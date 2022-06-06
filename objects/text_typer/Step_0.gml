@@ -1,0 +1,1 @@
+_group_voice[6,0]=asset_get_index("snd_text_voice_gaster"+string(irandom_range(1,7)))
