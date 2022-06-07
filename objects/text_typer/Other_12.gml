@@ -649,6 +649,18 @@ switch(cmd[|0]){
 		if(is_real(cmd[|1])){
 		fader.alarm[0]=cmd[|1]}
 		break;
+	case "audio_play":
+		if(is_string(cmd[|1])){
+		audio_play_sound(asset_get_index(cmd[|1]),0,0)}
+		break;
+	case "audio_pause":
+		if(is_string(cmd[|1])){
+		audio_pause_sound(asset_get_index(cmd[|1]))}
+		break;
+	case "audio_resume":
+		if(is_string(cmd[|1])){
+		audio_resume_sound(asset_get_index(cmd[|1]))}
+		break;
 	case "audio_stop":
 		if(is_string(cmd[|1])){
 		audio_stop_sound(asset_get_index(cmd[|1]))}
@@ -686,6 +698,9 @@ switch(cmd[|0]){
 		//audio_play_sound(snd_item_heal,0,false);
 		//audio_sound_gain(snd_item_heal,0.8,0)
 		instance_create_depth(0,0,0,ui_save)}
+	break
+	case "ui_save":
+		instance_create_depth(0,0,0,ui_save)
 	break
 //==================================================
 	case "titr_face":

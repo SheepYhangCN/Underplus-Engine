@@ -25,10 +25,16 @@ if(_state==0){
 	
 	_inst_return=instance_create_depth(108+6+236,118+6+116,0,text_typer);
 	if(global.language=0){
+	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
 	_inst_save.text=_prefix+"{font 1}Save"
+	}else{
+	_inst_save.text=_prefix+"{font 1}Overwrite"}
 	_inst_return.text=_prefix+"{font 1}Return"
 	}else if(global.language=1){
+	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
 	_inst_save.text=_prefix+"{font 3}保存"
+	}else{
+	_inst_save.text=_prefix+"{font 3}覆盖"}
 	_inst_return.text=_prefix+"{font 3}返回"
 	}
 }
@@ -78,8 +84,14 @@ if(_state==1){
 	
 	_inst_save=instance_create_depth(108+6+56,118+6+116,0,text_typer);
 	if(global.language=0){
+	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
 	_inst_save.text=_prefix+"{color `yellow`}{font 1}File Saved."
+	}else{
+	_inst_save.text=_prefix+"{color `yellow`}{font 1}File Overwrited."}
 	}else if(global.language=1){
+	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
 	_inst_save.text=_prefix+"{color `yellow`}{font 3}档案已储存。"
+	}else{
+	_inst_save.text=_prefix+"{color `yellow`}{font 3}档案已覆盖。"}
 	}
 }

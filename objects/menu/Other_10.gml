@@ -2,21 +2,20 @@
 if(_menu==0){
 	_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO));
 	if(_mode==0){
-		if(global.language=1){
-		_inst_instruction=instance_create_depth(150,5,0,text_typer);}else if(global.language=0){
-		_inst_instruction=instance_create_depth(110,0,0,text_typer);}
 		//_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F2] - Restart Room&[F3] - Restart&[F4] - Fullscreen&[ESC] - Quit Game&& --- DEBUG Mode Keys ---{space_y -1}&{space_y 2}[Insert] - DEBUG Mode&[Home] - Lock/Unlock HP&[~] - Console";
 		_inst_begin=instance_create_depth(170,315,0,text_typer);
 		//_inst_begin.text=_prefix+"Press Z or Enter to Begin";
 		_inst_settings=instance_create_depth(170,350,0,text_typer);
 		_inst_credits=instance_create_depth(170,385,0,text_typer)
 		if(global.language=0){
-		_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE"
+		_inst_instruction=instance_create_depth(70,0,0,text_typer);
+		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- New Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back key(backspace) to&switch the mobile controller."
 		_inst_begin.text=_prefix+"{font 0}Begin Game"
 		_inst_settings.text=_prefix+"{font 0}Settings"
 		_inst_credits.text=_prefix+"{font 0}Credits"
 		}else if(global.language=1){
-		_inst_instruction.text=_prefix+"{font 3}{color_text `gray_light`} --- 新增按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式"
+		_inst_instruction=instance_create_depth(150,0,0,text_typer);
+		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 新增按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
 		_inst_begin.text=_prefix+"{font 3}开始游戏"
 		_inst_settings.text=_prefix+"{font 3}设置"
 		_inst_credits.text=_prefix+"{font 3}制作名单"

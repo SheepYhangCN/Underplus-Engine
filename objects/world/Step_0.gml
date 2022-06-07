@@ -70,3 +70,15 @@ room_speed-=1}
 if(keyboard_check_pressed(vk_ralt)){
 room_speed+=1}
 }
+if(keyboard_check_pressed(vk_backspace)){
+if(instance_exists(obj_left_analog)||instance_exists(obj_touch_buttons)){
+instance_destroy(obj_left_analog)
+instance_destroy(obj_touch_buttons)
+}else{
+instance_create_depth(0,0,depth-1,obj_left_analog)
+instance_create_depth(0,0,depth-1,obj_touch_buttons)}
+if(global.language=0){
+show_message_async("Tap back key to&switch the mobile controller.")}
+if(global.language=1){
+show_message_async("按下返回键来开关移动端控制。")}
+}

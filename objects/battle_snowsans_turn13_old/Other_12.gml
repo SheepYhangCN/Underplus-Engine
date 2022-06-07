@@ -1,0 +1,10 @@
+alarm[0]=30
+Battle_SetSoul(battle_soul_blue)
+audio_play_sound(snd_ding,0,0)
+Battle_MakeBoneWallBottom(0,40,820)
+Battle_MakeBoneWallTop(0,40,820)
+Battle_MakeBoneWallLeft(0,40,820)
+Battle_MakeBoneWallRight(0,40,820)
+a=instance_create_depth(battle_board.x,battle_board.y+20,0,battle_platform)
+a.sticky=false
+a.width=64
