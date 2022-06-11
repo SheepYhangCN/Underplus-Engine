@@ -1,4 +1,4 @@
-if(global.shielding=0&&(lock_hp!=-1&&(Player_GetHp()+Player_GetKR())>lock_hp)){
+if(global.shielding=0&&Player_GetHp()+Player_GetKR()>lock_hp){
 if (type == 0){
 	Battle_CallSoulEventHurt();
 	if(global.kr=1){
@@ -22,4 +22,6 @@ if (type == 3){
 	Player_Heal(1)
 	audio_play_sound(snd_item_heal,0,0)}
 	}else if(global.shielding=1){
-	audio_play_sound(snd_ding,0,0)}
+	audio_play_sound(snd_ding,0,0)
+	}else if(Player_GetHp()+Player_GetKR()<=lock_hp){
+	audio_play_sound(snd_hurt,0,0)}
