@@ -8,3 +8,7 @@ alarm[0]=40
 fader.color=c_black
 fader.alpha=1
 Anim_Create(fader,"alpha",0,0,1,-1,40)
+
+Player_SetLv(8)
+Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
+Player_SetHp(Player_GetHpMax())

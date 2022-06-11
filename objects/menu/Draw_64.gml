@@ -11,7 +11,7 @@ if(_menu==0){
 if(_menu==1){
 	draw_set_color(c_white);
 	draw_set_font(font_menu);
-	draw_text_transformed(280,110,_naming_name,2,2,0);
+	draw_text_transformed(280,72,_naming_name,2,2,0);
 	//draw_text_transformed(230,180,_naming_name,4,4,0);
 	//draw_text_transformed(230,190,"______",4,4,0);
 }

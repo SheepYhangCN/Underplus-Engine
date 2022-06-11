@@ -1,7 +1,7 @@
 {
   "option_android_sync_amazon": false,
   "option_android_display_name": "YH!Undertale Games",
-  "option_android_version": "2022.6.7",
+  "option_android_version": "2022.6.11",
   "option_android_tools_from_version": false,
   "option_android_build_tools": "",
   "option_android_support_lib": "30.0.0",
@@ -21,7 +21,7 @@
   "option_android_orient_landscape_flipped": true,
   "option_android_gamepad_support": true,
   "option_android_lint": false,
-  "option_android_install_location": 0,
+  "option_android_install_location": 1,
   "option_android_sleep_margin": 4,
   "option_android_splash_screens_landscape": "${base_options_dir}/android/splash/landscape.png",
   "option_android_splash_screens_portrait": "${base_options_dir}/android/splash/portrait.png",

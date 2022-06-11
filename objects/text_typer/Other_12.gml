@@ -686,6 +686,19 @@ switch(cmd[|0]){
 		}
 		break
 //==================================================
+	case "choice_retry":
+		fader.color=c_black
+		Anim_Create(fader,"alpha",0,0,0,1,100)
+		audio_sound_gain(bgm_gameover,0,1000)
+        choice = Player_GetTextTyperChoice()
+        if(choice == 0){
+			gameover.alarm[10]=140
+			gameover.alarm[7]=30
+		}else if(choice=1){
+			gameover.alarm[11]=140
+			gameover.alarm[9]=40
+		}
+        break
 	case "choice_box":
         choice=Player_GetTextTyperChoice()
 		if(choice=0){

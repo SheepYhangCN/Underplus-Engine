@@ -36,6 +36,10 @@ if(room=room_games&&instance_exists(obj_games)){
 	draw_text(0,175,draw_choice)
 	draw_text(0,195,draw_phase)
 	draw_text(0,215,draw_warning_color)}
+if(room=room_menu&&instance_exists(menu)){
+	draw_letter="Choice Naming Letter:"+string(menu._choice_naming_letter)
+    draw_text(0, 175, draw_letter)
+	}
 if(room=room_battle){
 	turn_timer=Battle_GetTurnTime()
 	draw_soulxy="Soul XY:["+string(battle_soul.x)+","+string(battle_soul.y)+"]"

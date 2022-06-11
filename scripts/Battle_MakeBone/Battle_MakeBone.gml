@@ -1,4 +1,4 @@
-///@arg x,y,length,hspeed,vspeed,type,out,rotate,auto_destroy,*duration,*obj
+///@arg x,y,length,hspeed,vspeed,type,out,angle,rotate,auto_destroy,*duration,*obj
 function Battle_MakeBone(){
 	var OBJ = battle_bullet_bone
     var X = argument[0]

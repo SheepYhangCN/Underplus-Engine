@@ -8,9 +8,9 @@ if((current_month=12||current_month<=2)&&!audio_is_playing(bgm_menu_winter)){
 BGM_Play(0,bgm_menu_winter,true,1,1)}
 
 if(global.language=0){
-window_set_caption(GAME_NAME+" - Select Games")
+window_set_caption(GAME_NAME+" - Games Selection")
 }else if(global.language=1){
-window_set_caption(GAME_NAME+" - 选择游戏")
+window_set_caption(GAME_NAME+" - 游戏选择")
 }
 
 if(warning_countdown>-1){

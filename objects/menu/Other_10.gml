@@ -9,13 +9,13 @@ if(_menu==0){
 		_inst_credits=instance_create_depth(170,385,0,text_typer)
 		if(global.language=0){
 		_inst_instruction=instance_create_depth(70,0,0,text_typer);
-		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- New Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back key(backspace) to&switch the mobile controller."
+		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back key(backspace) to&switch the mobile controller."
 		_inst_begin.text=_prefix+"{font 0}Begin Game"
 		_inst_settings.text=_prefix+"{font 0}Settings"
 		_inst_credits.text=_prefix+"{font 0}Credits"
 		}else if(global.language=1){
 		_inst_instruction=instance_create_depth(150,0,0,text_typer);
-		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 新增按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
+		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
 		_inst_begin.text=_prefix+"{font 3}开始游戏"
 		_inst_settings.text=_prefix+"{font 3}设置"
 		_inst_credits.text=_prefix+"{font 3}制作名单"
@@ -94,12 +94,12 @@ if(_menu==0){
 }
 
 if(_menu==1){
-	_inst_naming_title=instance_create_depth(180,60,0,text_typer);
-	_inst_naming_letters=instance_create_depth(120,152,0,text_typer);
-	_inst_naming_letters.text=_prefix+"{font 0}{effect 0}{space_x 24}{space_y -2}ABCDEFG&HIJKLMN&OPQRSTU&VWXYZ{space_y -7}&&{space_y -2}abcdefg&hijklmn&opqrstu&vwxyz";
-	_inst_naming_quit=instance_create_depth(120,400,0,text_typer);
-	_inst_naming_backspace=instance_create_depth(240,400,0,text_typer);
-	_inst_naming_done=instance_create_depth(440,400,0,text_typer);
+	_inst_naming_title=instance_create_depth(180,35,0,text_typer);
+	_inst_naming_letters=instance_create_depth(120,107,0,text_typer);
+	_inst_naming_letters.text=_prefix+"{font 0}{effect 0}{space_x 24}{space_y -2}ABCDEFG&HIJKLMN&OPQRSTU&VWXYZ{space_y -7}&&{space_y -2}abcdefg&hijklmn&opqrstu&vwxyz{space_y -7}&&{space_y -2}1234567&890";
+	_inst_naming_quit=instance_create_depth(120,410,0,text_typer);
+	_inst_naming_backspace=instance_create_depth(240,410,0,text_typer);
+	_inst_naming_done=instance_create_depth(440,410,0,text_typer);
 	if(global.language=0){
 	_inst_naming_title.text=_prefix+"{font 1}Please input your name."
 	_inst_naming_quit.text=_prefix+"Quit"
@@ -152,13 +152,13 @@ if(_menu==2){
 	_inst_confirm_yes.text=_prefix+"{font 3}是"
 	}
 	_confirm_name_x=280;
-	_confirm_name_y=110;
+	_confirm_name_y=72;
 	_confirm_name_scale=2;
 	Anim_Destroy(self,"_confirm_name_x");
 	Anim_Destroy(self,"_confirm_name_y");
 	Anim_Destroy(self,"_confirm_name_scale");
 	Anim_Create(self,"_confirm_name_x",0,0,280,-80,270);
-	Anim_Create(self,"_confirm_name_y",0,0,110,120,270);
+	Anim_Create(self,"_confirm_name_y",0,0,72,158,270);
 	Anim_Create(self,"_confirm_name_scale",0,0,2,5,270);
 	_choice_confirm=0;
 	with(text_typer){

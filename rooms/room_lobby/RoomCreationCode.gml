@@ -1,10 +1,9 @@
 BGM_Stop(0)
-
-//if(global.debug=!1){
-//Dialog_Clear()
-//Dialog_Add(Lang_GetString("custom.dialog.lobby.1"))
-//Dialog_Add(Lang_GetString("custom.dialog.lobby.2"))
-//Dialog_Add(Lang_GetString("custom.dialog.lobby.3"))
-//Dialog_Add(Lang_GetString("custom.dialog.lobby.4"))
-//Dialog_Add(Lang_GetString("custom.dialog.lobby.5"))
-//Dialog_Start()}
+Dialog_Clear()
+if(Border_GetSprite()=spr_border_snowdin){
+Border_SetEnabled(false)}
+if(global.language=0){
+window_set_caption(GAME_NAME+" - Lobby")
+}else if(global.language=1){
+window_set_caption(GAME_NAME+" - 大厅")
+}

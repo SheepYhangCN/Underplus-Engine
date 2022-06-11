@@ -3,6 +3,10 @@ alarm[0]=-1
 alarm[1]=-1
 alarm[2]=-1
 alarm[3]=-1
+with(bone_box){
+instance_destroy()}
+with(battle_bullet_bone){
+instance_destroy()}
 Battle_SetSoul(battle_soul_red)
 audio_play_sound(snd_ding,0,0)
 Battle_MakeBoneWallBottom(30,55,70)

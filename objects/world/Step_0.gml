@@ -78,7 +78,7 @@ instance_destroy(obj_touch_buttons)
 instance_create_depth(0,0,depth-1,obj_left_analog)
 instance_create_depth(0,0,depth-1,obj_touch_buttons)}
 if(global.language=0){
-show_message_async("Tap back key to&switch the mobile controller.")}
+show_message_async("Tap back button(mobile) or backspace key(desktop) to switch the mobile controller.")}
 if(global.language=1){
-show_message_async("按下返回键来开关移动端控制。")}
+show_message_async("按下返回键(移动端)或退格键(桌面端)来开关移动端控制。")}
 }

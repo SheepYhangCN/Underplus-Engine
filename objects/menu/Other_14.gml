@@ -133,6 +133,12 @@ switch(string_lower(_naming_name)){
 	case "hf":
 		text="omg it's HF 11111"
 		break;
+	case "666":
+	case "6666":
+	case "66666":
+	case "666666":
+		text="Devil."
+		break;
 }
 }else if(global.language=1){
 switch(string_lower(_naming_name)){
@@ -231,6 +237,15 @@ switch(string_lower(_naming_name)){
 		break;
 	case "hf":
 		text="我趣事幻风大跌11111"
+		break;
+	case "114514":
+		text="你是一个一个一个哼哼啊啊啊啊啊啊啊啊啊啊"
+		break;
+	case "666":
+	case "6666":
+	case "66666":
+	case "666666":
+		text="西方的恶魔"
 		break;
 }}
 

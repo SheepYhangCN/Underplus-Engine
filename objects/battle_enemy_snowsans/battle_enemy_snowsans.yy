@@ -38,8 +38,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/物体/Battle/Enemy.yy",
+    "name": "snowdin_encounter",
+    "path": "folders/物体/Battle/Enemy/snowdin_encounter.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_enemy_snowsans",

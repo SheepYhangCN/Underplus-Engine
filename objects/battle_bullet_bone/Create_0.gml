@@ -9,4 +9,5 @@ rotate = 0
 vspeed = 0
 hspeed = 0
 duration = -1
+lock_hp=-1
 alarm[1] = 1

@@ -1,6 +1,6 @@
 var _dir=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
 if(global.mode=2){
-var length=70}else{var length=60}
+var length=40}else{var length=30}
 switch _dir{
 case DIR.UP:
 Battle_MakeBoneWallBottom(30,length,15)
@@ -21,4 +21,4 @@ break
 }
 battle_soul_blue.dir=_dir
 alarm[3]=10
-alarm[0]=length
+alarm[0]=length+30

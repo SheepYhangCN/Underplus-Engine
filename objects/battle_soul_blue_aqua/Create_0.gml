@@ -2,7 +2,7 @@ event_inherited()
 moveable = 1
 dir = 270
 move = 0
-impact = 0
+impact = 1
 impact_shake=0
 impact_damage=0
 _gravity_jump = 0.148

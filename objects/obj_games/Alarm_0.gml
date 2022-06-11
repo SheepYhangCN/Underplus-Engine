@@ -16,6 +16,8 @@ switch choice{
 		room_goto(room_utse)}
 		if(phase=1){
 		Encounter_Start(4)}
+		if(phase=2){
+		Encounter_Start(5)}
 		break
 	case 1:
 		Encounter_Start(2)

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_inksans_1",
-    "path": "sprites/spr_inksans_1/spr_inksans_1.yy",
+    "name": "spr_inksans",
+    "path": "sprites/spr_inksans/spr_inksans.yy",
   },
   "solid": false,
   "visible": true,
