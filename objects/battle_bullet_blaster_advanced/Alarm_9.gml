@@ -1,1 +1,0 @@
-Anim_Create(id,"exit_speed",_exit_anim_tween,_exit_anim_ease,_exit_speed_initial,_exit_speed_end-_exit_speed_initial,_exit_speed_add_time);

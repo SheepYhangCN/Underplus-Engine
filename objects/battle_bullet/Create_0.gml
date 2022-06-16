@@ -1,1 +1,0 @@
-depth=DEPTH_BATTLE.BULLET;

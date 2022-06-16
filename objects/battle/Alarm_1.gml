@@ -1,1 +1,0 @@
-Anim_Create(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.BATTLE_MENU_FIGHT_OBJ),"image_xscale",0,0,1.05,-0.06,5);

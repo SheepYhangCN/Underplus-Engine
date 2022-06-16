@@ -1,1 +1,0 @@
-titr_head.image_index=0

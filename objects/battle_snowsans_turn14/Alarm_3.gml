@@ -1,1 +1,0 @@
-battle_soul_blue.impact=true
