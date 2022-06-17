@@ -1,0 +1,38 @@
+///@arg action_choice
+///@arg call_event*
+function Battle_SetMenuChoiceAction() {
+	var ACTION=argument[0];
+	var CALL=true;
+	if(argument_count>=2){
+		CALL=argument[1];
+	}
+	
+	//if(ACTION<Battle_GetEnemyActionNumber(0)){
+		battle._menu_choice_action=ACTION;
+		while(ACTION>=battle._menu_choice_action_first+3){
+			battle._menu_choice_action_first+=1;
+		}
+		while(ACTION<battle._menu_choice_action_first){
+			battle._menu_choice_action_first-=1;
+		}
+		var text="";
+		var proc=battle._menu_choice_action;
+		proc-=1;
+		text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()-1)+"&";
+		proc=battle._menu_choice_action
+		text+=Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction())+"&";
+		proc+=1;
+		text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()+1)+"&";
+		Battle_SetDialog(text,true);
+	
+		if(CALL){
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_CHOICE_SWITCH);
+		}
+	
+		return true;
+	//}else{
+		//return false;
+	//}
+
+
+}

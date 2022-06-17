@@ -1,0 +1,14 @@
+if(Battle_GetTurnTime()=60){
+Battle_SetSoul(battle_soul_red)
+audio_play_sound(snd_ding,0,0)
+alarm[0]=-1
+alarm[3]=-1
+with(bone_box){
+instance_destroy()}
+with(battle_bullet_bone){
+instance_destroy()}
+Battle_MakeBoneWallBottom(35,40,25)
+Battle_MakeBoneWallTop(35,40,25)
+Battle_MakeBoneWallLeft(35,40,25)
+Battle_MakeBoneWallRight(35,40,25)
+}

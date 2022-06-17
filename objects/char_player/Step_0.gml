@@ -1,0 +1,71 @@
+can_move=(moveable&&_moveable_dialog&&_moveable_menu&&_moveable_save&&_moveable_warp&&_moveable_encounter&&_moveable_box);
+if(can_move){
+	if(Input_IsHeld(INPUT.UP)&&!Input_IsHeld(INPUT.DOWN)){
+		move_speed[DIR.UP]=2
+		move[DIR.UP]=2
+		if(Input_IsHeld(INPUT.CANCEL)){
+		move_speed[DIR.UP]=4
+		}
+	}
+	if(Input_IsHeld(INPUT.DOWN)&&!Input_IsHeld(INPUT.UP)){
+		move_speed[DIR.DOWN]=2
+		move[DIR.DOWN]=2
+		if(Input_IsHeld(INPUT.CANCEL)){
+		move_speed[DIR.DOWN]=4
+		}
+	}
+	if(Input_IsHeld(INPUT.LEFT)&&!Input_IsHeld(INPUT.RIGHT)){
+		move_speed[DIR.LEFT]=2
+		move[DIR.LEFT]=2
+		if(Input_IsHeld(INPUT.CANCEL)){
+		move_speed[DIR.LEFT]=4
+		}
+	}
+	if(Input_IsHeld(INPUT.RIGHT)&&!Input_IsHeld(INPUT.LEFT)){
+		move_speed[DIR.RIGHT]=2
+		move[DIR.RIGHT]=2
+		if(Input_IsHeld(INPUT.CANCEL)){
+		move_speed[DIR.RIGHT]=4
+		}
+	}
+	if(Input_IsPressed(INPUT.CONFIRM)){
+		var inst=noone;
+		if(dir==DIR.UP){
+			inst=collision_rectangle(x-sprite_width/2+15,y-5,x+sprite_width/2-15,y-sprite_height+5,char,false,true);
+		}
+		if(dir==DIR.DOWN){
+			inst=collision_rectangle(x-sprite_width/2+15,y-sprite_height+30,x+sprite_width/2-15,y+10,char,false,true);
+		}
+		if(dir==DIR.LEFT){
+			inst=collision_rectangle(x,y-sprite_height+22,x+sprite_width/2-15,y-2,char,false,true);
+		}
+		if(dir==DIR.RIGHT){
+			inst=collision_rectangle(x,y-sprite_height+22,x+sprite_width/2+10,y-2,char,false,true);
+		}
+		if(instance_exists(inst)){
+			with(inst){
+				event_user(0);
+			}
+		}
+	}
+	if(!instance_exists(ui_dialog)&&!instance_exists(ui_esc)&&!instance_exists(ui_menu)){
+		if(Input_IsPressed(INPUT.MENU)){
+		instance_create_depth(0,0,0,ui_menu);
+	}
+	if(keyboard_check_pressed(vk_escape)){
+		instance_create_depth(0,0,0,ui_esc);
+	}}
+}
+
+if(((!((Input_IsHeld(INPUT.UP)||Input_IsHeld(INPUT.DOWN)||Input_IsHeld(INPUT.LEFT)||Input_IsHeld(INPUT.RIGHT))&&Input_IsHeld(INPUT.CANCEL)))&&can_move)||!can_move||!cmove){
+	move_speed[DIR.UP]=2
+	move_speed[DIR.DOWN]=2
+	move_speed[DIR.LEFT]=2
+	move_speed[DIR.RIGHT]=2
+}
+
+if(Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.SHOP_ROOM_RETURN,-1)=room){
+_moveable_warp=true
+Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.SHOP_ROOM_RETURN,-1)}
+
+event_inherited();

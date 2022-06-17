@@ -1,0 +1,59 @@
+var SHOP=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.SHOP);
+depth = 97;
+
+// 设定位置
+
+border_x1 = 0;
+border_y1 = 120;
+border_x2 = 320;
+border_y2 = 240;
+border_width = 2;
+
+width_text = 20;
+width_heart = 30;
+height_text = 10;
+
+menu_divide_x = 200;
+state_info_y = 200;
+
+buy_info_x = menu_divide_x;
+buy_info_y = border_y1 - 80;
+buy_info_inst_y = border_y1;
+buy_info_vspeed = 8;
+
+_index = 0;
+_index_buy = 0;
+_index_sell = 0;
+_choice_state = 0;
+
+_host = instance_create_depth(160,border_y1,-100,Shop_GetHost(SHOP));
+Shop_GetDialog(_host);
+
+var i=0;
+for(i=0;i<4;i++)
+{
+	_item[i]=instance_create_depth(0,0,0,_host.shop_item[i]);
+}
+_background = Shop_GetBackground(SHOP);
+
+_typer_left = noone;
+_typer_right = noone;
+_typer_info = noone;
+_typer_state = noone;
+_typer_left_refresh = true;
+_typer_right_refresh = true;
+_typer_info_refresh = true;
+_typer_state_refresh = true;
+
+_state = SHOP_STATE.ENCOUNTER;
+_dialog = false;
+
+_pre="{scale 1}{voice 0}{speed 2}{space_y 4}{shadow true}{depth "+string(DEPTH_UI.TEXT)+"}";
+_pre_inst="{scale 1}{space_y 4}{shadow true}{instant true}{depth "+string(DEPTH_UI.TEXT)+"}";
+_pre_inst_2="{scale 1}{space_y 2}{shadow true}{instant true}{depth 98}";
+_pre_inst_3="{scale 1}{space_y 1}{shadow true}{instant true}{depth "+string(DEPTH_UI.TEXT)+"}";
+//
+_snd_buy_item = snd_buyitem;
+
+Shop_CallEvent(_state);
+volume=1
