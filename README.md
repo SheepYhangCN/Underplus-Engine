@@ -27,9 +27,9 @@ PageDown Encounter Battle
 
 Esc Pause game
 
-+ HP+
+Plus HP+
 
-- HP-
+Minus HP-
 
 L Ctrl LV-
 
@@ -111,9 +111,9 @@ PageDown 触发战斗
 
 Esc 暂停游戏
 
-+ 增加HP
+加号 增加HP
 
-- 减少HP
+减号 减少HP
 
 左Ctrl 降低LV
 
