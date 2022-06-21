@@ -9,7 +9,9 @@ Use the newest release version of GameMaker to open yyp file
 Gamejolt page:
 https://gamejolt.com/games/underplus-engine/726150
 
-How 2 use  Debug:
+============================================================
+
+How 2 use Debug:
 
 Insert Switch Debug
 
@@ -81,6 +83,9 @@ F12 switch mode
 
 WASD dir setting of blue soul and blue+aqua soul
 
+============================================================
+
+============================================================
 
 简体中文：
 
@@ -92,6 +97,8 @@ WASD dir setting of blue soul and blue+aqua soul
 
 Gamejolt页面：
 https://gamejolt.com/games/underplus-engine/726150
+
+============================================================
 
 Debug使用方法：
 
