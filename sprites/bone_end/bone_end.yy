@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Bone",
-    "path": "folders/精灵/Bone.yy",
+    "path": "folders/Sprites/Bone.yy",
   },
   "resourceVersion": "1.0",
   "name": "bone_end",

@@ -53,16 +53,26 @@ if(room=room_battle){
 	draw_turn_timer="Turn Timer:"+string(turn_timer)}
 	draw_enemy="Battle:"+string(global.enemy)+"["+object_get_name(Encounter_GetEnemy(global.enemy,0))+","+object_get_name(Encounter_GetEnemy(global.enemy,1))+","+object_get_name(Encounter_GetEnemy(global.enemy,2))+"]"
 	draw_board="Board XY & Size:["+string(battle_board.x)+","+string(battle_board.y)+"],["+string(battle_board.up)+","+string(battle_board.down)+","+string(battle_board.left)+","+string(battle_board.right)+"]"
+	draw_state="Battle State:"+string(Battle_GetState())
     draw_text(0, 175, draw_soulxy)
     draw_text(0, 195, draw_battle_button)
     draw_text(0, 215, draw_turn)
     draw_text(0, 235, draw_turn_timer)
 	draw_text(0, 255, draw_enemy)
 	draw_text(0, 275, draw_board)
+	draw_text(0, 295, draw_state)
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
-	draw_text(0, 295, "moving:"+string(battle_soul.moving))
-	draw_text(0, 315, "move:"+string(battle_soul.move))
-	draw_text(0, 335, "bbb:"+string(battle_soul.bbb))}
+	draw_text(0, 315, "Moving:"+string(battle_soul.moving))
+	draw_text(0, 335, "Falling Speed(move):"+string(battle_soul.move))
+	draw_text(0, 355, "Touched Board(bbb):"+string(battle_soul.bbb))
+	draw_text(0, 375, "Dir:"+string(battle_soul.dir))
+	}else if(instance_exists(battle_soul)){
+	draw_text(0, 315, "Image Angle:"+string(battle_soul.image_angle))
+	}
+	if(instance_exists(battle_soul_orange)||instance_exists(battle_soul_aqua_orange)){
+	draw_text(0, 335, "Moveable:"+string(battle_soul.moveable))
+	draw_text(0, 355, "Moving:["+string(battle_soul.moveup)+","+string(battle_soul.movedown)+","+string(battle_soul.moveleft)+","+string(battle_soul.moveright)+"]")
+	}
 }else{
 	if(instance_exists(char_player)){
 	draw_playerxy="Character XY:["+string(char_player.x)+","+string(char_player.y)+"]"

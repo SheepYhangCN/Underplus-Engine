@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Phone",
-    "path": "folders/物体/Phone.yy",
+    "path": "folders/Objects/Phone.yy",
   },
   "resourceVersion": "1.0",
   "name": "phone_toriel",

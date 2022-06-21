@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Character",
-    "path": "folders/精灵/Character.yy",
+    "path": "folders/Sprites/Character.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_char_save",

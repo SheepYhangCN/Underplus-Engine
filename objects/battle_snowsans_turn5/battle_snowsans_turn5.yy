@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin_encounter_p1",
-    "path": "folders/物体/Battle/Turn/snowdin_encounter_p1.yy",
+    "path": "folders/Objects/Battle/Turn/snowdin_encounter_p1.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_snowsans_turn5",

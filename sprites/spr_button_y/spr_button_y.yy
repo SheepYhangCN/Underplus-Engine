@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Mobile_Control",
-    "path": "folders/精灵/Mobile_Control.yy",
+    "path": "folders/Sprites/Mobile_Control.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_button_y",

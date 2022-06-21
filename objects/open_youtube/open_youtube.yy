@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Click",
-    "path": "folders/物体/Click.yy",
+    "path": "folders/Objects/Click.yy",
   },
   "resourceVersion": "1.0",
   "name": "open_youtube",

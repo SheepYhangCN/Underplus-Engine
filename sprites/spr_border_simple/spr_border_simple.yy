@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Border",
-    "path": "folders/精灵/Border.yy",
+    "path": "folders/Sprites/Border.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_border_simple",

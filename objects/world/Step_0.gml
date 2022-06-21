@@ -85,3 +85,17 @@ show_message_async("Tap back button(mobile) or backspace key(desktop) to switch 
 if(global.language=1){
 show_message_async("按下返回键(移动端)或退格键(桌面端)来开关移动端控制。")}
 }
+
+if(display_mouse_get_x()=window_get_x()+window_mouse_get_x()&&display_mouse_get_y()=window_get_y()+window_mouse_get_y()&&!(instance_exists(battle_soul_yellow)&&Battle_GetState()=BATTLE_STATE.IN_TURN)){
+cursor_sprite=spr_cursor
+}else{
+cursor_sprite=noone}
+
+//边框
+border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
+if(border_=0&&Border_IsEnabled()){
+Border_SetEnabled(false)}
+if(border_!=0){
+Border_SetEnabled(true)
+if(Border_GetSprite()!=Border_Get_Sprite(border_)){
+Border_SetSprite(Border_Get_Sprite(border_))}}

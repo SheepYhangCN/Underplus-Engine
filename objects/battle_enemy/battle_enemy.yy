@@ -41,7 +41,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemy",
-    "path": "folders/物体/Battle/Enemy.yy",
+    "path": "folders/Objects/Battle/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_enemy",

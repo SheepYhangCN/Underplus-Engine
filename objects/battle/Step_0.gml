@@ -10,19 +10,53 @@ if(_state==BATTLE_STATE.MENU){
 		//左/右
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
+			if((instance_exists(battle_button_fight)&&instance_exists(battle_button_act))||(instance_exists(battle_button_fight)&&instance_exists(battle_button_item))||(instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy))||(instance_exists(battle_button_act)&&instance_exists(battle_button_item))||(instance_exists(battle_button_act)&&instance_exists(battle_button_mercy))||(instance_exists(battle_button_item)&&instance_exists(battle_button_mercy))){
 			button-=1;
+			audio_play_sound(snd_menu_switch,0,false);}
 			if(button<0){
 				button=3;
 			}
-			audio_play_sound(snd_menu_switch,0,false);
+			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			button=2}
+			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			button=1}
+			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			button=3}
+			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			button=2}
+			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			button=0}
+			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			button=3}
+			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			button=1}
+			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			button=0}
 			Battle_SetMenuChoiceButton(button);
 		}else if(Input_IsPressed(INPUT.RIGHT)){
 			var button=_menu_choice_button;
+			if((instance_exists(battle_button_fight)&&instance_exists(battle_button_act))||(instance_exists(battle_button_fight)&&instance_exists(battle_button_item))||(instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy))||(instance_exists(battle_button_act)&&instance_exists(battle_button_item))||(instance_exists(battle_button_act)&&instance_exists(battle_button_mercy))||(instance_exists(battle_button_item)&&instance_exists(battle_button_mercy))){
 			button+=1;
+			audio_play_sound(snd_menu_switch,0,false);}
 			if(button>3){
 				button=0;
 			}
-			audio_play_sound(snd_menu_switch,0,false);
+			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			button=2}
+			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			button=3}
+			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			button=3}
+			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			button=0}
+			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			button=0}
+			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			button=1}
+			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			button=1}
+			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			button=2}
 			Battle_SetMenuChoiceButton(button);
 		}
 		

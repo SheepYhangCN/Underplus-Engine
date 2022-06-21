@@ -28,4 +28,5 @@ if(argument_count>7){
 a.knife_time=argument[7]}
 if(argument_count>8){
 a.hit_damage=argument[8]}
+return a
 }

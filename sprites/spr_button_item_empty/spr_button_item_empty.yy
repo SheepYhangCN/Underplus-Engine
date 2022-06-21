@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Button",
-    "path": "folders/精灵/Battle/Button.yy",
+    "path": "folders/Sprites/Battle/Button.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_button_item_empty",

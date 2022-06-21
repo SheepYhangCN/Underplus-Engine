@@ -39,14 +39,17 @@ if(global.debug = 1){
 }
 if(keyboard_check_pressed(vk_tab)){
 	if(world._window_size=1){
-	window_set_size(960,720)
-	world._window_size=1.5
+	//window_set_size(960,720)
+	//world._window_size=1.5
+	Window_Size_Set(1.5)
 	}else if(world._window_size=1.5){
-	window_set_size(1280,960)
-	world._window_size=2
+	//window_set_size(1280,960)
+	//world._window_size=2
+	Window_Size_Set(2)
 	}else if(world._window_size=2){
-	window_set_size(640,480)
-	world._window_size=1
+	//window_set_size(640,480)
+	//world._window_size=1
+	Window_Size_Set(1)
 	}
 }
 	if(global.shieldval<=0){
@@ -87,7 +90,7 @@ if(keyboard_check_pressed(vk_tab)){
 		encounter_battle=get_integer("Encounter_Start", global.enemy)
 		Encounter_Start(encounter_battle)
 }
-	if(keyboard_check_pressed(ord("S"))){
+	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)){
 		instance_create_depth(0,0,0,ui_save)
 	}
 	if(keyboard_check_pressed(ord("L"))){
@@ -98,6 +101,23 @@ if(keyboard_check_pressed(vk_tab)){
 if(keyboard_check_pressed(vk_escape)){
 		show_message("Game Paused")}
 if(room=room_battle){
+	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
+	if(keyboard_check_pressed(ord("W"))){
+		battle_soul.dir=DIR.UP
+		battle_soul.impact=1
+	}
+	if(keyboard_check_pressed(ord("A"))){
+		battle_soul.dir=DIR.LEFT
+		battle_soul.impact=1
+	}
+	if(keyboard_check_pressed(ord("S"))){
+		battle_soul.dir=DIR.DOWN
+		battle_soul.impact=1
+	}
+	if(keyboard_check_pressed(ord("D"))){
+		battle_soul.dir=DIR.RIGHT
+		battle_soul.impact=1
+	}}
 	if(keyboard_check_pressed(vk_delete)){
 		warp_battle_turn=get_integer("Battle_SetTurnNumber", Battle_GetTurnNumber())
 		Battle_SetTurnNumber(warp_battle_turn)
@@ -115,16 +135,13 @@ if(room=room_battle){
 	Battle_SetSoul(battle_soul_orange)
 	}
 	if(keyboard_check_pressed(vk_numpad4)){
-	Battle_SetSoul(battle_soul_blue_aqua)
+	Battle_SetSoul(battle_soul_yellow)
 	}
 	if(keyboard_check_pressed(vk_numpad5)){
-	Battle_SetSoul(battle_soul_blue_orange)
+	Battle_SetSoul(battle_soul_blue_aqua)
 	}
 	if(keyboard_check_pressed(vk_numpad6)){
 	Battle_SetSoul(battle_soul_aqua_orange)
-	}
-	if(keyboard_check_pressed(vk_numpad7)){
-	Battle_SetSoul(battle_soul_blue_orange_aqua)
 	}
 	if(keyboard_check_pressed(vk_f6)){
 		Battle_EndTurn()}

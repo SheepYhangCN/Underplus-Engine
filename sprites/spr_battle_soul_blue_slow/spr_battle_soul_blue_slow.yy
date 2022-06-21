@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Soul",
-    "path": "folders/精灵/Battle/Soul.yy",
+    "path": "folders/Sprites/Battle/Soul.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_soul_blue_slow",

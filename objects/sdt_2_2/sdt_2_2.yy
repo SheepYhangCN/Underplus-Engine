@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Host_Test",
-    "path": "folders/物体/Shop/Host_Test.yy",
+    "path": "folders/Objects/Shop/Host_Test.yy",
   },
   "resourceVersion": "1.0",
   "name": "sdt_2_2",

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Platform",
-    "path": "folders/精灵/Battle/Platform.yy",
+    "path": "folders/Sprites/Battle/Platform.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_platform_blue",

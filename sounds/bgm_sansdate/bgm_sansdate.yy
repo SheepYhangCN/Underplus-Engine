@@ -15,7 +15,7 @@
   "duration": 170.00635,
   "parent": {
     "name": "BGM",
-    "path": "folders/声音/BGM.yy",
+    "path": "folders/Sounds/BGM.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgm_sansdate",

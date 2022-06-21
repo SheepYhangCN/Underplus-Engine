@@ -39,7 +39,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Trigger",
-    "path": "folders/物体/Trigger.yy",
+    "path": "folders/Objects/Trigger.yy",
   },
   "resourceVersion": "1.0",
   "name": "trigger_warp",

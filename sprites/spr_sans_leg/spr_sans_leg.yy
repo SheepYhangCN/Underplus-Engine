@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Enemy",
-    "path": "folders/精灵/Battle/Enemy.yy",
+    "path": "folders/Sprites/Battle/Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sans_leg",

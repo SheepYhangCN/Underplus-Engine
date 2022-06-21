@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Face",
-    "path": "folders/物体/Face.yy",
+    "path": "folders/Objects/Face.yy",
   },
   "resourceVersion": "1.0",
   "name": "face",

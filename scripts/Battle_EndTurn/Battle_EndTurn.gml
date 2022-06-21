@@ -23,7 +23,16 @@ function Battle_EndTurn() {
 				event_user(BATTLE_BULLET_EVENT.TURN_END);
 			}
 		}
-	
+		/*with(battle_board_cover){
+		instance_destroy()}
+		with(battle_board_extra){
+		Battle_RemoveBoard(self)}
+		with(battle_board_extra_circle){
+		Battle_RemoveBoard(self)}
+		with(battle_board_extra_rect){
+		Battle_RemoveBoard(self)}
+		with(battle_board_extra_roundrect){
+		Battle_RemoveBoard(self)}*/
 		Battle_GotoNextState();
 		return true;
 	}else{

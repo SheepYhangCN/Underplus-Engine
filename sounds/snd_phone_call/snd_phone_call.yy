@@ -15,7 +15,7 @@
   "duration": 0.0,
   "parent": {
     "name": "SFX",
-    "path": "folders/声音/SFX.yy",
+    "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_phone_call",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Item",
-    "path": "folders/脚本/Item.yy",
+    "path": "folders/Scripts/Item.yy",
   },
   "resourceVersion": "1.0",
   "name": "Item_CallEvent",

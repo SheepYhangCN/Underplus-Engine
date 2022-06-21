@@ -1,6 +1,6 @@
 {
   "option_amazonfire_sync_android": false,
-  "option_amazonfire_display_name": "Created with GameMaker Studio 2",
+  "option_amazonfire_display_name": "Underplus Engine",
   "option_amazonfire_version": "1.0.0.0",
   "option_amazonfire_tools_from_version": false,
   "option_amazonfire_build_tools": "",
@@ -28,7 +28,7 @@
   "option_amazonfire_interpolate_pixels": false,
   "option_amazonfire_screen_depth": 0,
   "option_amazonfire_scale": 0,
-  "option_amazonfire_texture_page": "2048x2048",
+  "option_amazonfire_texture_page": "4096x4096",
   "option_amazonfire_icon_ldpi": "${base_options_dir}/android/icons/ldpi.png",
   "option_amazonfire_icon_mdpi": "${base_options_dir}/android/icons/mdpi.png",
   "option_amazonfire_icon_hdpi": "${base_options_dir}/android/icons/hdpi.png",

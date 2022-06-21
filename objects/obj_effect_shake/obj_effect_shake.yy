@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Effect",
-    "path": "folders/物体/Effect.yy",
+    "path": "folders/Objects/Effect.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_effect_shake",

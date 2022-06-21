@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Dev",
-    "path": "folders/精灵/Dev.yy",
+    "path": "folders/Sprites/Dev.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_block_corner",

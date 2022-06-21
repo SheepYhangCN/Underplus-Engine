@@ -90,7 +90,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Fight",
-    "path": "folders/精灵/Battle/Menu/Fight.yy",
+    "path": "folders/Sprites/Battle/Menu/Fight.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_menu_fight_anim_knife",

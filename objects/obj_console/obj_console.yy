@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Debug",
-    "path": "folders/物体/Debug.yy",
+    "path": "folders/Objects/Debug.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_console",

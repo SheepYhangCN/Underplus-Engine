@@ -1,4 +1,6 @@
-function Battle_EndMenu() {
+function Battle_EndMenu(){
+	if(instance_exists(battle_soul)){
+	battle_soul.image_angle=0}
 	if(Battle_GetState()==BATTLE_STATE.MENU){
 		Battle_SetMenu(-1,false);
 	

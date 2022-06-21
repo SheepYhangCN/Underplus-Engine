@@ -15,7 +15,7 @@
   "duration": 13.727347,
   "parent": {
     "name": "BGM",
-    "path": "folders/声音/BGM.yy",
+    "path": "folders/Sounds/BGM.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgm_menu_winter",

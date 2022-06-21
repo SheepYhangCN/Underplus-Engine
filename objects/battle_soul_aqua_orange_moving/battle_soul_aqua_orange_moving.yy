@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "moving",
-    "path": "folders/物体/Battle/Soul/effect/moving.yy",
+    "path": "folders/Objects/Battle/Soul/effect/moving.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_soul_aqua_orange_moving",

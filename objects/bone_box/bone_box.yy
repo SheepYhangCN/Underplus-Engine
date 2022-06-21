@@ -33,7 +33,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Bullet",
-    "path": "folders/物体/Battle/Bullet.yy",
+    "path": "folders/Objects/Battle/Bullet.yy",
   },
   "resourceVersion": "1.0",
   "name": "bone_box",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Game",
-    "path": "folders/脚本/Game.yy",
+    "path": "folders/Scripts/Game.yy",
   },
   "resourceVersion": "1.0",
   "name": "Game_GetFrameSkip",

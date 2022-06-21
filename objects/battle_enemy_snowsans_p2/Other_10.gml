@@ -43,5 +43,6 @@ Player_SetHp(Player_GetHpMax())
 
 Border_SetEnabled(true)
 Border_SetSprite(spr_border_snowdin)
+Flag_Set(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,spr_border_snowdin)
 head.image_index=4
 fader.alpha=0

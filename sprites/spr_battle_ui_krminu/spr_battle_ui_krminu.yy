@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "UI",
-    "path": "folders/精灵/Battle/UI.yy",
+    "path": "folders/Sprites/Battle/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_ui_krminu",

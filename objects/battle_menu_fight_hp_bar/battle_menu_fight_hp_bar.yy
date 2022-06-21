@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Menu",
-    "path": "folders/物体/Battle/Menu.yy",
+    "path": "folders/Objects/Battle/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_menu_fight_hp_bar",

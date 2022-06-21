@@ -28,7 +28,7 @@ ds_map_add(_map_macro,"voice.sans",3);
 ds_map_add(_map_macro,"voice.papyrus",4);
 ds_map_add(_map_macro,"voice.asgore",5);
 ds_map_add(_map_macro,"voice.gaster",6);
-ds_map_add(_map_macro,"voice.chara",6);
+ds_map_add(_map_macro,"voice.chara",7);
 
 _group_font[0,0]=font_dialog
 _group_font_scale_x[0,0]=1;

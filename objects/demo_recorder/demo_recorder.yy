@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Demo",
-    "path": "folders/物体/Demo.yy",
+    "path": "folders/Objects/Demo.yy",
   },
   "resourceVersion": "1.0",
   "name": "demo_recorder",

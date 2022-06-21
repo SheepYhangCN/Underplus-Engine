@@ -13,6 +13,9 @@ if(global.language=0){
 draw_set_font(font_menu)
 switch choice{
 case 0:
+game="Tutorial Fight"
+break
+case 1:
 draw_text_transformed(320,430,"Use Up and Down arrow keys to switch phase",2,2,0)
 game="Undertale : Snowdin Encounter | Sans Fight"
 switch phase{
@@ -39,7 +42,7 @@ break
 }
 break
 }
-draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift -Quit][C/Ctrl - Shop]",2,2,0)
+draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift -Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
 if(enabled){
 draw_text_transformed(320,400,"Press Z or Enter to start",2,2,0)
@@ -52,6 +55,9 @@ if(global.language=1){
 draw_set_font(font_fzxs12_18)
 switch choice{
 case 0:
+game="教程战"
+break
+case 1:
 draw_text(320,435,"使用上下方向键切换阶段")
 game="Undertale:雪镇之遇 | Sans战"
 switch phase{

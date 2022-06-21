@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "UI",
-    "path": "folders/物体/UI.yy",
+    "path": "folders/Objects/UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "ui_box",

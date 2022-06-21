@@ -41,7 +41,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Soul",
-    "path": "folders/物体/Battle/Soul.yy",
+    "path": "folders/Objects/Battle/Soul.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_soul",

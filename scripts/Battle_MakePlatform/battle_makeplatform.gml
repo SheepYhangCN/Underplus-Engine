@@ -5,7 +5,7 @@ var _x=argument[0]
 var _y=argument[1]
 if(argument_count>2){
 OBJ=argument[2]}
-a=instance_create_depth(_x,_y,0,OBJ)
+var a=instance_create_depth(_x,_y,0,OBJ)
 if(argument_count>3){
 a.sticky=argument[3]}
 if(argument_count>4){
@@ -22,4 +22,5 @@ if(argument_count>9){
 a.auto_destroy=argument[9]}
 if(argument_count>10){
 a.auto_destroy_dir=argument[10]}
+return a
 }

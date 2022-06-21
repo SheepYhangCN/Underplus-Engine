@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Battle",
-    "path": "folders/物体/Battle.yy",
+    "path": "folders/Objects/Battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_dialog_enemy",

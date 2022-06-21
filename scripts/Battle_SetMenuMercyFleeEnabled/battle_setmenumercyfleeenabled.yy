@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Flee",
-    "path": "folders/脚本/Battle/Menu/Flee.yy",
+    "path": "folders/Scripts/Battle/Menu/Flee.yy",
   },
   "resourceVersion": "1.0",
   "name": "Battle_SetMenuMercyFleeEnabled",

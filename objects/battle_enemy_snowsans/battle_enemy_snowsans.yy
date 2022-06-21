@@ -37,7 +37,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin_encounter",
-    "path": "folders/物体/Battle/Enemy/snowdin_encounter.yy",
+    "path": "folders/Objects/Battle/Enemy/snowdin_encounter.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_enemy_snowsans",

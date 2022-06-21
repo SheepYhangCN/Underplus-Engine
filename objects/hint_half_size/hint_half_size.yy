@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Hint",
-    "path": "folders/物体/Hint.yy",
+    "path": "folders/Objects/Hint.yy",
   },
   "resourceVersion": "1.0",
   "name": "hint_half_size",

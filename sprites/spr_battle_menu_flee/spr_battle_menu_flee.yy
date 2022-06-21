@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Menu",
-    "path": "folders/精灵/Battle/Menu.yy",
+    "path": "folders/Sprites/Battle/Menu.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_menu_flee",

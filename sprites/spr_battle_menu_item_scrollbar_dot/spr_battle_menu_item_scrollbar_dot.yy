@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Item",
-    "path": "folders/精灵/Battle/Menu/Item.yy",
+    "path": "folders/Sprites/Battle/Menu/Item.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_menu_item_scrollbar_dot",

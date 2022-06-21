@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "CC",
-    "path": "folders/脚本/CC.yy",
+    "path": "folders/Scripts/CC.yy",
   },
   "resourceVersion": "1.0",
   "name": "CC_Add",

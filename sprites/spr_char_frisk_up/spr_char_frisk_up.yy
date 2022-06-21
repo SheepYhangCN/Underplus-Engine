@@ -82,7 +82,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Frisk",
-    "path": "folders/精灵/Character/Frisk.yy",
+    "path": "folders/Sprites/Character/Frisk.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_char_frisk_up",

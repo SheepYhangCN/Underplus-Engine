@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Board_Edge",
-    "path": "folders/精灵/Battle/Board_Edge.yy",
+    "path": "folders/Sprites/Battle/Board_Edge.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_board_edge2",

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "BGM",
-    "path": "folders/脚本/BGM.yy",
+    "path": "folders/Scripts/BGM.yy",
   },
   "resourceVersion": "1.0",
   "name": "BGM_GetID",

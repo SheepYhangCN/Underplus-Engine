@@ -64,8 +64,8 @@ border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
 if(border_=0){
 Border_SetEnabled(false)}else{
 Border_SetEnabled(true)
-if(Border_GetSprite()!=spr_border_simple){
-Border_SetSprite(spr_border_simple)}}
+if(Border_GetSprite()!=Border_Get_Sprite(border_)){
+Border_SetSprite(Border_Get_Sprite(border_))}}
 //窗口大小
 if(!(os_type=os_android||os_type=os_ios||os_type=os_winphone)){
 _window_size=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.WINDOW_SIZE,1)

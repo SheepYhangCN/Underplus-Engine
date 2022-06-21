@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "changed",
-    "path": "folders/物体/Battle/Soul/effect/changed.yy",
+    "path": "folders/Objects/Battle/Soul/effect/changed.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_soul_aqua_orange_effect",

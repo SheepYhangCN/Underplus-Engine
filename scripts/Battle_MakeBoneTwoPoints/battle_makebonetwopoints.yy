@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Bone",
-    "path": "folders/脚本/Battle/Bullet/Bone.yy",
+    "path": "folders/Scripts/Battle/Bullet/Bone.yy",
   },
   "resourceVersion": "1.0",
   "name": "Battle_MakeBoneTwoPoints",

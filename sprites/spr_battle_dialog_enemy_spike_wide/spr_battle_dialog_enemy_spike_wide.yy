@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Dialog Enemy",
-    "path": "folders/精灵/Battle/Dialog Enemy.yy",
+    "path": "folders/Sprites/Battle/Dialog Enemy.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_dialog_enemy_spike_wide",

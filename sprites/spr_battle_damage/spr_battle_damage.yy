@@ -106,7 +106,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Battle",
-    "path": "folders/精灵/Battle.yy",
+    "path": "folders/Sprites/Battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_damage",

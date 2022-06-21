@@ -92,8 +92,8 @@
     "TileSerialiseData": [],
   },
   "parent": {
-    "name": "图块集",
-    "path": "folders/图块集.yy",
+    "name": "Tile Sets",
+    "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
   "name": "tile_sanscorridor",

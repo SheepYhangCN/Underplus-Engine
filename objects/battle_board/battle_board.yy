@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Board",
-    "path": "folders/物体/Battle/Board.yy",
+    "path": "folders/Objects/Battle/Board.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_board",

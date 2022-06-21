@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "BG",
-    "path": "folders/精灵/BG.yy",
+    "path": "folders/Sprites/BG.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_bg_area_1",

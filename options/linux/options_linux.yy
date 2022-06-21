@@ -1,5 +1,5 @@
 {
-  "option_linux_display_name": "YH!Undertale Games",
+  "option_linux_display_name": "Underplus Engine",
   "option_linux_version": "114.514.1919",
   "option_linux_maintainer_email": "13538773578@163.com",
   "option_linux_homepage": "sheep-yuhang.mysxl.cn",
@@ -15,7 +15,7 @@
   "option_linux_sync": true,
   "option_linux_resize_window": true,
   "option_linux_scale": 0,
-  "option_linux_texture_page": "2048x2048",
+  "option_linux_texture_page": "4096x4096",
   "option_linux_enable_steam": false,
   "option_linux_disable_sandbox": false,
   "resourceVersion": "1.0",

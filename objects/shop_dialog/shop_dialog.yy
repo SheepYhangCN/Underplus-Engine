@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shop",
-    "path": "folders/物体/Shop.yy",
+    "path": "folders/Objects/Shop.yy",
   },
   "resourceVersion": "1.0",
   "name": "shop_dialog",

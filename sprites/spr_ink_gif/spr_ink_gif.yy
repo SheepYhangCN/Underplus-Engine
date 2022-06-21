@@ -858,7 +858,7 @@
   },
   "parent": {
     "name": "ISF_Sprite",
-    "path": "folders/精灵/ISF_Sprite.yy",
+    "path": "folders/Sprites/ISF_Sprite.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_ink_gif",

@@ -36,7 +36,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "mixed",
-    "path": "folders/物体/Battle/Soul/mixed.yy",
+    "path": "folders/Objects/Battle/Soul/mixed.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_soul_aqua_orange",

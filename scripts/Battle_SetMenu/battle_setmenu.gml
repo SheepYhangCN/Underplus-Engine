@@ -55,7 +55,7 @@ function Battle_SetMenu() {
 			if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 				instance_create_depth(0,0,0,OBJ);
 				OBJ.image_xscale=0
-				OBJ.image_yscale=0.95
+				OBJ.image_yscale=0.97
 				OBJ.image_alpha=0
 				Anim_Create(OBJ,"image_xscale",0,0,0,1.05,15);
 				battle.alarm[1]=15
@@ -125,18 +125,18 @@ function Battle_SetMenu() {
 				proc+=1;
 			}
 			if(global.language=0){
-			text+="{font 0}* Spare"
+			text+="* Spare"
 			}else if(global.language=1){
-			text+="{font 0}* {font 3}饶恕"
+			text+="* {font 3}饶恕"
 			}
 		
 			//逃跑是否可用
 			if(Battle_IsMenuMercyFleeEnabled()){
 				text+="&{color `white`}";
 			if(global.language=0){
-			text+="{font 0}* Flee"
+			text+="* Flee"
 			}else if(global.language=1){
-			text+="{font 0}* {font 3}逃跑"}
+			text+="* 逃跑"}
 			}
 		}else{
 			if(Battle_GetMenuChoiceMercy()>=Battle_GetMenuChoiceMercyOverrideNumber()){

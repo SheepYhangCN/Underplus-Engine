@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Large",
-    "path": "folders/精灵/Gamepad/PS4/Large.yy",
+    "path": "folders/Sprites/Gamepad/PS4/Large.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gamepad_ps4_large_r1",

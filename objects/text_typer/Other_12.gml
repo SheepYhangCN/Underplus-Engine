@@ -14,6 +14,16 @@ switch(cmd[|0]){
 		if(is_string(cmd[|1])){
 			var color=GetColorFromString(cmd[|1]);
 			switch(color){
+				default:
+					_color_text[0]=color;
+					_color_text[1]=color;
+					_color_text[2]=color;
+					_color_text[3]=color;
+					_color_shadow[0]=make_color_rgb(49,49,79);
+					_color_shadow[1]=make_color_rgb(49,49,79);
+					_color_shadow[2]=make_color_rgb(15,15,115);
+					_color_shadow[3]=make_color_rgb(15,15,115);
+					break
 				case c_white:
 					_color_text[0]=c_white;
 					_color_text[1]=c_white;
@@ -45,50 +55,6 @@ switch(cmd[|0]){
 					_color_shadow[1]=make_color_rgb(76,0,0);
 					_color_shadow[2]=make_color_rgb(76,0,0);
 					_color_shadow[3]=make_color_rgb(76,0,0);
-					break;
-					
-				case c_gray:
-					_color_text[0]=c_gray
-					_color_text[1]=c_gray
-					_color_text[2]=c_gray
-					_color_text[3]=c_gray
-					_color_shadow[0]=make_color_rgb(105,105,105);
-					_color_shadow[0]=make_color_rgb(105,105,105);
-					_color_shadow[0]=make_color_rgb(105,105,105);
-					_color_shadow[0]=make_color_rgb(105,105,105);
-					break;
-					
-				case c_black:
-					_color_text[0]=c_black
-					_color_text[1]=c_black
-					_color_text[2]=c_black
-					_color_text[3]=c_black
-					_color_shadow[0]=make_color_rgb(49,49,79);
-					_color_shadow[1]=make_color_rgb(49,49,79);
-					_color_shadow[2]=make_color_rgb(15,15,115);
-					_color_shadow[3]=make_color_rgb(15,15,115);
-					break;
-					
-				case c_purple:
-					_color_text[0]=c_purple
-					_color_text[1]=c_purple
-					_color_text[2]=c_purple
-					_color_text[3]=c_purple
-					_color_shadow[0]=make_color_rgb(49,49,79);
-					_color_shadow[1]=make_color_rgb(49,49,79);
-					_color_shadow[2]=make_color_rgb(15,15,115);
-					_color_shadow[3]=make_color_rgb(15,15,115);
-					break;
-					
-				case c_lime:
-					_color_text[0]=c_lime
-					_color_text[1]=c_lime
-					_color_text[2]=c_lime
-					_color_text[3]=c_lime
-					_color_shadow[0]=make_color_rgb(49,49,79);
-					_color_shadow[1]=make_color_rgb(49,49,79);
-					_color_shadow[2]=make_color_rgb(15,15,115);
-					_color_shadow[3]=make_color_rgb(15,15,115);
 					break;
 			}
 		}
@@ -605,36 +571,37 @@ switch(cmd[|0]){
 		}
 		break;
 //==================================================
+	case "soul":
+		if(is_string(cmd[|1])){
+			Battle_SetSoul(asset_get_index(cmd[|1]))
+		}
+		break;
+//==================================================
 	case "heal_hp":
 		if(is_real(cmd[|1])){
 			Player_Heal(cmd[|1])
 		}
 		break;
-		
 	case "hurt_hp":
 		if(is_real(cmd[|1])){
 			Player_Hurt(cmd[|1])
 		}
 		break;
-		
 	case "set_hp":
 		if(is_real(cmd[|1])){
 			Player_SetHp(cmd[|1])
 		}
 		break;
-		
 	case "set_hpmax":
 		if(is_real(cmd[|1])){
 			Player_SetHpMax(cmd[|1])
 		}
 		break;
-		
 	case "set_lv":
 		if(is_real(cmd[|1])){
 			Player_SetLv(cmd[|1])
 		}
 		break;
-		
 	case "clear_kr":
 		Player_SetKR(0)
 		break;
@@ -668,10 +635,16 @@ switch(cmd[|0]){
 //==================================================
 	case "encounter":
 		if(is_real(cmd[|1])){
+		if(is_real(cmd[|2])){
+		if(is_real(cmd[|3])){
+			Encounter_Start(cmd[|1],cmd[|2],cmd[|3])
+			}else{
+			Encounter_Start(cmd[|1],cmd[|2],0)}
+			}else{
 			Encounter_Start(cmd[|1],0,0)
-		}
+			}}
 		break
-	case "encounter_exclam":
+	/*case "encounter_exclam":
 		if(is_real(cmd[|1])){
 			Encounter_Start(cmd[|1],0,1)
 		}
@@ -683,7 +656,7 @@ switch(cmd[|0]){
 		if(is_real(cmd[|1])){
 			Encounter_Start(cmd[|1],1,1)
 		}
-		break
+		break*/
 	case "shop":
 		if(is_real(cmd[|1])){
 			Shop_Start(cmd[|1])

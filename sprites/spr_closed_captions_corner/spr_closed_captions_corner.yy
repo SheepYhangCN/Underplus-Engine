@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "CC",
-    "path": "folders/精灵/CC.yy",
+    "path": "folders/Sprites/CC.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_closed_captions_corner",

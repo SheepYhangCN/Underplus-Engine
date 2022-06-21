@@ -1,5 +1,5 @@
 {
-  "option_html5_browser_title": "YH!Undertale Games",
+  "option_html5_browser_title": "Underplus Engine",
   "option_html5_version": "114.514.1919.810",
   "option_html5_foldername": "yh-utgames",
   "option_html5_outputname": "index.html",

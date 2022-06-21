@@ -42,7 +42,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "snowdin_encounter_p2",
-    "path": "folders/物体/Battle/Turn/snowdin_encounter_p2.yy",
+    "path": "folders/Objects/Battle/Turn/snowdin_encounter_p2.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_snowsans_p2_turn0",

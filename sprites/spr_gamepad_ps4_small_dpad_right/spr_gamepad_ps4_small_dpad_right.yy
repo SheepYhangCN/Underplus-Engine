@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Small",
-    "path": "folders/精灵/Gamepad/PS4/Small.yy",
+    "path": "folders/Sprites/Gamepad/PS4/Small.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gamepad_ps4_small_dpad_right",

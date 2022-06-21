@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Fight",
-    "path": "folders/脚本/Battle/Menu/Fight.yy",
+    "path": "folders/Scripts/Battle/Menu/Fight.yy",
   },
   "resourceVersion": "1.0",
   "name": "Battle_GetMenuFightDamageTime",

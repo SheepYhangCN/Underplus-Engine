@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Touch_Controls",
-    "path": "folders/物体/Touch_Controls.yy",
+    "path": "folders/Objects/Touch_Controls.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_touch_buttons",

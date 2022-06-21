@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Bullet",
-    "path": "folders/精灵/Battle/Bullet.yy",
+    "path": "folders/Sprites/Battle/Bullet.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gb_beam",

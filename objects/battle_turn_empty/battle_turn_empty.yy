@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Turn",
-    "path": "folders/物体/Battle/Turn.yy",
+    "path": "folders/Objects/Battle/Turn.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_turn_empty",

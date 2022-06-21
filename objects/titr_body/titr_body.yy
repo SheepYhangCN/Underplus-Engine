@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "tears_in_the_rain",
-    "path": "folders/物体/Battle/Enemy/tears_in_the_rain.yy",
+    "path": "folders/Objects/Battle/Enemy/tears_in_the_rain.yy",
   },
   "resourceVersion": "1.0",
   "name": "titr_body",

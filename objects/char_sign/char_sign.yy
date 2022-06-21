@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Character",
-    "path": "folders/物体/Character.yy",
+    "path": "folders/Objects/Character.yy",
   },
   "resourceVersion": "1.0",
   "name": "char_sign",

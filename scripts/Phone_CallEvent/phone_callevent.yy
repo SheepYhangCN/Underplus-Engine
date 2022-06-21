@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Phone",
-    "path": "folders/脚本/Phone.yy",
+    "path": "folders/Scripts/Phone.yy",
   },
   "resourceVersion": "1.0",
   "name": "Phone_CallEvent",
