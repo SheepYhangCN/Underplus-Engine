@@ -57,9 +57,9 @@ R Alt clockwise rotate screen
 
 Middle mouse button Reset screen rotate
 
-Front mouse sidekey 下一房间
+Front mouse sidekey Next room
 
-Back mouse sidekey 前一房间
+Back mouse sidekey Previous room
 
 S Shown saving menu (invalid while blue soul or blue+aqua soul)
 
