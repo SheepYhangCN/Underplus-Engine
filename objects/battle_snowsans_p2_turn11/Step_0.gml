@@ -119,9 +119,13 @@ switch timer{
 		Battle_MakeBoneWallRound(10,80,40,0,15,300)
 		Battle_MakeBone(battle_board.x,battle_board.y,120,0,0,1,0,0,3,1,350)
 		board=Battle_CreateBoardExtraCircle(320,320,80)
+		gbtemp=true
+		alarm[8]=1
 		alarm[11]=1
 		break
 	case 2140:
+		gbtemp=false
+		alarm[8]=-1
 		alarm[11]=-1
 		titr_head.sweat=3
 		break
