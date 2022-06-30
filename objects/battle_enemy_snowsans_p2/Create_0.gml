@@ -16,4 +16,6 @@ heady = head.ystart
 
 head.image_index=4
 hint=0
+menubone=noone
+enable_effect=true
 alarm[2]=1

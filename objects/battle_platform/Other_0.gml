@@ -1,18 +1,15 @@
-if(auto_destroy){
-	var destroy=false;
-	if(auto_destroy_dir==DIR.UP&&y<0){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.DOWN&&y>480){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.LEFT&&x<0){
-		destroy=true;
-	}
-	if(auto_destroy_dir==DIR.RIGHT&&y>640){
-		destroy=true;
-	}
-	if(destroy){
-		instance_destroy();
-	}
+var destroy;
+if auto_destroy
+{
+    destroy = 0
+    if ((auto_destroy_dir == 90) && (y < 0))
+        destroy = 1
+    if ((auto_destroy_dir == 270) && (y > 480))
+        destroy = 1
+    if ((auto_destroy_dir == 180) && (x < 0))
+        destroy = 1
+    if ((auto_destroy_dir == 0) && (y > 640))
+        destroy = 1
+    if destroy
+        instance_destroy()
 }

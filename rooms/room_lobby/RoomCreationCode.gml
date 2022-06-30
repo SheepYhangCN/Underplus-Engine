@@ -1,5 +1,6 @@
 BGM_Stop(0)
 Dialog_Clear()
+Flag_Load(FLAG_TYPE.SETTINGS)
 //边框
 border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
 if(border_=0){

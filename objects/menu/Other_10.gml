@@ -9,7 +9,7 @@ if(_menu==0){
 		_inst_credits=instance_create_depth(170,385,0,text_typer)
 		if(global.language=0){
 		_inst_instruction=instance_create_depth(120,0,0,text_typer);
-		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back key(backspace) to&switch the mobile controller."
+		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back button(backspace) to&switch the mobile controller."
 		_inst_begin.text=_prefix+"{font 0}Begin Game"
 		_inst_settings.text=_prefix+"{font 0}Settings"
 		_inst_credits.text=_prefix+"{font 0}Credits"

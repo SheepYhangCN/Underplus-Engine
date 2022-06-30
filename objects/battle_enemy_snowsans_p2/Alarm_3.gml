@@ -1,10 +1,10 @@
+if(Battle_GetState()=BATTLE_STATE.MENU&&Battle_GetTurnNumber()<12){
 Battle_MakeMenuBone(0,room_height,80,4,0,0,1,90,0,1)
 Battle_MakeMenuBone(room_width,room_height,80,-4,0,0,1,90,0,1)
-if(Battle_GetState()=BATTLE_STATE.MENU){
 if(global.mode=2){
-alarm[3]=60}
-if(global.mode=0){
 alarm[3]=70}
+if(global.mode=0){
+alarm[3]=90}
 if(global.mode=1){
-alarm[3]=80}
+alarm[3]=110}
 }

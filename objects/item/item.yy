@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item",
-    "path": "folders/Objects/Item.yy",
+    "path": "folders/Objects/Face/Item.yy",
   },
   "resourceVersion": "1.0",
   "name": "item",

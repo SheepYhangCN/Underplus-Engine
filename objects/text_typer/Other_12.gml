@@ -576,6 +576,19 @@ switch(cmd[|0]){
 			Battle_SetSoul(asset_get_index(cmd[|1]))
 		}
 		break;
+	case "kr":
+		if(is_bool(cmd[|1])){
+			global.kr=cmd[|1]
+		}
+		break;
+	case "board_size":
+		if(is_real(cmd[|1])&&is_real(cmd[|2])&&is_real(cmd[|3])&&is_real(cmd[|4])){
+			if(is_real(cmd[|5])){
+			Battle_SetBoardSize(cmd[|1],cmd[|2],cmd[|3],cmd[|4],cmd[|5])
+			}else{
+			Battle_SetBoardSize(cmd[|1],cmd[|2],cmd[|3],cmd[|4])}
+			}
+		break
 //==================================================
 	case "heal_hp":
 		if(is_real(cmd[|1])){
@@ -618,7 +631,14 @@ switch(cmd[|0]){
 		break;
 	case "audio_play":
 		if(is_string(cmd[|1])){
-		audio_play_sound(asset_get_index(cmd[|1]),0,0)}
+		if(is_bool(cmd[|2])){
+		if(is_bool(cmd[|3])){
+		audio_play_sound(asset_get_index(cmd[|1]),cmd[|2],cmd[|3])
+		}else{
+		audio_play_sound(asset_get_index(cmd[|1]),cmd[|2],0)}
+		}else{
+		audio_play_sound(asset_get_index(cmd[|1]),0,0)
+		}}
 		break;
 	case "audio_pause":
 		if(is_string(cmd[|1])){
@@ -632,11 +652,17 @@ switch(cmd[|0]){
 		if(is_string(cmd[|1])){
 		audio_stop_sound(asset_get_index(cmd[|1]))}
 		break;
+	case "alarm":
+		if(is_string(cmd[|1])&&is_real(cmd[|2])&&is_real(cmd[|3])){
+		var _alarm=cmd[|2]
+		with(asset_get_index(cmd[|1])){
+		alarm[_alarm]=cmd[|3]}}
+		break;
 //==================================================
 	case "encounter":
 		if(is_real(cmd[|1])){
-		if(is_real(cmd[|2])){
-		if(is_real(cmd[|3])){
+		if(is_bool(cmd[|2])){
+		if(is_bool(cmd[|3])){
 			Encounter_Start(cmd[|1],cmd[|2],cmd[|3])
 			}else{
 			Encounter_Start(cmd[|1],cmd[|2],0)}
@@ -696,6 +722,26 @@ switch(cmd[|0]){
 	case "titr_face":
 		if(is_real(cmd[|1])&&instance_exists(titr_head)){
 			titr_head.image_index=cmd[|1]
+		}
+		break
+	case "titr_body":
+		if(is_real(cmd[|1])&&instance_exists(titr_body)){
+			titr_body.image_index=cmd[|1]
+		}
+		break
+	case "titr_legs":
+		if(is_string(cmd[|1])&&instance_exists(asset_get_index(cmd[|1]))){
+			titr_legs.sprite_index=asset_get_index(cmd[|1])
+		}
+		break
+	case "utse_papy":
+		instance_create_depth(700,titr_legs.y,0,utse_pap_body)
+		Anim_Create(utse_pap_body,"x",0,0,700,-250,20)
+		battle_snowsans_p2_turn12.alarm[3]=15
+		break
+	case "utse_papy_face":
+		if(is_real(cmd[|1])&&instance_exists(utse_pap_head)){
+			utse_pap_head.image_index=cmd[|1]
 		}
 		break
 }

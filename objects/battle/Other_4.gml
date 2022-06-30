@@ -2,10 +2,11 @@
 instance_create_depth(0,0,0,battle_fader);
 instance_create_depth(0,0,0,battle_board);
 instance_create_depth(0,0,0,battle_ui);
-instance_create_depth(32,432,0,battle_button_fight);
-instance_create_depth(185,432,0,battle_button_act);
-instance_create_depth(345,432,0,battle_button_item);
-instance_create_depth(500,432,0,battle_button_mercy);
+instance_create_depth(32+53.5,452,0,battle_button_fight);
+instance_create_depth(185+53.5,452,0,battle_button_act);
+instance_create_depth(345+53.5,452,0,battle_button_item);
+instance_create_depth(500+53.5,452,0,battle_button_mercy);
+//Anim_Create(battle_button,"y",0,ANIM_EASE.OUT,452+70,-70,15)
 Battle_SetSoul(battle_soul_red);
 if(instance_exists(battle_soul)){
 battle_soul.x=battle_button_fight.x-47

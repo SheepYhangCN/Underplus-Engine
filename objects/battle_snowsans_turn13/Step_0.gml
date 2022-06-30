@@ -1,4 +1,4 @@
-if(Battle_GetTurnTime()=100){
+if(Battle_GetTurnTime()=130){
 alarm[0]=-1
 alarm[1]=-1
 alarm[2]=-1
@@ -11,8 +11,8 @@ with(battle_bullet_gb_new){
 instance_destroy()}
 Battle_SetSoul(battle_soul_red)
 audio_play_sound(snd_ding,0,0)
-Battle_MakeBoneWallBottom(30,55,70)
-Battle_MakeBoneWallTop(30,55,70)
-Battle_MakeBoneWallLeft(30,55,70)
-Battle_MakeBoneWallRight(30,55,70)
+Battle_MakeBoneWallBottom(60,55,70)
+Battle_MakeBoneWallTop(60,55,70)
+Battle_MakeBoneWallLeft(60,55,70)
+Battle_MakeBoneWallRight(60,55,70)
 }

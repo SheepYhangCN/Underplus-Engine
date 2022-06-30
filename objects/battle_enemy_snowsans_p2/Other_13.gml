@@ -2,6 +2,7 @@ if(Battle_GetMenu()=3){
 		body.image_index=1
 		head.image_index=2
 		random_flash=choose(0,1)
+		if(Battle_GetTurnNumber()<12){
 		if(random_flash=0){
         Anim_Create(id, "headx", 2, 1, 318.4, 80, 18)
         Anim_Create(id, "bodyx", 2, 1, 318.4, 80, 18)
@@ -28,6 +29,13 @@ if(Battle_GetMenu()=3){
         Anim_Create(head, "x", 2, 0, 238.4, 80, 18, 30)
         Anim_Create(body, "x", 2, 0, 238.4, 80, 18, 30)
         Anim_Create(legs, "x", 2, 0, 240, 80, 18, 30)
+		}}else{
+        Anim_Create(id, "headx", 2, 1, 318.4, -80, 18)
+        Anim_Create(id, "bodyx", 2, 1, 318.4, -80, 18)
+        Anim_Create(id, "legsx", 2, 1, 320, -80, 18)
+        Anim_Create(head, "x", 2, 1, 318.4, -80, 18)
+        Anim_Create(body, "x", 2, 1, 318.4, -80, 18)
+        Anim_Create(legs, "x", 2, 1, 320, -80, 18)
 		}
 	}
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){

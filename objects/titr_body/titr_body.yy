@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "tears_in_the_rain",
-    "path": "folders/Objects/Battle/Enemy/tears_in_the_rain.yy",
+    "name": "snowdin_encounter",
+    "path": "folders/Objects/Battle/Enemy/snowdin_encounter.yy",
   },
   "resourceVersion": "1.0",
   "name": "titr_body",

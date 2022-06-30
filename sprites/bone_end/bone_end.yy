@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Bone",
-    "path": "folders/Sprites/Bone.yy",
+    "path": "folders/Sprites/Battle/Bullet/Bone.yy",
   },
   "resourceVersion": "1.0",
   "name": "bone_end",

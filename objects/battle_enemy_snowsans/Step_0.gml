@@ -11,9 +11,3 @@ a=instance_create_depth(random(room_width+100),0,0,season_effect)
 a.image_index=3
 a.image_alpha=1
 //a.alarm[0]=-1
-
-
-if(Battle_GetState()=BATTLE_STATE.IN_TURN&&Battle_GetTurnNumber()!=0){
-	body.image_index=0
-	head.image_index=0
-}

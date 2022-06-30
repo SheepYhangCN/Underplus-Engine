@@ -1,2 +1,2 @@
-window_set_caption("YH!Undertale Games - Test Battle")
+window_set_caption(GAME_NAME+" - Test Battle")
 global.enemy=0

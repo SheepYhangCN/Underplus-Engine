@@ -1,9 +1,17 @@
-Blaster_Create_New(battle_bullet_gb_new,0,0,0,265,100,0,10,1.8,2,10)
-battle_soul_blue.dir=DIR.LEFT
-battle_soul_blue.impact=true
-if(global.mode=0){
-alarm[choose(1,2,4)]=50}
-if(global.mode=1){
-alarm[choose(1,2,4)]=60}
-if(global.mode=2){
-alarm[choose(1,2,4)]=40}
+///@descr 十字口字GB
+Blaster_Create_Advanced(260,250,260,250,0,0,2,2,0,0,spr_blaster,80,30)
+Blaster_Create_Advanced(260,250,260,250,-90,-90,2,2,0,0,spr_blaster,80,30)
+
+Blaster_Create_Advanced(260,370,260,370,0,0,2,2,0,0,spr_blaster,80,30)
+Blaster_Create_Advanced(260,370,260,370,90,90,2,2,0,0,spr_blaster,80,30)
+
+Blaster_Create_Advanced(380,250,380,250,-90,-90,2,2,0,0,spr_blaster,80,30)
+Blaster_Create_Advanced(380,250,380,250,180,180,2,2,0,0,spr_blaster,80,30)
+
+Blaster_Create_Advanced(380,370,380,370,90,90,2,2,0,0,spr_blaster,80,30)
+Blaster_Create_Advanced(380,370,380,370,180,180,2,2,0,0,spr_blaster,80,30)
+
+Blaster_Create_Advanced(260,250,260,250,-45,-45,2,2,0,0,spr_blaster,40,20)
+Blaster_Create_Advanced(380,250,380,250,225,225,2,2,0,0,spr_blaster,40,20)
+Blaster_Create_Advanced(380,370,380,370,-225,-225,2,2,0,0,spr_blaster,40,20)
+Blaster_Create_Advanced(260,370,260,370,45,45,2,2,0,0,spr_blaster,40,20)

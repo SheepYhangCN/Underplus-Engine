@@ -1,2 +1,3 @@
-Anim_Create(fader,"alpha",0,0,1,-1,10)
-instance_destroy()
+///@descr fader
+fader.alpha=0
+audio_play_sound(snd_cut,0,0)

@@ -37,6 +37,7 @@ case 2:
 draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
 game+=" | Phase 2"
 break
 }
@@ -79,6 +80,7 @@ case 2:
 draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
 game+=" | 第2阶段"
 break
 }

@@ -103,20 +103,32 @@ if(keyboard_check_pressed(vk_escape)){
 if(room=room_battle){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
 	if(keyboard_check_pressed(ord("W"))){
+		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
 		battle_soul.dir=DIR.UP
-		battle_soul.impact=1
+		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		}else{
+		Titr_BlueSoulControl(DIR.UP)}
 	}
 	if(keyboard_check_pressed(ord("A"))){
+		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
 		battle_soul.dir=DIR.LEFT
-		battle_soul.impact=1
+		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		}else{
+		Titr_BlueSoulControl(DIR.LEFT)}
 	}
 	if(keyboard_check_pressed(ord("S"))){
+		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
 		battle_soul.dir=DIR.DOWN
-		battle_soul.impact=1
+		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		}else{
+		Titr_BlueSoulControl(DIR.DOWN)}
 	}
 	if(keyboard_check_pressed(ord("D"))){
+		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
 		battle_soul.dir=DIR.RIGHT
-		battle_soul.impact=1
+		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		}else{
+		Titr_BlueSoulControl(DIR.RIGHT)}
 	}}
 	if(keyboard_check_pressed(vk_delete)){
 		warp_battle_turn=get_integer("Battle_SetTurnNumber", Battle_GetTurnNumber())

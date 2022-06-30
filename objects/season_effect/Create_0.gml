@@ -1,4 +1,7 @@
-depth=DEPTH_UI.FADER+1
+if(room=room_battle){
+depth=DEPTH_BATTLE.ENEMY+1
+}else{
+depth=DEPTH_UI.FADER+1}
 image_speed = 0
 image_angle = random(360)
 direction = (-90 - random_range(5,10))

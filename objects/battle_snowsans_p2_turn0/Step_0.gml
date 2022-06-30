@@ -1,16 +1,28 @@
 if(timer<860&&Battle_GetState()=BATTLE_STATE.IN_TURN){
 timer+=1}
-switch timer{
-	case 820:
-		fader.color=c_black
-		fader.alpha=1
-		audio_play_sound(snd_cut,0,0)
-		audio_pause_sound(bgm_snowsans)
-		break
-	case 859:
-		fader.alpha=0
-		audio_play_sound(snd_cut,0,0)
-		audio_resume_sound(bgm_snowsans)
-		Battle_EndTurn()
-		break
+if(timer mod 180 = 0){
+	fader.color=c_black
+	fader.alpha=1
+	audio_play_sound(snd_cut,0,0)
+	with(battle_bullet_bone){
+	instance_destroy()}
+	with(bone_box){
+	instance_destroy()}
+	if(!instance_exists(battle_soul_red)){
+	Battle_SetSoul(battle_soul_red)}
+	alarm[0]=30
+	alarm[4]=-1
+	alarm[choose(1,2,3,4)]=30
 }
+if(timer=860){
+fader.color=c_black
+fader.alpha=1
+audio_play_sound(snd_cut,0,0)
+alarm[1]=-1
+alarm[2]=-1
+alarm[3]=-1
+alarm[4]=-1
+with(battle_bullet_bone){
+instance_destroy()}
+battle_enemy_snowsans_p2.alarm[4]=30
+Battle_EndTurn()}

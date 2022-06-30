@@ -1,5 +1,5 @@
 Battle_SetSoul(battle_soul_blue)
-audio_play_sound(snd_ding,0,0)
+Titr_BlueSoulControl(DIR.DOWN)
 //Battle_MakeBoneWallLeft(0,28,1145141919810)
 //Battle_MakeBoneWallRight(0,28,1145141919810)
 if(global.mode=2){

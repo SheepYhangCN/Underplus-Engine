@@ -67,7 +67,7 @@ if(room=room_battle){
 	draw_text(0, 355, "Touched Board(bbb):"+string(battle_soul.bbb))
 	draw_text(0, 375, "Dir:"+string(battle_soul.dir))
 	}else if(instance_exists(battle_soul)){
-	draw_text(0, 315, "Image Angle:"+string(battle_soul.image_angle))
+	draw_text(0, 315, "Soul Image Angle:"+string(battle_soul.image_angle))
 	}
 	if(instance_exists(battle_soul_orange)||instance_exists(battle_soul_aqua_orange)){
 	draw_text(0, 335, "Moveable:"+string(battle_soul.moveable))

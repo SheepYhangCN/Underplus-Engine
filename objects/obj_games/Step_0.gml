@@ -93,7 +93,5 @@ break
 case 1:
 phases=2
 enabled=true
-if(phase=2){
-enabled=false}
 break
 }

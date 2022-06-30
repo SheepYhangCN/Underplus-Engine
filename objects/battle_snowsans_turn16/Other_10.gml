@@ -4,6 +4,7 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_DOWN,64)
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_LEFT,64)
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,64)
 audio_pause_sound(bgm_snowsans)
+titr_head.sweat=2
 
 _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
 if(global.language=0){

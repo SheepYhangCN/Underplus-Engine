@@ -5,6 +5,6 @@ Battle_MakeBoneTop(battle_board.x+128,20,-3,0,0,0,1)
 //Battle_MakeBoneLeft(battle_board.y-64,480,5,1,0,0,1)
 Blaster_Create_New(battle_bullet_gb_new,0,0,1,battle_soul.x,200,0,10,2,2)
 audio_play_sound(snd_cut,0,0)
-battle_soul_blue.dir=DIR.UP
-alarm[3]=10
+Titr_BlueSoulControl(DIR.UP)
+//alarm[3]=10
 alarm[0]=90

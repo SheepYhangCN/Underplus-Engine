@@ -17,7 +17,6 @@ Battle_SetEnemyActionInfo(_enemy_slot,0,"查看敌人数据")
 Battle_SetEnemyDEF(_enemy_slot,1);
 _hp = 1
 _hpmax = 1
-audio_stop_all()
 Player_SetLv(20)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())

@@ -1,9 +1,21 @@
-Blaster_Create_New(battle_bullet_gb_new,0,0,0,375,100,0,10,1.8,2,10)
-battle_soul_blue.dir=DIR.RIGHT
-battle_soul_blue.impact=true
-if(global.mode=0){
-alarm[choose(1,2,3)]=50}
-if(global.mode=1){
-alarm[choose(1,2,3)]=60}
-if(global.mode=2){
-alarm[choose(1,2,3)]=40}
+///@description 重力控制
+if(!instance_exists(battle_soul_blue)){
+Battle_SetSoul(battle_soul_blue)}
+var dir=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
+Titr_BlueSoulControl(dir)
+
+switch dir{
+case DIR.UP:
+Battle_MakeBoneWallTop(40,50,10)
+break
+case DIR.DOWN:
+Battle_MakeBoneWallBottom(40,50,10)
+break
+case DIR.LEFT:
+Battle_MakeBoneWallLeft(40,50,10)
+break
+case DIR.RIGHT:
+Battle_MakeBoneWallRight(40,50,10)
+break
+}
+alarm[4]=60

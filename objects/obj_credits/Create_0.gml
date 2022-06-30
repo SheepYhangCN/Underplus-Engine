@@ -16,7 +16,7 @@ dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By SheepYhan
 dialog2=instance_create_depth(100,415,0,text_typer)
 dialog2.text="{scale 2}{instant true}{color `gray`}[Use arrow keys to swtich page]&[Press X or Shift to return]"
 dialog3=instance_create_depth(450,20,0,text_typer)
-dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}Page "+string(page+1)+"/3>"
+dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}Page "+string(page+1)+"/4>"
 }else if(global.language=1){
 dialog=instance_create_depth(200,10,0,text_typer)
 dialog.text="{scale 3}{instant true}制作名单"
@@ -25,5 +25,5 @@ dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By 憨憨羊
 dialog2=instance_create_depth(140,412,0,text_typer)
 dialog2.text="{scale 2}{instant true}{color `gray`}[使用方向键来翻页]&[按下 X 或 Shift 来返回]"
 dialog3=instance_create_depth(480,20,0,text_typer)
-dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}第"+string(page+1)+"/3页>"
+dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}第"+string(page+1)+"/4页>"
 }

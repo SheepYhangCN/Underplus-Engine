@@ -4,7 +4,5 @@ _button_slot=-1;
 _yscale=image_yscale
 _x=x
 _y=y*/
-x+=53.5
-y+=20
 _timer=0;
 sat=125;

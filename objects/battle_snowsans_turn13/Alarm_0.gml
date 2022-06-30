@@ -1,5 +1,4 @@
-battle_soul_blue.dir=DIR.DOWN
-battle_soul_blue.impact=true
+Titr_BlueSoulControl(DIR.DOWN)
 Battle_MakeBoneWallLeft(40,35,15)
 Battle_MakeBoneWallRight(40,35,15)
 Battle_MakeBoneWallBottom(40,35,15)
