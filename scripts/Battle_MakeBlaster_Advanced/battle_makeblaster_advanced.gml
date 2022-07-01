@@ -123,7 +123,7 @@ function Blaster_Create_Advanced(argument0, argument1, argument2, argument3, arg
     blaster.angle_target = idealrot
     blaster.scale_x = xscale
     blaster.scale_y = yscale
-    blaster.color = color
+    blaster.type = color
     blaster.move_time = move_time
     blaster.scale_fire_pause_change_time = scale_fire_pause_change_time
     blaster.index_fire_pause_change_time = index_fire_pause_change_time
