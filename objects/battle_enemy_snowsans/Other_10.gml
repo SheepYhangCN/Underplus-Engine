@@ -7,7 +7,7 @@ Battle_SetMenuMercyFleeEnabled(0);
 //a.image_blend=$E16941
 //b.image_blend=$E16941
 //b.image_yscale=-1
-//global.kr=1
+global.kr=0
 Player_SetKR(0)
 alarm[1]=1
 Battle_SetEnemyActionNumber(_enemy_slot,1);
