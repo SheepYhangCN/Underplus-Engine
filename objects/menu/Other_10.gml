@@ -1,7 +1,7 @@
 ///@desc Menu Switch
 if(_menu==0){
 	//_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO,0));
-	_mode=directory_exists("./"+GAME_SAVE_NAME+"./flag")
+	_mode=directory_exists("./"+GAME_SAVE_NAME+"./file0")
 	if(_mode==0){
 		//_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F2] - Restart Room&[F3] - Restart&[F4] - Fullscreen&[ESC] - Quit Game&& --- DEBUG Mode Keys ---{space_y -1}&{space_y 2}[Insert] - DEBUG Mode&[Home] - Lock/Unlock HP&[~] - Console";
 		_inst_begin=instance_create_depth(170,315,0,text_typer);
