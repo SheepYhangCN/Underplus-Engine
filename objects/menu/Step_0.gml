@@ -59,8 +59,8 @@ if(_menu==0){
 				_choice=1;
 				event_user(2);}
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
-			if(_choice==0){
-				Player_Load(0);
+			if(_choice==0&&file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
+				Player_Load(Flag_GetSaveSlot());
 				audio_stop_all()
 				var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,-1);
 				room_goto(asset_get_index(target))

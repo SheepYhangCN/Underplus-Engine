@@ -39,7 +39,7 @@ if(_state==0){
 	}
 }
 if(_state==1){
-	Player_Save(0);
+	Player_Save(Flag_GetSaveSlot());
 	
 	audio_play_sound(snd_save,0,false);
 	

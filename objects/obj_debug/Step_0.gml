@@ -93,9 +93,13 @@ if(keyboard_check_pressed(vk_tab)){
 	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)){
 		instance_create_depth(0,0,0,ui_save)
 	}
+	if(keyboard_check_pressed(ord("F"))){
+		save_slot=get_integer("Flag_SetSaveSlot", Flag_GetSaveSlot())
+		Flag_SetSaveSlot(save_slot)
+	}
 	if(keyboard_check_pressed(ord("L"))){
-		Player_Load(0);
-		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_get_name(room));
+		Player_Load(Flag_GetSaveSlot());
+		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_init);
 		room_goto(asset_get_index(target))
 	}
 if(keyboard_check_pressed(vk_escape)){

@@ -65,6 +65,8 @@ S Shown saving menu (invalid while blue soul or blue+aqua soul)
 
 L Load save
 
+F Set Save Slot
+
 Tab switch window size (1x/1.5x/2x)
 
 F3 goto room
@@ -153,6 +155,8 @@ Esc 暂停游戏
 S 弹出存档界面（蓝魂或蓝+青魂时失效）
 
 L 读取存档
+
+F 设置存档档位
 
 Tab 切换窗口大小（1x/1.5x/2x）
 

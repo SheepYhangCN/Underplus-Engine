@@ -3,7 +3,6 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_UP,64)
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_DOWN,64)
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_LEFT,128)
 Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,128)
-battle_soul.y=300
 
 _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
 if(global.language=0){
