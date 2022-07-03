@@ -229,7 +229,7 @@ switch(string_lower(_naming_name)){
 		text="我趣事cxx大跌11111"
 		break;
 	case "yst":
-		text="我趣事益生堂大跌11111"
+		text="我趣事养生堂大跌11111"
 		break;
 	case "ax":
 	case "anxing":
