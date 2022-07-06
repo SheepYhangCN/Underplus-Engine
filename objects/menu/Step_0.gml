@@ -24,7 +24,7 @@ if(_menu==0){
 				room_goto(room_settings)
 			}else if(_choice==2){
 				room_goto(room_credits)
-				}
+			}
 		}
 	}else{
 		if(Input_IsPressed(INPUT.LEFT)){
@@ -32,6 +32,9 @@ if(_menu==0){
 				_choice=0;
 				event_user(2);
 			}else if(_choice==3){
+				_choice=2;
+				event_user(2);
+			}else if(_choice==4){
 				_choice=2;
 				event_user(2);
 			}
@@ -42,6 +45,9 @@ if(_menu==0){
 			}else if(_choice==2){
 				_choice=3;
 				event_user(2);
+			}else if(_choice==4){
+				_choice=3;
+				event_user(2);
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
 			if(_choice==0){
@@ -50,14 +56,21 @@ if(_menu==0){
 			}else if(_choice==1){
 				_choice=3;
 				event_user(2);
-			}
+			}else if(_choice==2||_choice=3){
+				_choice=4
+				event_user(2);
+				}
 		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice==2){
 				_choice=0;
 				event_user(2);
 			}else if(_choice==3){
 				_choice=1;
-				event_user(2);}
+				event_user(2);
+			}else if(_choice==4){
+				_choice=2;
+				event_user(2);
+			}
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice==0&&file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
 				Player_Load(Flag_GetSaveSlot());
@@ -73,6 +86,8 @@ if(_menu==0){
 				room_goto(room_settings)
 			}else if(_choice==3){
 				room_goto(room_credits)
+			}else if(_choice==4){
+				room_goto(room_save_options)
 			}
 		}
 	}

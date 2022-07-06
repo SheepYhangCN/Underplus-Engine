@@ -2,6 +2,8 @@ depth=DEPTH_UI.PANEL;
 
 _state=-1;
 _choice=0;
+_slot=Flag_GetSaveSlot()
+_slottemp=_slot
 
 _prefix="{shadow false}{scale 2}{font 1}{instant true}{gui true}{depth "+string(DEPTH_UI.TEXT)+"}";
 

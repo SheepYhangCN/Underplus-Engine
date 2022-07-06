@@ -10,8 +10,9 @@ if(_mode==0){
 	_change_color=(_choice==2 ? c_yellow : c_white);
 	event_user(1);
 }else{
-	_inst_continue.override_color_text=(_choice==0 ? c_yellow : c_white);
+	_inst_continue.override_color_text=(_choice==0 ? c_yellow : ((file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))) ? c_white : c_gray));
 	_inst_reset.override_color_text=(_choice==1 ? c_yellow : c_white);
 	_inst_settings.override_color_text=(_choice==2 ? c_yellow : c_white);
 	_inst_credits.override_color_text=(_choice==3 ? c_yellow : c_white);
+	_inst_save_options.override_color_text=(_choice==4 ? c_yellow : c_white);
 }

@@ -1,7 +1,7 @@
 ///@desc Menu Switch
 if(_menu==0){
 	//_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO,0));
-	_mode=file_exists("./"+GAME_SAVE_NAME+"./file0.ini")
+	_mode=file_exists("./"+GAME_SAVE_NAME+"./file0.ini")||file_exists("./"+GAME_SAVE_NAME+"./file1.ini")||file_exists("./"+GAME_SAVE_NAME+"./file2.ini")||file_exists("./"+GAME_SAVE_NAME+"./file3.ini")||file_exists("./"+GAME_SAVE_NAME+"./file4.ini")||file_exists("./"+GAME_SAVE_NAME+"./file5.ini")||file_exists("./"+GAME_SAVE_NAME+"./file6.ini")||file_exists("./"+GAME_SAVE_NAME+"./file7.ini")||file_exists("./"+GAME_SAVE_NAME+"./file8.ini")||file_exists("./"+GAME_SAVE_NAME+"./file9.ini")
 	if(_mode==0){
 		//_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F2] - Restart Room&[F3] - Restart&[F4] - Fullscreen&[ESC] - Quit Game&& --- DEBUG Mode Keys ---{space_y -1}&{space_y 2}[Insert] - DEBUG Mode&[Home] - Lock/Unlock HP&[~] - Console";
 		_inst_begin=instance_create_depth(170,315,0,text_typer);
@@ -45,24 +45,28 @@ if(_menu==0){
 		_inst_settings.override_color_text_enabled=true;
 		_inst_credits=instance_create_depth(390,250,0,text_typer);
 		_inst_credits.override_color_text_enabled=true;
+		_inst_save_options=instance_create_depth(250,290,0,text_typer);
+		_inst_save_options.override_color_text_enabled=true;
 		if(global.language=0){
 		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}EMPTY");
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
 		_inst_continue.text+="{color `gray`}"}
 		_inst_continue.text+="{font 0}Continue"
-		_inst_reset.text=_prefix+"{font 0}Rename"
+		_inst_reset.text=_prefix+"{font 0}Reset"
 		_inst_settings.text=_prefix+"{font 0}Settings"
 		_inst_credits.text=_prefix+"{font 0}Credits"
+		_inst_save_options.text=_prefix+"Save Options"
 		}else if(global.language=1){
 		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 3}空");
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
 		_inst_continue.text+="{color `gray`}"}
 		_inst_continue.text+="{font 3}继续"
-		_inst_reset.text=_prefix+"{font 3}改名"
+		_inst_reset.text=_prefix+"{font 3}重置"
 		_inst_settings.text=_prefix+"{font 3}设置"
 		_inst_credits.text=_prefix+"{font 3}制作名单"
+		_inst_save_options.text=_prefix+"存档选项"
 		}
 		event_user(2);
 		
@@ -97,6 +101,9 @@ if(_menu==0){
 	}
 	if(instance_exists(_inst_credits)){
 		instance_destroy(_inst_credits);
+	}
+	if(instance_exists(_inst_save_options)){
+		instance_destroy(_inst_save_options);
 	}
 }
 
