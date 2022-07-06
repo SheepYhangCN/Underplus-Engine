@@ -32,7 +32,7 @@ if(Input_IsPressed(INPUT.CANCEL)&&ok){ok=false}
 if(Input_IsPressed(INPUT.CONFIRM)){
 if(choice=5){room_goto(room_menu)}
 if!((choice=2&&Flag_GetSaveSlot()=select)||(choice=3&&Flag_GetSaveSlot()=select)||(choice=2&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))||(choice=3&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))||(choice=4&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))){
-if((!directory_exists("./"+GAME_SAVE_NAME+"./file"+string(select))&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(select)))||ok){
+if((!file_exists("./"+GAME_SAVE_NAME+"./file"+string(select)+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(select)))||ok){
 if(choice=2||choice=3){
 	if(directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(select))){directory_destroy("./"+GAME_SAVE_NAME+"./flag/"+string(select))}
 	directory_create("./"+GAME_SAVE_NAME+"./flag/"+string(select))
