@@ -7,7 +7,7 @@
 //draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHp()*1.25,21,0,make_color_rgb(255,255,0),1);
 
 //draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(Player_GetHpMax()));
-/*
+
 draw_set_font(font_mars_needs_cunnilingus);
 draw_set_color(c_white);
 draw_text(x,y,Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME)+"   LV "+string(Player_GetLv()));
@@ -31,7 +31,7 @@ if(global.kr=1){
     draw_sprite_ext(spr_battle_ui_krminu, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)}
 }else if(global.kr=0){
 draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(Player_GetHpMax()));}
-*/
+
 	if(global.shield=1){
 		if(global.kr=1){
         if(global.shield_useable == 1)
@@ -82,7 +82,7 @@ draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(
     }
 	
 	ca++;
-
+/*
 var color = c_white
 var kr_space = ""
 var hp_max_col =  make_color_rgb(192, 0, 0)
@@ -105,7 +105,7 @@ if (Player_GetKR() > 0)
 	var color = kr_col
 else color = c_white
 
-draw_set_color(color)
+draw_set_color(color)*/
 if global.kr = true{
 	if(global.mode=0){
 	draw_sprite_ext(spr_battle_ui_kr, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, image_alpha)}
@@ -113,9 +113,9 @@ if global.kr = true{
 	draw_sprite_ext(spr_battle_ui_krplus, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, image_alpha)}
 	if(global.mode=1){
 	draw_sprite_ext(spr_battle_ui_krminu, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, image_alpha)}
-	kr_space = "    "
+	//kr_space = "    "
 }
-
+/*
 var para_x = (x + 245) + (Player_GetHpMax() * 1.2) + 14
 if (round(hp+kr)) > 9
 	draw_text_ext_transformed_color(para_x, y, kr_space + string(round(hp+kr)) + " / ", -1, -1, 1, 1, 0, color, color, color, color, image_alpha)

@@ -90,6 +90,8 @@ _enemy_center_pos_y[2]=0;
 _enemy_def[0]=0;
 _enemy_def[1]=0;
 _enemy_def[2]=0;
+//敌人弹幕伤害
+_enemy_atk=1
 
 //状态
 _state=-1;

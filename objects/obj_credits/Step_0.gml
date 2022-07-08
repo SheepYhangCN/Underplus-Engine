@@ -22,12 +22,12 @@ page-=1
 if(page=0){
 if(global.language=0){
 dialog1=instance_create_depth(70,70,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By SheepYhangCN&UNDERTALE Engine By TML&GameMaker Studio 2 By YoYoGames&&Blue Soul \\& Platform \\& Bone By OneZhaZha&Gaster Blaster By Schizoid_Doge&Space background Shader By Kali&Animate HP bar By Panthervention&Shop By 不会起名的一杯猹&Developer Console By DaveTech&Mobile Control By Darknslim"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By SheepYhangCN&UNDERTALE Engine By TML&GameMaker Studio 2 By YoYoGames&&Blue Soul \\& Platform \\& Bone By OneZhaZha&Gaster Blaster By Schizoid_Doge&Space background Shader By Kali&Shop By 不会起名的一杯猹&Developer Console By DaveTech&Mobile Control By Darknslim"
 dialog3=instance_create_depth(450,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}Page "+string(page+1)+"/4>"
 }else if(global.language=1){
 dialog1=instance_create_depth(80,60,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By 憨憨羊の宇航鸽鸽&UNDERTALE Engine By 糖萌芦&GameMaker Studio 2 By YoYoGames&&蓝魂和板子和骨头By 1个渣渣&Gaster冲击波 By Schizoid_Doge&星空背景着色器By Kali&动态血条By Panthervention&商店By不会起名的一杯猹&开发者控制台By DaveTech&移动端操作By Darknslim"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}"+GAME_NAME+" By 憨憨羊の宇航鸽鸽&UNDERTALE Engine By 糖萌芦&GameMaker Studio 2 By YoYoGames&&蓝魂和板子和骨头By 1个渣渣&Gaster冲击波 By Schizoid_Doge&星空背景着色器By Kali&商店By不会起名的一杯猹&开发者控制台By DaveTech&移动端操作By Darknslim"
 dialog3=instance_create_depth(480,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}{color `gray`}<{color `white`}第"+string(page+1)+"/4页>"
 }}

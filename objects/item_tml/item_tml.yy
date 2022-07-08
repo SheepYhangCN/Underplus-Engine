@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Item",
-    "path": "folders/Objects/Face/Item.yy",
+    "name": "Humans",
+    "path": "folders/Objects/Item/Humans.yy",
   },
   "resourceVersion": "1.0",
   "name": "item_tml",

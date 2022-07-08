@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Item",
-    "path": "folders/Objects/Face/Item.yy",
+    "path": "folders/Objects/Item.yy",
   },
   "resourceVersion": "1.0",
   "name": "item_cake",
