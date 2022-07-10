@@ -51,6 +51,12 @@ keypad5 blue+aqua soul
 
 keypad6 aqua+orange soul
 
+keypad7 yellow+aqua soul
+
+keypad8 yellow+orange soul
+
+keypad9 yellow+aqua+orange soul
+
 L Alt anti-clockwise rotate screen
 
 R Alt clockwise rotate screen
@@ -141,6 +147,12 @@ Esc 暂停游戏
 小键盘5 蓝+青灵魂
 
 小键盘6 青+橙灵魂
+
+小键盘7 黄+青灵魂
+
+小键盘8 黄+橙灵魂
+
+小键盘9 黄+青+橙灵魂
 
 左Alt 逆时针旋转屏幕
 
