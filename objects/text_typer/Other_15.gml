@@ -47,7 +47,7 @@ _group_font_space_x[1,0]=0;
 _group_font[1,1]=font_chinese
 _group_font_scale_x[1,1]=1;
 _group_font_scale_y[1,1]=1;
-_group_font_space_x[1,1]=1
+_group_font_space_x[1,1]=0
 _group_font_space_y[1]=0;
 
 _group_font[2,0]=font_battle

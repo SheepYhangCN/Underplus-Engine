@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_rgb",
-    "path": "sprites/spr_rgb/spr_rgb.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Soul",
-    "path": "folders/Sprites/Battle/Soul.yy",
+    "name": "other",
+    "path": "folders/Sprites/Battle/Soul/other.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_soul_slice",

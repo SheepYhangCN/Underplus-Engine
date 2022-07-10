@@ -2,7 +2,7 @@
 if(global.language=0){
 	Dialog_Add("* Cxx ran away.")
 }else if(global.language=1){
-	Dialog_Add("* Cxx跑路了。")
+	Dialog_Add("* Cxx陶艺了。")
 }
 Dialog_Start();
 

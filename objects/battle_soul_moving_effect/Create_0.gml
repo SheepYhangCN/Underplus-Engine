@@ -1,5 +1,3 @@
-if instance_exists(battle_turn)
-{
-    depth = -1001
-    image_speed = 0
-}
+if(Battle_GetState()=BATTLE_STATE.IN_TURN){
+depth = DEPTH_BATTLE.SOUL+1
+image_speed = 0}

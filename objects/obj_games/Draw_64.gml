@@ -6,7 +6,10 @@ draw_set_halign(fa_center)
 draw_set_color(c_white)
 
 //框
+if(enabled){
 draw_sprite_ext(spr_pixel,0,102,108,430,210,0,c_white,1)
+}else{
+draw_sprite_ext(spr_pixel,0,102,108,430,210,0,c_gray,1)}
 draw_sprite_ext(spr_pixel,0,102+6,108+6,430-6-6,210-6-6,0,c_black,1)
 
 if(global.language=0){

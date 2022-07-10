@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":{"name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_soul_yellow_slow","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":{"name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_soul_yellow_slow","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c9de8861-2aad-4d00-9302-f01b9553269c","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c9de8861-2aad-4d00-9302-f01b9553269c","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":{"name":"34e85b74-bbef-447a-8f37-87bc86f23cc1","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_battle_soul_yellow_slow","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"c9de8861-2aad-4d00-9302-f01b9553269c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6d0cc8db-68e0-42e2-8cad-a58a737d0254","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6d0cc8db-68e0-42e2-8cad-a58a737d0254","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"LayerId":{"name":"34e85b74-bbef-447a-8f37-87bc86f23cc1","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_battle_soul_yellow_slow","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","name":"6d0cc8db-68e0-42e2-8cad-a58a737d0254","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_battle_soul_yellow_slow","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3d0ed85b-8c26-428c-b581-febe994d6572","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c6463ef3-54a0-4bed-b663-82342b6dd020","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"a7ce213b-4233-4f60-9b3c-54716fa4c899","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c9de8861-2aad-4d00-9302-f01b9553269c","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"c8047ba7-47e7-4819-9328-477490203bbe","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d0cc8db-68e0-42e2-8cad-a58a737d0254","path":"sprites/spr_battle_soul_yellow_slow/spr_battle_soul_yellow_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -69,12 +69,12 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"34e85b74-bbef-447a-8f37-87bc86f23cc1","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Soul",
-    "path": "folders/Sprites/Battle/Soul.yy",
+    "name": "origin",
+    "path": "folders/Sprites/Battle/Soul/origin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_soul_yellow_slow",

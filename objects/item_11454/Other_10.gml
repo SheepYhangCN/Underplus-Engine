@@ -3,7 +3,7 @@
 if(global.language=0){
 	Dialog_Add("* You typed [29 59 14 6C].{sleep 20}&* Inscreased 30 to your max HP.")
 }else if(global.language=1){
-	Dialog_Add("* 你输入了[29 59 14 6C]。{sleep 20}&* 你的最大HP被增加了30。")
+	Dialog_Add("* 你输入了[29 59 14 6C]。{sleep 20}&* 你的HP上限被增加了30。")
 }
 Dialog_Start();
 

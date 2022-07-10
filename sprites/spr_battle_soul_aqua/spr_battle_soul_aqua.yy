@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Soul",
-    "path": "folders/Sprites/Battle/Soul.yy",
+    "name": "origin",
+    "path": "folders/Sprites/Battle/Soul/origin.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_battle_soul_aqua",

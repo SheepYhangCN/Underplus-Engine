@@ -121,7 +121,7 @@ switch timer{
 		board=Battle_CreateBoardExtraCircle(320,320,80)
 		//if(global.mode=2){
 		gbtemp=true
-		alarm[8]=1//}
+		//alarm[8]=1//}
 		alarm[11]=1
 		break
 	case 2140:

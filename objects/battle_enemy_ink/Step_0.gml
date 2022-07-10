@@ -8,5 +8,4 @@ window_set_caption(GAME_NAME+" - Ink!Sans Fight")
 if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
-global.enemy=1
-Battle_SetFleeable(true)
+global.enemy=6

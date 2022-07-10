@@ -1,5 +1,4 @@
-depth=DEPTH_UI.FADER+1
-x = 320
-y = 240
-
+depth=DEPTH_UI.FADER+3
+shake=false
+range=0
 surface = surface_create(640,480);

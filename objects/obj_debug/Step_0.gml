@@ -104,7 +104,7 @@ if(keyboard_check_pressed(vk_tab)){
 	}
 if(keyboard_check_pressed(vk_escape)){
 		show_message("Game Paused")}
-if(room=room_battle){
+if(Player_IsInBattle()){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
 	if(keyboard_check_pressed(ord("W"))){
 		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
@@ -158,6 +158,15 @@ if(room=room_battle){
 	}
 	if(keyboard_check_pressed(vk_numpad6)){
 	Battle_SetSoul(battle_soul_aqua_orange)
+	}
+	if(keyboard_check_pressed(vk_numpad7)){
+	Battle_SetSoul(battle_soul_yellow_orange)
+	}
+	if(keyboard_check_pressed(vk_numpad8)){
+	Battle_SetSoul(battle_soul_yellow_aqua)
+	}
+	if(keyboard_check_pressed(vk_numpad9)){
+	Battle_SetSoul(battle_soul_yellow_aqua_orange)
 	}
 	if(keyboard_check_pressed(vk_f6)){
 		Battle_EndTurn()}

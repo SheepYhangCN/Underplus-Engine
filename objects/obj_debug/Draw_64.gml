@@ -40,7 +40,7 @@ if(room=room_menu&&instance_exists(menu)){
 	draw_letter="Choice Naming Letter:"+string(menu._choice_naming_letter)
     draw_text(0, 175, draw_letter)
 	}
-if(room=room_battle){
+if(Player_IsInBattle()){
 	turn_timer=Battle_GetTurnTime()
 	draw_soulxy="Soul XY:["+string(battle_soul.x)+","+string(battle_soul.y)+"]"
 	draw_battle_button="Choice Button:"+string(global.choice_button)

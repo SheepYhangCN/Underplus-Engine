@@ -101,10 +101,10 @@ if(global.language=1){
 //全屏
 if(fullscreen=1){
 if(choice=3){
-fullscreen_text="{color `gray`}<{color `yellow`} {font 3}关{font 1} >"}else{
-fullscreen_text="{color `gray`}<{color `white`} {font 3}关{font 1} >"}}
+fullscreen_text="{color `gray`}<{color `yellow`} 关 >"}else{
+fullscreen_text="{color `gray`}<{color `white`} 关 >"}}
 if(fullscreen=2){
-fullscreen_text="< {font 3}开{font 1} {color `gray`}>"}
+fullscreen_text="< 开 {color `gray`}>"}
 //边框
 if(border_var=0){
 if(choice=6){
@@ -121,12 +121,12 @@ border_text="< 狗 {color `gray`}>"}
 //模式
 if(mode_val=1){
 if(choice=4){
-modetext="{color `gray`}< {color `lime`}{font 3}简单{font 1} {color `yellow`}>"}else{
-modetext="{color `gray`}< {color `lime`}{font 3}简单{font 1} {color `white`}>"}}
+modetext="{color `gray`}< {color `lime`}简单 {color `yellow`}>"}else{
+modetext="{color `gray`}< {color `lime`}简单 {color `white`}>"}}
 if(mode_val=0){
-modetext="< {font 3}普通{font 1} >"}
+modetext="< 普通 >"}
 if(mode_val=2){
-modetext="< {font 3}{color `red`}困难{font 1} {color `gray`}>"}
+modetext="< {color `red`}困难 {color `gray`}>"}
 }
 
 if(Input_IsPressed(INPUT.DOWN)){

@@ -3,7 +3,7 @@ function Macro_Depth() {
 		PANEL=-100,
 		TEXT=-200,
 		ENCOUNTER_ANIM=-300,
-		FADER=-400,
+		FADER=-1500,
 		GAME=-2000
 	};
 

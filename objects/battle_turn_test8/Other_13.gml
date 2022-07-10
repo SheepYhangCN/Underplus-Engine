@@ -1,0 +1,7 @@
+Battle_SetTurnNumber(8)
+instance_destroy(a)
+instance_destroy(b)
+instance_destroy(c)
+instance_destroy(d)
+instance_destroy(e)
+event_inherited()
