@@ -10,4 +10,4 @@ temp1=0
 if(global.language=0){
 inst.text=_prefix+"Return&Restart Game&Quit Game"}
 if(global.language=1){
-inst.text=_prefix+"返回&重启游戏&退出游戏"}
+inst.text=_prefix+"{font 0}返回&重启游戏&退出游戏"}

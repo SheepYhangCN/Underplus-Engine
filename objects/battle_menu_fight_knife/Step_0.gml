@@ -32,10 +32,16 @@ if(_input_acceptable){
 		}
 		
 		Battle_SetMenuFightDamage(damage);
-		Battle_SetMenuFightAnimTime(40);
-		//Battle_SetMenuFightDamageTime(70);
-		Battle_SetMenuFightDamageTime(25);
+		Battle_SetMenuFightAnimTime(30);
+		Battle_SetMenuFightDamageTime(30);
 		Battle_EndMenuFightAim();
 		_input_acceptable=false;
 	}
 }
+
+battle_soul.image_angle=0
+if(_dir=DIR.RIGHT){
+battle_soul.x=_aim_x}
+if(_dir=DIR.LEFT){
+battle_soul.x=_aim_x_1}
+battle_soul.y=320

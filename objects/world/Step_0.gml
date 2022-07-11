@@ -92,10 +92,10 @@ cursor_sprite=spr_cursor
 cursor_sprite=noone}
 
 //边框
-border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
-if(border_=0&&Border_IsEnabled()){
-Border_SetEnabled(false)}
-if(border_!=0){
-Border_SetEnabled(true)
-if(Border_GetSprite()!=Border_Get_Sprite(border_)){
-Border_SetSprite(Border_Get_Sprite(border_))}}
+if(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)>0){
+if(Border_GetSprite()!=Border_Get_Sprite(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0))){
+Border_SetSprite(Border_Get_Sprite(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)))}
+//if(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)=1&&Border_GetSprite()!=Border_Get_DynamicSprite()){
+	//Border_SetSprite(Border_Get_DynamicSprite())
+}//}
+else if(Border_IsEnabled()){Border_SetEnabled(false)}

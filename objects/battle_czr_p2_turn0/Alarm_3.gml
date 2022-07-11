@@ -1,1 +1,0 @@
-Battle_SetSoul(battle_soul_aqua)

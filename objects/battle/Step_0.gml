@@ -137,14 +137,14 @@ if(_state==BATTLE_STATE.MENU){
 	}else
 	
 	//攻击条动画
-	if(_menu==BATTLE_MENU.FIGHT_AIM){
+	/*if(_menu==BATTLE_MENU.FIGHT_AIM){
 			battle_soul.image_angle=0
-			if(battle_menu_fight_knife._dir=DIR.RIGHT){
-			battle_soul.x=battle_menu_fight_knife._aim_x}
-			if(battle_menu_fight_knife._dir=DIR.LEFT){
-			battle_soul.x=battle_menu_fight_knife._aim_x_1}
+			if(battle_menu_fight._dir=DIR.RIGHT){
+			battle_soul.x=battle_menu_fight._aim_x}
+			if(battle_menu_fight._dir=DIR.LEFT){
+			battle_soul.x=battle_menu_fight._aim_x_1}
 			battle_soul.y=320
-	}else
+	}else*/
 	
 	//战斗动画
 	if(_menu==BATTLE_MENU.FIGHT_ANIM){
@@ -161,6 +161,7 @@ if(_state==BATTLE_STATE.MENU){
 			_menu_fight_damage_time-=1;
 		}else if(_menu_fight_damage_time==0){
 			Battle_EndMenuFightDamage();
+			//audio_play_sound(snd_ding,0,0)
 		}
 	}else
 	
@@ -281,7 +282,7 @@ if(_state==BATTLE_STATE.MENU){
 			Anim_Create(battle_soul,"y",0,0,tempy,battle_board.y-battle_board.up-5+36+32*_menu_choice_mercy-tempy,2)
 		}else if(Input_IsPressed(INPUT.DOWN)){
 			var mercy=Battle_GetMenuChoiceMercy()+1;
-			if((!Battle_IsMenuChoiceMercyOverride()&&mercy<=_menu_mercy_flee_enabled) || (Battle_IsMenuChoiceMercyOverride()&&mercy<Battle_GetMenuChoiceMercyOverrideNumber())){
+			if((!Battle_IsMenuChoiceMercyOverride()&&mercy<=Battle_IsMenuMercyFleeEnabled()) || (Battle_IsMenuChoiceMercyOverride()&&mercy<Battle_GetMenuChoiceMercyOverrideNumber())){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceMercy(mercy);
 			}

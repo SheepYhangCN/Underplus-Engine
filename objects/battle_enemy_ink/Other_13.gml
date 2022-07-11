@@ -2,12 +2,12 @@
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
 		var random_flash=choose(0,1)
 		if(random_flash=0){
-		Anim_Create(self,"x",0,0,320,80,10)
-		Anim_Create(self,"x",0,0,400,-80,10,40)
+		Anim_Create(self,"x",0,0,320,80,15)
+		Anim_Create(self,"x",0,0,400,-80,15,40)
 		}
 		if(random_flash=1){
-		Anim_Create(self,"x",0,0,320,-80,10)
-		Anim_Create(self,"x",0,0,240,80,10,40)
+		Anim_Create(self,"x",0,0,320,-80,15)
+		Anim_Create(self,"x",0,0,240,80,15,40)
 		}
 }
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){

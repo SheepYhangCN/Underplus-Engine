@@ -52,11 +52,11 @@ if(_menu==0){
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
 		_inst_continue.text+="{color `gray`}"}
-		_inst_continue.text+="{font 0}Continue"
-		_inst_reset.text=_prefix+"{font 0}Reset"
-		_inst_settings.text=_prefix+"{font 0}Settings"
-		_inst_credits.text=_prefix+"{font 0}Credits"
-		_inst_save_options.text=_prefix+"Save Options"
+		_inst_continue.text+="{font 1}Continue"
+		_inst_reset.text=_prefix+"{font 1}Reset"
+		_inst_settings.text=_prefix+"{font 1}Settings"
+		_inst_credits.text=_prefix+"{font 1}Credits"
+		_inst_save_options.text=_prefix+"{font 1}Save Options"
 		}else if(global.language=1){
 		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 3}空");
 		_inst_continue.text=_prefix

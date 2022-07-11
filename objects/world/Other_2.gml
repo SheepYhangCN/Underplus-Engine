@@ -13,6 +13,11 @@ global.tas=false
 room_speed=60
 //cursor_sprite=spr_cursor
 window_set_size(640,480)
+if(os_is_network_connected()=true){
+np_initdiscord("",true,0)
+np_update()
+}
+alarm[0]=1
 
 Anim_Init();
 
@@ -64,13 +69,7 @@ border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
 if(border_=0){
 Border_SetEnabled(false)}else{
 Border_SetEnabled(true)
-if(Border_GetSprite()!=Border_Get_Sprite(border_)){
-Border_SetSprite(Border_Get_Sprite(border_))}}
-//窗口大小
-if(!(os_type=os_android||os_type=os_ios||os_type=os_winphone)){
-_window_size=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.WINDOW_SIZE,1)
-if(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)=0){
-Window_Size_Set(_window_size)}}
+Border_SetSprite(Border_Get_Sprite(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)))}
 //全屏
 if(!(os_type=os_android||os_type=os_ios||os_type=os_winphone)){
 if(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.FULLSCREEN,1)=2){
@@ -79,6 +78,11 @@ window_set_fullscreen(true)}}
 volume=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.VOLUME,1)
 //模式
 global.mode=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.MODE,0)
+//窗口大小
+if(!(os_type=os_android||os_type=os_ios||os_type=os_winphone)){
+_window_size=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.WINDOW_SIZE,1)
+if(!Border_IsEnabled()&&window_get_fullscreen()=false){
+Window_Size_Set(_window_size)}}
 
 //Language_Set(1)
 room_goto(room_logo)
