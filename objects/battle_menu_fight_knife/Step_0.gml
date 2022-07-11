@@ -14,6 +14,12 @@ if(_input_acceptable){
 		instance_create_depth(_aim_x,y,0,battle_menu_fight_aim_effect)}else{
 		Anim_Destroy(id,"_aim_x_1");
 		instance_create_depth(_aim_x_1,y,0,battle_menu_fight_aim_effect)}
+		battle_soul.image_angle=0
+		if(_dir=DIR.RIGHT){
+		battle_soul.x=_aim_x}
+		if(_dir=DIR.LEFT){
+		battle_soul.x=_aim_x_1}
+		battle_soul.y=320
 		alarm[0]=1;
 		
 		var ATK=Player_GetAtkTotal();
@@ -32,16 +38,16 @@ if(_input_acceptable){
 		}
 		
 		Battle_SetMenuFightDamage(damage);
-		Battle_SetMenuFightAnimTime(30);
-		Battle_SetMenuFightDamageTime(30);
+		Battle_SetMenuFightAnimTime(25);
+		Battle_SetMenuFightDamageTime(25);
 		Battle_EndMenuFightAim();
 		_input_acceptable=false;
 	}
 }
-
+if(Battle_GetMenu()=BATTLE_MENU.FIGHT_AIM){
 battle_soul.image_angle=0
 if(_dir=DIR.RIGHT){
 battle_soul.x=_aim_x}
 if(_dir=DIR.LEFT){
 battle_soul.x=_aim_x_1}
-battle_soul.y=320
+battle_soul.y=320}

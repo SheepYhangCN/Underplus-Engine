@@ -53,7 +53,7 @@ if(Player_IsInBattle()){
 	draw_turn_timer="Turn Timer:"+string(turn_timer)}
 	draw_enemy="Battle:"+string(global.enemy)+"["+object_get_name(Encounter_GetEnemy(global.enemy,0))+","+object_get_name(Encounter_GetEnemy(global.enemy,1))+","+object_get_name(Encounter_GetEnemy(global.enemy,2))+"]"
 	draw_board="Board XY & Size:["+string(battle_board.x)+","+string(battle_board.y)+"],["+string(battle_board.up)+","+string(battle_board.down)+","+string(battle_board.left)+","+string(battle_board.right)+"]"
-	draw_state="Battle State:"+string(Battle_GetState())
+	draw_state="Battle State & Menu:["+string(Battle_GetState())+","+string(Battle_GetMenu())+"]"
     draw_text(0, 175, draw_soulxy)
     draw_text(0, 195, draw_battle_button)
     draw_text(0, 215, draw_turn)
