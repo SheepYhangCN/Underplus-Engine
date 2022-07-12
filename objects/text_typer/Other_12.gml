@@ -730,7 +730,7 @@ switch(cmd[|0]){
 		}
 		break
 	case "titr_legs":
-		if(is_string(cmd[|1])&&instance_exists(asset_get_index(cmd[|1]))){
+		if(is_string(cmd[|1])&&instance_exists(titr_legs)){
 			titr_legs.sprite_index=asset_get_index(cmd[|1])
 		}
 		break

@@ -86,7 +86,9 @@ if(global.language=1){
 show_message_async("按下返回键(移动端)或退格键(桌面端)来开关移动端控制。")}
 }
 
-if(display_mouse_get_x()=window_get_x()+window_mouse_get_x()&&display_mouse_get_y()=window_get_y()+window_mouse_get_y()&&!(Player_IsInBattle()&&Battle_GetState()=BATTLE_STATE.IN_TURN&&!(instance_exists(battle_soul_yellow)||instance_exists(battle_soul_yellow_aqua)||instance_exists(battle_soul_yellow_orange)||instance_exists(battle_soul_yellow_aqua_orange)))){
+if(instance_exists(battle_soul_yellow)||instance_exists(battle_soul_yellow_aqua)||instance_exists(battle_soul_yellow_orange)||instance_exists(battle_soul_yellow_aqua_orange)){
+cursor_sprite=noone
+}else if(display_mouse_get_x()=window_get_x()+window_mouse_get_x()&&display_mouse_get_y()=window_get_y()+window_mouse_get_y()){
 cursor_sprite=spr_cursor
 }else{
 cursor_sprite=noone}
