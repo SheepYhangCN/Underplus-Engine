@@ -255,3 +255,18 @@ if((Battle_GetState() == 3)&&moveable){
 else{
 	move = 0;
 }
+
+var xxx=0
+var yyy=0
+if(dir==DIR.DOWN){
+	yyy=sprite_height/2+1;
+}else if(dir==DIR.UP){
+	yyy=-sprite_height/2-1;
+}else if(dir==DIR.LEFT){
+	xxx=-sprite_height/2-1;
+}else if(dir==DIR.RIGHT){
+	xxx=sprite_height/2+1;
+}
+var inst=instance_place((x + xxx), (y + yyy), battle_platform)
+if(instance_exists(inst)&&move>0.5){
+move=0.5}

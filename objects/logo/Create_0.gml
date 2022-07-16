@@ -22,3 +22,9 @@ BGM_Play(0,bgm_menu_winter,true,1,1)}*/
 audio_play_sound(snd_logo,0,false);
 //Dialog_Start()
 //ui_dialog._top=true
+if(current_weekday=4){
+if(global.language=0){
+CC_Add("Today is KFC Crazy Thursday!",120)}
+if(global.language=1){
+CC_Add("今天可是肯德基疯狂星期四啊！V我50",120)}
+}

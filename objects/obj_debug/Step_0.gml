@@ -90,7 +90,7 @@ if(keyboard_check_pressed(vk_tab)){
 		encounter_battle=get_integer("Encounter_Start", global.enemy)
 		Encounter_Start(encounter_battle)
 }
-	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)){
+	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)&&!instance_exists(battle_soul_green)&&!instance_exists(battle_soul_green_aqua)){
 		instance_create_depth(0,0,0,ui_save)
 	}
 	if(keyboard_check_pressed(ord("F"))){
@@ -154,19 +154,25 @@ if(Player_IsInBattle()){
 	Battle_SetSoul(battle_soul_yellow)
 	}
 	if(keyboard_check_pressed(vk_numpad5)){
+	Battle_SetSoul(battle_soul_green)
+	}
+	if(keyboard_check(vk_numpad1)&&keyboard_check_pressed(vk_numpad2)){
 	Battle_SetSoul(battle_soul_blue_aqua)
 	}
-	if(keyboard_check_pressed(vk_numpad6)){
+	if(keyboard_check(vk_numpad2)&&keyboard_check_pressed(vk_numpad3)){
 	Battle_SetSoul(battle_soul_aqua_orange)
 	}
-	if(keyboard_check_pressed(vk_numpad7)){
+	if(keyboard_check(vk_numpad4)&&keyboard_check_pressed(vk_numpad3)){
 	Battle_SetSoul(battle_soul_yellow_orange)
 	}
-	if(keyboard_check_pressed(vk_numpad8)){
+	if(keyboard_check(vk_numpad4)&&keyboard_check_pressed(vk_numpad2)){
 	Battle_SetSoul(battle_soul_yellow_aqua)
 	}
-	if(keyboard_check_pressed(vk_numpad9)){
+	if(keyboard_check(vk_numpad4)&&keyboard_check(vk_numpad2)&&keyboard_check(vk_numpad3)){
 	Battle_SetSoul(battle_soul_yellow_aqua_orange)
+	}
+	if(keyboard_check(vk_numpad5)&&keyboard_check_pressed(vk_numpad2)){
+	Battle_SetSoul(battle_soul_green_aqua)
 	}
 	if(keyboard_check_pressed(vk_f6)){
 		Battle_EndTurn()}

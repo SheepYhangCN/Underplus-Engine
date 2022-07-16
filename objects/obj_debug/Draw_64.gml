@@ -67,7 +67,13 @@ if(Player_IsInBattle()){
 	draw_text(0, 355, "Touched Board(bbb):"+string(battle_soul.bbb))
 	draw_text(0, 375, "Dir:"+string(battle_soul.dir))
 	}else if(instance_exists(battle_soul)){
-	draw_text(0, 315, "Soul Image Angle:"+string(battle_soul.image_angle))
+	if(instance_exists(battle_soul_green)){
+	if(instance_exists(battle_soul_green_shield1)){
+	draw_text(0, 315, "Green Soul Angles:["+string(battle_soul.image_angle)+","+string(battle_soul_green_shield1.image_angle)+"]")
+	if(instance_exists(battle_soul_green_shield2)){
+	draw_text(0, 315, "Green Soul Angles:["+string(battle_soul.image_angle)+","+string(battle_soul_green_shield1.image_angle)+","+string(battle_soul_green_shield2.image_angle)+"]")}
+	}}else{
+	draw_text(0, 315, "Soul Image Angle:"+string(battle_soul.image_angle))}
 	}
 	if(instance_exists(battle_soul_orange)||instance_exists(battle_soul_aqua_orange)){
 	draw_text(0, 335, "Moveable:"+string(battle_soul.moveable))

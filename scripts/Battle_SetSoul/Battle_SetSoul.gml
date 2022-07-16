@@ -1,4 +1,4 @@
-///@arg soul_obj
+///@arg soul_obj,*spr
 function Battle_SetSoul() {
 	var SOUL=argument[0];
 
@@ -10,7 +10,11 @@ function Battle_SetSoul() {
 			Y=battle_soul.y;
 			instance_destroy(battle_soul);
 		}
-		instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
+		var inst=instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
+		if(argument_count>1){
+		inst.default_spr=argument[1]
+		inst.sprite_index=argument[1]
+		}
 		return true;
 	}else{
 		return false;

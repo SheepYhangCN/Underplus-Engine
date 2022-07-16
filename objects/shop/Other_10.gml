@@ -9,9 +9,9 @@ switch(_state)
 			_typer_left.text = _pre + _host.menu_text;
 		if(_typer_right_refresh){
 		if(global.language=0){
-			_typer_right.text = _pre_inst + "  Buy&  Sell&  Talk&  Exit";}
+			_typer_right.text = _pre_inst + "{font 1}    Buy&    Sell&    Talk&    Exit";}
 		if(global.language=1){
-			_typer_right.text = _pre_inst + "{font 3}  购买&  出售&  谈话&  退出";}}
+			_typer_right.text = _pre_inst + "{font 0}  购买&  出售&  谈话&  退出";}}
 		
 		//_typer_state.text = _pre_inst + string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD))+"G   "+string(Item_GetNumber())+"/8";
 		if(_typer_state_refresh)

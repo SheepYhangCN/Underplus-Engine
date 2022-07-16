@@ -1,11 +1,11 @@
 if(Battle_GetState()==BATTLE_STATE.IN_TURN){
 	if(Input_IsHeld(INPUT.CANCEL)){
-	sprite_index=asset_get_index("spr_"+object_get_name(object_index)+"_slow")
+	sprite_index=asset_get_index(sprite_get_name(default_spr)+"_slow")
 	}else{
-	sprite_index=asset_get_index("spr_"+object_get_name(object_index))
+	sprite_index=default_spr
 }}
 if(Battle_GetState()==BATTLE_STATE.MENU){
-	sprite_index=asset_get_index("spr_"+object_get_name(object_index))
+	sprite_index=default_spr
 }
 var STATE=Battle_GetState();
 if(STATE==BATTLE_STATE.TURN_PREPARATION||STATE==BATTLE_STATE.IN_TURN){

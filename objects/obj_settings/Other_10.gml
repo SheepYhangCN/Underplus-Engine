@@ -57,7 +57,7 @@ mode_index.text = (prefix + modetext)
 volume.text=(prefix + "Volume")
 border_obj.text = (prefix + "Border")
 border_obj_index.text = (prefix + border_text)
-backtext.text = (prefix + "Back")
+backtext.text = (prefix + "Save \\& Back")
 
 }else if(global.language=1){
 title = instance_create_depth(275, 30, 0, text_typer)
@@ -77,7 +77,7 @@ mode_index.text = (prefix + modetext)
 volume.text=(prefix + "音量")
 border_obj.text = (prefix + "边框")
 border_obj_index.text = (prefix + border_text)
-backtext.text = (prefix + "返回")}
+backtext.text = (prefix + "保存并返回")}
 if(choice=1){
 if(global.language=0){
 language.text = (prefix + "{color `yellow`}" + "Language")
@@ -134,6 +134,6 @@ border_obj_index.text = (prefix + "{color `yellow`}" + border_text)}
 
 if(choice=7){
 if(global.language=0){
-backtext.text = (prefix + "{color `yellow`}Back")
+backtext.text = (prefix + "{color `yellow`}Save \\& Back")
 }else if(global.language=1){
-backtext.text = (prefix + "{color `yellow`}返回")}}
+backtext.text = (prefix + "{color `yellow`}保存并返回")}}
