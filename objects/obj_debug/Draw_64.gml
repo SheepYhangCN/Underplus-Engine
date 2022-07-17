@@ -68,9 +68,9 @@ if(Player_IsInBattle()){
 	draw_text(0, 375, "Dir:"+string(battle_soul.dir))
 	}else if(instance_exists(battle_soul)){
 	if(instance_exists(battle_soul_green)){
-	if(instance_exists(battle_soul_green_shield1)){
+	if(instance_exists(battle_soul_green_shield1)&&!instance_exists(battle_soul_green_shield2)){
 	draw_text(0, 315, "Green Soul Angles:["+string(battle_soul.image_angle)+","+string(battle_soul_green_shield1.image_angle)+"]")
-	if(instance_exists(battle_soul_green_shield2)){
+	if(instance_exists(battle_soul_green_shield1)&&instance_exists(battle_soul_green_shield2)){
 	draw_text(0, 315, "Green Soul Angles:["+string(battle_soul.image_angle)+","+string(battle_soul_green_shield1.image_angle)+","+string(battle_soul_green_shield2.image_angle)+"]")}
 	}}else{
 	draw_text(0, 315, "Soul Image Angle:"+string(battle_soul.image_angle))}
