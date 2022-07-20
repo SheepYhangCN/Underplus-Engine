@@ -33,8 +33,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Objects/Battle/Bullet.yy",
+    "name": "Bone",
+    "path": "folders/Objects/Battle/Bullet/Bone.yy",
   },
   "resourceVersion": "1.0",
   "name": "oRoundBone",

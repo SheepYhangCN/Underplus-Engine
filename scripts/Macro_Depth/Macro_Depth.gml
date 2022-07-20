@@ -23,8 +23,7 @@ function Macro_Depth() {
 	enum DEPTH_OVERWORLD{
 		TRIGGER=-100,
 		CHAR=-200,
-		PLAYER=-300,
-		COVER_PLAYER=-301
+		COVER_PLAYER=-700
 	};
 
 

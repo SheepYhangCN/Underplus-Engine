@@ -1,4 +1,4 @@
-///@arg x,y,length,hspeed,vspeed,type,out,rotate,auto_destroy,*duration,*obj
+///@arg x,y,length,hspeed,vspeed,type,out,rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneH(){
 	var OBJ = battle_bullet_bone
     var X = argument[0]
@@ -14,7 +14,7 @@ function Battle_MakeBoneH(){
     if (argument_count >= 10)
         DURATION = argument[9]
     if (argument_count >= 11)
-        OBJ = argument[0]
+        OBJ = argument[10]
     bone = instance_create_depth(X, Y, 0, OBJ)
     bone.length = LENGTH
     bone.hspeed = HSPEED
@@ -25,5 +25,9 @@ function Battle_MakeBoneH(){
     bone.auto_destroy = DESTROY
     bone.angle = (0 << 0)
     bone.duration = DURATION
+    if (argument_count >= 12)
+        bone._bone_body = argument[11]
+    if (argument_count >= 13)
+        bone._bone_end = argument[12]
     return bone;
 }

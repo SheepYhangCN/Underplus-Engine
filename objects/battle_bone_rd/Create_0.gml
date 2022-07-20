@@ -7,3 +7,5 @@ auto_destroy_dir = -1
 no_bottom = 0
 time = -1
 outside = 0
+_bone_body=bone_body
+_bone_end=bone_end

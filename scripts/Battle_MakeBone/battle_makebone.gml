@@ -1,4 +1,4 @@
-///@arg x,y,length,hspeed,vspeed,type,out,angle,rotate,auto_destroy,*duration,*obj
+///@arg x,y,length,hspeed,vspeed,type,out,angle,rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBone(){
 	var OBJ = battle_bullet_bone
     var X = argument[0]
@@ -26,5 +26,9 @@ function Battle_MakeBone(){
     bone.auto_destroy = DESTROY
     bone.angle = ANGLE
     bone.duration = DURATION
+    if (argument_count >= 13)
+        bone._bone_body = argument[12]
+    if (argument_count >= 14)
+        bone._bone_end = argument[13]
     return bone;
 }

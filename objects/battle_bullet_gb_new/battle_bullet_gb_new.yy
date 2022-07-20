@@ -36,8 +36,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Objects/Battle/Bullet.yy",
+    "name": "Blaster",
+    "path": "folders/Objects/Battle/Bullet/Blaster.yy",
   },
   "resourceVersion": "1.0",
   "name": "battle_bullet_gb_new",

@@ -8,3 +8,5 @@ _bones_angle = 0
 _bones_num = 30
 _bones_length = 0
 type=0
+_bone_body=bone_body
+_bone_end=bone_end

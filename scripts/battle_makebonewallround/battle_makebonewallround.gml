@@ -1,6 +1,8 @@
-///@arg bone_gap,gap_board,length,type,pause,*duration,*obj
+///@arg bone_gap,gap_board,length,type,pause,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneWallRound(){
 var obj = battle_bullet_bone
+var spr_body=bone_body
+var spr_end=bone_end
 var duration = -1
 var dir=0
 var dir_add=argument[0]
@@ -18,9 +20,9 @@ var _x = (battle_board.x + lengthdir_x(gap, dir))
 var _y = (battle_board.y + lengthdir_y(gap, dir))
 
 if(duration!=-1){
-var bone=Battle_MakeBone(_x,_y,length,0,0,type,0,dir,0,0,((duration + (pause * 2)) + 24),obj)
+var bone=Battle_MakeBone(_x,_y,length,0,0,type,0,dir,0,0,((duration + (pause * 2)) + 24),obj,spr_body,spr_end)
 }else{
-var bone=Battle_MakeBone(_x,_y,length,0,0,type,0,dir,0,0,duration,obj)}
+var bone=Battle_MakeBone(_x,_y,length,0,0,type,0,dir,0,0,duration,obj,spr_body,spr_end)}
 
 with (bone)
         {
@@ -51,9 +53,11 @@ audio_play_sound(snd_exclamation, 0, false)
 return;
 }
 
-///@arg rotate_speed,length,type,pause,*duration,*sound,*anim,*obj
+///@arg rotate_speed,length,type,pause,*duration,*sound,*anim,*obj,*spr_body,*spr_end
 function Battle_MakeBoneWallRound_Rotate(){
 var obj = oRoundBone
+var spr_body=bone_body
+var spr_end=bone_end
 var duration = -1
 var sound=true
 var anim=true
@@ -72,6 +76,8 @@ obj=argument[7]}
 
 var bone=instance_create_depth(0,0,0,obj);
 bone._bones_angle=angle
+bone._bone_body=spr_body
+bone._bone_end=spr_end
 if(anim=true){
 bone._bones_length=0
 }else{

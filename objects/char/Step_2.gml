@@ -1,1 +1,1 @@
-//depth=-2000-y;
+depth=DEPTH_OVERWORLD.CHAR-y;

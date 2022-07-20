@@ -1,14 +1,9 @@
 {
-  "extensionVersion": "1.3.2",
-  "name": "NekoPresence",
-  "copyToTargets": 194,
-  "androidProps": false,
-  "iosProps": false,
-  "tvosProps": false,
   "optionsFile": "options.json",
   "options": [],
   "exportToGame": true,
   "supportedTargets": -1,
+  "extensionVersion": "1.3.2",
   "packageId": "",
   "productId": "",
   "author": "",
@@ -16,6 +11,9 @@
   "license": "",
   "description": "",
   "helpfile": "",
+  "iosProps": false,
+  "tvosProps": false,
+  "androidProps": false,
   "installdir": "",
   "files": [
     {"filename":"NekoPresence.gml","origname":"","init":"","final":"","kind":2,"uncompress":false,"functions":[
@@ -145,6 +143,7 @@
   "tvosThirdPartyFrameworkEntries": [],
   "IncludedResources": [],
   "androidPermissions": [],
+  "copyToTargets": 194,
   "iosCocoaPods": "",
   "tvosCocoaPods": "",
   "iosCocoaPodDependencies": "",
@@ -154,6 +153,7 @@
     "path": "folders/Extensions.yy",
   },
   "resourceVersion": "1.2",
+  "name": "NekoPresence",
   "tags": [],
   "resourceType": "GMExtension",
 }

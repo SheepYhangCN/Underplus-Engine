@@ -9,4 +9,6 @@ vspeed = 0
 hspeed = 0
 duration = -1
 lock_hp=-1
+_bone_end=bone_end
+_bone_body=bone_body
 alarm[1] = 1

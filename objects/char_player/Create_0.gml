@@ -1,7 +1,5 @@
 event_inherited();
 
-depth=DEPTH_OVERWORLD.PLAYER
-
 char_id=0;
 
 res_idle_sprite[DIR.UP]=spr_char_frisk_up;

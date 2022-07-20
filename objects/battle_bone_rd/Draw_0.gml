@@ -8,14 +8,14 @@ else if (type == 2)
 var topl = sprite_get_width(bone_end)
 if (!no_bottom)
 {
-    draw_sprite_ext(bone_end, 1, x, y, 1, 1, dir, color, 1)
-    draw_sprite_ext(bone_body, 0, (x + lengthdir_x(topl, dir)), (y + lengthdir_y(topl, dir)), (length - (2 * topl)), 1, dir, color, 1)
-    draw_sprite_ext(bone_end, 1, (x + lengthdir_x(length-topl/2, dir)), (y + lengthdir_y(length-topl/2, dir)), -1, 1, dir, color, 1)
+    draw_sprite_ext(_bone_end, 1, x, y, 1, 1, dir, color, 1)
+    draw_sprite_ext(_bone_body, 0, (x + lengthdir_x(topl, dir)), (y + lengthdir_y(topl, dir)), (length - (2 * topl)), 1, dir, color, 1)
+    draw_sprite_ext(_bone_end, 1, (x + lengthdir_x(length-topl/2, dir)), (y + lengthdir_y(length-topl/2, dir)), -1, 1, dir, color, 1)
 }
 else
 {
-    draw_sprite_ext(bone_body, 0, x, y, (length - topl), 1, dir, color, 1)
-    draw_sprite_ext(bone_end, 1, (x + lengthdir_x(length-topl/2, dir)), (y + lengthdir_y(length-topl/2, dir)), -1, 1, dir, color, 1)
+    draw_sprite_ext(_bone_body, 0, x, y, (length - topl), 1, dir, color, 1)
+    draw_sprite_ext(_bone_end, 1, (x + lengthdir_x(length-topl/2, dir)), (y + lengthdir_y(length-topl/2, dir)), -1, 1, dir, color, 1)
 }
 if (!outside)
     surface_reset_target()

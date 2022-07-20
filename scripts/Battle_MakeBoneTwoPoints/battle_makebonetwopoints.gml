@@ -1,4 +1,4 @@
-///@arg point0_x,point0_y,point1_x,point1_y,type,out,autoo_destroy,*duration,*obj
+///@arg point0_x,point0_y,point1_x,point1_y,type,out,autoo_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneTwoPoints(){
     var POINT_X0 = argument[0]
     var POINT_Y0 = argument[1]
@@ -23,6 +23,10 @@ function Battle_MakeBoneTwoPoints(){
     bone.auto_destroy = DESTROY
     bone.duration = DURATION
     bone.mode = (2 << 0)
+    if (argument_count >= 10)
+        bone._bone_body = argument[9]
+    if (argument_count >= 11)
+        bone._bone_end = argument[10]
     return bone;
 
 }
