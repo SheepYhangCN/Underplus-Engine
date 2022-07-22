@@ -26,6 +26,7 @@ function Battle_MakeBoneWallRight(){
 		}
         with (b[ii])
         {
+			angle+=180
             Anim_Create(id, "x", 0, 0, x, (-LENGTH), 8, PAUSE)
 			if(DURATION!=-1){
             Anim_Create(id, "x", 0, 0, (x - LENGTH), (LENGTH * 2), 16, ((16 + PAUSE) + DURATION))}

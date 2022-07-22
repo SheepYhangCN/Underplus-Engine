@@ -26,6 +26,7 @@ function Battle_MakeBoneWallTop(){
 		}
         with (b[ii])
         {
+			angle+=180
             Anim_Create(id, "y", 0, 0, y, LENGTH, 8, PAUSE)
 			if(DURATION!=-1){
             Anim_Create(id, "y", 0, 0, (y + LENGTH), ((-LENGTH) * 2), 16, ((16 + PAUSE) + DURATION))}

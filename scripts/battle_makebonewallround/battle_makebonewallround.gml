@@ -14,6 +14,10 @@ if(argument_count>5){
 duration=argument[5]}
 if(argument_count>6){
 obj=argument[6]}
+if(argument_count>7){
+spr_body=argument[7]}
+if(argument_count>8){
+spr_end=argument[8]}
 
 repeat(360/dir_add){
 var _x = (battle_board.x + lengthdir_x(gap, dir))
@@ -26,6 +30,7 @@ var bone=Battle_MakeBone(_x,_y,length,0,0,type,0,dir,0,0,duration,obj,spr_body,s
 
 with (bone)
         {
+		angle+=180
 		x=(battle_board.x + lengthdir_x(gap+length, dir))
 		y=(battle_board.y + lengthdir_y(gap+length, dir))
         Anim_Create(id, "x", 0, 0, x, _x-x, 16, pause)
@@ -73,11 +78,16 @@ if(argument_count>6){
 anim=argument[6]}
 if(argument_count>7){
 obj=argument[7]}
+if(argument_count>8){
+spr_body=argument[8]}
+if(argument_count>9){
+spr_end=argument[9]}
 
 var bone=instance_create_depth(0,0,0,obj);
 bone._bones_angle=angle
 bone._bone_body=spr_body
 bone._bone_end=spr_end
+bone.angle+=180
 if(anim=true){
 bone._bones_length=0
 }else{
