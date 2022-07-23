@@ -22,5 +22,8 @@ switch choice{
 		if(phase=2){
 		Encounter_Start(5)}
 		break
+	case 2:
+	Encounter_Start(7)
+	break
 }
 }

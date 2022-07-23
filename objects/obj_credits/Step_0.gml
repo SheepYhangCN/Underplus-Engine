@@ -88,12 +88,12 @@ dialog3.text="{scale 2}{instant true}<第"+string(page+1)+"/4页>"
 if(page=3){
 if(global.language=0){
 dialog1=instance_create_depth(70,70,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}Special Thanks&Cxx, YuanSaTion&&UT:SE Sans Sprite By krib_&Split sprite By HF"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}Special Thanks&Cxx, YuanSaTion"
 dialog3=instance_create_depth(450,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}<Page "+string(page+1)+"/4{color `gray`}>"
 }else if(global.language=1){
 dialog1=instance_create_depth(80,60,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}特别感谢&Cxx、养生堂&&UT:SE Sans贴图By krib_&贴图分割By 幻风"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}特别感谢&Cxx、养生堂"
 dialog3=instance_create_depth(480,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}<第"+string(page+1)+"/4页{color `gray`}>"
 }}

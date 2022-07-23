@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sprites/Battle/Enemy.yy",
+    "name": "sans",
+    "path": "folders/Sprites/Battle/Enemy/sans.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_sans_almost_dead",

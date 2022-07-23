@@ -107,32 +107,36 @@ if(keyboard_check_pressed(vk_escape)){
 if(Player_IsInBattle()){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
 	if(keyboard_check_pressed(ord("W"))){
-		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
-		battle_soul.dir=DIR.UP
-		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		Titr_BlueSoulControl(DIR.UP)
+		}else if(instance_exists(battle_enemy_anya)){
+		BlueSoulControl_Anya(DIR.UP)
 		}else{
-		Titr_BlueSoulControl(DIR.UP)}
+		BlueSoulControl(DIR.UP)}
 	}
 	if(keyboard_check_pressed(ord("A"))){
-		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
-		battle_soul.dir=DIR.LEFT
-		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		Titr_BlueSoulControl(DIR.LEFT)
+		}else if(instance_exists(battle_enemy_anya)){
+		BlueSoulControl_Anya(DIR.LEFT)
 		}else{
-		Titr_BlueSoulControl(DIR.LEFT)}
+		BlueSoulControl(DIR.LEFT)}
 	}
 	if(keyboard_check_pressed(ord("S"))){
-		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
-		battle_soul.dir=DIR.DOWN
-		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		Titr_BlueSoulControl(DIR.DOWN)
+		}else if(instance_exists(battle_enemy_anya)){
+		BlueSoulControl_Anya(DIR.DOWN)
 		}else{
-		Titr_BlueSoulControl(DIR.DOWN)}
+		BlueSoulControl(DIR.DOWN)}
 	}
 	if(keyboard_check_pressed(ord("D"))){
-		if(!(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2))){
-		battle_soul.dir=DIR.RIGHT
-		Anim_Create(battle_soul,"impact",0,0,0,1,0,10)
+		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		Titr_BlueSoulControl(DIR.RIGHT)
+		}else if(instance_exists(battle_enemy_anya)){
+		BlueSoulControl_Anya(DIR.RIGHT)
 		}else{
-		Titr_BlueSoulControl(DIR.RIGHT)}
+		BlueSoulControl(DIR.RIGHT)}
 	}}
 	if(keyboard_check_pressed(vk_delete)){
 		warp_battle_turn=get_integer("Battle_SetTurnNumber", Battle_GetTurnNumber())

@@ -45,6 +45,9 @@ game+=" | Phase 2"
 break
 }
 break
+case 2:
+game="Anya Forger Fight"
+break
 }
 draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift -Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
@@ -87,6 +90,9 @@ draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
 game+=" | 第2阶段"
 break
 }
+break
+case 2:
+game="Anya Forger战"
 break
 }
 draw_text(320,45,(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+Player_GetName()+"！\n[←&→-切换游戏][X/Shift-退出][C/Ctrl-商店]")

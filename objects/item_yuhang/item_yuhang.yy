@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Humans",
-    "path": "folders/Objects/Item/Humans.yy",
+    "name": "guys",
+    "path": "folders/Objects/Item/guys.yy",
   },
   "resourceVersion": "1.0",
   "name": "item_yuhang",

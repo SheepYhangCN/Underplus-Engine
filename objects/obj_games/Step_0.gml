@@ -94,4 +94,8 @@ case 1:
 phases=2
 enabled=true
 break
+case 2:
+phases=0
+enabled=true
+break
 }
