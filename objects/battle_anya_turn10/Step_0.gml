@@ -4,11 +4,13 @@ switch timer{
 	case 1:
 		alarm[0]=1
 		break
-	case 390:
+	case 330:
+		alarm[0]=-1
+		break
+	case 370:
 		targetx=80
 		Battle_SetSoul(battle_soul_red)
 		Battle_SetBoardSize(64,64,240,240,15)
-		alarm[0]=-1
 		alarm[1]=15
 		break
 	case 870:
