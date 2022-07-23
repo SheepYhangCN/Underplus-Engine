@@ -324,6 +324,10 @@ if(_state==BATTLE_STATE.DIALOG){
 
 //回合准备
 if(_state==BATTLE_STATE.TURN_PREPARATION){
+	Anim_Destroy(battle_soul,"x")
+	Anim_Destroy(battle_soul,"y")
+	battle_soul.x=battle_board.x
+	battle_soul.y=battle_board.y
 	//battle_soul.image_angle=0
 	if(Battle_IsTurnPreparationAutoEnd()){
 		if(!instance_exists(battle_dialog_enemy) && !Battle_IsBoardTransforming()){
