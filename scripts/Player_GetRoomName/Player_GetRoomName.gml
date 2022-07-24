@@ -38,28 +38,28 @@ function Player_GetRoomName() {
 	}
 	}else if(global.language=1){
 	if(ROOM="room_lobby"){
-	name="{font 3}大厅"
+	name="{font 0}大厅"
 	}
 	if(ROOM="room_logo"){
-	name="{font 3}标题画面"
+	name="{font 0}标题画面"
 	}
 	if(ROOM="room_battle"){
-	name="{font 3}战斗房间"
+	name="{font 0}战斗房间"
 	}
 	if(ROOM="room_menu"){
-	name="{font 3}菜单"
+	name="{font 0}菜单"
 	}
 	if(ROOM="room_warning"){
-	name="{font 3}光敏性癫痫警告"
+	name="{font 0}光敏性癫痫警告"
 	}
 	if(ROOM="room_gameover"){
-	name="Game Over{font 3}房间"
+	name="Game Over{font 0}房间"
 	}
 	if(ROOM="room_shop"){
-	name="{font 3}商店房间"
+	name="{font 0}商店房间"
 	}
 	if(ROOM="room_empty"){
-	name="{font 3}空房间"
+	name="{font 0}空房间"
 	}
 	if(ROOM="room_games"){
 	name="选择游戏"

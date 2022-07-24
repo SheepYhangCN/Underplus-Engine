@@ -1,4 +1,4 @@
-///@arg x*,y*,obj*,angle*,type*,width*,warning_time*,knife_time*,hit_damage
+///@arg x*,y*,obj*,angle*,type*,width*,warning_time*,knife_time*,*hit_damage
 function Battle_MakeDtKnife(){
 var _x=random_range(0,room_width)
 var _y=random_range(0,room_height)

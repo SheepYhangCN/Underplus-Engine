@@ -10,5 +10,5 @@ a=instance_create_depth(200,320,depth-1,text_typer)
 a.text="{color `white`}{speed 5}{font 1}{scale 2}{voice 1}Stay determined...&&  {choice 0} Retry          {choice 1} Give Up{instant false}{choice `CHOICE`}{pause}{choice_retry}{end}"}
 if(global.language=1){
 a=instance_create_depth(220,320,depth-1,text_typer)
-a.text="{color `white`}{speed 5}{font 3}{scale 2}{speed 8}{voice 1}保持你的决心...&& {choice 0}重试     {choice 1}放弃{instant false}{choice `CHOICE`}{pause}{choice_retry}{end}"}
+a.text="{color `white`}{speed 5}{font 0}{scale 2}{speed 8}{voice 1}保持你的决心...&& {choice 0}重试     {choice 1}放弃{instant false}{choice `CHOICE`}{pause}{choice_retry}{end}"}
 }

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "bgm_tokyovania.ogg",
-  "duration": 160.10933,
+  "soundFile": "bgm_dt_p2_main.wav",
+  "duration": 197.16,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",
   },
   "resourceVersion": "1.0",
-  "name": "bgm_tokyovania",
+  "name": "bgm_dt_p2_main",
   "tags": [],
   "resourceType": "GMSound",
 }

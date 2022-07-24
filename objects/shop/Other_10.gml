@@ -60,7 +60,7 @@ switch(_state)
 		if(global.language=0){
 			_typer_left.text+="Exit";}
 		if(global.language=1){
-			_typer_left.text+="{font 3}退出";}
+			_typer_left.text+="{font 0}退出";}
 		}
 		
 		if(_typer_right_refresh)
@@ -75,7 +75,7 @@ switch(_state)
 					if(global.language=0){
 					_typer_right.text = _pre_inst_3 + "Buy it for&" + string(_item[_index]._price_buy)+"G?& Yes& No";}
 					if(global.language=1){
-					_typer_right.text = _pre_inst_3 + "{font 3}用" + string(_item[_index]._price_buy)+"G购买吗？&& 是& 否";}
+					_typer_right.text = _pre_inst_3 + "{font 0}用" + string(_item[_index]._price_buy)+"G购买吗？&& 是& 否";}
 					break;
 				case 2:
 					_typer_right.text = _pre + _host.buy_after_text;
@@ -134,7 +134,7 @@ switch(_state)
 				if(global.language=0){
 				_typer_left.text+="Exit";}
 				if(global.language=1){
-				_typer_left.text+="{font 3}退出";}
+				_typer_left.text+="{font 0}退出";}
 			}
 			if(_typer_right_refresh)
 			{
@@ -166,8 +166,8 @@ switch(_state)
 				_typer_left.text += "Sell it for "+string(Item_GetSellGold(Item_Get(_index)))+"G?&&";
 				_typer_left.text += "  Yes      No";}
 				if(global.language=1){
-				_typer_left.text += "{font 3}以"+string(Item_GetSellGold(Item_Get(_index)))+"G卖出吗？&&";
-				_typer_left.text += "{font 3} 是       否";}
+				_typer_left.text += "{font 0}以"+string(Item_GetSellGold(Item_Get(_index)))+"G卖出吗？&&";
+				_typer_left.text += "{font 0} 是       否";}
 			}
 		}
 		if(_typer_state_refresh)
@@ -188,7 +188,7 @@ switch(_state)
 			if(global.language=0){
 			_typer_left.text += "{color `white`}Exit";}
 			if(global.language=1){
-			_typer_left.text += "{color `white`}{font 3}退出";}
+			_typer_left.text += "{color `white`}{font 0}退出";}
 		}
 		if(_typer_right_refresh)
 			_typer_right.text = _pre + _host.dialog_before_text;

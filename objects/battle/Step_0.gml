@@ -370,7 +370,7 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 		case 0:
 		text+="{font 0}* You WON!&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
 		case 1:
-		text+="{font 0}* {font 3}你赢了！&* 你获得了 {font 0}{insert EXP} EXP {font 3}和 {font 0}{insert GOLD} {font 3}金钱。"
+		text+="{font 0}* {font 0}你赢了！&* 你获得了 {font 0}{insert EXP} EXP {font 0}和 {font 0}{insert GOLD} {font 0}金钱。"
 		}
 	Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
 	Player_SetGold(Player_GetGold()+Battle_GetRewardGold());
@@ -379,7 +379,7 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 		case 0:
 		text+="&"+"{font 0}* Your LOVE increased."
 		case 1:
-		text+="&"+"{font 0}* {font 3}你的 {font 0}LOVE {font 3}增加了。"
+		text+="&"+"{font 0}* {font 0}你的 {font 0}LOVE {font 0}增加了。"
 		}
 		audio_play_sound(snd_level_up,0,false);
 	}

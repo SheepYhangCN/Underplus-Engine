@@ -23,7 +23,10 @@ switch choice{
 		Encounter_Start(5)}
 		break
 	case 2:
-	Encounter_Start(7)
+		if(phase=0){
+		Encounter_Start(7)}
+		if(phase=1){
+		room_goto(room_anya_dt2)}
 	break
 }
 }

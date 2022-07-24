@@ -15,13 +15,13 @@ Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"Clear Karma")
 Battle_SetEnemyActionInfo(_enemy_slot,2,"{color `lime`}+Full HP")
 }else if(global.language=1){
-Battle_SetEnemyName(_enemy_slot,"{font 3}敌人名称");
-Battle_SetEnemyActionName(_enemy_slot,0,"{font 3}检查")
-Battle_SetEnemyActionName(_enemy_slot,1,"{font 3}祈祷")
-Battle_SetEnemyActionName(_enemy_slot,2,"{font 3}治疗")
-Battle_SetEnemyActionInfo(_enemy_slot,0,"{font 3}查看敌人数据")
-Battle_SetEnemyActionInfo(_enemy_slot,1,"{font 3}清除{font 1}Karma")
-Battle_SetEnemyActionInfo(_enemy_slot,2,"{color `lime`}+{font 3}满{font 1}HP")
+Battle_SetEnemyName(_enemy_slot,"{font 0}敌人名称");
+Battle_SetEnemyActionName(_enemy_slot,0,"{font 0}检查")
+Battle_SetEnemyActionName(_enemy_slot,1,"{font 0}祈祷")
+Battle_SetEnemyActionName(_enemy_slot,2,"{font 0}治疗")
+Battle_SetEnemyActionInfo(_enemy_slot,0,"{font 0}查看敌人数据")
+Battle_SetEnemyActionInfo(_enemy_slot,1,"{font 0}清除{font 1}Karma")
+Battle_SetEnemyActionInfo(_enemy_slot,2,"{color `lime`}+{font 0}满{font 1}HP")
 }
 
 

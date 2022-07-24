@@ -36,7 +36,6 @@ _choice_macro="";
 
 //text_single args
 _font=0;
-_font_temp=0
 _scale_x=1;
 _scale_y=1;
 _angle=0;

@@ -127,7 +127,7 @@ function Battle_SetMenu() {
 			if(global.language=0){
 			text+="* Spare"
 			}else if(global.language=1){
-			text+="* {font 3}饶恕"
+			text+="* {font 0}饶恕"
 			}
 		
 			//逃跑是否可用

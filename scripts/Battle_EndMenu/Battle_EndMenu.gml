@@ -48,14 +48,14 @@ function Battle_EndMenu(){
 					if(global.language=0){
 					text+=choose("{font 0}* Escaped...","{font 0}* I'm outta here.","{font 0}* I've got better to do.","{font 0}* Don't slow me down.")
 					}else if(global.language=1){
-					text+=choose("{font 0}* {font 3}逃跑了...","{font 0}* {font 3}我要走了。","{font 0}* {font 3}我还有事要做。","{font 0}* {font 3}别拖我的后腿。")
+					text+=choose("{font 0}* {font 0}逃跑了...","{font 0}* {font 0}我要走了。","{font 0}* {font 0}我还有事要做。","{font 0}* {font 0}别拖我的后腿。")
 					}
 				}else{
 					text+="{define `EXP` "+string(EXP)+"}"+"{define `GOLD` "+string(GOLD)+"}";
 					if(global.language=0){
 					text+="{font 0}* Ran away with {insert EXP} EXP&  and {insert GOLD} GOLD."
 					}else if(global.language=1){
-					text+="{font 0}* {font 3}带着 {font 0}{insert EXP} EXP {font 3}和 {font 0}{insert GOLD} {font 3}金钱逃跑了。"
+					text+="{font 0}* {font 0}带着 {font 0}{insert EXP} EXP {font 0}和 {font 0}{insert GOLD} {font 0}金钱逃跑了。"
 					}
 					Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
 					Player_SetGold(Player_GetGold()+Battle_GetRewardGold());

@@ -17,9 +17,9 @@ if(_menu==0){
 		}else if(global.language=1){
 		_inst_instruction=instance_create_depth(150,0,0,text_typer);
 		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
-		_inst_begin.text=_prefix+"{font 3}开始游戏"
-		_inst_settings.text=_prefix+"{font 3}设置"
-		_inst_credits.text=_prefix+"{font 3}制作名单"
+		_inst_begin.text=_prefix+"{font 0}开始游戏"
+		_inst_settings.text=_prefix+"{font 0}设置"
+		_inst_credits.text=_prefix+"{font 0}制作名单"
 		}
 		with(text_typer){
 			event_user(15);
@@ -58,14 +58,14 @@ if(_menu==0){
 		_inst_credits.text=_prefix+"{font 1}Credits"
 		_inst_save_options.text=_prefix+"{font 1}Save Options"
 		}else if(global.language=1){
-		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 3}空");
+		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}空");
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
 		_inst_continue.text+="{color `gray`}"}
-		_inst_continue.text+="{font 3}继续"
-		_inst_reset.text=_prefix+"{font 3}重置"
-		_inst_settings.text=_prefix+"{font 3}设置"
-		_inst_credits.text=_prefix+"{font 3}制作名单"
+		_inst_continue.text+="{font 0}继续"
+		_inst_reset.text=_prefix+"{font 0}重置"
+		_inst_settings.text=_prefix+"{font 0}设置"
+		_inst_credits.text=_prefix+"{font 0}制作名单"
 		_inst_save_options.text=_prefix+"存档选项"
 		}
 		event_user(2);
@@ -121,11 +121,11 @@ if(_menu==1){
 	_inst_naming_done.text=_prefix+"Done"
 	//_inst_naming.text=_prefix+"{font 1}Press Enter to Done&Press Backspace to Backspace&Press Esc to Quit"
 	}else if(global.language=1){
-	_inst_naming_title.text=_prefix+"{font 3}请输入你的名字。"
-	_inst_naming_quit.text=_prefix+"{font 3}退出"
-	_inst_naming_backspace.text=_prefix+"{font 3}退格"
-	_inst_naming_done.text=_prefix+"{font 3}完成"
-	//_inst_naming.text=_prefix+"{font 3}按下 回车 完成&按下 退格键 退格&按下 {font 1}Esc{font 3} 退出"
+	_inst_naming_title.text=_prefix+"{font 0}请输入你的名字。"
+	_inst_naming_quit.text=_prefix+"{font 0}退出"
+	_inst_naming_backspace.text=_prefix+"{font 0}退格"
+	_inst_naming_done.text=_prefix+"{font 0}完成"
+	//_inst_naming.text=_prefix+"{font 0}按下 回车 完成&按下 退格键 退格&按下 {font 1}Esc{font 0} 退出"
 	}
 	with(text_typer){
 		event_user(15);
@@ -162,8 +162,8 @@ if(_menu==2){
 	_inst_confirm_no.text=_prefix+"{font 1}No"
 	_inst_confirm_yes.text=_prefix+"{font 1}Yes"
 	}else if(global.language=1){
-	_inst_confirm_no.text=_prefix+"{font 3}否"
-	_inst_confirm_yes.text=_prefix+"{font 3}是"
+	_inst_confirm_no.text=_prefix+"{font 0}否"
+	_inst_confirm_yes.text=_prefix+"{font 0}是"
 	}
 	_confirm_name_x=280;
 	_confirm_name_y=72;

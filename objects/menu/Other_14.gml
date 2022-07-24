@@ -143,7 +143,7 @@ switch(string_lower(_naming_name)){
 }else if(global.language=1){
 switch(string_lower(_naming_name)){
 	default:
-		text="{font 3}是这个名字没错吗?"
+		text="{font 0}是这个名字没错吗?"
 		break;
 	case "yuhang":
 		if(global.debug=0){
@@ -165,25 +165,25 @@ switch(string_lower(_naming_name)){
 	case "123456":
 	case "654321":
 	case "147258":
-		text="{font 3}不是很有创造性...?"
+		text="{font 0}不是很有创造性...?"
 		break;
 	case "frisk":
-		text="{font 3}提示:请使用{font 0}Delete{font 3}键&来开关困难模式"
+		text="{font 0}提示:请使用{font 0}Delete{font 0}键&来开关困难模式"
 		global.hardmode=1;
 		break;
 	case "":
-		text="{font 3}噢我的天哪那可真是个好名字&真的太棒了我爱死这个名字了"
+		text="{font 0}噢我的天哪那可真是个好名字&真的太棒了我爱死这个名字了"
 		break;
 	case "gms":
 	case "gms2":
 	case "gml":
 	case "yyg":
 	case "yygame":
-		text="{font 0}YoYoGames{font 3}给爷死{font 0}!"
+		text="{font 0}YoYoGames{font 0}给爷死{font 0}!"
 		break;
 	case "tml":
 	case "ute":
-		text="{font 0}UNDERTALE Engine{font 3}永远滴神{font 0}!"
+		text="{font 0}UNDERTALE Engine{font 0}永远滴神{font 0}!"
 		break;
 	case "sb":
 	case "shabi":
@@ -201,7 +201,7 @@ switch(string_lower(_naming_name)){
 	case "cnm":
 	case "naotan":
 	case "wdnmd":
-		text="{font 3}这可太有素质了"
+		text="{font 0}这可太有素质了"
 		break;
 	case "dick":
 	case "penis":
@@ -210,7 +210,7 @@ switch(string_lower(_naming_name)){
 	case "ass":
 	case "butt":
 	case "jiba":
-		text="{font 3}¿你不对劲"
+		text="{font 0}¿你不对劲"
 		break;
 	case "kris":
 	case "susie":
@@ -220,7 +220,7 @@ switch(string_lower(_naming_name)){
 		text="{font 0}{scale 2.5}<DELTARUNE>"
 		break;
 	case "player":
-		text="{font 3}你。"
+		text="{font 0}你。"
 		break;
 	case "ptfk":
 		text="我趣事拼图方块大跌11111"

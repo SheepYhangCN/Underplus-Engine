@@ -1,3 +1,4 @@
+if(battle_soul._inv=0){
 if(global.shielding=0){
 if (type == 0){
 	Battle_CallSoulEventHurt();
@@ -17,3 +18,4 @@ if (type == 3){
 	audio_play_sound(snd_item_heal,0,0)}
 	}else{
 	audio_play_sound(snd_ding,0,0)}
+}

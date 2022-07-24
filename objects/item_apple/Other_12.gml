@@ -2,7 +2,7 @@
 if(global.language=0){
 	Dialog_Add("{font 0}* You throw Apple away.")
 }else if(global.language=1){
-	Dialog_Add("{font 0}* {font 3}你扔掉了苹果。")
+	Dialog_Add("{font 0}* {font 0}你扔掉了苹果。")
 }
 Dialog_Start();
 

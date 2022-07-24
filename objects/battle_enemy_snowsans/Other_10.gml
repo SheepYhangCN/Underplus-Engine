@@ -24,11 +24,11 @@ Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
 Battle_SetEnemyName(_enemy_slot,"{font 0}Sans");
 if(global.mode=1){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
-Battle_SetEnemyActionName(_enemy_slot,1,"{font 3}治疗")
-Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+{font 3}满{font 1}HP")
+Battle_SetEnemyActionName(_enemy_slot,1,"{font 0}治疗")
+Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+{font 0}满{font 1}HP")
 }
-Battle_SetEnemyActionName(_enemy_slot,0,"{font 3}检查")
-Battle_SetEnemyActionInfo(_enemy_slot,0,"{font 3}查看敌人数据")
+Battle_SetEnemyActionName(_enemy_slot,0,"{font 0}检查")
+Battle_SetEnemyActionInfo(_enemy_slot,0,"{font 0}查看敌人数据")
 
 }
 Battle_SetPlayerTempAtk(9999999999);

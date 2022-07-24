@@ -24,7 +24,7 @@ if(_state==0){
 	if(global.language=0){
 	_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 1}EMPTY")
 	}else if(global.language=1){
-	_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 3}空")
+	_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}空")
 	}
 	
 	_inst_lv=instance_create_depth(108+6+180,118+6+16,0,text_typer);
@@ -50,10 +50,10 @@ if(_state==0){
 	_inst_return.text=_prefix+"{font 1}Return"
 	}else if(global.language=1){
 	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
-	_inst_save.text=_prefix+"{font 3}保存"
+	_inst_save.text=_prefix+"{font 0}保存"
 	}else{
-	_inst_save.text=_prefix+"{font 3}覆盖"}
-	_inst_return.text=_prefix+"{font 3}返回"
+	_inst_save.text=_prefix+"{font 0}覆盖"}
+	_inst_return.text=_prefix+"{font 0}返回"
 	}
 }
 if(_state==1){
@@ -68,9 +68,9 @@ if(_state==1){
 	_inst_save.text=_prefix+"{color `yellow`}{font 1}File Overwrited."}
 	}else if(global.language=1){
 	if(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,-1)=-1){
-	_inst_save.text=_prefix+"{color `yellow`}{font 3}档案已储存。"
+	_inst_save.text=_prefix+"{color `yellow`}{font 0}档案已储存。"
 	}else{
-	_inst_save.text=_prefix+"{color `yellow`}{font 3}档案已覆盖。"}
+	_inst_save.text=_prefix+"{color `yellow`}{font 0}档案已覆盖。"}
 	}
 	//Flag_SetSaveSlot(_slot)
 	Player_Save(Flag_GetSaveSlot());
@@ -97,7 +97,7 @@ if(_state==1){
 	if(global.language=0){
 	_inst_name.text=_prefix+"{color `yellow`}"+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 1}EMPTY");
 	}else if(global.language=1){
-	_inst_name.text=_prefix+"{color `yellow`}"+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 3}空");
+	_inst_name.text=_prefix+"{color `yellow`}"+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}空");
 	}
 	
 	_inst_lv=instance_create_depth(108+6+180,118+6+16,0,text_typer);

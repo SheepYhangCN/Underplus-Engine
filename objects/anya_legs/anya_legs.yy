@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_anyya_legs",
-    "path": "sprites/spr_anyya_legs/spr_anyya_legs.yy",
+    "name": "spr_anya_legs",
+    "path": "sprites/spr_anya_legs/spr_anya_legs.yy",
   },
   "solid": false,
   "visible": true,

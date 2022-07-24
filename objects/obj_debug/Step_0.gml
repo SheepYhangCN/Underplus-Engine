@@ -107,33 +107,33 @@ if(keyboard_check_pressed(vk_escape)){
 if(Player_IsInBattle()){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
 	if(keyboard_check_pressed(ord("W"))){
-		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		if(instance_exists(titr_body)){
 		Titr_BlueSoulControl(DIR.UP)
-		}else if(instance_exists(battle_enemy_anya)){
+		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
 	if(keyboard_check_pressed(ord("A"))){
-		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		if(instance_exists(titr_body)){
 		Titr_BlueSoulControl(DIR.LEFT)
-		}else if(instance_exists(battle_enemy_anya)){
+		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
 	if(keyboard_check_pressed(ord("S"))){
-		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		if(instance_exists(titr_body)){
 		Titr_BlueSoulControl(DIR.DOWN)
-		}else if(instance_exists(battle_enemy_anya)){
+		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
 	if(keyboard_check_pressed(ord("D"))){
-		if(instance_exists(battle_enemy_snowsans)||instance_exists(battle_enemy_snowsans_p2)){
+		if(instance_exists(titr_body)){
 		Titr_BlueSoulControl(DIR.RIGHT)
-		}else if(instance_exists(battle_enemy_anya)){
+		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}

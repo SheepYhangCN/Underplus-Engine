@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},"LayerId":{"name":"83775ef7-5e06-4a8d-9a71-4495a51b7a4b","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_anyya_legs","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},"resourceVersion":"1.0","name":"129d2491-56ae-440b-89af-c0a09ab59e7b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},"LayerId":{"name":"83775ef7-5e06-4a8d-9a71-4495a51b7a4b","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_anya_legs","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},"resourceVersion":"1.0","name":"129d2491-56ae-440b-89af-c0a09ab59e7b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_anyya_legs","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},
+    "spriteId": {"name":"spr_anya_legs","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ed885532-444e-4f2d-b0e0-cdb56dad426c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
+            {"id":"ed885532-444e-4f2d-b0e0-cdb56dad426c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"129d2491-56ae-440b-89af-c0a09ab59e7b","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 25,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_anyya_legs","path":"sprites/spr_anyya_legs/spr_anyya_legs.yy",},
+    "parent": {"name":"spr_anya_legs","path":"sprites/spr_anya_legs/spr_anya_legs.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_anyya_legs",
+    "name": "spr_anya_legs",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Battle/Enemy/anya.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_anyya_legs",
+  "name": "spr_anya_legs",
   "tags": [],
   "resourceType": "GMSprite",
 }

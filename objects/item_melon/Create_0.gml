@@ -1,3 +1,3 @@
 event_inherited();
 
-_name="{font 3}西瓜{font 0}"
+_name="{font 0}西瓜{font 0}"

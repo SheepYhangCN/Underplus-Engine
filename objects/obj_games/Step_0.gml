@@ -95,7 +95,7 @@ phases=2
 enabled=true
 break
 case 2:
-phases=0
+phases=1
 enabled=true
 break
 }

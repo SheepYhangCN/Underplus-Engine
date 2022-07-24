@@ -19,8 +19,8 @@ switch timer{
 	case 519:
 		a=instance_create_depth(420, 110, 0, battle_dialog_enemy)
 		if(global.language=0){
-		a.text="{font 4}{scale 1}{voice 0}you are {color `blue`}blue{color `black`} now,{sleep 15}&this is my special attack!{pause}{end_turn}{end}"
+		a.text="{font 3}{scale 1}{voice 0}you are {color `blue`}blue{color `black`} now,{sleep 15}&this is my special attack!{pause}{end_turn}{end}"
 		}else if(global.language=1){
-		a.text="{font 5}{speed 5}{scale 1}{voice 0}你现在是{color `blue`}蓝{color `black`}的啦，{sleep 15}&这就是我的特殊攻击!{pause}{end_turn}{end}"}
+		a.text="{font 3}{speed 5}{scale 1}{voice 0}你现在是{color `blue`}蓝{color `black`}的啦，{sleep 15}&这就是我的特殊攻击!{pause}{end_turn}{end}"}
 		break
 }

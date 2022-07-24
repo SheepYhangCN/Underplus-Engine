@@ -23,10 +23,14 @@ _hpmax = 1
 Player_SetLv(1)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
-Battle_SetPlayerTempInv(60)
 if(global.mode=2){
+Battle_SetPlayerTempInv(45)
 Battle_SetEnemyAtk(6)
+}else if(global.mode=1){
+Battle_SetPlayerTempInv(75)
+Battle_SetEnemyAtk(2)
 }else{
+Battle_SetPlayerTempInv(60)
 Battle_SetEnemyAtk(4)}
 Battle_SetMenuMercyFleeEnabled(false)
 var a=0

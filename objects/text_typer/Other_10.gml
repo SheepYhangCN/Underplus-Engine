@@ -4,29 +4,21 @@ var font=0;
 if(ord(_char)<128){
 	font=0;
 }else{
-	font=1
-}
-
-if(_font=3&&ord(_char)<128&&enemy_dialog=false){
-	_font_temp=0
-}else if(_font=3&&ord(_char)<128&&enemy_dialog=true){
-	_font_temp=2
-}else{
-	_font_temp=_font
+	font=1;
 }
 
 if(_char!=" "&&_char!="　"){
-	draw_set_font(_group_font[_font_temp,0]);
+	draw_set_font(_group_font[_font,0]);
 	var H1=string_height(" ");
-	draw_set_font(_group_font[_font_temp,font]);
+	draw_set_font(_group_font[_font,font]);
 	var H2=string_height(" ");
 	var OFFSET=(H1-H2)/2*_scale_y;
 	
 	var INST=instance_create_depth(x+_char_x,y+_char_y+OFFSET,depth,text_single);
-	INST.font=_group_font[_font_temp,font]
-	INST.scale_x=_scale_x*_group_font_scale_x[_font_temp,font]
-	INST.scale_y=_scale_y*_group_font_scale_y[_font_temp,font]
 	INST.text=_char;
+	INST.font=_group_font[_font,font];
+	INST.scale_x=_scale_x*_group_font_scale_x[_font,font];
+	INST.scale_y=_scale_y*_group_font_scale_y[_font,font];
 	INST.angle=_angle;
 	INST.shadow=_shadow;
 	INST.outline=_outline;
@@ -73,8 +65,8 @@ if(_char!=" "&&_char!="　"){
 	}
 }
 
-draw_set_font(_group_font[_font_temp,font]);
-_char_x+=((sprite_exists(_char_sprite) ? sprite_get_width(_char_sprite) : string_width(_char))+_group_font_space_x[_font_temp,font]+_space_x)*_group_font_scale_x[_font_temp,font]*_scale_x;
+draw_set_font(_group_font[_font,font]);
+_char_x+=((sprite_exists(_char_sprite) ? sprite_get_width(_char_sprite) : string_width(_char))+_group_font_space_x[_font,font]+_space_x)*_group_font_scale_x[_font,font]*_scale_x;
 
 if(width<_char_x){
 	width=_char_x;

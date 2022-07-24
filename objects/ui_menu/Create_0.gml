@@ -14,7 +14,7 @@ _choice_item_operate=0;
 _choice_phone=0;
 
 _prefix="{shadow false}{skipping 1}{scale 2}{font 1}{instant true}{gui true}{depth "+string(DEPTH_UI.TEXT)+"}";
-//_prefix="{shadow false}{scale 1.75}{font 3}{instant true}{gui true}{depth "+string(DEPTH_UI.TEXT)+"}";
+//_prefix="{shadow false}{scale 1.75}{font 0}{instant true}{gui true}{depth "+string(DEPTH_UI.TEXT)+"}";
 _inst_name=noone;
 _inst_menu=noone;
 _inst_item=noone;
@@ -33,10 +33,10 @@ _inst_menu=instance_create_depth(32+6+46,168+6+14,0,text_typer);
 if(global.language=0){
 _phone="CELL"}
 if(global.language=1){
-_phone="{font 3}电话"}
+_phone="{font 0}电话"}
 if(global.language=0){
 _inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+"{font 1}ITEM"+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+"{font 1}STAT"+(Phone_GetNumber()>0 ? "&"+_phone : "");
 }else if(global.language=1){
-_inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+"{font 3}物品"+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+"{font 3}统计"+(Phone_GetNumber()>0 ? "&"+_phone : "");
+_inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+"{font 0}物品"+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+"{font 0}统计"+(Phone_GetNumber()>0 ? "&"+_phone : "");
 }
 audio_play_sound(snd_menu_switch,0,false);
