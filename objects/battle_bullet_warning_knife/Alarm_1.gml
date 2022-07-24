@@ -1,6 +1,6 @@
 if(battle_soul._inv=0){
 if(global.shielding=0){
-if (type == 0){
+if (type == 0||type=4){
 	Battle_CallSoulEventHurt();
     Player_Hurt(hit_damage);}
 if (type == 1){
