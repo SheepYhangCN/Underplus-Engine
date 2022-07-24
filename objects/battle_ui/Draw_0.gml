@@ -32,8 +32,13 @@ if(global.kr=1){
 }else if(global.kr=0){
 draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(Player_GetHpMax()));}
 
-	if(global.shield=1){
-		if(global.kr=1){
+	if(global.shield=true){
+		draw_sprite_ext(spr_pixel,0,x+245,y-1+21,Player_GetHpMax()*1.25,5,0,make_color_rgb(192,0,0),1);
+        if(global.shield_useable == true){
+		draw_sprite_ext(spr_pixel,0,x+245,y-1+21,(Player_GetHpMax()*1.25)/120*global.shieldval,5,0,c_lime,1);
+		}else{
+		draw_sprite_ext(spr_pixel,0,x+245,y-1+21,(Player_GetHpMax()*1.25)/120*global.shieldval,5,0,make_color_rgb(255,255,255),1);}
+		/*if(global.kr=1){
         if(global.shield_useable == 1)
         {
             draw_sprite_ext(spr_pixel, 0, (((x + 245) + (Player_GetHpMax() * 1.25)) + 150), y, 80, 21, 0, make_color_rgb(192, 0, 0), 1)
@@ -53,8 +58,8 @@ draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(
         {
             draw_sprite_ext(spr_pixel, 0, (((x + 245) + (Player_GetHpMax() * 1.25)) + 130), y, 80, 21, 0, make_color_rgb(192, 0, 0), 1)
             draw_sprite_ext(spr_pixel, 0, (((x + 245) + (Player_GetHpMax() * 1.25)) + 130), y, (global.shieldval / 1.5), 21, 0, make_color_rgb(255, 255, 255), 1)
-        }}
-        if((!keyboard_check(vk_space)) || global.shield_useable == 0)
+        }}*/
+        if((!keyboard_check(ord("C"))) || global.shield_useable == false)
         {
             if(global.shieldval < 120){
 			if(global.mode=0){
@@ -64,10 +69,9 @@ draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(
 			if(global.mode=2){
                 global.shieldval += 1}
 			}
+			global.shielding=false
         }
-        if(global.shieldval > 120){
-            global.shieldval = 120}
-        if(keyboard_check(vk_space) && global.shield_useable == 1 && global.shieldval > 0)
+        if(keyboard_check(ord("C")) && global.shield_useable == true && global.shieldval > 0)
         {
 			if(global.mode=0){
             global.shieldval -= 2}
@@ -75,13 +79,13 @@ draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(
             global.shieldval -= 1}
 			if(global.mode=2){
             global.shieldval -= 3}
-            global.shielding = 1
+            global.shielding = true
         }
-        else{
-            global.shielding = 0}
+        if(global.shieldval > 120){
+            global.shieldval = 120}
+        if(global.shieldval < 0){
+            global.shieldval = 0}
     }
-	
-	ca++;
 /*
 var color = c_white
 var kr_space = ""
