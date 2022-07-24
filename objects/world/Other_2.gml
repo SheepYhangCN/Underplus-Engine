@@ -17,7 +17,6 @@ if(os_is_network_connected()=true){
 np_initdiscord("",true,0)
 np_update()
 }
-alarm[0]=1
 
 Anim_Init();
 
