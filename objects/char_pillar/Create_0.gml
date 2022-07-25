@@ -1,0 +1,2 @@
+dx = x
+depth = DEPTH_OVERWORLD.COVER_PLAYER

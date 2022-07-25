@@ -17,10 +17,7 @@ Anim_Create(titr_body,"image_index",0,0,6,-6,0,30)
 }
 BlueSoulControl(argument[0])
 titr_head.sprite_index=spr_sans_blue_eyes
-titr_head.alarm_time=10
-titr_head.alarm[0]=10
-Anim_Create(titr_head,"alarm_time",0,0,10,-11,0,28)
 Anim_Create(titr_head,"sprite_index",0,0,spr_sans_blue_eyes,spr_sans_face-spr_sans_blue_eyes,0,30)
-Anim_Create(titr_head,"image_index",0,0,titr_head.image_index,-titr_head.image_index,0,31)
+Anim_Create(titr_head,"image_index",0,0,0,0,0,31)
 return
 }

@@ -86,16 +86,20 @@ default:
 phases=0
 enabled=true
 break
-case 0:
+case 0://教程
 phases=0
 enabled=false
 break
-case 1:
+case 1://雪镇杉
 phases=2
 enabled=true
 break
-case 2:
+case 2://阿尼亚
 phases=1
 enabled=true
+break
+case 3://原杉
+phases=2
+enabled=false
 break
 }

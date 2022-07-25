@@ -3,7 +3,7 @@ y = Battle_GetEnemyCenterPosY(_enemy_slot)
 Battle_SetEnemySpareable(_enemy_slot,0);
 Battle_SetEnemyActionNumber(_enemy_slot,0);
 Battle_SetEnemyName(_enemy_slot,"Anya")
-
+audio_stop_all()
 Battle_SetEnemyDEF(_enemy_slot,1);
 _hp = 1
 _hpmax = 1
@@ -26,6 +26,7 @@ body = instance_create_depth(x, y-5, 0, anya_body)
 legs = instance_create_depth(x, y+25, 0, anya_legs)
 animsin = 0
 sinn = 2
+audio_main=audio_play_sound(bgm_dt_p2_main,0,1)
 alarm[2]=1
 var ba=instance_create_depth(0,room_height,0,battle_bg)
 ba.image_blend=c_purple

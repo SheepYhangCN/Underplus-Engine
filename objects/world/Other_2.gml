@@ -13,10 +13,6 @@ global.tas=false
 room_speed=60
 //cursor_sprite=spr_cursor
 window_set_size(640,480)
-if(os_is_network_connected()=true){
-np_initdiscord("",true,0)
-np_update()
-}
 
 Anim_Init();
 

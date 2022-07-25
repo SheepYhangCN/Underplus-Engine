@@ -55,8 +55,31 @@ if(phase=1){
 draw_sprite(spr_anya_face,1,320+2,220-50)
 game="Anya think she is dt2"}
 break
+case 3:
+draw_text_transformed(320,430,"Use Up and Down arrow keys to switch phase",2,2,0)
+game="Classic! Sans Fight Remake"
+switch phase{
+case 0:
+draw_sprite_ext(spr_bg_sanscorridor_full_cut,0,320-3,220-7,418/480,198/240,0,c_white,1)
+game+=" | Corridor"
+break
+case 1:
+draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+game+=" | Phase 1"
+break
+case 2:
+draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+game+=" | Phase 2"
+break
 }
-draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift -Quit][C/Ctrl - Shop]",2,2,0)
+break
+}
+draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift - Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
 if(enabled){
 draw_text_transformed(320,400,"Press Z or Enter to start",2,2,0)
@@ -108,8 +131,31 @@ if(phase=1){
 draw_sprite(spr_anya_face,1,320+2,220-50)
 game="阿尼亚觉得她是dt2"}
 break
+case 3:
+draw_text(320,435,"使用上下方向键切换阶段")
+game="原版Sans战重制"
+switch phase{
+case 0:
+draw_sprite_ext(spr_bg_sanscorridor_full_cut,0,320-3,220-7,418/480,198/240,0,c_white,1)
+game+=" | 长廊"
+break
+case 1:
+draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+game+=" | 第1阶段"
+break
+case 2:
+draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+game+=" | 第2阶段"
+break
 }
-draw_text(320,45,(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+Player_GetName()+"！\n[←&→-切换游戏][X/Shift-退出][C/Ctrl-商店]")
+break
+}
+draw_text(320,45,(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+Player_GetName()+"！\n[←&→-切换游戏][X/Shift-退出][C/Ctrl-商店]")
 draw_text(320,375,game)
 if(enabled){
 draw_text(320,405,"按下Z或Enter来开始")

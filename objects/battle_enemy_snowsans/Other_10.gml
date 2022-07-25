@@ -10,6 +10,7 @@ Battle_SetMenuMercyFleeEnabled(0);
 global.kr=0
 Player_SetKR(0)
 alarm[1]=1
+Battle_SetEnemyAtk(1)
 Battle_SetEnemyActionNumber(_enemy_slot,1);
 if(global.language=0){
 Battle_SetEnemyName(_enemy_slot,"{font 0}Sans");

@@ -5,6 +5,9 @@ Player_SetKR(0)
 alarm[1]=1
 _hp=1
 _hpmax=1
+audio_stop_all()
+global.shield=true
+global.shield_useable=true
 Battle_SetEnemyActionNumber(_enemy_slot,3);
 if(global.language=0){
 Battle_SetEnemyName(_enemy_slot,"Enemy Name");

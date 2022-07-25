@@ -718,6 +718,14 @@ switch(cmd[|0]){
 	case "ui_save":
 		instance_create_depth(0,0,0,ui_save)
 	break
+	case "choice_back_lobby":
+        choice=Player_GetTextTyperChoice()
+		if(choice=0){
+		fader.color=c_black
+		Fader_Fade(0,1,29)
+		char_player.alarm[1]=30
+		}
+	break
 //==================================================
 	case "titr_face":
 		if(is_real(cmd[|1])&&instance_exists(titr_head)){

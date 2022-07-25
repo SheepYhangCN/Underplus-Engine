@@ -1,7 +1,7 @@
 ///@desc Use
 //Dialog_Add("* You ate TML.&{sleep 20}* Undertale Engine Forever!&{sleep 20}* Your HP is maxed out.");
 var a=irandom_range(1,3)
-if(Player_IsInBattle()){
+if(Player_IsInBattle()&&global.kr!=true){
 if(global.language=0){
 	Dialog_Add("* You ate Ptfk.{sleep 20}&* You lost 1 HP.{pause}{clear}* You have "+string(a)+" frame more&  invincible time now!")
 }else if(global.language=1){
@@ -18,7 +18,7 @@ Dialog_Start();
 
 Player_Hurt(1);
 
-if(Player_IsInBattle()){Battle_SetPlayerTempInv(Battle_GetPlayerTempInv()+a)}
+if(Player_IsInBattle()&&global.kr!=true){Battle_SetPlayerTempInv(Battle_GetPlayerTempInv()+a)}
 
 Item_Remove(_item_slot);
 

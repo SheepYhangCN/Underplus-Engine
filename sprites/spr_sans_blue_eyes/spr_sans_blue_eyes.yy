@@ -35,7 +35,7 @@
     "spriteId": {"name":"spr_sans_blue_eyes","path":"sprites/spr_sans_blue_eyes/spr_sans_blue_eyes.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

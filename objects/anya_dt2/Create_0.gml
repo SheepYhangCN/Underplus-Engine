@@ -3,7 +3,7 @@ spr=4
 Anim_Create(fader,"alpha",0,0,fader.alpha,-fader.alpha,1)//fader.alpha=0
 temp=0
 audio_stop_all()
-audio_play_sound(bgm_dt_p2_intro,0,0)
+main_audio=audio_play_sound(bgm_dt_p2_intro,0,0)
 a=instance_create_depth(5,5,0,text_typer)
 if(global.language=1){
 a.text="{scale 1}{skippable false}{instant true}按C跳过"}
@@ -26,3 +26,4 @@ alarm[0]=490
 alarm[2]=925
 alarm[4]=1
 alarm[6]=875
+audio=0
