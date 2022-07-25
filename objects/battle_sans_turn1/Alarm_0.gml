@@ -2,4 +2,9 @@ Battle_MakeBoneBottom(battle_board.x-240,20,3,0,0,0,1)
 Battle_MakeBoneTop(battle_board.x-240,60,3,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x+240,20,-3,0,0,0,1)
 Battle_MakeBoneTop(battle_board.x+240,60,-3,0,0,0,1)
-alarm[0]=50
+Battle_MakeBoneLeft(battle_board.y-64,480,5,1,0,0,1)
+if(global.mode=2){
+alarm[2]=30
+alarm[1]=60
+}else{
+alarm[0]=50}

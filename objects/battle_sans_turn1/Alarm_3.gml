@@ -1,0 +1,1 @@
+Titr_BlueSoulControl(DIR.UP)

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_science_gb.wav",
-  "duration": 0.894535,
+  "soundFile": "snd_science_gb_shoot.wav",
+  "duration": 2.331701,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_science_gb",
+  "name": "snd_science_gb_shoot",
   "tags": [],
   "resourceType": "GMSound",
 }

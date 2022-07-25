@@ -13,8 +13,5 @@ beam_time = 20
 destroy = 0
 type=choose(0,1,2,3)
 audio_play_sound(snd_gb_charge, 0, false)
-/*audio_stop_sound(snd_science_gb);
-audio_play_sound(snd_science_gb,0,0);
-audio_sound_gain(snd_science_gb,0.5,0)*/
 a=noone
 b=noone

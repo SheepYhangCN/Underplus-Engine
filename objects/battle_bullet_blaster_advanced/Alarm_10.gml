@@ -4,8 +4,7 @@ Anim_Create(id,"x",4,1,x,x_target-x,move_time);
 Anim_Create(id,"y",4,1,y,y_target-y,move_time);
 audio_stop_sound(snd_gb_charge);
 audio_play_sound(snd_gb_charge,0,0);
-/*audio_stop_sound(snd_science_gb);
-audio_play_sound(snd_science_gb,0,0);
-audio_sound_gain(snd_science_gb,0.5,0)*/
+//audio_stop_sound(snd_science_gb_intro);
+//audio_play_sound(snd_science_gb_intro,0,0);
 alarm[1]=move_time+fire_pause_time+1;
 Anim_Create(id,"_exit_speed",_exit_anim_tween,_exit_anim_ease,_exit_speed_initial,_exit_speed_end-_exit_speed_initial,_exit_speed_add_time,move_time+fire_pause_time+((index_fire_pause_change_time/3)*2));

@@ -4,6 +4,7 @@ switch timer{
 	case 1:
 		Titr_BlueSoulControl(DIR.DOWN)
 		Battle_MakeBoneWallBottom(30,55,20)
+		if(global.mode=2){Battle_MakeBoneWallTop(30,55,20)}
 		break
 	case 60:
 		Battle_SetSoul(battle_soul_red)
@@ -15,22 +16,22 @@ switch timer{
 		alarm[0]=-1
 		break
 	case 260:
-		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,2,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,gbscale,2,0,30,spr_blaster,20,15)
 		break
 	case 320:
-		Blaster_Create_Advanced(0,0,240,240,0,45-90,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,400,240,0,-45-90,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,240,400,0,135-90,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,400,400,0,-135-90,2,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,240,240,0,45-90,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,400,240,0,-45-90,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,240,400,0,135-90,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,400,400,0,-135-90,gbscale,2,0,30,spr_blaster,20,15)
 		break
 	case 380:
-		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,2,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,2,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,gbscale,2,0,30,spr_blaster,20,15)
+		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,gbscale,2,0,30,spr_blaster,20,15)
 		break
 	case 440:
 		Blaster_Create_Advanced(0,0,200,battle_board.y,0,90-90,4,2,0,40,spr_blaster,20,35)

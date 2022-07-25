@@ -11,3 +11,4 @@ _dialog.text="{font 3}{scale 1}{voice 3}{titr_face 3}it's beautiful day outside.
 }else if(global.language=1){
 _dialog.text="{font 3}{speed 5}{scale 1}{voice 3}{titr_face 3}今日多么美好。{pause}{clear}{titr_face 1}鸟儿歌唱，{sleep 20}&花儿绽放。{pause}{clear}{titr_face 0}在日子如此，{sleep 20}&{titr_face 3}小鬼如你，{pause}{clear}{skippable false}{black_cut 20}{titr_face 4}{audio_stop `bgm_bird`}{sleep 20}{skippable true}{font 2}{scale 1.4}{voice -1}应当焚身于&地狱烈火之中。"
 }
+if(global.mode=2){gbscale=2.6}else{gbscale=2}

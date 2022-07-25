@@ -12,5 +12,7 @@ temp=1}
 if(basey<=280){
 temp=0}
 
-
-alarm[0]=8
+if(global.mode=2){
+alarm[0]=6
+}else{
+alarm[0]=8}

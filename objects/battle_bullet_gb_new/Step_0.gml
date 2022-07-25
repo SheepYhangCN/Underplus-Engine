@@ -45,6 +45,7 @@ if (image_index == 3)
     b.time_start = beam_time
 	b.type=type
     alarm[1] = 1
+	audio_play_sound(snd_science_gb_shoot,0,0);
     audio_play_sound(snd_gb_release, 0, false)
     //Camera_Shake(4, 4, 2, 2)
 }
