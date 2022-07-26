@@ -102,4 +102,8 @@ case 3://原杉
 phases=2
 enabled=false
 break
+case 4://starry杉
+phases=0
+enabled=false
+break
 }

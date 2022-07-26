@@ -10,7 +10,12 @@ Anim_Create(titr_body,"image_index",0,0,0,2,0)
 Anim_Create(titr_body,"image_index",0,0,2,2,0,5)
 Anim_Create(titr_body,"image_index",0,0,4,-4,0,30)
 }
-if(argument[0]=DIR.LEFT||argument[0]=DIR.RIGHT){
+if(argument[0]=DIR.LEFT){
+Anim_Create(titr_body,"image_index",0,0,0,6,0)
+Anim_Create(titr_body,"image_index",0,0,6,-1,0,5)
+Anim_Create(titr_body,"image_index",0,0,5,-5,0,30)
+}
+if(argument[0]=DIR.RIGHT){
 Anim_Create(titr_body,"image_index",0,0,0,5,0)
 Anim_Create(titr_body,"image_index",0,0,5,1,0,5)
 Anim_Create(titr_body,"image_index",0,0,6,-6,0,30)

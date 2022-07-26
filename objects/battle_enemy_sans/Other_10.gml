@@ -5,9 +5,9 @@ Battle_SetMenuMercyFleeEnabled(0);
 global.kr=1
 Player_SetKR(0)
 alarm[1]=1
+Battle_SetEnemyName(_enemy_slot,"Sans");
 Battle_SetEnemyActionNumber(_enemy_slot,1);
 if(global.language=0){
-Battle_SetEnemyName(_enemy_slot,"{font 0}Sans");
 if(global.mode=1){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"Heal")
@@ -16,7 +16,6 @@ Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+Full HP")
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
 }else if(global.language=1){
-Battle_SetEnemyName(_enemy_slot,"Sans");
 if(global.mode=1){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"治疗")

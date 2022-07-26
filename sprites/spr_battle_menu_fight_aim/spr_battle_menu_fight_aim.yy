@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_battle_menu_fight_aim","path":"sprites/spr_battle_menu_fight_aim/spr_battle_menu_fight_aim.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "spr_battle_menu_fight_aim",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -1,5 +1,5 @@
 fader.color=c_white
-spr=4
+spr=1
 Anim_Create(fader,"alpha",0,0,fader.alpha,-fader.alpha,1)//fader.alpha=0
 temp=0
 audio_stop_all()

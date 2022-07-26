@@ -7,6 +7,7 @@ function Encounter_Custom() {
 	Encounter_Set(7,-1,battle_enemy_anya,-1,"* Anya blocked your way!",bgm_anya)
 	Encounter_Set(8,-1,battle_enemy_anya_dt2,-1,"")
 	Encounter_Set(9,-1,battle_enemy_sans,-1,"* You feel like you're going to&  have a \"bone\" time.")
+	Encounter_Set(10,-1,battle_enemy_starry_sans,-1,"{color `red`}* Why is he here? Kill him=)")
 	}else if(global.language=1){
 	Encounter_Set(0,-1,battle_enemy,-1,"* {font 0}测试战斗");
 	Encounter_Set(1,-1,battle_enemy_tutorial,-1,"* 你遇见了个敌人！",bgm_shop);
@@ -15,5 +16,6 @@ function Encounter_Custom() {
 	Encounter_Set(7,-1,battle_enemy_anya,-1,"* Anya挡住了去路!",bgm_anya)
 	Encounter_Set(8,-1,battle_enemy_anya_dt2,-1,"")
 	Encounter_Set(9,-1,battle_enemy_sans,-1,"* 你感觉你要吃“骨”头了。")
+	Encounter_Set(10,-1,battle_enemy_starry_sans,-1,"{color `red`}* 他为什么会出现在这里? 杀了他=)")
 	}
 }

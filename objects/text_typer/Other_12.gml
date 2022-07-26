@@ -752,4 +752,14 @@ switch(cmd[|0]){
 			utse_pap_head.image_index=cmd[|1]
 		}
 		break
+	case "starry_face":
+		if(is_real(cmd[|1])&&instance_exists(starry_sans_head)){
+			starry_sans_head.image_index=cmd[|1]
+		}
+		break
+	case "starry_body":
+		if(is_real(cmd[|1])&&instance_exists(starry_sans_body)){
+			starry_sans_body.image_index=cmd[|1]
+		}
+		break
 }

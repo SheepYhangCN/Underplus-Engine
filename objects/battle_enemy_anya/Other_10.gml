@@ -39,9 +39,9 @@ Item_Set(a,item_peanut)
 a+=1
 }
 
-head = instance_create_depth(x+2, y-50, 0, anya_head)
-body = instance_create_depth(x, y-5, 0, anya_body)
-legs = instance_create_depth(x, y+25, 0, anya_legs)
+head = instance_create_depth(x+2, y-30, 0, anya_head)
+body = instance_create_depth(x+2, y+15, 0, anya_body)
+legs = instance_create_depth(x, y+65, 0, anya_legs)
 animsin = 0
 sinn = 2
 alarm[2]=1

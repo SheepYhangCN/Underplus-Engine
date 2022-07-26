@@ -1,5 +1,5 @@
 if(_input_acceptable){
-	if((_dir==DIR.LEFT&&_aim_x_1<=battle_board.x-battle_board.left-sprite_get_width(spr_battle_menu_fight_aim)/2+16) || (_dir==DIR.RIGHT&&_aim_x>=battle_board.x+battle_board.right+sprite_get_width(spr_battle_menu_fight_aim)/2-16)){
+	if((_dir==DIR.LEFT&&_aim_x_1<=battle_board.x-battle_board.left-sprite_get_width(_aim_spr)/2+16) || (_dir==DIR.RIGHT&&_aim_x>=battle_board.x+battle_board.right+sprite_get_width(_aim_spr)/2-16)){
 			Battle_SetNextState(BATTLE_MENU.BUTTON)
 			Battle_SetMenuFightDamage(-1);
 			//Battle_EndMenuFightAim();

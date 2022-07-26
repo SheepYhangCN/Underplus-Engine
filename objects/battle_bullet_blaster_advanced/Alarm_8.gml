@@ -2,7 +2,8 @@
 audio_stop_sound(snd_gb_release);
 audio_play_sound(snd_gb_release,0,0);
 audio_stop_sound(snd_science_gb_shoot);
-audio_play_sound(snd_science_gb_shoot,0,0);
+var snd=audio_play_sound(snd_science_gb_shoot,0,0);
+audio_sound_gain(snd,0.5,0)
 audio_stop_sound(snd_gb_release2);
 var sid=audio_play_sound(snd_gb_release2,0,0);
 audio_sound_pitch(sid,1.2);

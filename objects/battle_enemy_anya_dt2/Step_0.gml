@@ -9,4 +9,4 @@ if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
 global.enemy=8
-head.image_index=1
+head.image_index=4
