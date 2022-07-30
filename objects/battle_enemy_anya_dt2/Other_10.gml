@@ -20,6 +20,8 @@ Battle_SetEnemyAtk(4)
 Battle_SetPlayerTempInv(45)
 Battle_SetEnemyAtk(6)}
 Battle_SetMenuMercyFleeEnabled(false)
+global.shield=false
+global.shield_useable=false
 
 head = instance_create_depth(x+2, y-30, 0, anya_head)
 body = instance_create_depth(x+2, y+15, 0, anya_body)

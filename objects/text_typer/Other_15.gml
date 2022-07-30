@@ -127,3 +127,4 @@ _group_voice[6,0]=asset_get_index("snd_text_voice_gaster"+string(irandom_range(1
 _group_voice[7,0]=snd_text_voice_chara
 
 _group_face[0]=face;
+_group_face[1]=face_sans;

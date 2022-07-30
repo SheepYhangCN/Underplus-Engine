@@ -1,6 +1,10 @@
 if(global.mode=2){empty=45}else{empty=56}
 Battle_MakeBoneTop(battle_board.x-64,basey-(battle_board.y-64),4,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x-64,battle_board.y+64-basey-empty,4,0,0,0,1)
+if(global.mode=2){
+Battle_MakeBoneLeft(battle_board.x-64,basey-(battle_board.y-64),4,0,0,0,1)
+Battle_MakeBoneRight(battle_board.x-64,battle_board.y+64-basey-empty,4,0,0,0,1)
+}
 
 if(temp=0){
 basey+=7}

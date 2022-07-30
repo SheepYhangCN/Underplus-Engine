@@ -21,9 +21,9 @@
 ///@arg *Blaster精灵
 ///@arg *Blaster精灵帧数上限
 ///@arg *混色效果
+///@arg *光束贴图
 ///@arg *物体
 function Battle_MakeBlaster_Advanced(){
-	var obj=battle_bullet_blaster_advanced
 	var xx = argument[0];
 	var yy = argument[1];
 	var idealx = argument[2];
@@ -53,10 +53,14 @@ function Battle_MakeBlaster_Advanced(){
 	var blend = 1;
 	if(argument_count >= 23){
 		blend = argument[22];}
+	var obj=battle_bullet_blaster_advanced
 	if(argument_count >= 24){
 		obj = argument[23];}
+	var beam_spr=spr_beam
+	if(argument_count >= 25){
+		beam_spr = argument[24];}
 
-	blaster  = instance_create_depth(xx,yy,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,obj);
+	var blaster  = instance_create_depth(xx,yy,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,obj);
 	blaster.x_target = idealx;
 	blaster.y_target = idealy;
 	blaster.angle_start = angle;
@@ -78,45 +82,59 @@ function Battle_MakeBlaster_Advanced(){
 	blaster.sprite_index = sprite;
 	blaster.blaster_index_up = index_up;
 	blaster.color_blend = blend;
+	blaster._inst_spr=beam_spr
 
 	return blaster;
 }
 
-///@arg x,y,targetx,targety,angle,target_angle,xscale,yscale,type,move_time,sprite,wait_time,stay_time,*shake_type,*exit_speed_start,*exit_speed_final,*obj
-function Blaster_Create_Advanced(argument0, argument1, argument2, argument3, argument4, argument5, argument6, argument7, argument8, argument9, argument10, argument11, argument12){
-	obj = battle_bullet_blaster_advanced
-    xx = argument0
-    yy = argument1
-    idealx = argument2
-    idealy = argument3
-    angle = argument4
-    idealrot = argument5
-    xscale = argument6
-    yscale = argument7
-    color = argument8
-    move_time = argument9
-    sprite = argument10
-    fire_pause_time = argument11
-    fire_stay_time = argument12
-    fire_shake_type = -1
-    exit_speed_initial = 0
-    exit_speed_end = 50
+///@arg x,y,targetx,targety,angle,target_angle,xscale,yscale,type,move_time,sprite,wait_time,stay_time,*beam_spr,*obj,*shake_type,*exit_speed_start,*exit_speed_final,*beam_scale_pause_change,*fire_index_pause_change_time,*index_firing_change_time,*shooting_change_time,*exit_speed_add_time,*exit_anim
+function Blaster_Create_Advanced(){
+    var xx = argument[0]
+    var yy = argument[1]
+    var idealx = argument[2]
+    var idealy = argument[3]
+    var angle = argument[4]
+    var idealrot = argument[5]
+    var xscale = argument[6]
+    var yscale = argument[7]
+    var color = argument[8]
+    var move_time = argument[9]
+    var sprite = argument[10]
+    var fire_pause_time = argument[11]
+    var fire_stay_time = argument[12]
+	
+	var beam_spr = spr_beam
+	var obj = battle_bullet_blaster_advanced
+	
+    var fire_shake_type = -1
+    var exit_speed_initial = 0
+    var exit_speed_end = 70
+    var scale_fire_pause_change_time = 6
+    var index_fire_pause_change_time = 6
+    var index_firing_change_time = 3
+    var exit_speed_add_time = 120
+    var exit_anim_type = 1
     if (argument_count >= 14)
-        fire_shake_type = argument[13]
+        beam_spr = argument[13]
     if (argument_count >= 15)
-        exit_speed_initial = argument[14]
+        obj = argument[14]
     if (argument_count >= 16)
-        exit_speed_end = argument[15]
+        fire_shake_type = argument[15]
     if (argument_count >= 17)
-        obj = argument[16]
-    index_up = 3
-    blend = 0
-    scale_fire_pause_change_time = 6
-    index_fire_pause_change_time = 6
-    index_firing_change_time = 3
-    exit_speed_add_time = 180
-    exit_anim_type = 1
-    blaster = instance_create_depth(xx, yy, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, obj)
+        exit_speed_initial = argument[16]
+    if (argument_count >= 18)
+        exit_speed_end = argument[17]
+    if (argument_count >= 19)
+        scale_fire_pause_change_time = argument[18]
+    if (argument_count >= 20)
+        index_fire_pause_change_time = argument[19]
+    if (argument_count >= 21)
+        index_firing_change_time = argument[20]
+    if (argument_count >= 22)
+        exit_speed_add_time = argument[21]
+    if (argument_count >= 23)
+        exit_anim_type = argument[22]
+    var blaster = instance_create_depth(xx, yy, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, obj)
     blaster.x_target = idealx
     blaster.y_target = idealy
     blaster.angle_start = angle
@@ -136,7 +154,6 @@ function Blaster_Create_Advanced(argument0, argument1, argument2, argument3, arg
     blaster._exit_speed_add_time = exit_speed_add_time
     blaster._exit_anim_type = exit_anim_type
     blaster.sprite_index = sprite
-    blaster.blaster_index_up = index_up
-    blaster.color_blend = blend
+	blaster._inst_spr=beam_spr
     return blaster;
 	}

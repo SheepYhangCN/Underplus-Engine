@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Emoji",
+    "path": "folders/Sprites/Emoji.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_horse",

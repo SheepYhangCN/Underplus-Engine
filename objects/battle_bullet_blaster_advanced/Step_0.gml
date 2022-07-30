@@ -1,5 +1,5 @@
 _inst.type=type
-if(sprite_index=spr_gb_ink){_inst.sprite_index=spr_beam_ink}
+_inst.sprite_index=_inst_spr
 if (sprite_width>=100||sprite_height>=100)
 blaster_beam_size_set=1;
 else blaster_beam_size_set=0;

@@ -41,6 +41,8 @@ Player_SetLv(8)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
 Battle_SetEnemyAtk(1)
+global.shield=false
+global.shield_useable=false
 
 Border_SetEnabled(true)
 Border_SetSprite(spr_border_snowdin)

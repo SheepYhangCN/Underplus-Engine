@@ -2,6 +2,8 @@ x = Battle_GetEnemyCenterPosX(_enemy_slot)
 y = Battle_GetEnemyCenterPosY(_enemy_slot)
 Battle_SetEnemySpareable(_enemy_slot,0);
 Battle_SetEnemyActionNumber(_enemy_slot,1);
+global.shield=false
+global.shield_useable=false
 if(global.language=0){
 Battle_SetEnemyName(_enemy_slot,"Enemy")
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")

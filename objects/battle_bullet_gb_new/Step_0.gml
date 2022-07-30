@@ -46,7 +46,7 @@ if (image_index == 3)
 	b.type=type
     alarm[1] = 1
 	var snd=audio_play_sound(snd_science_gb_shoot,0,0);
-	audio_sound_gain(snd,0.5,0)
+	audio_sound_gain(snd,0.4,0)
     audio_play_sound(snd_gb_release, 0, false)
     //Camera_Shake(4, 4, 2, 2)
 }

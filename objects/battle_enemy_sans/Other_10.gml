@@ -34,7 +34,9 @@ audio_play_sound(bgm_bird,0,1)
 Player_SetLv(19)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
-Battle_SetEnemyAtk(1)
+Battle_SetEnemyAtk(2)
+global.shield=false
+global.shield_useable=false
 
 animsin = 0
 sinn = 2

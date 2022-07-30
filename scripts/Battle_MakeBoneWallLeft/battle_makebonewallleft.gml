@@ -16,7 +16,7 @@ function Battle_MakeBoneWallLeft(){
     if (argument_count >= 7)
         SPR_END = argument[6]
     var ii = 0
-    for (i = 0; i < ((battle_board.up + battle_board.down) + 11); i += 11)
+    for (i = 0; i < ((battle_board.up + battle_board.down) + 10); i += 10)
     {
         ii += 1
 		if(DURATION!=-1){

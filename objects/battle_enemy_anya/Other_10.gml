@@ -38,6 +38,8 @@ repeat(8){
 Item_Set(a,item_peanut)
 a+=1
 }
+global.shield=false
+global.shield_useable=false
 
 head = instance_create_depth(x+2, y-30, 0, anya_head)
 body = instance_create_depth(x+2, y+15, 0, anya_body)
