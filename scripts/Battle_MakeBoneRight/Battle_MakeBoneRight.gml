@@ -19,7 +19,8 @@ function Battle_MakeBoneRight(){
         SPR_BODY = argument[9]
     if (argument_count >= 11)
         SPR_END = argument[10]
-    bone = Battle_MakeBoneH((((battle_board.x + battle_board.right) - (LENGTH / 2)) - 5), Y, LENGTH, 0, VSPEED, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+    var bone = Battle_MakeBoneH((((battle_board.x + battle_board.right) - (LENGTH / 2)) - 5), Y, LENGTH, 0, VSPEED, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+	bone.angle+=180
     return bone;
 
 }

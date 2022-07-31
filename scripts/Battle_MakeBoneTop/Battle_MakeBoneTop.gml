@@ -19,6 +19,7 @@ function Battle_MakeBoneTop(){
         SPR_BODY = argument[9]
     if (argument_count >= 11)
         SPR_END = argument[10]
-    bone = Battle_MakeBoneV(X, (((battle_board.y - battle_board.up) + (LENGTH / 2)) + 5), LENGTH, HSPEED, 0, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+    var bone = Battle_MakeBoneV(X, (((battle_board.y - battle_board.up) + (LENGTH / 2)) + 5), LENGTH, HSPEED, 0, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+	bone.angle+=180
     return bone;
 }

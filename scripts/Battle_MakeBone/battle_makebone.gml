@@ -16,7 +16,7 @@ function Battle_MakeBone(){
         DURATION = argument[10]
     if (argument_count >= 12)
         OBJ = argument[11]
-    bone = instance_create_depth(X, Y, 0, OBJ)
+    var bone = instance_create_depth(X, Y, 0, OBJ)
     bone.length = LENGTH
     bone.hspeed = HSPEED
     bone.vspeed = VSPEED

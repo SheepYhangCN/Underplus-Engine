@@ -19,6 +19,6 @@ function Battle_MakeBoneBottom(){
         SPR_BODY = argument[9]
     if (argument_count >= 11)
         SPR_END = argument[10]
-    bone = Battle_MakeBoneV(X, (((battle_board.y + battle_board.down) - (LENGTH / 2)) - 5), LENGTH, HSPEED, 0, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+	var bone = Battle_MakeBoneV(X, (((battle_board.y + battle_board.down) - (LENGTH / 2)) - 5), LENGTH, HSPEED, 0, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
     return bone;
 }
