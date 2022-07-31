@@ -111,8 +111,6 @@ if(Player_IsInBattle()){
 		Titr_BlueSoulControl(DIR.UP)
 		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.UP)
-		}else if(instance_exists(starry_sans_body)){
-		BlueSoulControl_Starry(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
@@ -121,8 +119,6 @@ if(Player_IsInBattle()){
 		Titr_BlueSoulControl(DIR.LEFT)
 		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.LEFT)
-		}else if(instance_exists(starry_sans_body)){
-		BlueSoulControl_Starry(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
@@ -131,8 +127,6 @@ if(Player_IsInBattle()){
 		Titr_BlueSoulControl(DIR.DOWN)
 		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.DOWN)
-		}else if(instance_exists(starry_sans_body)){
-		BlueSoulControl_Starry(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
@@ -141,8 +135,6 @@ if(Player_IsInBattle()){
 		Titr_BlueSoulControl(DIR.RIGHT)
 		}else if(instance_exists(anya_body)){
 		BlueSoulControl_Anya(DIR.RIGHT)
-		}else if(instance_exists(starry_sans_body)){
-		BlueSoulControl_Starry(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}
 	}}
