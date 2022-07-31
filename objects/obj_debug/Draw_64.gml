@@ -66,8 +66,7 @@ if(Player_IsInBattle()){
 	draw_text(0, 335, "Falling Speed(move):"+string(battle_soul.move))
 	draw_text(0, 355, "Touched Board(bbb):"+string(battle_soul.bbb))
 	draw_text(0, 375, "Gravity Jump:"+string(battle_soul._gravity_jump))
-	draw_text(0, 395, "IsInside:["+string(battle_soul.isInside1)+","+string(battle_soul.isInside2)+","+string(battle_soul.isInside3)+","+string(battle_soul.isInside4)+"]")
-	draw_text(0, 415, "Dir:"+string(battle_soul.dir))
+	draw_text(0, 395, "Dir:"+string(battle_soul.dir))
 	}else if(instance_exists(battle_soul)){
 	draw_text(0, 315, "Soul Image Angle:"+string(battle_soul.image_angle))}
 	if(instance_exists(battle_soul_green)||instance_exists(battle_soul_green_aqua)){
