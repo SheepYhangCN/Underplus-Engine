@@ -13,9 +13,7 @@ ds_map_add(_map_macro,"FONT.BATTLE",2);
 ds_map_add(_map_macro,"font.sans",3);
 ds_map_add(_map_macro,"font.papyrus",4);
 ds_map_add(_map_macro,"font.gaster",5);
-ds_map_add(_map_macro,"font.fzxs_dtm",6);
-ds_map_add(_map_macro,"font.fzxs_dotum",7);
-ds_map_add(_map_macro,"font.inksans",8);
+ds_map_add(_map_macro,"font.inksans",6);
 
 ds_map_add(_map_macro,"VOICE.NULL",-1);
 ds_map_add(_map_macro,"VOICE.DEFAULT",0);
@@ -87,35 +85,15 @@ _group_font_scale_y[5,1]=1;
 _group_font_space_x[5,1]=0;
 _group_font_space_y[5]=0;
 
-_group_font[6,0]=font_fzxs12_18
-_group_font_scale_x[6,0]=0.5
-_group_font_scale_y[6,0]=0.5
+_group_font[6,0]=font_inksans
+_group_font_scale_x[6,0]=1
+_group_font_scale_y[6,0]=1
 _group_font_space_x[6,0]=1
-_group_font[6,1]=font_fzxs12_18
-_group_font_scale_x[6,1]=0.5
-_group_font_scale_y[6,1]=0.5
+_group_font[6,1]=font_sans
+_group_font_scale_x[6,1]=1
+_group_font_scale_y[6,1]=1
 _group_font_space_x[6,1]=1
-_group_font_space_y[6]=-5
-
-_group_font[7,0]=font_fzxs14_24
-_group_font_scale_x[7,0]=0.5
-_group_font_scale_y[7,0]=0.5
-_group_font_space_x[7,0]=1
-_group_font[7,1]=font_fzxs14_24
-_group_font_scale_x[7,1]=0.5
-_group_font_scale_y[7,1]=0.5
-_group_font_space_x[7,1]=1
-_group_font_space_y[7]=-5
-
-_group_font[8,0]=font_inksans
-_group_font_scale_x[8,0]=1
-_group_font_scale_y[8,0]=1
-_group_font_space_x[8,0]=1
-_group_font[8,1]=font_sans
-_group_font_scale_x[8,1]=1
-_group_font_scale_y[8,1]=1
-_group_font_space_x[8,1]=1
-_group_font_space_y[8]=1
+_group_font_space_y[6]=1
 
 _group_voice[0,0]=snd_text_voice_default;
 _group_voice[1,0]=snd_text_voice_typer;

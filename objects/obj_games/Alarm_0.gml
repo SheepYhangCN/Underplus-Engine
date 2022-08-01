@@ -7,7 +7,9 @@ room_goto(room_lobby);
 }else if(_shop=1){
 _shop=0
 //Shop_Start(0)
-show_message_async("Coming Soon")
+//show_message_async("Coming Soon")
+if(global.language=0){CC_Add("Coming Soon")}
+if(global.language=1){CC_Add("即将到来")}
 room_restart()
 }else{
 switch choice{

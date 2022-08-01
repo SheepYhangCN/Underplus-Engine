@@ -20,7 +20,7 @@ if(global.debug=1){
 	language="简体中文"
 	}
 	draw_room="Current Room:"+string(room)+"("+room_get_name(room)+")"
-	draw_fps="Current FPS:"+string(fps)+"/"+string(room_speed)
+	draw_fps="Current FPS:"+string(fps)+"/"+string(room_speed)+"("+string(fps_real)+")"
 	draw_language="Current Language:"+string(language)
 	draw_windowsize="Current Window Size:"+string(world._window_size)+"x"
 	draw_instance_count="Instance Count:"+string(instance_count)

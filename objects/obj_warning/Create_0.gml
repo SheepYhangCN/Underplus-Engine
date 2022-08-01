@@ -1,4 +1,5 @@
 audio_play_sound(snd_ding,0,0)
+temp=0
 if(global.language=0){
 dialog=instance_create_depth(135,10,0,text_typer)
 dialog.text="{scale 3}{instant true}{color `red`}Epilepsy Warning"

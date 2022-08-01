@@ -4,5 +4,6 @@ window_set_caption(GAME_NAME+" - Warning")
 }else if(global.language=1){
 window_set_caption(GAME_NAME+" - 警告")
 }
-if(Input_IsPressed(INPUT.CONFIRM)){
-room_goto(room_menu)}
+if(Input_IsPressed(INPUT.CONFIRM)&&temp=0){
+temp=1
+alarm[0]=1}

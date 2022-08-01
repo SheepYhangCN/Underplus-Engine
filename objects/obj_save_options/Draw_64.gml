@@ -13,7 +13,6 @@ if(choice_previous=4){
 draw_text_transformed(320,360,"Deleted Save #"+string(slot_previous)+"!",2,2,0)}
 }
 if(global.language=1){
-draw_set_font(font_fzxs12_18)
 if(choice_previous=2){
 draw_text_scribble(320,360,"[scale,2][font_chinese]已将[font_menu]"+string(Flag_GetSaveSlot())+"[font_chinese]号存档复制至槽位[font_menu]"+string(select_previous)+"[font_chinese]！")}
 if(choice_previous=3){

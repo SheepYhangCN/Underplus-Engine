@@ -26,9 +26,8 @@ if(global.tas=true){
 	if(global.mode!=0){var tempy=40}else{var tempy=15}
 	draw_text_transformed(620,tempy,"Tas Mode\n(Speed: "+string(room_speed/60)+"x/"+string(room_speed)+"fps)",2,2,0)
 	}else if(global.language=1){
-	draw_set_font(font_fzxs12_18)
 	if(global.mode!=0){var tempy=45}else{var tempy=15}
-	draw_text(620,tempy,"变速模式\n(速度："+string(room_speed/60)+"x/"+string(room_speed)+"fps)")}
+	draw_text_scribble(620,tempy,"[scale,2][font_chinese]变速模式\n[font_menu]([font_chinese]速度：[font_menu]"+string(room_speed/60)+"x/"+string(room_speed)+"fps)")}
 	draw_set_halign(fa_left)
 	draw_set_color(c_red)
 	if(global.language=0){

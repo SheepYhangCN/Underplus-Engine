@@ -37,8 +37,9 @@ _hp = 1
 _hpmax = 1
 if(audio_is_paused(bgm_snowsans)){
 audio_resume_sound(bgm_snowsans)}else{BGM_Play(0,bgm_snowsans);hint=300}
+if(Player_GetLv()!=8){
 Player_SetLv(8)
-Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
+Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))}
 Player_SetHp(Player_GetHpMax())
 Battle_SetEnemyAtk(1)
 global.shield=false

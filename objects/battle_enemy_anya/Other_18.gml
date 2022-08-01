@@ -4,6 +4,7 @@ if(global.choice_button=1||global.choice_button = 2){
 }
 if(global.choice_button = 0||global.choice_button=3){
 if(Battle_GetTurnNumber()<11){
+	if(Battle_GetTurnNumber()=8){Battle_SetTurnNumber(Battle_GetTurnNumber()+1)}
 	body.image_index=0
 	head.image_index=0
 	instance_create_depth(0,0,0,asset_get_index("battle_anya_turn"+string(Battle_GetTurnNumber())))

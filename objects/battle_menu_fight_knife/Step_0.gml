@@ -1,5 +1,5 @@
 if(_input_acceptable){
-	if((_dir==DIR.LEFT&&_aim_x_1<=battle_board.x-battle_board.left-sprite_get_width(_aim_spr)/2+16) || (_dir==DIR.RIGHT&&_aim_x>=battle_board.x+battle_board.right+sprite_get_width(_aim_spr)/2-16)){
+	if((_dir==DIR.LEFT&&_aim_x_1<=battle_board.x-battle_board.left-sprite_get_width(spr_battle_menu_fight_aim)/2+16) || (_dir==DIR.RIGHT&&_aim_x>=battle_board.x+battle_board.right+sprite_get_width(spr_battle_menu_fight_aim)/2-16)){
 			Battle_SetNextState(BATTLE_MENU.BUTTON)
 			Battle_SetMenuFightDamage(-1);
 			//Battle_EndMenuFightAim();
@@ -11,9 +11,11 @@ if(_input_acceptable){
 		alarm[3]=-1
 		if(_dir=DIR.RIGHT){
 		Anim_Destroy(id,"_aim_x");
-		instance_create_depth(_aim_x,y,0,battle_menu_fight_aim_effect)}else{
+		instance_create_depth(_aim_x,y,0,battle_menu_fight_aim_effect)
+		}else{
 		Anim_Destroy(id,"_aim_x_1");
-		instance_create_depth(_aim_x_1,y,0,battle_menu_fight_aim_effect)}
+		instance_create_depth(_aim_x_1,y,0,battle_menu_fight_aim_effect)
+		}
 		battle_soul.image_angle=0
 		if(_dir=DIR.RIGHT){
 		battle_soul.x=_aim_x}
@@ -39,6 +41,7 @@ if(_input_acceptable){
 		
 		Battle_SetMenuFightDamage(damage);
 		Battle_SetMenuFightAnimTime(25);
+		//Battle_SetMenuFightDamageTime(70);
 		Battle_SetMenuFightDamageTime(25);
 		Battle_EndMenuFightAim();
 		_input_acceptable=false;

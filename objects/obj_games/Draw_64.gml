@@ -89,7 +89,7 @@ draw_text_transformed(320,400,"Not available yet",2,2,0)
 draw_set_color(c_white)}
 }
 if(global.language=1){
-draw_set_font(font_fzxs12_18)
+draw_set_font(font_chinese)
 switch choice{
 case 0:
 game="[font_chinese]教程战"
@@ -161,7 +161,7 @@ if(enabled){
 draw_text_scribble(320,405,"[scale,2][font_chinese]按下[font_menu]Z[font_chinese]或[font_menu]Enter[font_chinese]来开始")
 }else{
 draw_set_color(warning_color)
-draw_text(320,409,"暂不可用")
+draw_text_transformed(320,405,"暂不可用",2,2,0)
 draw_set_color(c_white)}
 }
 
@@ -205,7 +205,6 @@ if(global.language=0){
 draw_set_font(font_menu)
 draw_text_transformed(0,room_height,string(current_year)+"-"+(current_month<10 ? "0" : "")+string(current_month)+"-"+(current_day<10 ? "0" : "")+string(current_day)+" ("+GetWeekday()+")",2,2,0)}
 if(global.language=1){
-draw_set_font(font_fzxs12_18)
 draw_text_scribble(0,room_height,"[font_menu][scale,2]"+string(current_year)+"-"+(current_month<10 ? "0" : "")+string(current_month)+"-"+(current_day<10 ? "0" : "")+string(current_day)+" ([font_chinese]"+GetWeekday()+"[font_menu])")}
 draw_set_font(font_menu)
 

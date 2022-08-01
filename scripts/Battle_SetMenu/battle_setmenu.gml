@@ -54,12 +54,13 @@ function Battle_SetMenu() {
 		if(object_exists(OBJ)){
 			if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 				instance_create_depth(0,0,0,OBJ);
-				OBJ.image_xscale=0
+				OBJ.image_yscale=0.97
+				/*OBJ.image_xscale=0
 				OBJ.image_yscale=OBJ._base_yscale*0.97
 				OBJ.image_alpha=0
 				Anim_Create(OBJ,"image_xscale",0,0,0,OBJ._base_xscale*1.05,15);
 				Anim_Create(OBJ,"image_xscale",0,0,OBJ._base_xscale*1.05,-(OBJ._base_xscale*0.06),5,15);
-				Anim_Create(OBJ,"image_alpha",0,0,0,1,10);
+				Anim_Create(OBJ,"image_alpha",0,0,0,1,10);*/
 			}
 		}
 	}

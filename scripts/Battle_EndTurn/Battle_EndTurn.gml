@@ -26,13 +26,13 @@ function Battle_EndTurn() {
 		/*with(battle_board_cover){
 		instance_destroy()}
 		with(battle_board_extra){
-		Battle_RemoveBoard(self)}
+		instance_destroy()}
 		with(battle_board_extra_circle){
-		Battle_RemoveBoard(self)}
+		instance_destroy()}
 		with(battle_board_extra_rect){
-		Battle_RemoveBoard(self)}
+		instance_destroy()}
 		with(battle_board_extra_roundrect){
-		Battle_RemoveBoard(self)}*/
+		instance_destroy()}*/
 		Battle_GotoNextState();
 		return true;
 	}else{

@@ -85,13 +85,13 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 			//var tempy=battle_soul.y
 			//Anim_Create(battle_soul,"x",0,0,tempx,x-42-tempx,2)
 			//Anim_Create(battle_soul,"y",0,0,tempy,y-tempy,2)
-			battle_soul.x=x-42
+			battle_soul.x=x-38.5//42
 			battle_soul.y=y
 			}
-			if image_xscale < 1.1
+			/*if image_xscale < 1.1
 				image_xscale += 0.025;
 			if image_yscale < 1.1
-				image_yscale += 0.025;}
+				image_yscale += 0.025;*/}
 			if sat < 255
 				sat+=20;
 		}
@@ -101,10 +101,10 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 	}else if(global.language=1){
 	image_index=2}
 		_timer=0;
-		if image_xscale > 1
+		/*if image_xscale > 1
 			image_xscale -= 0.025;
 		if image_yscale > 1
-			image_yscale -= 0.025;
+			image_yscale -= 0.025;*/
 		if sat > 125
 			sat-=20;
 	}
@@ -114,10 +114,10 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 	}else if(global.language=1){
 	image_index=2}
 	_timer=0;
-	if image_xscale > 1
+	/*if image_xscale > 1
 		image_xscale -= 0.025;
 	if image_yscale > 1
-		image_yscale -= 0.025;
+		image_yscale -= 0.025;*/
 	if sat > 125
 		sat-=20;
 }
