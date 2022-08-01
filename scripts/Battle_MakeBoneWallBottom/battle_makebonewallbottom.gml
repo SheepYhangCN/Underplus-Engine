@@ -15,8 +15,9 @@ function Battle_MakeBoneWallBottom(){
         SPR_BODY = argument[5]
     if (argument_count >= 7)
         SPR_END = argument[6]
+	var SPR_HEIGHT=max(sprite_get_height(SPR_END),sprite_get_height(SPR_BODY))+1
     var ii = 0
-    for (i = -3; i < ((battle_board.left + battle_board.right) + 10); i += 10)
+    for (i = -3; i < ((battle_board.left + battle_board.right) + SPR_HEIGHT); i += SPR_HEIGHT)
     {
         ii += 1
 		if(DURATION!=-1){
