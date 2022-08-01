@@ -15,7 +15,7 @@ function Battle_MakeBoneWallRight(){
         SPR_BODY = argument[5]
     if (argument_count >= 7)
         SPR_END = argument[6]
-	var SPR_HEIGHT=max(sprite_get_height(SPR_END),sprite_get_height(SPR_BODY))+1
+	var SPR_HEIGHT=max(sprite_get_height(SPR_END),sprite_get_height(SPR_BODY))
     var ii = 0
     for (i = 0; i < ((battle_board.up + battle_board.down) + SPR_HEIGHT); i += SPR_HEIGHT)
     {
