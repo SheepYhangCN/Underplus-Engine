@@ -4,5 +4,5 @@ _name="SheepYhangCN"
 _info="{font 1}{color `lime`}+Full HP"
 }else if(global.language=1){
 _name="憨憨羊の宇航鸽鸽"
-_info="{font 1}{color `lime`}+满HP"
+_info="{color `lime`}+{font 0}满{font 1}HP"
 }
