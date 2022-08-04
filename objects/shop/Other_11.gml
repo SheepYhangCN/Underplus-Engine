@@ -27,9 +27,13 @@ if(_typer_left_refresh)
 }
 if(_typer_right_refresh)
 {
-	if(_state!=SHOP_STATE.SELL)
-	{
-		_typer_right = instance_create_depth(menu_divide_x+width_text,border_y1+height_text,0,text_typer);
+	if(_state!=SHOP_STATE.SELL){
+		if!(_state = SHOP_STATE.BUY||_state = SHOP_STATE.DIALOG){
+			_typer_right = instance_create_depth(menu_divide_x+width_text,border_y1+height_text,0,text_typer);
+		}
+		else{
+			_typer_right = instance_create_depth(menu_divide_x+width_text-6,border_y1+height_text,0,text_typer);
+		}
 	}
 	else
 	{
@@ -42,10 +46,13 @@ if(_typer_right_refresh)
 }
 if(_typer_state_refresh)
 {
-	if(_state!=SHOP_STATE.SELL)
-		_typer_state = instance_create_depth(menu_divide_x+width_text,state_info_y+height_text,0,text_typer);
-	else
-		_typer_state = instance_create_depth(menu_divide_x,state_info_y+height_text,0,text_typer);
+	if(_state!=SHOP_STATE.SELL){
+		_typer_state_0 = instance_create_depth(menu_divide_x+width_text-4,state_info_y+height_text,0,text_typer);
+		_typer_state_1 = instance_create_depth(menu_divide_x+width_text-4+50,state_info_y+height_text,0,text_typer);
+	}
+	else{
+		_typer_state_0 = instance_create_depth(menu_divide_x,state_info_y+height_text,0,text_typer);
+	}
 }
 if(_typer_info_refresh)
 {

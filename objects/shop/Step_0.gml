@@ -1,10 +1,4 @@
-if(global.language=0){
-window_set_caption(GAME_NAME+" - Shop")
-}else if(global.language=1){
-window_set_caption(GAME_NAME+" - 商店")
-}
-switch(_state)
-{
+switch(_state){
 	case SHOP_STATE.ENCOUNTER:
 		if(_dialog == true && !instance_exists(shop_dialog_typer))
 		{
@@ -37,6 +31,7 @@ switch(_state)
 					break;
 				case 1:
 					Shop_GoState(SHOP_STATE.SELL);
+					_index = 0;
 					break;
 				case 2:
 					Shop_GoState(SHOP_STATE.DIALOG);
@@ -67,6 +62,7 @@ switch(_state)
 			case 0:
 			case 2:
 			case 3:
+			case 4:
 			default:
 				if(Input_IsPressed(INPUT.UP))
 				{
@@ -89,13 +85,14 @@ switch(_state)
 					if(_index<4)
 					{
 						var ITEM = _item[_index];
-						if(Item_GetNumber()<8 && Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD) >= ITEM._price_buy)
-						{
+						if(Item_GetNumber()<8&&Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD)>=ITEM._price_buy){
 							_choice_state = 1;
 						}
-						else
-						{
+						else if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD)<ITEM._price_buy){
 							_choice_state = 3;
+						}
+						else if(Item_GetNumber()>=8){
+							_choice_state = 4;
 						}
 						Shop_RefreshTyper(false,true,false,false);
 					}
@@ -139,8 +136,7 @@ switch(_state)
 		}
 		break;
 	case SHOP_STATE.SELL:
-		if(_host.sold_available)
-		{
+		if(_host.sold_available){
 			var NUM = Item_GetNumber();
 			if(NUM > 0)
 			{
@@ -160,8 +156,9 @@ switch(_state)
 						if(Input_IsPressed(INPUT.DOWN))
 						{
 							_index += 2;
-							if(_index>=NUM)
+							if(_index>=NUM){
 								_index = 8;
+							}
 						}
 						if(Input_IsPressed(INPUT.LEFT)||Input_IsPressed(INPUT.RIGHT))
 						{
@@ -176,11 +173,15 @@ switch(_state)
 								_choice_state = 1;
 								Shop_RefreshTyper();
 							}
-							else
+							else{
 								Shop_GoState(SHOP_STATE.MENU);
+								_index = 1;
+							}
 						}
-						if(Input_IsPressed(INPUT.CANCEL))
+						if(Input_IsPressed(INPUT.CANCEL)){
 							Shop_GoState(SHOP_STATE.MENU);
+							_index = 1;
+						}
 						break;
 					case 1:
 						if(Input_IsPressed(INPUT.LEFT)||Input_IsPressed(INPUT.RIGHT))
@@ -263,6 +264,7 @@ switch(_state)
 			if(Input_IsPressed(INPUT.CANCEL))
 			{
 				Shop_GoState(SHOP_STATE.MENU);
+				_index = 2;
 			}
 		}
 		else
@@ -295,14 +297,9 @@ switch(_state)
 				Fader_Fade(-1,1,50);
 				BGM_Resume(0);
 				BGM_SetVolume(0,1);
-				volume=1
-				Anim_Create(self,"volume",0,0,1,-1,50)
-				//BGM_Fade(0,0,50);
+				BGM_SetVolume(0,0,50);
 				alarm[0]=50;
 				_state = SHOP_STATE.CLOSE;
 			}
 		}
-		break
-	case SHOP_STATE.CLOSE:
-				BGM_SetVolume(0,volume);
 }

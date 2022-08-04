@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function Shop_ClearTyper(){
 //var SHOP = shop;
 //if(instance_exists(SHOP._typer_left))
 //instance_destroy(SHOP._typer_left);
@@ -14,6 +11,6 @@ function Shop_ClearTyper(){
 //instance_destroy(text_single);
 //if(instance_exists(text_typer))
 //instance_destroy(text_typer);
-with(shop)
-event_user(2);
+function Shop_ClearTyper(){
+	with(shop)event_user(2);
 }

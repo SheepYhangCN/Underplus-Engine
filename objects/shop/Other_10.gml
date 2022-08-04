@@ -8,23 +8,17 @@ switch(_state)
 		if(_typer_left_refresh)
 			_typer_left.text = _pre + _host.menu_text;
 		if(_typer_right_refresh){
-		if(global.language=0){
-			_typer_right.text = _pre_inst + "{font 1}    Buy&    Sell&    Talk&    Exit";}
-		if(global.language=1){
-			_typer_right.text = _pre_inst + "{font 0}  购买&  出售&  谈话&  退出";}}
-		
+			if(global.language=0){
+			_typer_right.text = _pre_inst + "  Buy&  Sell&  Talk&  Exit";}
+			if(global.language=1){
+			_typer_right.text = _pre_inst + "  购买&  售卖&  聊天&  退出";}
+		}
 		//_typer_state.text = _pre_inst + string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD))+"G   "+string(Item_GetNumber())+"/8";
 		if(_typer_state_refresh)
 		{
 			var GOLD = Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
-			shop._typer_state.text = shop._pre_inst + string(GOLD)+"G   ";
-			var i = string_length(string(GOLD));
-			while(i<3)
-			{
-				shop._typer_state.text += " ";
-				i ++;
-			}
-			shop._typer_state.text += +string(Item_GetNumber())+"/8";
+			shop._typer_state_0.text = shop._pre_inst + string(GOLD)+"G";
+			shop._typer_state_1.text = shop._pre_inst+string(Item_GetNumber())+"/8";
 		}
 		break;
 	case SHOP_STATE.BUY:
@@ -55,12 +49,12 @@ switch(_state)
 						_typer_left.text+=" ";
 					}
 				}
-				_typer_left.text+=string(ITEM._price_buy)+"G-"+ITEM._name+"&";
+				_typer_left.text+=string(ITEM._price_buy)+"G - "+ITEM._name+"&{font 1}";
 			}
-		if(global.language=0){
+			if(global.language=0){
 			_typer_left.text+="Exit";}
-		if(global.language=1){
-			_typer_left.text+="{font 0}退出";}
+			if(global.language=1){
+			_typer_left.text+="退出";}
 		}
 		
 		if(_typer_right_refresh)
@@ -75,13 +69,16 @@ switch(_state)
 					if(global.language=0){
 					_typer_right.text = _pre_inst_3 + "Buy it for&" + string(_item[_index]._price_buy)+"G?& Yes& No";}
 					if(global.language=1){
-					_typer_right.text = _pre_inst_3 + "{font 0}用" + string(_item[_index]._price_buy)+"G购买吗？&& 是& 否";}
+					_typer_right.text = _pre_inst_3 + "用" + string(_item[_index]._price_buy)+"G来&购买吗?& 是& 否";}
 					break;
 				case 2:
 					_typer_right.text = _pre + _host.buy_after_text;
 					break;
 				case 3:
-					_typer_right.text = _pre + _host.buy_false_text;
+					_typer_right.text = _pre + _host.buy_false_text_0;
+					break;
+				case 4:
+					_typer_right.text = _pre + _host.buy_false_text_1;
 					break;
 			}
 		}
@@ -90,89 +87,85 @@ switch(_state)
 		if(_typer_state_refresh)
 		{
 			var GOLD = Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
-			shop._typer_state.text = shop._pre_inst + string(GOLD)+"G   ";
-			var i = string_length(string(GOLD));
-			while(i<3)
-			{
-				shop._typer_state.text += " ";
-				i ++;
-			}
-			shop._typer_state.text += +string(Item_GetNumber())+"/8";
+			shop._typer_state_0.text = shop._pre_inst + string(GOLD)+"G";
+			shop._typer_state_1.text = shop._pre_inst+string(Item_GetNumber())+"/8";
 		}
 		break;
 	case SHOP_STATE.SELL:
-		if(_choice_state == 0)
-		{
-			var MAXLENGTH = 0;
-			var NUM = Item_GetNumber();
-			var i,LEN,GOLD,ITEM;
-			for(i=0;i<NUM;i++)
+		if(_host.sold_available){
+			if(_choice_state == 0)
 			{
-				LEN = string_length(string(Item_GetSellGold(Item_Get(i))));
-				if(LEN>MAXLENGTH)
-					MAXLENGTH=LEN;
-			}
-			if(_typer_left_refresh)
-			{
-				_typer_left.text = _pre_inst;
-				for(i=0;i<4;i++)
+				var MAXLENGTH = 0;
+				var NUM = Item_GetNumber();
+				var i,LEN,GOLD,ITEM;
+				for(i=0;i<NUM;i++)
 				{
-					if(2*i<NUM)
-					{
-						ITEM = Item_Get(2*i);
-						GOLD = Item_GetSellGold(ITEM);
-						LEN = string_length(string(GOLD));
-						if(MAXLENGTH - LEN > 0)
-						{
-							repeat(MAXLENGTH - LEN)
-								_typer_left.text += " ";
-						}
-						_typer_left.text += string(GOLD)+"G-"+Item_GetName(ITEM);
-					}
-					_typer_left.text+="&";
+					LEN = string_length(string(Item_GetSellGold(Item_Get(i))));
+					if(LEN>MAXLENGTH)
+						MAXLENGTH=LEN;
 				}
-				if(global.language=0){
-				_typer_left.text+="Exit";}
-				if(global.language=1){
-				_typer_left.text+="{font 0}退出";}
-			}
-			if(_typer_right_refresh)
-			{
-				_typer_right.text = _pre_inst;
-				for(i=0;i<4;i++)
+				if(_typer_left_refresh)
 				{
-					if((2*i+1)<NUM)
+					_typer_left.text = _pre_inst;
+					for(i=0;i<4;i++)
 					{
-						ITEM = Item_Get(2*i+1);
-						GOLD = Item_GetSellGold(ITEM);
-						LEN = string_length(string(GOLD));
-						if(MAXLENGTH - LEN > 0)
+						if(2*i<NUM)
 						{
-							repeat(MAXLENGTH - LEN)
-								_typer_right.text += " ";
+							ITEM = Item_Get(2*i);
+							GOLD = Item_GetSellGold(ITEM);
+							LEN = string_length(string(GOLD));
+							if(MAXLENGTH - LEN > 0)
+							{
+								repeat(MAXLENGTH - LEN)
+									_typer_left.text += " ";
+							}
+							_typer_left.text += string(GOLD)+"G - "+Item_GetName(ITEM);
 						}
-						_typer_right.text += string(GOLD)+"G-"+Item_GetName(ITEM);
+						_typer_left.text+="&{font 1}";
 					}
-					_typer_right.text+="&";
+					if(global.language=0){
+					_typer_left.text+="Exit";}
+					if(global.language=1){
+					_typer_left.text+="退出";}
+				}
+				if(_typer_right_refresh)
+				{
+					_typer_right.text = _pre_inst;
+					for(i=0;i<4;i++)
+					{
+						if((2*i+1)<NUM)
+						{
+							ITEM = Item_Get(2*i+1);
+							GOLD = Item_GetSellGold(ITEM);
+							LEN = string_length(string(GOLD));
+							if(MAXLENGTH - LEN > 0)
+							{
+								repeat(MAXLENGTH - LEN)
+									_typer_right.text += " ";
+							}
+							_typer_right.text += string(GOLD)+"G - "+Item_GetName(ITEM);
+						}
+						_typer_right.text+="&{font 1}";
+					}
 				}
 			}
-		}
-		else
-		{
-			if(_typer_left_refresh)
+			else
 			{
-				_typer_left.text = _pre_inst;
-				if(global.language=0){
-				_typer_left.text += "Sell it for "+string(Item_GetSellGold(Item_Get(_index)))+"G?&&";
-				_typer_left.text += "  Yes      No";}
-				if(global.language=1){
-				_typer_left.text += "{font 0}以"+string(Item_GetSellGold(Item_Get(_index)))+"G卖出吗？&&";
-				_typer_left.text += "{font 0} 是       否";}
+				if(_typer_left_refresh)
+				{
+					_typer_left.text = _pre_inst;
+					if(global.language=0){
+					_typer_left.text += "Sell it for "+string(Item_GetSellGold(Item_Get(_index)))+"G?&&";
+					_typer_left.text += "  Yes                  No";}
+					if(global.language=1){
+					_typer_left.text += "用"+string(Item_GetSellGold(Item_Get(_index)))+"G来卖出吗?&&";
+					_typer_left.text += "  是                   否";}
+				}
 			}
-		}
-		if(_typer_state_refresh)
-		{
-			_typer_state.text = _pre_inst+"{color `yellow`}("+string(Player_GetGold())+"G)";
+			if(_typer_state_refresh)
+			{
+				_typer_state_0.text = _pre_inst+"{color `yellow`}("+string(Player_GetGold())+"G)";
+			}
 		}
 		break;
 	case SHOP_STATE.DIALOG:
@@ -188,7 +181,7 @@ switch(_state)
 			if(global.language=0){
 			_typer_left.text += "{color `white`}Exit";}
 			if(global.language=1){
-			_typer_left.text += "{color `white`}{font 0}退出";}
+			_typer_left.text += "{color `white`}退出";}
 		}
 		if(_typer_right_refresh)
 			_typer_right.text = _pre + _host.dialog_before_text;

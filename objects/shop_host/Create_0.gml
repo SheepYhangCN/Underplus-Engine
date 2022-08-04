@@ -2,6 +2,8 @@ encounter_text = noone;
 
 menu_text = noone;
 
+host_sprite = noone;
+
 shop_item[0] = noone;
 shop_item[1] = noone;
 shop_item[2] = noone;

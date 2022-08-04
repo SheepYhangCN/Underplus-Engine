@@ -5,15 +5,15 @@ depth = 97;
 
 border_x1 = 0;
 border_y1 = 120;
-border_x2 = 320;
-border_y2 = 240;
-border_width = 2;
+border_x2 = 319;
+border_y2 = 239;
+border_width = 4;
 
-width_text = 20;
+width_text = 25;
 width_heart = 30;
 height_text = 10;
 
-menu_divide_x = 200;
+menu_divide_x = 209;
 state_info_y = 200;
 
 buy_info_x = menu_divide_x;
@@ -39,7 +39,8 @@ _background = Shop_GetBackground(SHOP);
 _typer_left = noone;
 _typer_right = noone;
 _typer_info = noone;
-_typer_state = noone;
+_typer_state_0 = noone;
+_typer_state_1 = noone;
 _typer_left_refresh = true;
 _typer_right_refresh = true;
 _typer_info_refresh = true;
@@ -49,11 +50,10 @@ _state = SHOP_STATE.ENCOUNTER;
 _dialog = false;
 
 _pre="{scale 1}{voice 0}{speed 2}{space_y 4}{shadow true}{depth "+string(DEPTH_UI.TEXT)+"}";
-_pre_inst="{scale 1}{space_y 4}{shadow true}{instant true}{depth "+string(DEPTH_UI.TEXT)+"}";
+_pre_inst="{font 1}{scale 1}{space_y 4}{shadow true}{instant true}{depth "+string(DEPTH_UI.TEXT)+"}";
 _pre_inst_2="{scale 1}{space_y 2}{shadow true}{instant true}{depth 98}";
 _pre_inst_3="{scale 1}{space_y 1}{shadow true}{instant true}{depth "+string(DEPTH_UI.TEXT)+"}";
 //
 _snd_buy_item = snd_buyitem;
 
 Shop_CallEvent(_state);
-volume=1
