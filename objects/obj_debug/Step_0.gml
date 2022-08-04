@@ -11,14 +11,18 @@ if(global.debug = 1){
 	if(!instance_exists(obj_console)){
 	instance_create_depth(0,0,0,obj_console)}
 	if(keyboard_check_pressed(vk_end)){
+	if(instance_exists(char_player)){
 	with(block){
 	if(object_index=block||object_index=block_corner){
 	visible=!visible}}
 	with(trigger){
 	visible=!visible}
 	with(hint_landmark){
-	visible=!visible}
-	}
+	visible=!visible}}
+	if(Player_IsInBattle()){
+	with(battle_bullet_bone){
+	out=!out}
+	}}
 	if(keyboard_check_pressed(vk_f12)){
 	if(global.mode = 0){
 		global.mode = 1;

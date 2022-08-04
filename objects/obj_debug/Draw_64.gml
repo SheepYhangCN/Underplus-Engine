@@ -43,8 +43,8 @@ if(room=room_menu&&instance_exists(menu)){
 if(Player_IsInBattle()){
 	turn_timer=Battle_GetTurnTime()
 	draw_soulxy="Soul XY:["+string(battle_soul.x)+","+string(battle_soul.y)+"]"
-	draw_battle_button="Choice Button:"+string(global.choice_button)
-	draw_turn="Turn Number:"+string(global.turn_number)
+	draw_battle_button="Choice Button:"+string(Battle_GetMenuChoiceButton())
+	draw_turn="Turn Number:"+string(Battle_GetTurnNumber())
 	if(instance_exists(battle_turn)){
 	if(battle_turn.timer!=-1){
 	draw_turn_timer="Turn Timer:"+string(turn_timer)+"("+string(battle_turn.timer)+")"

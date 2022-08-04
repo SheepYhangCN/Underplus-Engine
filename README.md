@@ -9,10 +9,14 @@ A game compilation of my self-made Undertale fangames
 
 Also a open-source engine based on UNDERTALE Engine by TML
 
-Use the newest release version of GameMaker to open yyp file
+Use the latest release version of GameMaker to open yyp file
 
 Gamejolt page:
 https://gamejolt.com/games/underplus-engine/726150
+
+============================================================
+
+Gaster Blaster script：Blaster_Create_Advanced (located in Battle_MakeBlaster_Advanced)
 
 ============================================================
 
@@ -26,7 +30,7 @@ Home Undead mode
 
 Delete Change turn
 
-End switch block, trigger, landmark visible
+End overworld(switch block, trigger, landmark visible) battle(switch bone.out)
 
 PageUp Start Shop
 
@@ -117,6 +121,10 @@ https://gamejolt.com/games/underplus-engine/726150
 
 ============================================================
 
+Gaster Blaster脚本：Blaster_Create_Advanced (位置在Battle_MakeBlaster_Advanced里)
+
+============================================================
+
 Debug使用方法：
 
 Insert 开关调试模式
@@ -127,7 +135,7 @@ Home 不死模式
 
 Delete 切换回合
 
-End 切换空气墙、触发块、landmark显示
+End 主世界(切换空气墙、触发块、landmark显示) 战斗(切换bone.out)
 
 PageUp 触发商店
 
