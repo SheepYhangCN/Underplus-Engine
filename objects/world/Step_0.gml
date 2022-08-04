@@ -1,6 +1,5 @@
 Anim_Step();
 BGM_Step();
-//global.hp = Player_GetHp();
 
 if(volume<0){
 volume=0}
@@ -30,15 +29,6 @@ if(room!=room_battle){
 global.enemy=0}
 if(room!=room_shop){
 global.shop=0}
-
-if(Player_GetHp()+Player_GetKR()>Player_GetHpMax()){
-Player_SetHp(Player_GetHpMax()-Player_GetKR())}
-
-if(Player_GetHp()<=1 && Player_GetKR()>0){
-Player_SetHp(1)}
-
-if(Player_GetKR()>Player_GetHpMax()-1&&Player_GetHp()=1){
-Player_SetKR(Player_GetHpMax()-1)}
 
 if(keyboard_check_pressed(vk_f2)){
 	room_restart();

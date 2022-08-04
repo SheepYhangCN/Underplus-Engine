@@ -1,8 +1,8 @@
-if(global.choice_button=1||global.choice_button = 2){
+if(Battle_GetMenuChoiceButton()=1||Battle_GetMenuChoiceButton()=2){
 	Battle_SetNextState(BATTLE_MENU.BUTTON)
 	Battle_GotoNextState()
 }
-if(global.choice_button = 0||global.choice_button=3){
+if(Battle_GetMenuChoiceButton()=0||Battle_GetMenuChoiceButton()=3){
 if(Battle_GetTurnNumber()<11){
 	if(Battle_GetTurnNumber()=8){Battle_SetTurnNumber(Battle_GetTurnNumber()+1)}
 	body.image_index=0

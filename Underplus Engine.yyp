@@ -1143,7 +1143,6 @@
     {"folderPath":"folders/Extensions.yy","order":11,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sequences.yy","order":0,"resourceVersion":"1.0","name":"Sequences","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets/Animation Curve.yy","order":2,"resourceVersion":"1.0","name":"Animation Curve","tags":[],"resourceType":"GMFolder",},
-    {"folderPath":"folders/Sprites/Bone.yy","order":17,"resourceVersion":"1.0","name":"Bone","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Battle/Platform.yy","order":5,"resourceVersion":"1.0","name":"Platform","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Battle/Soul/effect.yy","order":0,"resourceVersion":"1.0","name":"effect","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Battle/Soul/origin.yy","order":1,"resourceVersion":"1.0","name":"origin","tags":[],"resourceType":"GMFolder",},

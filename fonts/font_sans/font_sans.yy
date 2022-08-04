@@ -13,7 +13,7 @@
   "AntiAlias": 0,
   "first": 0,
   "last": 0,
-  "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)\r\n杉斯\r\n",
+  "sampleText": "abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)\r\n杉斯\r\nSans",
   "includeTTF": false,
   "TTFName": "",
   "textureGroupId": {
@@ -359,7 +359,7 @@
     "9320": {"x":1031,"y":1010,"w":16,"h":19,"character":9320,"shift":16,"offset":0,},
     "9321": {"x":710,"y":1010,"w":16,"h":19,"character":9321,"shift":16,"offset":0,},
     "9633": {"x":885,"y":1010,"w":12,"h":19,"character":9633,"shift":16,"offset":2,},
-    "9647": {"x":899,"y":1010,"w":8,"h":19,"character":9647,"shift":16,"offset":4,},
+    "9647": {"x":899,"y":1010,"w":8,"h":19,"character":9647,"shift":16,"offset":3,},
     "9650": {"x":909,"y":1010,"w":12,"h":19,"character":9650,"shift":16,"offset":2,},
     "9679": {"x":923,"y":1010,"w":12,"h":19,"character":9679,"shift":16,"offset":2,},
     "9792": {"x":937,"y":1010,"w":8,"h":19,"character":9792,"shift":16,"offset":4,},

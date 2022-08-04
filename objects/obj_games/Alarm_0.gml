@@ -36,9 +36,6 @@ switch choice{
 		if(phase=1){
 		Encounter_Start(9)}
 		break
-	case 4:
-		Encounter_Start(10)
-		break
 	break
 }
 }

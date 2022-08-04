@@ -1,6 +1,6 @@
 {
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 2,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,
@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bgm_menu_summer.ogg",
-  "duration": 54.870205,
+  "duration": 34.00127,
   "parent": {
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",

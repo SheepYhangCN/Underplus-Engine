@@ -23,20 +23,20 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 		}
 	}
 if(shields>1){
-	if(keyboard_check_pressed(ord("W"))){
+	if(keyboard_check(ord("W"))){
 		if(shield2.image_angle<360&&shield2.image_angle>180){
 		Anim_Create(shield2,"image_angle",0,0,shield2.image_angle-360,0-(shield2.image_angle-360),5)
 		}else{
 		Anim_Create(shield2,"image_angle",0,0,shield2.image_angle,0-shield2.image_angle,5)
 		}
 	}
-	if(keyboard_check_pressed(ord("S"))){
+	if(keyboard_check(ord("S"))){
 		Anim_Create(shield2,"image_angle",0,0,shield2.image_angle,180-shield2.image_angle,5)
 	}
-	if(keyboard_check_pressed(ord("A"))){
+	if(keyboard_check(ord("A"))){
 		Anim_Create(shield2,"image_angle",0,0,shield2.image_angle,90-shield2.image_angle,5)
 	}
-	if(keyboard_check_pressed(ord("D"))){
+	if(keyboard_check(ord("D"))){
 		if(shield2.image_angle<90&&shield2.image_angle>-90){
 		Anim_Create(shield2,"image_angle",0,0,shield2.image_angle+360,270-(shield2.image_angle+360),5)
 		}else{

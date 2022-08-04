@@ -55,7 +55,7 @@ case 800:
 	Battle_SetSoul(battle_soul_red)
 	Battle_SetBoardSize(48,48,48,48,10)
 	board=Battle_CreateBoardExtraCircle(battle_board.x,battle_board.y,80)
-	Battle_MakeBoneWallRound(18,80,24,0,10,800,battle_bullet_bone,pencil_body,pencil_end)
+	Battle_MakeBoneWallRound(15,80,24,0,10,800,battle_bullet_bone,pencil_body,pencil_end)
 	angle=0
 	alarm[7]=1
 	break
