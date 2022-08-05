@@ -893,6 +893,7 @@
     {"id":{"name":"Shop_GetDialogTitle","path":"scripts/Shop_GetDialogTitle/Shop_GetDialogTitle.yy",},"order":10,},
     {"id":{"name":"battle_snowsans_turn2","path":"objects/battle_snowsans_turn2/battle_snowsans_turn2.yy",},"order":22,},
     {"id":{"name":"__scribble_config_defaults","path":"scripts/__scribble_config_defaults/__scribble_config_defaults.yy",},"order":2,},
+    {"id":{"name":"draw_text_colour_outline","path":"scripts/draw_text_colour_outline/draw_text_colour_outline.yy",},"order":27,},
     {"id":{"name":"battle_button_mercy","path":"objects/battle_button_mercy/battle_button_mercy.yy",},"order":4,},
     {"id":{"name":"battle_enemy","path":"objects/battle_enemy/battle_enemy.yy",},"order":1,},
     {"id":{"name":"battle_tutorial_turn0","path":"objects/battle_tutorial_turn0/battle_tutorial_turn0.yy",},"order":0,},
