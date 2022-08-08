@@ -30,29 +30,31 @@ game+=" | Intro"
 break
 case 1:
 //draw_sprite_ext(spr_battle_bg_snowdin,0,102+6,108+6,418/639,198/253,0,c_white,1)
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,325-3,220-35,2,2,0,c_white,1)
 game+=" | Phase 1"
 break
 case 2:
 //draw_sprite_ext(spr_battle_bg_snowdin,0,102+6,108+6,418/639,198/253,0,c_white,1)
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,325-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,325-3,220-35,2,2,0,c_white,1)
 game+=" | Phase 2"
 break
 }
 break
 case 2:
-draw_sprite_ext(spr_anya_legs,0,320,220+65,2,2,0,c_white,1)
-draw_sprite_ext(spr_anya_body,0,320,220+15,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_legs,0,318,220+65,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_body,0,318,220+15,2,2,0,c_white,1)
 if(phase=0){
-draw_sprite_ext(spr_anya_face,0,320+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_face,0,318+2,220-30,2,2,0,c_white,1)
 game="Anya Forger Fight"}
 if(phase=1){
-draw_sprite_ext(spr_anya_face,4,320+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_face,4,318+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_peanut_blaster,0,318-150,220-80,2,2,90,c_white,1)
+draw_sprite_ext(spr_peanut_blaster,0,318+150,220-80,2,2,90,c_white,1)
 game="Anya think she is dt2"}
 break
 case 3:
@@ -64,16 +66,16 @@ draw_sprite_ext(spr_bg_sanscorridor_full_cut,0,320-3,220-7,418/480,198/240,0,c_w
 game+=" | Corridor"
 break
 case 1:
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,325-3,220-35,2,2,0,c_white,1)
 game+=" | Phase 1"
 break
 case 2:
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,325-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,325-3,220-35,2,2,0,c_white,1)
 game+=" | Phase 2"
 break
 }
@@ -106,29 +108,31 @@ game+="[font_menu] | [font_chinese]开头"
 break
 case 1:
 //draw_sprite_ext(spr_battle_bg_snowdin,0,102+6,108+6,418/639,198/253,0,c_white,1)
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,325-3,220-35,2,2,0,c_white,1)
 game+="[font_menu] | [font_chinese]第[font_menu]1[font_chinese]阶段"
 break
 case 2:
 //draw_sprite_ext(spr_battle_bg_snowdin,0,102+6,108+6,418/639,198/253,0,c_white,1)
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,325-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,325-3,220-35,2,2,0,c_white,1)
 game+="[font_menu] | [font_chinese]第[font_menu]2[font_chinese]阶段"
 break
 }
 break
 case 2:
-draw_sprite_ext(spr_anya_legs,0,320,220+65,2,2,0,c_white,1)
-draw_sprite_ext(spr_anya_body,0,320+2,220+15,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_legs,0,318,220+65,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_body,0,318+2,220+15,2,2,0,c_white,1)
 if(phase=0){
-draw_sprite_ext(spr_anya_face,0,320+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_face,0,318+2,220-30,2,2,0,c_white,1)
 game="[font_menu]Anya Forger[font_chinese]战"}
 if(phase=1){
-draw_sprite_ext(spr_anya_face,4,320+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_anya_face,4,318+2,220-30,2,2,0,c_white,1)
+draw_sprite_ext(spr_peanut_blaster,0,318-150,220-80,2,2,90,c_white,1)
+draw_sprite_ext(spr_peanut_blaster,0,318+150,220-80,2,2,90,c_white,1)
 game="[font_chinese]阿尼亚觉得她是[font_menu]dt2"}
 break
 case 3:
@@ -140,16 +144,16 @@ draw_sprite_ext(spr_bg_sanscorridor_full_cut,0,320-3,220-7,418/480,198/240,0,c_w
 game+="[font_menu] | [font_chinese]长廊"
 break
 case 1:
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_face,3,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,3,325-3,220-35,2,2,0,c_white,1)
 game+="[font_menu] | [font_chinese]第[font_menu]1[font_chinese]阶段"
 break
 case 2:
-draw_sprite_ext(spr_sans_leg,0,320-2,220+53,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_body,0,320-3,220+8,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_blue_eyes,0,320-3,220-35,2,2,0,c_white,1)
-draw_sprite_ext(spr_sans_sweat,0,320-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_blue_eyes,0,325-3,220-35,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_sweat,0,325-3,220-35,2,2,0,c_white,1)
 game+="[font_menu] | [font_chinese]第[font_menu]2[font_chinese]阶段"
 break
 }

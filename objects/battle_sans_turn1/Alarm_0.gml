@@ -1,5 +1,11 @@
-Battle_MakeBoneBottom(battle_board.x-240,25,4,0,0,0,1)
+Battle_MakeBoneBottom(battle_board.x-240,20,3,0,0,0,1)
+Battle_MakeBoneTop(battle_board.x-240,60,3,0,0,0,1)
+Battle_MakeBoneBottom(battle_board.x+240,20,-3,0,0,0,1)
+Battle_MakeBoneTop(battle_board.x+240,60,-3,0,0,0,1)
+alarm[4]=10
 if(global.mode=2){
-Battle_MakeBoneTop(battle_board.x-240,75,4,0,0,0,1)
-}
-alarm[0]=40
+alarm[2]=30
+alarm[1]=60
+alarm[5]=40
+}else{
+alarm[0]=60}

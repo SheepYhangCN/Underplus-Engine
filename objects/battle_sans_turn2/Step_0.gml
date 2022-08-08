@@ -1,6 +1,5 @@
-if(global.mode!=2){
-if(Battle_GetTurnTime()=520){alarm[0]=-1}
-if(Battle_GetTurnTime()=460){
-Titr_BlueSoulControl(DIR.UP)
-alarm[1]=1
-}}
+if(Battle_GetTurnTime()=600){
+alarm[0]=-1
+alarm[1]=-1
+alarm[4]=1
+alarm[3]=15}
