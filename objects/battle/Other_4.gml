@@ -33,4 +33,4 @@ Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BATTLE_START);
 
 Battle_GotoNextState();
 
-if(global.mode=1&&Player_GetInvTotal()=0){Player_SetInv(1)}
+if(global.mode=1&&Player_GetInvTotal()=0){Player_SetInv(1)}else if(global.mode!=1){Player_SetInv(0)}
