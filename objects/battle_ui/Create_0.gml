@@ -18,8 +18,4 @@ depth=DEPTH_BATTLE.UI;
 x=30;
 y=401;
 
-hp=Player_GetHp();
-hp_max=Player_GetHpMax();
-kr=0;
-ca=0;
-krr=0;
+hp_bar_lock=-1
