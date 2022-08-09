@@ -1,4 +1,5 @@
 ///@desc Draw
+if(depth=DEPTH_BATTLE.BULLET){surface_set_target(Battle_GetBoardSurface())}
 if(font_exists(font)){
 	draw_set_font(font);
 	if(shadow){
@@ -23,3 +24,4 @@ if(font_exists(font)){
 if(sprite_exists(sprite)){
 	draw_sprite_ext(sprite,sprite_image,x+_offset_x,y+_offset_y,scale_x,scale_y,angle,color_text[0],alpha_text*alpha);
 }
+if(depth=DEPTH_BATTLE.BULLET){surface_reset_target()}

@@ -79,7 +79,7 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenu(BATTLE_MENU.ITEM);
 					Anim_Create(battle_soul,"image_angle",0,0,0,90,3)
 					Anim_Create(battle_soul,"x",0,0,tempx,battle_board.x-battle_board.left-5+45-tempx,3)
-					Anim_Create(battle_soul,"y",0,0,tempy,battle_board.y-battle_board.up-5+36+32*1-tempy,3)
+					Anim_Create(battle_soul,"y",0,0,tempy,battle_board.y-battle_board.up-5+36+32*1+2-tempy,3)
 					}else{
 						audio_stop_sound(snd_menu_confirm);
 					}
@@ -201,7 +201,7 @@ if(_state==BATTLE_STATE.MENU){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_SetMenu(BATTLE_MENU.ACT_ACTION);
 			Anim_Create(battle_soul,"x",0,0,tempx,battle_board.x-battle_board.left-5+45-tempx,2)
-			Anim_Create(battle_soul,"y",0,0,tempy,battle_board.y-battle_board.up-5+36+32*1-tempy,2)
+			Anim_Create(battle_soul,"y",0,0,tempy,battle_board.y-battle_board.up-5+36+32*1+2-tempy,2)
 		}
 	}else
 	

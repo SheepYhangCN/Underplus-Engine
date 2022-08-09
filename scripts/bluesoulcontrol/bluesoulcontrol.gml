@@ -1,3 +1,4 @@
+///@arg dir
 function BlueSoulControl(){
 	if(!(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua))){
 		Battle_SetSoul(battle_soul_blue)

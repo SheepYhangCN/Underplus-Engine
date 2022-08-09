@@ -58,7 +58,9 @@ application_surface_draw_enable(false);
 show_debug_overlay(false);
 
 Flag_Load(FLAG_TYPE.SETTINGS)
-Language_Set(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.LANGUAGE,0))
+var default_lang=0
+if(os_get_language()="zh"){default_lang=1}
+Language_Set(Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.LANGUAGE,default_lang))
 //边框
 border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
 if(border_=0){

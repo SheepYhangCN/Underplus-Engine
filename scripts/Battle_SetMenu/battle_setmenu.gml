@@ -67,38 +67,8 @@ function Battle_SetMenu() {
 	////////////////////////////////////////
 	//行动内容
 	if(MENU==BATTLE_MENU.ACT_ACTION){
-		var ENEMY=Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy());
-		var num=Battle_GetEnemyActionNumber(ENEMY);
-	
-		//越界归零
-		if(Battle_GetMenuChoiceAction()>=num){
-			Battle_SetMenuChoiceAction(0,false);
-		}
-	
-		var proc=0;
-		var text="";
-		//var text2="";
-		//var target=0;
-		//创建行动列表文字
-		//repeat(Battle_GetEnemyActionNumber(ENEMY)){
-			proc-=1;
-			text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()-1)+"&";
-			proc=battle._menu_choice_action
-			text+=Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction())+"&";
-			proc+=1;
-			text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()+1)+"&";
-			//if(!target){
-				//text+=Battle_GetEnemyActionName(ENEMY,proc)+"&";
-				//target=!target;
-			//}else{
-				//text2+=Battle_GetEnemyActionName(ENEMY,proc)+"&";
-				//target=!target;
-			//}
-			proc+=1;
-		//}
+		Battle_SetMenuChoiceAction(0,false);
 		instance_create_depth(0,0,0,battle_menu_action_scrollbar);
-		Battle_SetDialog(text,true);
-		//Battle_SetDialog(text2,true,true);
 	}
 
 	//物品

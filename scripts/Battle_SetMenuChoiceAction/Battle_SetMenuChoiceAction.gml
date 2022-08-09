@@ -16,23 +16,21 @@ function Battle_SetMenuChoiceAction() {
 			battle._menu_choice_action_first-=1;
 		}
 		var text="";
-		var proc=battle._menu_choice_action;
-		proc-=1;
-		text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()-1)+"&";
-		proc=battle._menu_choice_action
-		text+=Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction())+"&";
-		proc+=1;
-		text+=" "+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()+1)+"&";
-		Battle_SetDialog(text,true);
+		text+="{color `gray`}"+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()-2)+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()-1)+"&";
+		text+="{color `white`}"+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction())+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()+1)+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(battle_enemy._enemy_slot,Battle_GetMenuChoiceAction()+2)+"&";
+		Battle_SetDialog5Line(text,true);
 	
 		if(CALL){
 			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_CHOICE_SWITCH);
 		}
 	
 		return true;
-	//}else{
-		//return false;
-	//}
+	/*}else{
+		return false;
+	}*/
 
 
 }

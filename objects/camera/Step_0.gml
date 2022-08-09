@@ -1,9 +1,4 @@
 if(shake_x>0){
-	//if(instance_exists(obj_blur_shader)){
-        //instance_destroy(obj_blur_shader)}
-        //shader = instance_create_depth(0, 0, 0, obj_blur_shader)
-        //shader.duration =_shake_time
-		
 	if(_shake_time_x>0){
 		_shake_time_x-=1;
 	}else{

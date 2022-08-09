@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Battle/Dialog.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Battle_IsDialogAutoEnd",
+  "name": "Battle_SetDialog5Line",
   "tags": [],
   "resourceType": "GMScript",
 }
