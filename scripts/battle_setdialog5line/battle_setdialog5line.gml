@@ -23,7 +23,7 @@ function Battle_SetDialog5Line() {
 	if(TEXT!=""){
 		//创建实例
 		var tx=battle_board.x-battle_board.left-5+25;
-		var ty=battle_board.y-battle_board.up-5-10;
+		var ty=battle_board.y-battle_board.up-5-12;
 		if(CHOICE){
 			tx+=40
 		}
