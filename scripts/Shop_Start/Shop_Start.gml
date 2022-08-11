@@ -16,7 +16,7 @@ function Shop_Start(){
 	
 		return true;
 	}else{
-		Console_OutputLine("Shop ID "+string(SHOP)+" doesn't exists!");
+		//Console_OutputLine("Shop ID "+string(SHOP)+" doesn't exists!");
 		return false;
 	}
 }
