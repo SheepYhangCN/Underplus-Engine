@@ -5,6 +5,11 @@ global.language=0
 global.enemy=0
 global.shop=0
 global.tas=false
+global.kr=0
+global.shield=false
+global.shield_useable=false
+global.shielding=false
+global.shieldval=120
 room_speed=60
 //cursor_sprite=spr_cursor
 window_set_size(640,480)
