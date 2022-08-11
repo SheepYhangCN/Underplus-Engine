@@ -1,5 +1,5 @@
 Battle_SetSoul(battle_soul_blue)
-Titr_BlueSoulControl(DIR.DOWN)
+BlueSoulControl_Titr(DIR.DOWN)
 Battle_MakeBoneWallBottom(40,32,1145141919810)
 Battle_MakeBoneWallTop(40,32,1145141919810)
 Battle_MakeBoneWallLeft(40,32,1145141919810)

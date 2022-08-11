@@ -1,6 +1,6 @@
 var temp=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
 var temp1=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
-Titr_BlueSoulControl(temp)
+BlueSoulControl_Titr(temp)
 switch temp{
 case DIR.UP:
 Battle_MakeBoneWallTop(40,30,15)

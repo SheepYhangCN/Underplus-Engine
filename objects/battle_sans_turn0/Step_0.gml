@@ -2,7 +2,7 @@ if(timer<600&&Battle_GetState()=BATTLE_STATE.IN_TURN){
 timer+=1}
 switch timer{
 	case 1:
-		Titr_BlueSoulControl(DIR.DOWN)
+		BlueSoulControl_Titr(DIR.DOWN)
 		Battle_MakeBoneWallBottom(30,55,20)
 		if(global.mode=2){Battle_MakeBoneWallTop(30,55,20)}
 		break

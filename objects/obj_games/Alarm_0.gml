@@ -13,10 +13,10 @@ if(global.language=1){CC_Add("即将到来")}
 room_restart()
 }else{
 switch choice{
-	case 0:
-	Encounter_Start(1)
+	case 0://教程
+		Encounter_Start(1)
 	break
-	case 1:
+	case 1://雪镇杉
 		if(phase=0){
 		room_goto(room_utse)}
 		if(phase=1){
@@ -24,18 +24,20 @@ switch choice{
 		if(phase=2){
 		Encounter_Start(5)}
 		break
-	case 2:
+	case 2://阿尼亚
 		if(phase=0){
 		Encounter_Start(7)}
 		if(phase=1){
 		room_goto(room_anya_dt2)}
 		break
-	case 3:
+	case 3://原杉
 		if(phase=0){
 		room_goto(room_sans_corridor)}
 		if(phase=1){
 		Encounter_Start(9)}
 		break
+	case 4://utc杉
+		room_goto(room_logo_utc)
 	break
 }
 }

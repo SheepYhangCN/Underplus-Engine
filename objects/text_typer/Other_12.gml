@@ -752,4 +752,20 @@ switch(cmd[|0]){
 			utse_pap_head.image_index=cmd[|1]
 		}
 		break
+//==================================================
+	case "utcsans_face":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_utcsans)){
+			battle_enemy_utcsans._face=cmd[|1]
+		}
+		break
+	case "utcsans_body":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_utcsans)){
+			battle_enemy_utcsans._body=cmd[|1]
+		}
+		break
+	case "utcsans_legs":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_utcsans)){
+			battle_enemy_utcsans._legs=cmd[|1]
+		}
+		break
 }

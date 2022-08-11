@@ -1,1 +1,1 @@
-Titr_BlueSoulControl(DIR.DOWN)
+BlueSoulControl_Titr(DIR.DOWN)

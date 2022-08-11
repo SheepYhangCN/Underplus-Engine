@@ -7,7 +7,7 @@ if(dir=DIR.LEFT){
 Battle_MakeBoneWallLeft(30,30,20)}
 if(dir=DIR.RIGHT){
 Battle_MakeBoneWallRight(30,30,20)}
-Titr_BlueSoulControl(dir)
+BlueSoulControl_Titr(dir)
 if(global.mode=0){
 alarm[3]=60}
 if(global.mode=1){

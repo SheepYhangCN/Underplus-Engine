@@ -26,7 +26,7 @@ switch timer{
 	case 800:
 		Battle_SetSoul(battle_soul_blue)
 		Battle_SetBoardSize(64,64,320,320)
-		Titr_BlueSoulControl(DIR.RIGHT)
+		BlueSoulControl_Titr(DIR.RIGHT)
 		Anim_Create(battle_soul,"x",0,0,battle_soul.x,220-battle_soul.x,20)
 		Anim_Create(titr_legs,"x",0,ANIM_EASE.IN,titr_legs.x,-640,120)
 		Anim_Create(titr_body,"x",0,ANIM_EASE.IN,titr_body.x,-640,120)
@@ -87,7 +87,7 @@ switch timer{
 		fader.alpha=0
 		audio_play_sound(snd_cut,0,0)
 		audio_resume_sound(bgm_snowsans)
-		Titr_BlueSoulControl(DIR.DOWN)
+		BlueSoulControl_Titr(DIR.DOWN)
 		Battle_MakeBoneWallBottom(40,40,20)
 		break
 	case 1710:
@@ -99,7 +99,7 @@ switch timer{
 		fader.alpha=0
 		audio_play_sound(snd_cut,0,0)
 		audio_resume_sound(bgm_snowsans)
-		Titr_BlueSoulControl(DIR.UP)
+		BlueSoulControl_Titr(DIR.UP)
 		battle_soul.x=280
 		battle_soul.y=battle_board.y-60
 		Battle_MakeBoneWallLeft(30,40,20)

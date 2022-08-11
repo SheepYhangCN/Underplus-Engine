@@ -19,6 +19,6 @@ Battle_MakeBoneWallLeft(30,length,10)
 Battle_MakeBoneWallRight(30,30,10)
 break
 }
-Titr_BlueSoulControl(_dir)
+BlueSoulControl_Titr(_dir)
 //alarm[3]=10
 alarm[0]=length+30

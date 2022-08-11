@@ -80,6 +80,12 @@ game+=" | Phase 2"
 break
 }
 break
+case 4:
+draw_sprite_ext(spr_utcsans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_utcsans_body,0,325-3,220-2,2,2,0,c_white,1)
+draw_sprite_ext(spr_utcsans_face,0,325-3,220-60,2,2,0,c_white,1)
+game="Undertale: Candid | Sans Fight"
+break
 }
 draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift - Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
@@ -157,6 +163,12 @@ draw_sprite_ext(spr_sans_sweat,0,325-3,220-35,2,2,0,c_white,1)
 game+="[font_menu] | [font_chinese]第[font_menu]2[font_chinese]阶段"
 break
 }
+break
+case 4:
+draw_sprite_ext(spr_utcsans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_utcsans_body,0,325-3,220-2,2,2,0,c_white,1)
+draw_sprite_ext(spr_utcsans_face,0,325-3,220-60,2,2,0,c_white,1)
+game="[font_menu]Undertale: Candid | Sans[font_chinese]战"
 break
 }
 draw_text_scribble(320,45,"[font_chinese][scale,2]"+(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+"[font_menu]"+Player_GetName()+"！\n[[[font_chinese]←[font_menu]&[font_chinese]→[font_menu]-[font_chinese]切换游戏[font_menu]][[X/Shift-[font_chinese]退出[font_menu]][[C/Ctrl-[font_chinese]商店[font_menu]]")

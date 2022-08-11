@@ -33,7 +33,7 @@ if(length<=0){
 length=a+32}
 if(128-length-35<=0){
 length=a-32}
-Titr_BlueSoulControl(DIR.DOWN)
+BlueSoulControl_Titr(DIR.DOWN)
 Battle_MakeBoneWallBottom(50,35,15)
 Battle_MakeBoneLeft(battle_board.y-64,length,2,0,0,0,1)
 Battle_MakeBoneRight(battle_board.y-64,128-length-35,2,0,0,0,1)
@@ -56,7 +56,7 @@ if(length<=0){
 length=a+32}
 if(128-length-35<=0){
 length=a-32}
-Titr_BlueSoulControl(DIR.UP)
+BlueSoulControl_Titr(DIR.UP)
 Battle_MakeBoneWallTop(50,35,15)
 Battle_MakeBoneLeft(battle_board.y+64,length,-2,0,0,0,1)
 Battle_MakeBoneRight(battle_board.y+64,128-length-35,-2,0,0,0,1)
@@ -79,7 +79,7 @@ if(length<=0){
 length=a+32}
 if(128-length-35<=0){
 length=a-32}
-Titr_BlueSoulControl(DIR.LEFT)
+BlueSoulControl_Titr(DIR.LEFT)
 Battle_MakeBoneWallLeft(50,35,15)
 Battle_MakeBoneTop(battle_board.x+64,length,-2,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x+64,128-length-35,-2,0,0,0,1)
@@ -102,7 +102,7 @@ if(length<=0){
 length=a+32}
 if(128-length-35<=0){
 length=a-32}
-Titr_BlueSoulControl(DIR.RIGHT)
+BlueSoulControl_Titr(DIR.RIGHT)
 Battle_MakeBoneWallRight(50,35,15)
 Battle_MakeBoneTop(battle_board.x-64,length,2,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x-64,128-length-35,2,0,0,0,1)

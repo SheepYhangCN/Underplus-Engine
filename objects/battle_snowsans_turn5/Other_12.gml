@@ -1,5 +1,5 @@
 Battle_SetSoul(battle_soul_blue)
-Titr_BlueSoulControl(DIR.DOWN)
+BlueSoulControl_Titr(DIR.DOWN)
 //Battle_MakeBoneWallLeft(0,28,1145141919810)
 //Battle_MakeBoneWallRight(0,28,1145141919810)
 if(global.mode=2){

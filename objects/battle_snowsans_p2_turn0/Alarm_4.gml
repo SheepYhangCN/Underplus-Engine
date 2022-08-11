@@ -2,7 +2,7 @@
 if(!instance_exists(battle_soul_blue)){
 Battle_SetSoul(battle_soul_blue)}
 var dir=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
-Titr_BlueSoulControl(dir)
+BlueSoulControl_Titr(dir)
 
 switch dir{
 case DIR.UP:

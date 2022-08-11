@@ -1,4 +1,4 @@
-Titr_BlueSoulControl(DIR.UP)
+BlueSoulControl_Titr(DIR.UP)
 Battle_MakeBoneWallLeft(40,35,15)
 Battle_MakeBoneWallRight(40,35,15)
 Battle_MakeBoneWallTop(40,35,15)
