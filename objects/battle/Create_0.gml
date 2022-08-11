@@ -1,6 +1,9 @@
 Battle_SetTurnTime(0)
+global.kr=0
+global.shield=false
+global.shield_useable=false
+global.shielding=false
 global.shieldval=120
-//alarm[0]=1
 if(Item_GetArmor()=item_shield){
 global.shield=1
 global.shield_useable=1}
