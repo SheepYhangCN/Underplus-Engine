@@ -1,4 +1,4 @@
-///@arg y,length.vspeed,type,out.rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
+///@arg y,length,vspeed,type,out.rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneRight(){
     var Y = argument[0]
     var LENGTH = argument[1]
