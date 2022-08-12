@@ -1,0 +1,1 @@
+if(_beam_scale=0&&_beam_alpha=0){instance_destroy();instance_destroy(_inst)}
