@@ -77,7 +77,7 @@ case 1220:
 	if(global.language=0){
 	_dialog.text="{font 3}{scale 5}{scale 4}{voice 0}{skippable false}D I E!{sleep 114514}"
 	}else if(global.language=1){
-	_dialog.text="{font 3}{speed 10}{scale 4}{voice 0}{skippalbe false}西 内 ！{sleep 114514}"
+	_dialog.text="{font 3}{speed 10}{scale 4}{voice 0}{skippalbe false}西 内 !{sleep 114514}"
 	}
 	break
 case 1400:

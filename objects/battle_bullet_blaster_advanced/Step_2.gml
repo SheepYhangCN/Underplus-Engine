@@ -9,3 +9,5 @@ _inst.image_xscale=scale_y;
 else _inst.image_xscale=scale_y*2;
 _inst.image_yscale=_beam_scale;
 _inst.image_alpha=_beam_alpha;
+
+if(_beam_scale=0&&_beam_alpha=0&&(x>room_width||x<0||y>room_height||y<0)){instance_destroy()}

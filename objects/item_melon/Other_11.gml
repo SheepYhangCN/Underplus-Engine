@@ -10,10 +10,10 @@ Dialog_Add("{font 4}{voice 4}{scale 1.9}我开水果摊的，能卖给你生瓜�
 Dialog_Add("{font 4}{voice 4}{scale 1.9}你是故意找猹是不是？&{sleep 20}你要不要吧。&{sleep 20}{font 3}{voice 3}{scale 1.8}* 你这瓜要是熟我肯定要啊。")
 Dialog_Add("{font 3}{voice 3}{scale 1.8}* 那它要是不熟怎么办啊？&{sleep 20}{font 4}{voice 4}{scale 1.9}要是不熟，我自己吃了它，&{sleep 20}满意了吧？")
 Dialog_Add("{font 4}{voice 4}{scale 1.9}15斤，30块。&{sleep 20}{font 3}{voice 3}{scale 1.8}* 你这哪够15斤，&{sleep 20}   你这称有问题啊。")
-Dialog_Add("{font 4}{voice 4}{scale 1.9}你TM故意找猹是不是？&{sleep 20}你要不要吧！&{sleep 20}你要不要？")
+Dialog_Add("{font 4}{voice 4}{scale 1.9}你TM故意找猹是不是？&{sleep 20}你要不要吧!&{sleep 20}你要不要？")
 Dialog_Add("{font 3}{voice 3}{scale 1.8}* 吸铁石。&{sleep 40}  另外你说的，&{sleep 20}  这瓜要是生的 你自己吞进去啊。")
-Dialog_Add("{font 4}{voice 4}{scale 1.9}你TM劈我瓜是吧？&{sleep 20}{font 0}{voice 2}{scale 2}* 诶外卖萨日朗！&{sleep 20}  萨日朗！萨日朗！")
-Dialog_Add("{font 0}{voice 5}{scale 2}* Sans！诶！Sans！")
+Dialog_Add("{font 4}{voice 4}{scale 1.9}你TM劈我瓜是吧？&{sleep 20}{font 0}{voice 2}{scale 2}* 诶外卖萨日朗!&{sleep 20}  萨日朗!萨日朗!")
+Dialog_Add("{font 0}{voice 5}{scale 2}* Sans!诶!Sans!")
 Dialog_Start();
 event_inherited();
 }

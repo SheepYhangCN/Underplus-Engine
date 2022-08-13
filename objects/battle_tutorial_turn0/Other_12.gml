@@ -1,7 +1,7 @@
 if(global.language=1){
-line0="你好！欢迎来到这个教程&"
+line0="你好!欢迎来到这个教程&"
 line1="我将向你讲述各种这个引擎中&的灵魂和弹幕&"
-line2="{sleep 15}那么开始吧！"
+line2="{sleep 15}那么开始吧!"
 line3="{pause}{clear}{soul `battle_soul_red`}你现在是{color `red`}红色{color `black`}的"
 line4="{pause}{clear}这个灵魂可以随意移动{pause}&（按下Z或Enter下一个灵魂）"
 line5="{pause}{clear}{soul `battle_soul_blue`}你现在是{color `blue`}蓝色{color `black`}的"
