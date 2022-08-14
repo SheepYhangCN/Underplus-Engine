@@ -1,7 +1,7 @@
 {
   "option_android_sync_amazon": false,
-  "option_android_display_name": "Underplus Engine",
-  "option_android_version": "2022.8.13",
+  "option_android_display_name": "UTC Sans Fight",
+  "option_android_version": "2022.8.12",
   "option_android_tools_from_version": false,
   "option_android_build_tools": "",
   "option_android_support_lib": "30.0.0",
@@ -10,7 +10,7 @@
   "option_android_compile_sdk": "30",
   "option_android_package_domain": "com",
   "option_android_package_company": "yuhang",
-  "option_android_package_product": "upe",
+  "option_android_package_product": "utcsans",
   "option_android_arch_armv7": true,
   "option_android_arch_x86": true,
   "option_android_arch_arm64": true,

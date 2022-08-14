@@ -171,7 +171,7 @@ draw_sprite_ext(spr_utcsans_face,0,325-3,220-60,2,2,0,c_white,1)
 game="[font_menu]Undertale: Candid | Sans[font_chinese]战"
 break
 }
-draw_text_scribble(320,45,"[font_chinese][scale,2]"+(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+"[font_menu]"+Player_GetName()+"!\n[[[font_chinese]←[font_menu]&[font_chinese]→[font_menu]-[font_chinese]切换游戏[font_menu]][[X/Shift-[font_chinese]退出[font_menu]][[C/Ctrl-[font_chinese]商店[font_menu]]")
+draw_text_scribble(320,45,"[font_chinese][scale,2]"+(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+"[font_menu]"+Player_GetName()+"！\n[[[font_chinese]←[font_menu]&[font_chinese]→[font_menu]-[font_chinese]切换游戏[font_menu]][[X/Shift-[font_chinese]退出[font_menu]][[C/Ctrl-[font_chinese]商店[font_menu]]")
 draw_text_scribble(320,375,"[scale,2]"+game)
 if(enabled){
 draw_text_scribble(320,405,"[scale,2][font_chinese]按下[font_menu]Z[font_chinese]或[font_menu]Enter[font_chinese]来开始")

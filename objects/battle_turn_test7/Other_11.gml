@@ -1,1 +1,0 @@
-Battle_MakeBoneWallRound_Rotate(1,100,0,60,-1)

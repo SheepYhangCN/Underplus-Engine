@@ -9,5 +9,5 @@ if(current_weekday=4){
 if(global.language=0){
 CC_Add("Today is KFC Crazy Thursday!",120)}
 if(global.language=1){
-CC_Add("今天可是肯德基疯狂星期四啊!V我50",120)}
+CC_Add("今天可是肯德基疯狂星期四啊！V我50",120)}
 }

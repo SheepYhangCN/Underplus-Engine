@@ -8,7 +8,7 @@ if(a){
 if(global.language=0){
 	Dialog_Add("* You ate Cxx.{sleep 20}&* You lost 1 HP.{pause}{clear}&* He is believe in you,&  your KR disappeared!")
 }else if(global.language=1){
-	Dialog_Add("* 你吃了Cxx。{sleep 20}&* 你失去了1点HP。{pause}{clear}&* 他相信着你，你的KR消失了!")
+	Dialog_Add("* 你吃了Cxx。{sleep 20}&* 你失去了1点HP。{pause}{clear}&* 他相信着你，你的KR消失了！")
 }
 }else if(Player_GetHp<=10){
 if(global.language=0){

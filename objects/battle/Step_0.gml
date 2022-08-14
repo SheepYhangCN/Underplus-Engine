@@ -369,7 +369,7 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 		text+="{font 0}* You WON!&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
 		break
 		case 1:
-		text+="{font 0}* 你赢了!&* 你获得了 {insert EXP} EXP 和 {insert GOLD} 金钱。"
+		text+="{font 0}* 你赢了！&* 你获得了 {insert EXP} EXP 和 {insert GOLD} 金钱。"
 		break
 		}
 	Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
