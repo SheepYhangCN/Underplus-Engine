@@ -8,5 +8,5 @@ _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
 if(global.language=0){
 _dialog.text="{font 3}{voice 3}{titr_face 1}are you still dreaming to&hit me?{pause}{clear}{titr_face 3}heh..{sleep 10}{titr_face 4}&it's impossible."
 }else if(global.language=1){
-_dialog.text="{font 3}{voice 3}{speed 5}{titr_face 1}你还妄想着能打中我？{pause}{clear}{titr_face 3}呵..{sleep 10}{titr_face 4}&那是不可能的。"
+_dialog.text="{font 3}{voice 3}{speed 5}{titr_face 1}你还妄想着能打中我?{pause}{clear}{titr_face 3}呵..{sleep 10}{titr_face 4}&那是不可能的。"
 }

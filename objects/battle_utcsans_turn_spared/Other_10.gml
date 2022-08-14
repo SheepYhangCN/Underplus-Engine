@@ -21,13 +21,13 @@ _dialog.text+="{pause}{clear}{utcsans_face 0}what? {sleep 15}me?{pause}{clear}{u
 _dialog.text+="{pause}{clear}{utcsans_face 0}chat was over.{sleep 15}{utcsans_face 2}&i hope you can escape from&the main fighting monster."
 }else if(global.language=1){
 _dialog.text+="{utcsans_face 3}好吧，{sleep 15}&也许你说的不错。"
-_dialog.text+="{pause}{utcsans_face 1}&谁说怪物一定要和&人类拼个你死我活？"
+_dialog.text+="{pause}{utcsans_face 1}&谁说怪物一定要和&人类拼个你死我活?"
 _dialog.text+="{pause}{clear}{utcsans_face 3}说不定真的能恢复和平，{sleep 15}&让怪物的未来充满光明。{pause}{utcsans_face 1}&我总是把事情想得太悲观。"
 _dialog.text+="{pause}{clear}{utcsans_face 3}那么...{sleep 15}{utcsans_face 0}&祝你真的能说服undyne&他们。"
 _dialog.text+="{pause}{clear}{utcsans_face 1}papyrus不过是跟着&undyne做事罢了，{sleep 15}{utcsans_face 0}&说服他并不难。"
 _dialog.text+="{pause}{clear}{utcsans_face 3}至于alphys...{sleep 15}{utcsans_face 1}&我想如果没有undyne&她很快就会倒戈。"
 _dialog.text+="{pause}{clear}{utcsans_face 0}undyne才是你的大麻烦...{sleep 15}{utcsans_face 1}&她虽然大大咧咧的，{sleep 15}{utcsans_face 3}&但是在她的内心深处，{sleep 15}{utcsans_face 0}&其实是一个坚守正义的&小屁孩。"
 _dialog.text+="{pause}{clear}{utcsans_face 3}那个小屁孩充满了&改变怪物命运的决心，{sleep 15}{utcsans_face 1}&试图让她屈服于人类&可不是一件容易事。"
-_dialog.text+="{pause}{clear}{utcsans_face 0}什么？{sleep 15}你问我？{pause}{clear}{utcsans_face 3}呵，{sleep 15}{utcsans_face 2}我不是已经&“倒戈”了吗。"
+_dialog.text+="{pause}{clear}{utcsans_face 0}什么?{sleep 15}你问我?{pause}{clear}{utcsans_face 3}呵，{sleep 15}{utcsans_face 2}我不是已经&“倒戈”了吗。"
 _dialog.text+="{pause}{clear}{utcsans_face 0}聊天到此结束，{sleep 15}{utcsans_face 2}&希望你能在主战的&怪物手中逃出来。"
 }
