@@ -14,8 +14,8 @@
   "soundFile": "snd_science_gb_shoot.wav",
   "duration": 2.331701,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_science_gb_shoot",

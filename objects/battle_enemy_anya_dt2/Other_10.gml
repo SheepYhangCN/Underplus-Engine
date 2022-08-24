@@ -31,6 +31,7 @@ legs = instance_create_depth(x, y+65, 0, anya_legs)
 animsin = 0
 sinn = 2
 audio_main=audio_play_sound(bgm_dt_p2_main,0,1)
+//Player_SetName("Damian")
 alarm[2]=1
 var ba=instance_create_depth(0,room_height,0,battle_bg)
 ba.image_blend=c_purple

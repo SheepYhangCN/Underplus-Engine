@@ -5,6 +5,15 @@ tempy=battle_soul.y
 if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
+		//检测当前按键是否存在
+		if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_fight)){
+		Battle_SetMenuChoiceButton(1)}
+		if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_act)){
+		Battle_SetMenuChoiceButton(2)}
+		if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_item)){
+		Battle_SetMenuChoiceButton(3)}
+		if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_mercy)){
+		Battle_SetMenuChoiceButton(4)}
 		//左/右
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;

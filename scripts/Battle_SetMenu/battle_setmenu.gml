@@ -54,7 +54,8 @@ function Battle_SetMenu() {
 		if(object_exists(OBJ)){
 			if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 				instance_create_depth(0,0,0,OBJ);
-				OBJ.image_yscale=0.97
+				OBJ.image_yscale=OBJ.base_yscale*0.97
+				OBJ.image_xscale=OBJ.base_xscale*1
 				/*OBJ.image_xscale=0
 				OBJ.image_yscale=OBJ._base_yscale*0.97
 				OBJ.image_alpha=0

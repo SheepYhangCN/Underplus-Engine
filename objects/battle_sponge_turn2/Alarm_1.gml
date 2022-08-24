@@ -1,0 +1,12 @@
+var a=random_range(-12,20)
+Battle_MakeBoneTwoV(battle_board.x-120,battle_board.y+a,3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x-135,battle_board.y+a,3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x-150,battle_board.y+a,3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x-165,battle_board.y+a,3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x-180,battle_board.y+a,3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+120,battle_board.y+a,-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+135,battle_board.y+a,-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+150,battle_board.y+a,-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+165,battle_board.y+a,-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+180,battle_board.y+a,-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+alarm[0]=80

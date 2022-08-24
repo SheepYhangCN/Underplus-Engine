@@ -14,8 +14,8 @@
   "soundFile": "bgm_anya.ogg",
   "duration": 295.19507,
   "parent": {
-    "name": "BGM",
-    "path": "folders/Sounds/BGM.yy",
+    "name": "fights",
+    "path": "folders/Sounds/BGM/fights.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgm_anya",

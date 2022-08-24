@@ -1,4 +1,4 @@
-var a = instance_create_depth(320,180,-1000,battle_bullet_bone);
+var a = instance_create_depth(320,180,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_bullet_bone);
 a.direction=point_direction(320,180,battle_soul.x,battle_soul.y);
 a.angle=point_direction(320,180,battle_soul.x,battle_soul.y);
 a.speed=3;

@@ -14,8 +14,8 @@
   "soundFile": "snd_gb_charge.wav",
   "duration": 1.057959,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_gb_charge",

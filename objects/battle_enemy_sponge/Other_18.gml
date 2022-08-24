@@ -1,0 +1,10 @@
+if(Battle_GetMenuChoiceButton()=1||Battle_GetMenuChoiceButton()=2||Battle_GetMenuChoiceButton()=3){
+	if(Battle_GetMenuChoiceButton()=3&&Battle_GetTurnNumber()=11){
+		instance_create_depth(0,0,0,battle_sponge_spared)}else{
+		Battle_SetNextState(BATTLE_MENU.BUTTON)
+		Battle_GotoNextState()
+}}
+if(Battle_GetMenuChoiceButton()=0){
+	_face=0
+	instance_create_depth(0,0,0,asset_get_index("battle_sponge_turn"+string(Battle_GetTurnNumber())))
+}

@@ -1,5 +1,4 @@
-event_inherited()
-/*if (type == 0){
+if (type == 0){
     image_blend = c_white}
 if (type == 1){
     image_blend = c_aqua//make_color_rgb(20, 196, 255)
@@ -9,4 +8,6 @@ if (type == 2){
 	}
 if (type == 3){
     image_blend = c_lime}
-draw_self()
+//surface_set_target(Battle_GetBoardSurface());{
+	draw_self();
+//}surface_reset_target();

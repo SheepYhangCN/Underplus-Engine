@@ -14,8 +14,8 @@
   "soundFile": "snd_text_voice_typer",
   "duration": 0.26,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "text_voice",
+    "path": "folders/Sounds/SFX/text_voice.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_text_voice_typer",

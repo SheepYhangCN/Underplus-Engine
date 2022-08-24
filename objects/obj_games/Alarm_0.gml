@@ -13,6 +13,10 @@ if(global.language=1){CC_Add("即将到来")}
 room_restart()
 }else{
 switch choice{
+	case -1://小游戏
+		if(phase=0){//3分钟大风车
+		Encounter_Start(12)}
+	break
 	case 0://教程
 		Encounter_Start(1)
 	break
@@ -38,6 +42,12 @@ switch choice{
 		break
 	case 4://utc杉
 		room_goto(room_logo_utc)
+	break
+	case 5://starry杉
+		Encounter_Start(11)
+	break
+	case 6://海绵宝宝
+		Encounter_Start(13)
 	break
 }
 }

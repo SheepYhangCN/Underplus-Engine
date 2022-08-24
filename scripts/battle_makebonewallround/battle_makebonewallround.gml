@@ -87,7 +87,6 @@ var bone=instance_create_depth(0,0,0,obj);
 bone._bones_angle=angle
 bone._bone_body=spr_body
 bone._bone_end=spr_end
-bone.angle+=180
 if(anim=true){
 bone._bones_length=0
 }else{
@@ -114,7 +113,7 @@ with (bone)
 if(sound=true){
 a = instance_create_depth(0, 0, 0, bone_box_round)
 a.duration = pause
-a.gap=battle_board.right-(length-72)
+a.gap=130-length
 audio_stop_sound(snd_exclamation)
 audio_play_sound(snd_exclamation, 0, false)}
 return bone;

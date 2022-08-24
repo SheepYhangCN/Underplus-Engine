@@ -14,8 +14,8 @@
   "soundFile": "bgm_dt_p2_main.wav",
   "duration": 197.16,
   "parent": {
-    "name": "BGM",
-    "path": "folders/Sounds/BGM.yy",
+    "name": "fights",
+    "path": "folders/Sounds/BGM/fights.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgm_dt_p2_main",

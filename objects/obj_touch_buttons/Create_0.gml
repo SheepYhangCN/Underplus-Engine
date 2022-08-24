@@ -1,6 +1,6 @@
 /// @description Assign Keys / Buttons
 
-should_show_touch_areas = false  // For debugging / customizing
+//should_show_touch_areas = false  // For debugging / customizing
 
 /**	
 	If 'should_show_touch_areas' is set to 'true', you'll be able 

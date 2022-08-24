@@ -14,8 +14,8 @@
   "soundFile": "bgm_snowsans.ogg",
   "duration": 184.61537,
   "parent": {
-    "name": "BGM",
-    "path": "folders/Sounds/BGM.yy",
+    "name": "fights",
+    "path": "folders/Sounds/BGM/fights.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgm_snowsans",

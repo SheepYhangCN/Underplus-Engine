@@ -1,5 +1,5 @@
-//instance_create_depth(random(room_width+100),0,0,season_effect)
-b=instance_create_depth(random(room_width+10), 0, 0, season_effect)
+//instance_create_depth(random(room_width+100),0,0,obj_season_effect)
+b=instance_create_depth(random(room_width+10), 0, 0, obj_season_effect)
 b.image_xscale=1
 b.image_yscale=1
 b.alarm[0]=-1

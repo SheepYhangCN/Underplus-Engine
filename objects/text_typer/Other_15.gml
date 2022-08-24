@@ -24,6 +24,7 @@ ds_map_add(_map_macro,"voice.papyrus",4);
 ds_map_add(_map_macro,"voice.asgore",5);
 ds_map_add(_map_macro,"voice.gaster",6);
 ds_map_add(_map_macro,"voice.chara",7);
+ds_map_add(_map_macro,"voice.sponge",8);
 
 _group_font[0,0]=font_dialog
 _group_font_scale_x[0,0]=1;
@@ -49,11 +50,11 @@ _group_font[2,0]=font_battle
 _group_font_scale_x[2,0]=1;
 _group_font_scale_y[2,0]=1;
 _group_font_space_x[2,0]=0;
-_group_font[2,1]=font_chinese
+_group_font[2,1]=font_chinese_enemy
 _group_font_scale_x[2,1]=1;
 _group_font_scale_y[2,1]=1;
 _group_font_space_x[2,1]=1
-_group_font_space_y[2]=0;
+_group_font_space_y[2]=1;
 
 _group_font[3,0]=font_sans
 _group_font_scale_x[3,0]=1;
@@ -103,6 +104,7 @@ _group_voice[4,0]=snd_text_voice_papyrus;
 _group_voice[5,0]=snd_text_voice_asgore;
 _group_voice[6,0]=asset_get_index("snd_text_voice_gaster"+string(irandom_range(1,7)))
 _group_voice[7,0]=snd_text_voice_chara
+_group_voice[8,0]=snd_text_voice_spongebob
 
 _group_face[0]=face;
 _group_face[1]=face_sans;

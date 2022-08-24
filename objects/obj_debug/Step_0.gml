@@ -20,8 +20,12 @@ if(global.debug = 1){
 	with(hint_landmark){
 	visible=!visible}}
 	if(Player_IsInBattle()){
-	with(battle_bullet_bone){
+	with(battle_bullet){
+	if(variable_instance_exists(self,"out")){
 	out=!out}
+	if(variable_instance_exists(self,"outside")){
+	outside=!outside}
+	}
 	}}
 	if(keyboard_check_pressed(vk_f12)){
 	if(global.mode = 0){
@@ -91,7 +95,7 @@ if(keyboard_check_pressed(vk_tab)){
 		Shop_Start(shop_start)
 	}
 	if(keyboard_check_pressed(vk_pagedown)){
-		encounter_battle=get_integer("Encounter_Start", global.enemy)
+		encounter_battle=get_integer("Encounter_Start", global.battle)
 		Encounter_Start(encounter_battle)
 }
 	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)&&!instance_exists(battle_soul_green)&&!instance_exists(battle_soul_green_aqua)){
@@ -117,6 +121,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.UP)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.UP)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
@@ -127,6 +133,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.LEFT)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.LEFT)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
@@ -137,6 +145,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.DOWN)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.DOWN)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
@@ -147,6 +157,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.RIGHT)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.RIGHT)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}
 	}}

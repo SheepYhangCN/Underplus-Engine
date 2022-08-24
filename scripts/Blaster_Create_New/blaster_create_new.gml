@@ -12,7 +12,7 @@ function Blaster_Create_New(){
     xx = argument[1]}
 	if(argument_count>2){
     yy = argument[2]}
-    bb = instance_create_depth(xx, yy, (-1000 << 0), blaster)
+    bb = instance_create_depth(xx, yy, (DEPTH_BATTLE.BULLET_OUTSIDE_HIGH << 0), blaster)
 	if(argument_count>3){
 	type = argument[3]}
 	if(argument_count>4){

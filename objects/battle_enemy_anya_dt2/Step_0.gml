@@ -8,5 +8,5 @@ window_set_caption(GAME_NAME+" - Anya think she is dt2")
 if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
-global.enemy=8
+global.battle=8
 head.image_index=4

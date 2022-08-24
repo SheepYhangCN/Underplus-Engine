@@ -14,8 +14,8 @@
   "soundFile": "snd_damage",
   "duration": 0.450884,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_damage",

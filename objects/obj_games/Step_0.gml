@@ -22,14 +22,14 @@ warning_color=c_white}
 if(warning_countdown>0){
 warning_color=c_red}
 
-/*a=instance_create_depth(random(room_width+10), 0, depth, season_effect)
+/*a=instance_create_depth(random(room_width+10), 0, depth, obj_season_effect)
 a.image_xscale=1
 a.image_yscale=1
 a.alarm[0]=-1
 a.alarm[1]=1*/
 //按键
 if(temp=0){
-if(Input_IsPressed(INPUT.LEFT)&&choice>0){
+if(Input_IsPressed(INPUT.LEFT)&&choice>choice_min){
 choice-=1
 audio_play_sound(snd_menu_switch,0,0)}
 
@@ -86,6 +86,10 @@ default:
 phases=0
 enabled=true
 break
+case -1://小游戏
+phases=0
+enabled=true
+break
 case 0://教程
 phases=0
 enabled=false
@@ -105,5 +109,16 @@ break
 case 4://utc杉
 phases=0
 enabled=true
+break
+case 5://starry杉
+phases=0
+enabled=false
+break
+case 6://海绵宝宝
+phases=1
+if(phase=0){
+enabled=true}
+if(phase=1){
+enabled=false}
 break
 }

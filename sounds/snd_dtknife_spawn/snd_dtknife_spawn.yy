@@ -14,8 +14,8 @@
   "soundFile": "snd_dtknife_spawn.wav",
   "duration": 1.110204,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_dtknife_spawn",

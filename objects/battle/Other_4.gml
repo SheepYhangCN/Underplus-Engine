@@ -8,9 +8,9 @@ instance_create_depth(345+53.5,432+20,0,battle_button_item);
 instance_create_depth(500+53.5,432+20,0,battle_button_mercy);
 //Anim_Create(battle_button,"y",0,ANIM_EASE.OUT,452+70,-70,15)
 Battle_SetSoul(battle_soul_red);
-if(instance_exists(battle_soul)){
-battle_soul.x=battle_button_fight.x-47
-battle_soul.y=battle_button_fight.y}
+//if(instance_exists(battle_soul)){
+//battle_soul.x=battle_button_fight.x-47
+//battle_soul.y=battle_button_fight.y}
 Dialog_Clear()
 
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);

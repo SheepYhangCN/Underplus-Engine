@@ -1,3 +1,4 @@
 event_inherited();
 
-_name="{font 0}西瓜{font 0}"
+_name="西瓜"
+_info="{font 1}{color `lime`}+30 HP"

@@ -14,8 +14,8 @@
   "soundFile": "snd_impact.wav",
   "duration": 0.619683,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_impact",

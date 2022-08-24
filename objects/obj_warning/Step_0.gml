@@ -1,4 +1,4 @@
-//instance_create_depth(random(room_width+10), 0, depth, season_effect)
+//instance_create_depth(random(room_width+10), 0, depth, obj_season_effect)
 if(global.language=0){
 window_set_caption(GAME_NAME+" - Warning")
 }else if(global.language=1){

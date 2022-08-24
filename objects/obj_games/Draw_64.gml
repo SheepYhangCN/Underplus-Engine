@@ -15,6 +15,14 @@ draw_sprite_ext(spr_pixel,0,102+6,108+6,430-6-6,210-6-6,0,c_black,1)
 if(global.language=0){
 draw_set_font(font_menu)
 switch choice{
+case -1:
+draw_text_transformed(320,430,"Use Up and Down arrow keys to switch game",2,2,0)
+game="Minigame"
+if(phase=0){
+draw_sprite_ext(spr_blaster,0,320-3,300-7,3,3,-90,c_white,1)
+game+=" | 3 Minute GB Fan Fight"
+}
+break
 case 0:
 game="Tutorial Fight"
 break
@@ -86,6 +94,21 @@ draw_sprite_ext(spr_utcsans_body,0,325-3,220-2,2,2,0,c_white,1)
 draw_sprite_ext(spr_utcsans_face,0,325-3,220-60,2,2,0,c_white,1)
 game="Undertale: Candid | Sans Fight"
 break
+case 5:
+draw_text_transformed(320,430,"Use Up and Down arrow keys to switch phase",2,2,0)
+draw_sprite_ext(spr_starry_sans_legs,0,320,220+60,2,2,0,c_white,1)
+draw_sprite_ext(spr_starry_sans_body,0,320,220+10,2,2,0,c_white,1)
+draw_sprite_ext(spr_starry_sans_face,0,320,220-30,2,2,0,c_white,1)
+game="StarryTale | Sans Fight"
+break
+case 6:
+draw_text_transformed(320,430,"Use Up and Down arrow keys to switch phase",2,2,0)
+draw_sprite_ext(spr_sponge_legs,0,320,220+60,2,2,0,c_white,1)
+draw_sprite_ext(spr_sponge_face,0,320,220-25,2,2,0,c_white,1)
+draw_sprite_ext(spr_sponge_body,0,320,220+23,2,2,0,c_white,1)
+game="Spongeswap | Spongebob Fight"
+game+=" | Phase "+string(phase+1)
+break
 }
 draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift - Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
@@ -99,6 +122,14 @@ draw_set_color(c_white)}
 if(global.language=1){
 draw_set_font(font_chinese)
 switch choice{
+case -1:
+draw_text_scribble(320,435,"[font_chinese][scale,2]使用上下方向键切换游戏")
+game="[font_chinese]小游戏"
+if(phase=0){
+draw_sprite_ext(spr_blaster,0,320-3,300-7,3,3,-90,c_white,1)
+game+="[font_dialog] | 3[font_chinese]分钟大风车耐力战"
+}
+break
 case 0:
 game="[font_chinese]教程战"
 break
@@ -170,6 +201,20 @@ draw_sprite_ext(spr_utcsans_body,0,325-3,220-2,2,2,0,c_white,1)
 draw_sprite_ext(spr_utcsans_face,0,325-3,220-60,2,2,0,c_white,1)
 game="[font_dialog]Undertale: Candid | Sans[font_chinese]战"
 break
+case 5:
+draw_sprite_ext(spr_starry_sans_legs,0,320,220+60,2,2,0,c_white,1)
+draw_sprite_ext(spr_starry_sans_body,0,320,220+10,2,2,0,c_white,1)
+draw_sprite_ext(spr_starry_sans_face,0,320,220-30,2,2,0,c_white,1)
+game="[font_chinese]星空传说[font_dialog]StarryTale | Sans[font_chinese]战"
+break
+case 6:
+draw_text_scribble(320,435,"[font_chinese][scale,2]使用上下方向键切换阶段")
+draw_sprite_ext(spr_sponge_legs,0,320,220+60,2,2,0,c_white,1)
+draw_sprite_ext(spr_sponge_face,0,320,220-25,2,2,0,c_white,1)
+draw_sprite_ext(spr_sponge_body,0,320,220+23,2,2,0,c_white,1)
+game="[font_dialog]Spongeswap | Spongebob [font_chinese]战"
+game+="[font_dialog] | [font_chinese]第[font_dialog]"+string(phase+1)+"[font_chinese]阶段"
+break
 }
 draw_text_scribble(320,45,"[font_chinese][scale,2]"+(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+"[font_dialog]"+Player_GetName()+"!\n[[[font_chinese]←[font_dialog]&[font_chinese]→[font_dialog]-[font_chinese]切换游戏[font_dialog]][[X/Shift-[font_chinese]退出[font_dialog]][[C/Ctrl-[font_chinese]商店[font_dialog]]")
 draw_text_scribble(320,375,"[scale,2]"+game)
@@ -182,8 +227,27 @@ draw_set_color(c_white)}
 }
 
 draw_set_font(font_menu)
+//小游戏/战斗 提示
+if(global.language=0){
+if(choice=0){
+draw_set_halign(fa_left)
+draw_text_transformed(15,340,"<- Minigames",2,2,0)
+draw_set_halign(fa_center)}
+if(choice=-1){
+draw_set_halign(fa_right)
+draw_text_transformed(room_width-15,340,"Battles ->",2,2,0)
+draw_set_halign(fa_center)}}
+if(global.language=1){
+if(choice=0){
+draw_set_halign(fa_left)
+draw_text_scribble(15,345,"[scale,2]<- [font_chinese]小游戏",)
+draw_set_halign(fa_center)}
+if(choice=-1){
+draw_set_halign(fa_right)
+draw_text_scribble(room_width-15,345,"[scale,2][font_chinese]战斗[font_menu] ->")
+draw_set_halign(fa_center)}}
 //左右箭头
-if(choice>0){
+if(choice>choice_min){
 draw_set_color(c_white)
 }else{
 draw_set_color(c_gray)}

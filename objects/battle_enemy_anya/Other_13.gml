@@ -1,4 +1,4 @@
-if(Battle_GetTurnNumber()<11){
+if(Battle_GetTurnNumber()<11&&flirted=false){
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
 		body.image_index=1
 		head.image_index=2

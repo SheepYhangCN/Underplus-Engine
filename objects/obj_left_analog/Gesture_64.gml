@@ -26,4 +26,4 @@ and axis_radius <= circle_border * screen_size)
 }
 
 // Wait 1 second to reset the axis
-alarm[0] = 5//1 * room_speed
+alarm[0] = 3//1 * room_speed

@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "sans_remake",
+    "path": "folders/Objects/Battle/Enemy/sans_remake.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_sans_corridor",
