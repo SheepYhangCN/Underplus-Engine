@@ -1,5 +1,5 @@
 var _dir=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 var length=40}else{var length=30}
 switch _dir{
 case DIR.UP:

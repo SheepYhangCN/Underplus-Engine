@@ -7,12 +7,12 @@ Player_SetKR(0)
 alarm[1]=1
 Battle_SetEnemyName(_enemy_slot,"Sans");
 Battle_SetEnemyActionNumber(_enemy_slot,2);
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
 Battle_SetEnemyActionName(_enemy_slot,1,"Taunt")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"Taunt enemy")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 Battle_SetEnemyActionName(_enemy_slot,0,"检查")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"查看敌人数据")
 Battle_SetEnemyActionName(_enemy_slot,1,"嘲讽")

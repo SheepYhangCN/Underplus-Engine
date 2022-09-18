@@ -25,9 +25,9 @@ var second=time mod 60;
 _inst_time.text=_prefix+string(minute)+":"+(second<10 ? "0" : "")+string(second);
 _inst_room=instance_create_depth(150,56,0,text_typer);
 _inst_room.text=_prefix+"["+string(Flag_GetSaveSlot())+"] "+Player_GetRoomName(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.ROOM,-1));
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"EMPTY");
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 _inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"空");
 }
 
@@ -65,7 +65,7 @@ if(choice=3&&select=0){inst_move_index.text=_prefix+"{color `gray`}< {color `yel
 if(choice=3&&select=9){inst_move_index.text=_prefix+"{color `yellow`}< "+string(select)+"/9{color `gray`} >"}
 }
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 if(choice=2){
 if(ok){inst_copy.text=_prefix+"{color `red`}(Are you sure? It will overwrite your old save!)"
 }else{inst_copy.text=_prefix+"{color `yellow`}Copy to"}
@@ -92,7 +92,7 @@ if(choice=5){
 inst_back.text=_prefix+"{color `yellow`}Back"
 }else{inst_back.text=_prefix+"Back"}
 }
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 if(choice=2){
 if(ok){inst_copy.text=_prefix+"{color `red`}(你确定吗? 这将会覆盖你的旧存档!)"
 }else{inst_copy.text=_prefix+"{color `yellow`}复制至"}

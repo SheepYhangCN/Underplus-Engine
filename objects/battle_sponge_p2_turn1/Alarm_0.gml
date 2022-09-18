@@ -1,0 +1,9 @@
+//Battle_MakeBoneBottom(battle_board.x-240,20,3,0,0,0,1)
+//Battle_MakeBoneTop(battle_board.x-240,70,3,0,0,0,1)
+//Battle_MakeBoneBottom(battle_board.x+240,20,-3,0,0,0,1)
+//Battle_MakeBoneTop(battle_board.x+240,70,-3,0,0,0,1)
+Battle_MakeBoneTwoV(battle_board.x-240,battle_board.y+random_range(-16,24),3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+Battle_MakeBoneTwoV(battle_board.x+240,battle_board.y+random_range(-16,24),-3,32,1,-1,battle_bullet_bone,bone_body,spatula_end)
+//Battle_MakeBoneLeft(battle_board.y-64,480,5,1,0,0,1)
+audio_play_sound(snd_cut,0,0)
+alarm[0]=80

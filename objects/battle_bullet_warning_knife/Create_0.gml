@@ -4,11 +4,11 @@ type=0
 warning_time=60
 knife_time=10
 width=10
-/*if(global.mode=0){
+/*if(global.mode=GAME_MODE.NORMAL){
 hit_damage=5}
-if(global.mode=1){
+if(global.mode=GAME_MODE.EASY){
 hit_damage=4}
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 hit_damage=6}*/
 hit_damage=Battle_GetEnemyAtk()
 audio_play_sound(snd_dtknife_warning,0,0)

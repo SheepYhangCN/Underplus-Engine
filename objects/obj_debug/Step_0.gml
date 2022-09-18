@@ -28,20 +28,20 @@ if(global.debug = 1){
 	}
 	}}
 	if(keyboard_check_pressed(vk_f12)){
-	if(global.mode = 0){
-		global.mode = 1;
-	}else if(global.mode = 1){
-		global.mode = 2;
-	}else if(global.mode = 2){
-		global.mode = 0
+	if(global.mode=GAME_MODE.NORMAL){
+		global.mode=GAME_MODE.EASY;
+	}else if(global.mode=GAME_MODE.EASY){
+		global.mode=GAME_MODE.HARD;
+	}else if(global.mode=GAME_MODE.HARD){
+		global.mode=GAME_MODE.NORMAL
 	}
 		Player_SetHp(Player_GetHpMax())
 		room_restart()
 }
 	if(keyboard_check_pressed(vk_f5)){
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	Language_Set(1)
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	Language_Set(0)
 	}
 }
@@ -110,7 +110,7 @@ if(keyboard_check_pressed(vk_tab)){
 		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_init);
 		room_goto(asset_get_index(target))
 	}
-if(keyboard_check_pressed(vk_escape)){
+if(keyboard_check_pressed(vk_space)){
 		show_message("Game Paused")}
 if(Player_IsInBattle()){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){

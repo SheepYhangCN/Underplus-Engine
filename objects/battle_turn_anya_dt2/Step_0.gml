@@ -74,9 +74,9 @@ case 1200:
 case 1220:
 	Battle_MakeDtKnife(battle_board.x,battle_board.y,battle_bullet_warning_knife,0,4,10,120,100)
 	var _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	_dialog.text="{font 3}{scale 5}{scale 4}{voice 0}{skippable false}D I E!{sleep 114514}"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	_dialog.text="{font 3}{speed 10}{scale 4}{voice 0}{skippalbe false}西 内 !{sleep 114514}"
 	}
 	break

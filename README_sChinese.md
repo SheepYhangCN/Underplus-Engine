@@ -36,7 +36,7 @@ PageUp 触发商店
 
 PageDown 触发战斗
 
-Esc 暂停游戏
+空格 暂停游戏
 
 加号 增加HP
 

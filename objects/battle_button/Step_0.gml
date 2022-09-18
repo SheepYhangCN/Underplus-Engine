@@ -3,9 +3,9 @@ var MENU=Battle_GetMenu();
 image_blend = make_color_hsv(0,0,sat);
 if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU.FIGHT_ANIM && MENU!=BATTLE_MENU.FIGHT_DAMAGE){
 	if(Battle_GetMenuChoiceButton()==_button_slot){
-		if(global.language=0){
+		if(global.language=LANGUAGE.ENGLISH){
 		image_index=1;
-		}else if(global.language=1){
+		}else if(global.language=LANGUAGE.SCHINESE){
 		image_index=3}
 		if(MENU==BATTLE_MENU.BUTTON){
 			//battle_soul.x=x-47;
@@ -35,9 +35,9 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 				sat+=20;
 		}
 	}else{
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	image_index=0;
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	image_index=2}
 		_timer=0;
 		/*if image_xscale > 1
@@ -48,9 +48,9 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 			sat-=20;
 	}
 }else{
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	image_index=0;
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	image_index=2}
 	_timer=0;
 	/*if image_xscale > 1

@@ -2,7 +2,7 @@ Battle_SetSoul(battle_soul_blue)
 BlueSoulControl_Titr(DIR.DOWN)
 //Battle_MakeBoneWallLeft(0,28,1145141919810)
 //Battle_MakeBoneWallRight(0,28,1145141919810)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 Battle_MakeBoneWallTop(0,48,800)
 }else{
 Battle_MakeBoneWallTop(0,40,800)}

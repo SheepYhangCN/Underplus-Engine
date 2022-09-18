@@ -57,6 +57,12 @@ if(keyboard_check_pressed(ord("S"))){
 	global.tas=false
 	room_speed=60}
 }}}
+if(keyboard_check(ord("V"))){
+if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("P"))){
+if(keyboard_check_pressed(ord("E"))){
+	Vape_Setup()
+}}}}
 if(global.tas=true){
 if(keyboard_check(vk_lalt)){
 room_speed-=1}
@@ -64,17 +70,24 @@ if(keyboard_check(vk_ralt)){
 room_speed+=1}
 }
 if(keyboard_check_pressed(vk_backspace)){
+if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Tap back button(mobile) or backspace&key(desktop) to switch the&mobile controller.")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("按下返回键(移动端)或退格键&(桌面端)来切换移动端控制。")}
 if(instance_exists(obj_left_analog)||instance_exists(obj_touch_buttons)){
 instance_destroy(obj_left_analog)
 instance_destroy(obj_touch_buttons)
+instance_create_depth(0,0,depth-1,mobile_control)
+if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Mobile Control By Crosu")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：移动端控制By南省Crosu")}
+}else if(instance_exists(mobile_control)){
+instance_destroy(mobile_control)
+if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Disabled")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：已关闭")}
 }else{
 instance_create_depth(0,0,depth-1,obj_left_analog)
-instance_create_depth(0,0,depth-1,obj_touch_buttons)}
-if(global.language=0){
-show_message_async("Tap back button(mobile) or backspace key(desktop) to switch the mobile controller.")}
-if(global.language=1){
-show_message_async("按下返回键(移动端)或退格键(桌面端)来开关移动端控制。")}
-}
+instance_create_depth(0,0,depth-1,obj_touch_buttons)
+if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Mobile Control By Darknslim")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：移动端控制By Darknslim")}
+}}
 
 if(instance_exists(battle_soul_yellow)||instance_exists(battle_soul_yellow_aqua)||instance_exists(battle_soul_yellow_orange)||instance_exists(battle_soul_yellow_aqua_orange)){
 cursor_sprite=noone

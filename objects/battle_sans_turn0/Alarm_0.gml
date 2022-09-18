@@ -1,7 +1,7 @@
-if(global.mode=2){empty=45}else{empty=56}
+if(global.mode=GAME_MODE.HARD){empty=45}else{empty=56}
 Battle_MakeBoneTop(battle_board.x-64,basey-(battle_board.y-64),4,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x-64,battle_board.y+64-basey-empty,4,0,0,0,1)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 Battle_MakeBoneLeft(battle_board.x-64,basey-(battle_board.y-64),4,0,0,0,1)
 Battle_MakeBoneRight(battle_board.x-64,battle_board.y+64-basey-empty,4,0,0,0,1)
 }
@@ -16,7 +16,7 @@ temp=1}
 if(basey<=280){
 temp=0}
 
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 alarm[0]=6
 }else{
 alarm[0]=8}

@@ -3,7 +3,7 @@ y = Battle_GetEnemyCenterPosY(_enemy_slot)
 Battle_SetEnemySpareable(_enemy_slot,0);
 Battle_SetEnemyActionNumber(_enemy_slot,3);
 Battle_SetEnemyName(_enemy_slot,"Anya")
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check Enemy Data")
 Battle_SetEnemyActionName(_enemy_slot,1,"Insult")
@@ -11,7 +11,7 @@ Battle_SetEnemyActionInfo(_enemy_slot,1,"Insult enemy")
 Battle_SetEnemyActionName(_enemy_slot,2,"Flirt")
 Battle_SetEnemyActionInfo(_enemy_slot,2,"Flirt enemy")
 }
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 Battle_SetEnemyActionName(_enemy_slot,0,"检查")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"查看敌人数据")
 Battle_SetEnemyActionName(_enemy_slot,1,"辱骂")
@@ -26,10 +26,10 @@ _hpmax = 1
 Player_SetLv(1)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 Battle_SetPlayerTempInv(45)
 Battle_SetEnemyAtk(6)
-}else if(global.mode=1){
+}else if(global.mode=GAME_MODE.EASY){
 Battle_SetPlayerTempInv(75)
 Battle_SetEnemyAtk(2)
 }else{

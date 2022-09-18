@@ -784,5 +784,8 @@ switch(cmd[|0]){
 		if(is_real(cmd[|1])&&instance_exists(battle_enemy_sponge)){
 			battle_enemy_sponge._face=cmd[|1]
 		}
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_sponge_p2)){
+			battle_enemy_sponge_p2._face=cmd[|1]
+		}
 		break
 }

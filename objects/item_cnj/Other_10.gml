@@ -1,8 +1,8 @@
 ///@desc Use
 //Dialog_Add("* You ate TML.&{sleep 20}* Undertale Engine Forever!&{sleep 20}* Your HP is maxed out.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* You ate CNJ.{sleep 20}&* You recovered 55 HP.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 你吃了CNJ。{sleep 20}&* 你恢复了55点HP。")
 }
 Dialog_Start();

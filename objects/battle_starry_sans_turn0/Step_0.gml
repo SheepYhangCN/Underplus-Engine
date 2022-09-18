@@ -19,7 +19,7 @@ case 150:
 	break
 case 200:
 	Battle_SetSoul(battle_soul_red)
-	//if(global.mode=2){var scale=2.8}else{var scale=2.5}
+	//if(global.mode=GAME_MODE.HARD){var scale=2.8}else{var scale=2.5}
 	var scale=2.8
 	Blaster_Create_Advanced(0,0,battle_board.x,200,0,0-90,scale,2,0,25,spr_starry_gb,20,30)
 	Blaster_Create_Advanced(0,0,battle_board.x,440,0,180-90,scale,2,0,25,spr_starry_gb,20,30)
@@ -27,7 +27,7 @@ case 200:
 	Blaster_Create_Advanced(0,0,440,battle_board.y,0,-90-90,scale,2,0,25,spr_starry_gb,20,30)
 	break
 case 270:
-	//if(global.mode=2){var scale=2.5}else{var scale=2.2}
+	//if(global.mode=GAME_MODE.HARD){var scale=2.5}else{var scale=2.2}
 	var scale=2.5
 	Blaster_Create_Advanced(0,0,200,200,0,45-90,scale,2,0,25,spr_starry_gb,20,30)
 	Blaster_Create_Advanced(0,0,440,200,0,-45-90,scale,2,0,25,spr_starry_gb,20,30)
@@ -69,9 +69,9 @@ case 880:
 	break
 case 999:
 	a=instance_create_depth(420, 120, 0, battle_dialog_enemy)
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	a.text="{font 3}{scale 1}{voice 3}{starry_face 1}{starry_body 1}heheh{sleep 15}&i said why didn't anyone&make the big thing at first?{pause}{end_turn}{end}"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	a.text="{font 3}{scale 1}{voice 3}{starry_face 1}{starry_body 1}哈{sleep 15}&我就说怎么没人一开始&就放大呢？{pause}{end_turn}{end}"
 	}
 	break

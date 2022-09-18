@@ -4,11 +4,11 @@ BGM_Play(0,bgm_sansdate)
 audio_play_sound(snd_logo,0,0)
 typer=instance_create_depth(10,10,0,text_typer)
 typer.text="{instant true}{skippable false}{font 1}{scale 2}"
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 typer.text+="{scale 4}Anya Forger Fight&{scale 3}(NO AU, based on <Spy x Family>)&{scale 2}Made By SheepYhangCN&Used Song: 心照不宣 by PikaLcu_靓&Bullets Sprites by 无名的wm&Anya Sprites by CT_LAES"
 typer1=instance_create_depth(180,440,0,text_typer)
 typer1.text="{scale 2}{instant true}{color `gray`}[Press Z or Enter]"}
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 typer.text+="{scale 4}Anya Forger战&{scale 3}(无AU 基于《间谍过家家》)&{scale 2}By 憨憨羊の宇航鸽鸽&使用曲子: 心照不宣 by PikaLcu_靓&弹幕贴图By 无名的wm&Anya贴图 by CT_LAES"
 typer1=instance_create_depth(200,440,0,text_typer)
 typer1.text="{font 0}{scale 2}{instant true}{color `gray`}[按下 Z 或 Enter]"}

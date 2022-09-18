@@ -19,16 +19,16 @@ Player_SetKR(0)
 alarm[1]=1
 Battle_SetEnemyName(_enemy_slot,"Spongebob");
 Battle_SetEnemyActionNumber(_enemy_slot,1);
-if(global.language=0){
-if(global.mode=1){
+if(global.language=LANGUAGE.ENGLISH){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"Heal")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+Full HP")
 }
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
-}else if(global.language=1){
-if(global.mode=1){
+}else if(global.language=LANGUAGE.SCHINESE){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"治疗")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+满HP")
@@ -60,7 +60,7 @@ Item_Set(2,item_sponge_bubble)
 Item_Set(3,item_sponge_bubble)
 Item_Set(4,item_sponge_bubble)
 Item_Set(5,item_sponge_bubble)
-Item_Set(6,(global.mode=2 ? item_sponge_bubble : item_sponge_bubble_water))
+Item_Set(6,(global.mode=GAME_MODE.HARD ? item_sponge_bubble : item_sponge_bubble_water))
 Item_Set(7,item_sponge_chumstick)
 hint=0
 

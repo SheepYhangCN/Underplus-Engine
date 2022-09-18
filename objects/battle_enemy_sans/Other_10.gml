@@ -7,16 +7,16 @@ Player_SetKR(0)
 alarm[1]=1
 Battle_SetEnemyName(_enemy_slot,"Sans");
 Battle_SetEnemyActionNumber(_enemy_slot,1);
-if(global.language=0){
-if(global.mode=1){
+if(global.language=LANGUAGE.ENGLISH){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"Heal")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+Full HP")
 }
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
-}else if(global.language=1){
-if(global.mode=1){
+}else if(global.language=LANGUAGE.SCHINESE){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"治疗")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+满HP")

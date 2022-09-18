@@ -109,7 +109,7 @@ Battle_MakeBoneBottom(battle_board.x-64,128-length-35,2,0,0,0,1)
 break
 }
 lastet_dir=temp
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 alarm[0]=70
 }else{
 alarm[0]=80}

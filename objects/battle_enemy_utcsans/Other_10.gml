@@ -21,16 +21,16 @@ Player_SetKR(0)
 alarm[1]=1
 Battle_SetEnemyName(_enemy_slot,"Sans");
 Battle_SetEnemyActionNumber(_enemy_slot,1);
-if(global.language=0){
-if(global.mode=1){
+if(global.language=LANGUAGE.ENGLISH){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"Heal")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+Full HP")
 }
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
-}else if(global.language=1){
-if(global.mode=1){
+}else if(global.language=LANGUAGE.SCHINESE){
+if(global.mode=GAME_MODE.EASY){
 Battle_SetEnemyActionNumber(_enemy_slot,2);
 Battle_SetEnemyActionName(_enemy_slot,1,"治疗")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"{color `lime`}+满HP")
@@ -47,9 +47,9 @@ Player_SetHpMax(25)
 Player_SetHp(Player_GetHpMax())
 Battle_SetEnemyAtk(4)
 
-if(global.mode=0){Battle_SetPlayerTempInv(75)}
-if(global.mode=1){Battle_SetPlayerTempInv(90)}
-if(global.mode=2){Battle_SetPlayerTempInv(60)}
+if(global.mode=GAME_MODE.NORMAL){Battle_SetPlayerTempInv(75)}
+if(global.mode=GAME_MODE.EASY){Battle_SetPlayerTempInv(90)}
+if(global.mode=GAME_MODE.HARD){Battle_SetPlayerTempInv(60)}
 global.shield=false
 global.shield_useable=false
 alarm[3]=1

@@ -1,7 +1,7 @@
 //Dialog_Add("* The Engine won't make you drop&  it.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* Yst gave you a slap and ran&  away.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 养生堂给了你一巴掌然后跑路了。")
 }
 Dialog_Start();

@@ -1,0 +1,1 @@
+BlueSoulControl(DIR.UP)

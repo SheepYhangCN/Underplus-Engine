@@ -1,1 +1,1 @@
-room_goto(room_sponge_end)
+Encounter_Start(14)

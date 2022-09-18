@@ -91,9 +91,9 @@ switch timer{
 	case 1139:
 		titr_body.image_index=1
 		a=instance_create_depth(420, 110, 0, battle_dialog_enemy)
-		if(global.language=0){
+		if(global.language=LANGUAGE.ENGLISH){
 		a.text="{font 3}{scale 1}{voice 3}{titr_face 1}i've been wondering how&stupid it is to show their&strongest attack at first.{pause}{end_turn}{end}"
-		}else if(global.language=1){
+		}else if(global.language=LANGUAGE.SCHINESE){
 		a.text="{font 3}{speed 5}{scale 1}{voice 3}{titr_face 1}我一直在想把最强攻击&放在开头的人是有多蠢。{pause}{end_turn}{end}"
 		break
 }}

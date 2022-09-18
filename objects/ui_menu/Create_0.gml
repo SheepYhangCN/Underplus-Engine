@@ -30,13 +30,13 @@ _inst_name.text=_prefix+Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME);
 
 _inst_menu=instance_create_depth(32+6+46,168+6+14,0,text_typer);
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _phone="CELL"}
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 _phone="{font 0}电话"}
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+"{font 1}ITEM"+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+"{font 1}STAT"+(Phone_GetNumber()>0 ? "&"+_phone : "");
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 _inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+"{font 0}物品"+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+"{font 0}统计"+(Phone_GetNumber()>0 ? "&"+_phone : "");
 }
 audio_play_sound(snd_menu_switch,0,false);

@@ -1,7 +1,7 @@
 global.debug = 0;
 global.undead = 0;
-global.mode = 0;
-global.language=0
+global.mode=GAME_MODE.NORMAL;
+global.language=LANGUAGE.ENGLISH
 global.battle=0
 global.shop=0
 global.tas=false

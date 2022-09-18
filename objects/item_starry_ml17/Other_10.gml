@@ -1,6 +1,6 @@
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* You ate ML17.{sleep 15}&* You recovered 114514 HP.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 你吃了ML17。{sleep 15}&* 你恢复了114514点HP。")
 }
 Dialog_Start();

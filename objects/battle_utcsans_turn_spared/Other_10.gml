@@ -8,7 +8,7 @@ battle_enemy_utcsans.alarm[2]=-1
 audio_stop_all()
 _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 _dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 0}...{pause}{clear}"
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _dialog.text+="{utcsans_face 3}okay, {sleep 15}&maybe you are right."
 _dialog.text+="{pause}{utcsans_face 1}&who said monsters have to&fight to death with human?"
 _dialog.text+="{pause}{clear}{utcsans_face 3}maybe peace really can&be restored, {sleep 15}&making the future of&monsters bright.{pause}{clear}{utcsans_face 1}i always think things&too pessimistically."
@@ -19,7 +19,7 @@ _dialog.text+="{pause}{clear}{utcsans_face 0}undyne is your big trouble...{sleep
 _dialog.text+="{pause}{clear}{utcsans_face 3}that kid is full of&determination to change&the fate of the monster,{sleep 15}{utcsans_face 1}&it's not easy to make&her succumb to human."
 _dialog.text+="{pause}{clear}{utcsans_face 0}what? {sleep 15}me?{pause}{clear}{utcsans_face 3}heh,{sleep 15}{utcsans_face 2}&i have already&\"defectioned\"."
 _dialog.text+="{pause}{clear}{utcsans_face 0}chat was over.{sleep 15}{utcsans_face 2}&i hope you can escape from&the main fighting monster."
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 _dialog.text+="{utcsans_face 3}好吧，{sleep 15}&也许你说的不错。"
 _dialog.text+="{pause}{utcsans_face 1}&谁说怪物一定要和&人类拼个你死我活?"
 _dialog.text+="{pause}{clear}{utcsans_face 3}说不定真的能恢复和平，{sleep 15}&让怪物的未来充满光明。{pause}{utcsans_face 1}&我总是把事情想得太悲观。"

@@ -1,6 +1,6 @@
 var angle=random_range(155,25)
 var angle1=random_range(155,25)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 var scale=1.5
 }else{
 var scale=1}

@@ -8,13 +8,13 @@ if(_menu==0){
 		//_inst_begin.text=_prefix+"Press Z or Enter to Begin";
 		_inst_settings=instance_create_depth(170,350,0,text_typer);
 		_inst_credits=instance_create_depth(170,385,0,text_typer)
-		if(global.language=0){
+		if(global.language=LANGUAGE.ENGLISH){
 		_inst_instruction=instance_create_depth(120,0,0,text_typer);
 		_inst_instruction.text=_prefix+"{color_text `gray_light`}{font 1} --- Keys ---{space_y -1}&{space_y 2}[F1] - Restart&[F2] - Restart Room&[F4] - Fullscreen&[X/Shift] - Run(Overworld)&[X/Shift] - Slow(In Battle)&[Insert] - DEBUG MODE&Tap the back button(backspace) to&switch the mobile controller."
 		_inst_begin.text=_prefix+"{font 0}Begin Game"
 		_inst_settings.text=_prefix+"{font 0}Settings"
 		_inst_credits.text=_prefix+"{font 0}Credits"
-		}else if(global.language=1){
+		}else if(global.language=LANGUAGE.SCHINESE){
 		_inst_instruction=instance_create_depth(150,0,0,text_typer);
 		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
 		_inst_begin.text=_prefix+"{font 0}开始游戏"
@@ -47,7 +47,7 @@ if(_menu==0){
 		_inst_credits.override_color_text_enabled=true;
 		_inst_save_options=instance_create_depth(250,290,0,text_typer);
 		_inst_save_options.override_color_text_enabled=true;
-		if(global.language=0){
+		if(global.language=LANGUAGE.ENGLISH){
 		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}EMPTY");
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
@@ -57,7 +57,7 @@ if(_menu==0){
 		_inst_settings.text=_prefix+"{font 1}Settings"
 		_inst_credits.text=_prefix+"{font 1}Credits"
 		_inst_save_options.text=_prefix+"{font 1}Save Options"
-		}else if(global.language=1){
+		}else if(global.language=LANGUAGE.SCHINESE){
 		_inst_name.text=_prefix+Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"{font 0}空");
 		_inst_continue.text=_prefix
 		if(!file_exists(Flag_GetSavePath(FLAG_TYPE.INFO))){
@@ -114,13 +114,13 @@ if(_menu==1){
 	_inst_naming_quit=instance_create_depth(120,410,0,text_typer);
 	_inst_naming_backspace=instance_create_depth(240,410,0,text_typer);
 	_inst_naming_done=instance_create_depth(440,410,0,text_typer);
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	_inst_naming_title.text=_prefix+"{font 1}Please input your name."
 	_inst_naming_quit.text=_prefix+"Quit"
 	_inst_naming_backspace.text=_prefix+"Backspace"
 	_inst_naming_done.text=_prefix+"Done"
 	//_inst_naming.text=_prefix+"{font 1}Press Enter to Done&Press Backspace to Backspace&Press Esc to Quit"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	_inst_naming_title.text=_prefix+"{font 0}请输入你的名字。"
 	_inst_naming_quit.text=_prefix+"{font 0}退出"
 	_inst_naming_backspace.text=_prefix+"{font 0}退格"
@@ -158,10 +158,10 @@ if(_menu==2){
 	_inst_confirm_title.text=_prefix+_confirm_title;
 	_inst_confirm_no=instance_create_depth(146,400,0,text_typer);
 	_inst_confirm_yes=instance_create_depth(460,400,0,text_typer);
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	_inst_confirm_no.text=_prefix+"{font 1}No"
 	_inst_confirm_yes.text=_prefix+"{font 1}Yes"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	_inst_confirm_no.text=_prefix+"{font 0}否"
 	_inst_confirm_yes.text=_prefix+"{font 0}是"
 	}

@@ -4,7 +4,7 @@ var weekday=current_weekday
 var result="ERROR"
 if(argument_count>0){
 weekday=argument[0]}
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 switch weekday{
 case 0:
 result="Sunday"
@@ -28,7 +28,7 @@ case 6:
 result="Saturday"
 break
 }}
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 switch weekday{
 case 0:
 result="周日"

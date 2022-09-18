@@ -1,6 +1,6 @@
 draw_set_font(font_mars_needs_cunnilingus);
 draw_set_color(c_white);
-if(global.battle=13){
+if(global.battle=13||global.battle=14){
 draw_text(x,y,Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME)+"   FN "+string(Player_GetLv()));
 }else{
 draw_text(x,y,Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME)+"   LV "+string(Player_GetLv()));

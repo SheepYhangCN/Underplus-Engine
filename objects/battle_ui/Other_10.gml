@@ -1,6 +1,6 @@
 ///@descr hp bar lock disabled
 draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHpMax()*1.25,21,0,make_color_rgb(192,0,0),1);
-if(global.battle=13){
+if(global.battle=13||global.battle=14){
 draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHp()*1.25,21,0,c_aqua,1);
 }else{
 draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHp()*1.25,21,0,make_color_rgb(255,255,0),1);}
@@ -16,11 +16,11 @@ if(global.kr=true){
 	if(global.battle=11){
     draw_sprite_ext(spr_battle_ui_sr_starry, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
 	}else{
-	if(global.mode=0){
+	if(global.mode=GAME_MODE.NORMAL){
     draw_sprite_ext(spr_battle_ui_kr, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
-	}else if(global.mode=2){
+	}else if(global.mode=GAME_MODE.HARD){
     draw_sprite_ext(spr_battle_ui_krplus, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
-	}else if(global.mode=1){
+	}else if(global.mode=GAME_MODE.EASY){
     draw_sprite_ext(spr_battle_ui_krminu, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)}
 	}
 }else if(global.kr=false){

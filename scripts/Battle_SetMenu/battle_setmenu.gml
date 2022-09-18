@@ -96,18 +96,18 @@ function Battle_SetMenu() {
 				}
 				proc+=1;
 			}
-			if(global.language=0){
+			if(global.language=LANGUAGE.ENGLISH){
 			text+="* Spare"
-			}else if(global.language=1){
+			}else if(global.language=LANGUAGE.SCHINESE){
 			text+="* {font 0}饶恕"
 			}
 		
 			//逃跑是否可用
 			if(Battle_IsMenuMercyFleeEnabled()){
 				text+="&{color `white`}";
-			if(global.language=0){
+			if(global.language=LANGUAGE.ENGLISH){
 			text+="* Flee"
-			}else if(global.language=1){
+			}else if(global.language=LANGUAGE.SCHINESE){
 			text+="* 逃跑"}
 			}
 		}else{

@@ -27,7 +27,7 @@ switch timer{
 		Battle_SetSoul(battle_soul_blue)
 		Battle_SetBoardSize(64,64,320,320)
 		BlueSoulControl_Titr(DIR.RIGHT)
-		Anim_Create(battle_soul,"x",0,0,battle_soul.x,220-battle_soul.x,20)
+		Anim_Create(battle_soul,"x",0,0,battle_soul.x,320-battle_soul.x,20)
 		Anim_Create(titr_legs,"x",0,ANIM_EASE.IN,titr_legs.x,-640,120)
 		Anim_Create(titr_body,"x",0,ANIM_EASE.IN,titr_body.x,-640,120)
 		Anim_Create(titr_head,"x",0,ANIM_EASE.IN,titr_head.x,-640,120)
@@ -119,7 +119,7 @@ switch timer{
 		Battle_MakeBoneWallRound(10,80,40,0,15,300)
 		Battle_MakeBone(battle_board.x,battle_board.y,120,0,0,1,0,0,3,1,350)
 		board=Battle_CreateBoardExtraCircle(320,320,80)
-		//if(global.mode=2){
+		//if(global.mode=GAME_MODE.HARD){
 		gbtemp=true
 		//alarm[8]=1//}
 		alarm[11]=1
@@ -148,7 +148,7 @@ switch timer{
 		break
 }
 if(soultemp=1){
-battle_soul.x=220
+battle_soul.x=320
 if(timer<1400&&timer>860&&timer mod 180 == 0){
 Anim_Create(titr_legs,"x",0,0,320+640,-1280,120)
 Anim_Create(titr_body,"x",0,0,318.4+640,-1280,120)

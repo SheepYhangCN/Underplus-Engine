@@ -6,8 +6,8 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,240)
 timer=0
 
 _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 3}{titr_face 4}ok,{sleep 15}&you asked for it.{pause}{clear}something BIG is coming."
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 _dialog.text="{font 3}{speed 5}{scale 1}{voice 3}{titr_face 4}好，{sleep 15}&这是你自找的。{pause}{clear}大的要来了。"
 }

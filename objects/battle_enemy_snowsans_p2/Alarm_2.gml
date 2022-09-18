@@ -1,4 +1,4 @@
-if(Battle_GetState()=BATTLE_STATE.MENU||(Battle_GetState()=BATTLE_STATE.IN_TURN&&Battle_GetTurnNumber()<12)){
+if(Battle_GetState()!=BATTLE_STATE.TURN_PREPARATION&&Battle_GetTurnNumber()<12){
 animsin += sinn
 head.x = (headx + cos((animsin / 3)))
 head.y = (heady + sin((animsin / 1.5)))

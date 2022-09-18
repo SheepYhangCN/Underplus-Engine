@@ -1,0 +1,1 @@
+if(Battle_GetTurnTime()=400){Anim_Create(camera,"angle",ANIM_TWEEN.BACK,ANIM_EASE.IN_OUT,0,180,60)}

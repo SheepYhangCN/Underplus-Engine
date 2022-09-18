@@ -1,6 +1,6 @@
 audio_play_sound(snd_cut,0,0)
 
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 empty=50
 }else{empty=55}
 Battle_MakeBoneTop(battle_board.x-64,basey-(battle_board.y-64),2,0,0,0,1)

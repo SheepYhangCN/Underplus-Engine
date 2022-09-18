@@ -1,7 +1,7 @@
 basey=290
 temp=0
 for(var basex=0;battle_board.x-128+basex<=battle_board.x+128;basex+=12){
-if(global.mode=2){empty=45}else{empty=56}
+if(global.mode=GAME_MODE.HARD){empty=45}else{empty=56}
 Battle_MakeBoneTop(battle_board.x-128+basex,basey-(battle_board.y-64),0,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x-128+basex,battle_board.y+64-basey-empty,0,0,0,0,1)
 

@@ -1,5 +1,5 @@
-if(Battle_GetMenuChoiceButton()=0||Battle_GetMenuChoiceButton()=3){
-if(Battle_GetTurnNumber()>=11||(Battle_GetMenuChoiceButton()=0&&flirted=true)){
+if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY){
+if(Battle_GetTurnNumber()>=11||(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&flirted=true)){
 	Battle_SetMenuDialog("")
 	fader.color=c_black
 	fader.alpha=1
@@ -12,8 +12,8 @@ if(Battle_GetTurnNumber()>=11||(Battle_GetMenuChoiceButton()=0&&flirted=true)){
 	head.image_index=0
 	instance_create_depth(0,0,0,asset_get_index("battle_anya_turn"+string(Battle_GetTurnNumber())))
 }}
-if(Battle_GetMenuChoiceButton()=1||Battle_GetMenuChoiceButton()=2||(Battle_GetMenuChoiceButton()=3&&flirted=true)){
-	if(Battle_GetMenuChoiceButton()=3&&flirted=true){flirted=false;head.image_index=0}
+if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM||(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&flirted=true)){
+	if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&flirted=true){flirted=false;head.image_index=0}
 	Battle_SetNextState(BATTLE_MENU.BUTTON)
 	Battle_GotoNextState()
 }

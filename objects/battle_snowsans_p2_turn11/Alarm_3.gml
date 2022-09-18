@@ -8,9 +8,9 @@ Battle_MakeBoneWallLeft(30,30,20)}
 if(dir=DIR.RIGHT){
 Battle_MakeBoneWallRight(30,30,20)}
 BlueSoulControl_Titr(dir)
-if(global.mode=0){
+if(global.mode=GAME_MODE.NORMAL){
 alarm[3]=60}
-if(global.mode=1){
+if(global.mode=GAME_MODE.EASY){
 alarm[3]=70}
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 alarm[3]=50}

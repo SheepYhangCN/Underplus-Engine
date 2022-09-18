@@ -1,7 +1,7 @@
 if(gbtemp){
 var angle=random_range(-180,180)
 var angle1=random_range(-180,180)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 var scale=0.4
 }else{
 var scale=0.2}

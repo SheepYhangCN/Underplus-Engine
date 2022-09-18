@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_anya_seeing",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"2dcc894b-5632-4f84-a426-b4d6f01849b9","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2dcc894b-5632-4f84-a426-b4d6f01849b9","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"LayerId":{"name":"94a688a7-d078-44a8-b852-e53a1f344bdf","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_anya_seeing","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","name":"2dcc894b-5632-4f84-a426-b4d6f01849b9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"LayerId":{"name":"94a688a7-d078-44a8-b852-e53a1f344bdf","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_anya_seeing","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2dcc894b-5632-4f84-a426-b4d6f01849b9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_anya_seeing","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_anya_seeing",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7bf9151a-23d5-4192-946f-00378b9ba448","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2dcc894b-5632-4f84-a426-b4d6f01849b9","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"9aeb4c71-8ceb-42b7-b81e-1c7c8dd74fb3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"7bf9151a-23d5-4192-946f-00378b9ba448","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2dcc894b-5632-4f84-a426-b4d6f01849b9","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9aeb4c71-8ceb-42b7-b81e-1c7c8dd74fb3","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fc939ce-5178-4b00-b6ee-7a7c372e7e77","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 40,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_anya_seeing","path":"sprites/spr_anya_seeing/spr_anya_seeing.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_anya_seeing",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"94a688a7-d078-44a8-b852-e53a1f344bdf","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"94a688a7-d078-44a8-b852-e53a1f344bdf","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "anya",
     "path": "folders/Sprites/Battle/Enemy/anya.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_anya_seeing",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

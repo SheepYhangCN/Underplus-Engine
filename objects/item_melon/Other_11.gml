@@ -1,4 +1,4 @@
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 Dialog_Clear()
 Dialog_Add("{font 0}{scale 2}* 有一个骨前来买瓜&&{pause}{font 4}{voice 4}{scale 1.9}生意行啊你们哥俩。")
 Dialog_Add("{font 3}{voice 3}{scale 1.8}* 哥们，你这瓜多少钱一斤啊?&{sleep 20}{font 4}{voice 4}{scale 1.9}两块钱一斤。")

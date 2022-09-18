@@ -6,8 +6,8 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,64)
 lastet_dir=0
 
 _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}Until suddenly,&{sleep 15}everything ends."
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 _dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}直到刹那，&{sleep 15}一切戛然而止。"
 }

@@ -11,7 +11,7 @@ global.shield_useable=true
 Battle_SetEnemyAtk(1)
 Battle_SetPlayerTempInv(60)
 Battle_SetEnemyActionNumber(_enemy_slot,3);
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 Battle_SetEnemyName(_enemy_slot,"Enemy Name");
 Battle_SetEnemyActionName(_enemy_slot,0,"Check")
 Battle_SetEnemyActionName(_enemy_slot,1,"Pray")
@@ -19,7 +19,7 @@ Battle_SetEnemyActionName(_enemy_slot,2,"Heal")
 Battle_SetEnemyActionInfo(_enemy_slot,0,"Check enemy data")
 Battle_SetEnemyActionInfo(_enemy_slot,1,"Clear Karma")
 Battle_SetEnemyActionInfo(_enemy_slot,2,"{color `lime`}+Full HP")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 Battle_SetEnemyName(_enemy_slot,"{font 0}敌人名称");
 Battle_SetEnemyActionName(_enemy_slot,0,"{font 0}检查")
 Battle_SetEnemyActionName(_enemy_slot,1,"{font 0}祈祷")

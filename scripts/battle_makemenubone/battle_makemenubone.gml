@@ -1,4 +1,4 @@
-///@arg x,y,length,hspeed,vspeed,type,out,angle,rotate,auto_destroy,*duration,*obj
+///@arg x,y,length,hspeed,vspeed,type,out,angle,rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeMenuBone(){
 	var OBJ = battle_bullet_bone
     var X = argument[0]
@@ -18,5 +18,9 @@ function Battle_MakeMenuBone(){
         OBJ = argument[11]
 		var bone=Battle_MakeBone(X,Y,LENGTH,HSPEED,VSPEED,COLOR,OUT,ANGLE,ROT,DESTROY,DURATION,OBJ)
 		bone.lock_hp=1
+    if (argument_count > 12)
+        bone._bone_body = argument[12]
+    if (argument_count > 13)
+        bone._bone_end = argument[13]
     return bone;
 }

@@ -1,4 +1,4 @@
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 line0="你好!欢迎来到这个教程&"
 line1="我将向你讲述各种这个引擎中&的灵魂和弹幕&"
 line2="{sleep 15}那么开始吧!"

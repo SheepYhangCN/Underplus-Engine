@@ -6,14 +6,14 @@ if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
 		//检测当前按键是否存在
-		if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_fight)){
-		Battle_SetMenuChoiceButton(1)}
-		if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_act)){
-		Battle_SetMenuChoiceButton(2)}
-		if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_item)){
-		Battle_SetMenuChoiceButton(3)}
-		if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_mercy)){
-		Battle_SetMenuChoiceButton(4)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_fight)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.ACT)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_act)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.ITEM)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_item)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.MERCY)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_mercy)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.FIGHT)}
 		//左/右
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
@@ -23,21 +23,21 @@ if(_state==BATTLE_STATE.MENU){
 			if(button<0){
 				button=3;
 			}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
 			button=0}
 			Battle_SetMenuChoiceButton(button);
 		}else if(Input_IsPressed(INPUT.RIGHT)){
@@ -48,21 +48,21 @@ if(_state==BATTLE_STATE.MENU){
 			if(button>3){
 				button=0;
 			}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
 			button=2}
 			Battle_SetMenuChoiceButton(button);
 		}
@@ -398,8 +398,8 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetDialog(text);
 }
 
-//if(global.language=0){
+//if(global.language=LANGUAGE.ENGLISH){
 //window_set_caption("YH!Undertale Games - Battle")
-//}else if(global.language=1){
+//}else if(global.language=LANGUAGE.SCHINESE){
 //window_set_caption("YH!Undertale Games - 战斗")
 //}

@@ -36,7 +36,7 @@ PageUp Start Shop
 
 PageDown Encounter Battle
 
-Esc Pause game
+Space Pause game
 
 Plus HP+
 

@@ -1,5 +1,5 @@
 function Encounter_Custom() {
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	Encounter_Set(0,-1,battle_enemy,-1,"* test battle");
 	Encounter_Set(1,-1,battle_enemy_tutorial,-1,"* You encountered an Enemy!",bgm_shop);
 	Encounter_Set(4,-1,battle_enemy_snowsans,-1,"* White dust are falling with&  snowflakes.")
@@ -11,7 +11,8 @@ function Encounter_Custom() {
 	Encounter_Set(11,-1,battle_enemy_starry_sans,-1,"* The unexpected battle began...")
 	Encounter_Set(12,-1,battle_enemy_timematch,-1,"",bgm_rickroll)
 	Encounter_Set(13,-1,battle_enemy_sponge,-1,"* Are you ready?")
-	}else if(global.language=1){
+	Encounter_Set(14,-1,battle_enemy_sponge_p2,-1,"* Welcome to Hell Of High Water.")
+	}else if(global.language=LANGUAGE.SCHINESE){
 	Encounter_Set(0,-1,battle_enemy,-1,"* {font 0}测试战斗");
 	Encounter_Set(1,-1,battle_enemy_tutorial,-1,"* 你遇见了个敌人!",bgm_shop);
 	Encounter_Set(4,-1,battle_enemy_snowsans,-1,"* 雪白的尘埃伴随着雪花飘落。")
@@ -23,5 +24,6 @@ function Encounter_Custom() {
 	Encounter_Set(11,-1,battle_enemy_starry_sans,-1,"* 意外的战斗开始了...")
 	Encounter_Set(12,-1,battle_enemy_timematch,-1,"",bgm_rickroll)
 	Encounter_Set(13,-1,battle_enemy_sponge,-1,"* 你准备好了吗?")
+	Encounter_Set(14,-1,battle_enemy_sponge_p2,-1,"* 欢迎来到深水地狱。")
 	}
 }

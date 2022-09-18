@@ -1,5 +1,5 @@
 if(Battle_GetMenuChoiceButton() = 1||Battle_GetMenuChoiceButton() = 2||Battle_GetMenuChoiceButton() = 3){
-	/*if(Battle_GetMenuChoiceButton()=3&&Battle_GetTurnNumber()=17){
+	/*if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&Battle_GetTurnNumber()=17){
 	instance_create_depth(0,0,0,battle_snowsans_spared)
 	}else{*/
 		Battle_SetNextState(BATTLE_MENU.BUTTON)

@@ -14,9 +14,9 @@ if(global.debug=1){
 	rainbow+=1
 	draw_set_color(make_color_hsv((rainbow % 255), 255, 255))
 	draw_set_font(font_fzjcxs)
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	language="English"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	language="简体中文"
 	}
 	draw_room="Current Room:"+string(room)+"("+room_get_name(room)+")"
@@ -45,11 +45,9 @@ if(Player_IsInBattle()){
 	draw_soulxy="Soul XY:["+string(battle_soul.x)+","+string(battle_soul.y)+"]"
 	draw_battle_button="Choice Button:"+string(Battle_GetMenuChoiceButton())
 	draw_turn="Turn Number:"+string(Battle_GetTurnNumber())
-	if(instance_exists(battle_turn)){
-	if(battle_turn.timer!=-1){
+	if(instance_exists(battle_turn)&&variable_instance_exists(battle_turn,"timer")&&battle_turn.timer!=-1){
 	draw_turn_timer="Turn Timer:"+string(turn_timer)+"("+string(battle_turn.timer)+")"
 	}else{
-	draw_turn_timer="Turn Timer:"+string(turn_timer)}}else{
 	draw_turn_timer="Turn Timer:"+string(turn_timer)}
 	draw_enemy="Battle:"+string(global.battle)+"["+object_get_name(Encounter_GetEnemy(global.battle,0))+","+object_get_name(Encounter_GetEnemy(global.battle,1))+","+object_get_name(Encounter_GetEnemy(global.battle,2))+"]"
 	draw_board="Board XY & Size:["+string(battle_board.x)+","+string(battle_board.y)+"],["+string(battle_board.up)+","+string(battle_board.down)+","+string(battle_board.left)+","+string(battle_board.right)+"]"

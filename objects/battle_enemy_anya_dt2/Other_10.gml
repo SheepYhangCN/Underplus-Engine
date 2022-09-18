@@ -10,10 +10,10 @@ _hpmax = 1
 Player_SetLv(1)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 Battle_SetPlayerTempInv(30)
 Battle_SetEnemyAtk(8)
-}else if(global.mode=1){
+}else if(global.mode=GAME_MODE.EASY){
 Battle_SetPlayerTempInv(60)
 Battle_SetEnemyAtk(4)
 }else{

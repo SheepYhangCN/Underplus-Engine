@@ -1,4 +1,4 @@
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	window_set_caption(GAME_NAME+" - Stay determined...")}
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 	window_set_caption(GAME_NAME+" - 保持你的决心...")}

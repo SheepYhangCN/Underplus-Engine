@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_battle_soul_yellow_aqua_slow",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,15 +27,13 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"LayerId":{"name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_soul_yellow_aqua_slow","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"LayerId":{"name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_soul_yellow_aqua_slow","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_battle_soul_yellow_aqua_slow","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_battle_soul_yellow_aqua_slow",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -40,13 +41,13 @@
     "autoRecord": true,
     "volume": 1.0,
     "length": 2.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MessageEventKeyframe",},
-    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"MomentsEventKeyframe",},
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3d0ed85b-8c26-428c-b581-febe994d6572","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-            {"id":"c6463ef3-54a0-4bed-b663-82342b6dd020","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe`1","elementType":"SpriteFrameKeyframe",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore`1","elementType":"SpriteFrameKeyframe",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"3d0ed85b-8c26-428c-b581-febe994d6572","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"55565ad9-d2fe-4e11-9aa2-3eb6735bdca9","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c6463ef3-54a0-4bed-b663-82342b6dd020","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4aa9f6ce-cff2-432c-bfd6-c647d0fbe998","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -62,22 +63,13 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_battle_soul_yellow_aqua_slow","path":"sprites/spr_battle_soul_yellow_aqua_slow/spr_battle_soul_yellow_aqua_slow.yy",},
-    "resourceVersion": "1.4",
-    "name": "spr_battle_soul_yellow_aqua_slow",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"3544fb05-abf4-46be-bf0f-a82dc29b7a37","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "mixed",
     "path": "folders/Sprites/Battle/Soul/mixed.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_battle_soul_yellow_aqua_slow",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

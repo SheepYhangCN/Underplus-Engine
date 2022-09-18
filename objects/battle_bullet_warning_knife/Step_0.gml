@@ -22,7 +22,7 @@ sprite_index=spr_pixel_mid
 image_xscale=width
 image_yscale=1000
 if(place_meeting(x,y,battle_soul)){
-if(global.mode=1){
+if(global.mode=GAME_MODE.EASY){
 alarm[1]=1.5}else{
 alarm[1]=1}
 }

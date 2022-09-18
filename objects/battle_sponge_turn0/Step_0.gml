@@ -47,9 +47,9 @@ case 680:
 	break
 case 779:
 	a=instance_create_depth(420, 120, 0, battle_dialog_enemy)
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	a.text="{font 3}{scale 1}{voice 8}{sponge_face 1}Are you ready?{sleep 15}{sponge_face 2}&I'm ready.{pause}{end_turn}{end}"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	a.text="{font 3}{scale 1}{voice 8}{sponge_face 1}你准备好了吗？{sleep 15}{sponge_face 2}&我准备好了。{pause}{end_turn}{end}"
 	}
 	break

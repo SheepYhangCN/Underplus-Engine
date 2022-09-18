@@ -1,5 +1,5 @@
 event_inherited();
-if(global.mode=2){length=24}else{length=12}
+if(global.mode=GAME_MODE.HARD){length=24}else{length=12}
 Battle_MakeBoneWallTop(5,length,-1,0,battle_bullet_bone,pencil_body,pencil_end)
 Battle_MakeBoneWallBottom(5,length,-1,0,battle_bullet_bone,pencil_body,pencil_end)
 Battle_MakeBoneWallLeft(5,length,-1,0,battle_bullet_bone,pencil_body,pencil_end)

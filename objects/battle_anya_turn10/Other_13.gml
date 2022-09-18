@@ -1,6 +1,6 @@
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 Battle_SetMenuDialog("* Time to end.")}
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 Battle_SetMenuDialog("* 是时候结束了。")}
 Battle_SetEnemySpareable(1,true)
 Battle_SetSoul(battle_soul_red)
