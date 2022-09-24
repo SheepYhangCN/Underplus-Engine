@@ -26,7 +26,7 @@ if(Game_GetFrameSkip()>0){
 	draw_enable_drawevent(true);
 }
 if(room!=room_battle){
-global.battle=0}
+global.battle=BATTLE.TEST}
 if(room!=room_shop){
 global.shop=0}
 

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battle_bullet_tomblaster",
   "spriteId": {
     "name": "spr_tomblaster_old",
     "path": "sprites/spr_tomblaster_old/spr_tomblaster_old.yy",
@@ -31,8 +34,4 @@
     "name": "Blaster",
     "path": "folders/Objects/Battle/Bullet/Blaster.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battle_bullet_tomblaster",
-  "tags": [],
-  "resourceType": "GMObject",
 }

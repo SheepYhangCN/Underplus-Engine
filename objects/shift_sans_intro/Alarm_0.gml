@@ -1,0 +1,1 @@
+Encounter_Start(BATTLE.SHIFT_SANS)

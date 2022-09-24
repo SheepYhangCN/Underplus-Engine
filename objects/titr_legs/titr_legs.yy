@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "titr_legs",
   "spriteId": {
     "name": "spr_sans_leg",
     "path": "sprites/spr_sans_leg/spr_sans_leg.yy",
@@ -22,7 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -30,8 +33,4 @@
     "name": "snowdin_encounter",
     "path": "folders/Objects/Battle/Enemy/snowdin_encounter.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "titr_legs",
-  "tags": [],
-  "resourceType": "GMObject",
 }

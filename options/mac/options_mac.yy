@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMMacOptions",
+  "resourceVersion": "1.0",
+  "name": "macOS",
   "option_mac_display_name": "Underplus Engine",
   "option_mac_app_id": "com.yuhang.upe",
   "option_mac_version": "114.514.1919.810",
@@ -28,8 +31,4 @@
   "option_mac_x86_64": true,
   "option_mac_arm64": true,
   "option_mac_apple_sign_in": false,
-  "resourceVersion": "1.0",
-  "name": "macOS",
-  "tags": [],
-  "resourceType": "GMMacOptions",
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battle_soul_aqua_orange_effect",
   "spriteId": {
     "name": "spr_battle_soul_aqua_orange",
     "path": "sprites/spr_battle_soul_aqua_orange/spr_battle_soul_aqua_orange.yy",
@@ -31,8 +34,4 @@
     "name": "changed",
     "path": "folders/Objects/Battle/Soul/effect/changed.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battle_soul_aqua_orange_effect",
-  "tags": [],
-  "resourceType": "GMObject",
 }

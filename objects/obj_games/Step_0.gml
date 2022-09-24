@@ -118,4 +118,8 @@ case 5://海绵宝宝
 phases=1
 enabled=true
 break
+case 6://shift杉王
+phases=0
+enabled=false
+break
 }

@@ -10,21 +10,21 @@ ds_map_add(_map_macro,"DIR.RIGHT",DIR.RIGHT);
 ds_map_add(_map_macro,"FONT.DIALOG",0);
 ds_map_add(_map_macro,"FONT.MENU",1);
 ds_map_add(_map_macro,"FONT.BATTLE",2);
-ds_map_add(_map_macro,"font.sans",3);
-ds_map_add(_map_macro,"font.papyrus",4);
-ds_map_add(_map_macro,"font.gaster",5);
-ds_map_add(_map_macro,"font.inksans",6);
+ds_map_add(_map_macro,"FONT.SANS",3);
+ds_map_add(_map_macro,"FONT.PAPYRUS",4);
+ds_map_add(_map_macro,"FONT.GASTER",5);
+ds_map_add(_map_macro,"FONT.INKSANS",6);
 
 ds_map_add(_map_macro,"VOICE.NULL",-1);
 ds_map_add(_map_macro,"VOICE.DEFAULT",0);
 ds_map_add(_map_macro,"VOICE.TYPER",1);
-ds_map_add(_map_macro,"voice.toriel",2);
-ds_map_add(_map_macro,"voice.sans",3);
-ds_map_add(_map_macro,"voice.papyrus",4);
-ds_map_add(_map_macro,"voice.asgore",5);
-ds_map_add(_map_macro,"voice.gaster",6);
-ds_map_add(_map_macro,"voice.chara",7);
-ds_map_add(_map_macro,"voice.sponge",8);
+ds_map_add(_map_macro,"VOICE.TORIEL",2);
+ds_map_add(_map_macro,"VOICE.SANS",3);
+ds_map_add(_map_macro,"VOICE.PAPYRUS",4);
+ds_map_add(_map_macro,"VOICE.ASGORE",5);
+ds_map_add(_map_macro,"VOICE.GASTER",6);
+ds_map_add(_map_macro,"VOICE.CHARA",7);
+ds_map_add(_map_macro,"VOICE,SPONGE",8);
 
 _group_font[0,0]=font_dialog
 _group_font_scale_x[0,0]=1;

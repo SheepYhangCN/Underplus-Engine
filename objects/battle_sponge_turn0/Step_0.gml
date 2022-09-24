@@ -9,7 +9,7 @@ case 1:
 	alarm[2]=30
 	break
 case 30:
-	Anim_Create(obj_effect_water,"height",0,0,0,235,60)
+	Anim_Create(obj_effect_water,"height",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,0,235,60)
 	Battle_SetSoul(battle_soul_red)
 	break
 case 120:
@@ -30,7 +30,7 @@ case 360:
 	Blaster_Create_Advanced(battle_soul.x,0,battle_soul.x,150,-90,-90,0.25,1,1,40,spr_jellyfish_blaster,20,10)
 	break
 case 480:
-	Anim_Create(obj_effect_water,"height",0,0,235,-235,60)
+	Anim_Create(obj_effect_water,"height",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,235,-235,60)
 	alarm[3]=-1
 	break
 case 540:

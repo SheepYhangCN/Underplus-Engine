@@ -39,7 +39,7 @@ case 1060:
 	Battle_SetBoardSize(64,64,320,320)
 	BlueSoulControl(DIR.RIGHT)
 	Anim_Create(battle_soul_blue,"x",0,0,battle_soul_blue.x,320-battle_soul_blue.x,40)
-	Anim_Create(obj_effect_water,"height",0,0,0,160,60)
+	Anim_Create(obj_effect_water,"height",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,0,160,60)
 	Anim_Create(battle_enemy_sponge_p2,"x",0,ANIM_EASE.IN,battle_enemy_sponge_p2.x,-640,120)
 	Anim_Create(battle_enemy_sponge_p2,"legx",0,ANIM_EASE.IN,battle_enemy_sponge_p2.legx,-640,120)
 	Anim_Create(battle_enemy_sponge_p2,"bodyx",0,ANIM_EASE.IN,battle_enemy_sponge_p2.bodyx,-640,120)
@@ -119,7 +119,6 @@ case 1850+370:
 	alarm[5]=1
 	break
 case 2140+370:
-	Anim_Create(obj_effect_water,"height",0,0,235,-235,60)
 	instance_destroy(board)
 	Battle_EndTurn()
 	break

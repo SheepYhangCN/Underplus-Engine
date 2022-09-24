@@ -8,7 +8,7 @@ window_set_caption(GAME_NAME+" - Minigame | 3 Minute GB Fan Fight")
 if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
-global.battle=12
+global.battle=BATTLE.SPONGE
 
 if(Input_IsPressed(INPUT.MENU)&&temp=false){
 temp=true

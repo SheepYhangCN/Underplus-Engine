@@ -1,4 +1,4 @@
-if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM||(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&Battle_GetTurnNumber()!=8)){
+if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY){
 		Battle_SetNextState(BATTLE_MENU.BUTTON)
 		Battle_GotoNextState()
 }

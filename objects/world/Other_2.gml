@@ -2,7 +2,7 @@ global.debug = 0;
 global.undead = 0;
 global.mode=GAME_MODE.NORMAL;
 global.language=LANGUAGE.ENGLISH
-global.battle=0
+global.battle=BATTLE.TEST
 global.shop=0
 global.tas=false
 global.kr=0
@@ -81,5 +81,5 @@ _window_size=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.WINDOW_SIZE,1)
 if(!Border_IsEnabled()&&window_get_fullscreen()=false){
 Window_Size_Set(_window_size)}}
 
-//Language_Set(1)
+//Language_Set(LANGUAGE.SCHINESE)
 room_goto(room_logo)

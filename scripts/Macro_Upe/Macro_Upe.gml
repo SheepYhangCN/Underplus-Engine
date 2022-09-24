@@ -20,4 +20,27 @@ function Macro_Upe(){
 		ITEM,
 		MERCY
 	}
+	enum BATTLE_DAMAGE{
+		NONE=-1,
+		MISS=-2,
+		BLOCK=-3,
+		NO_EFFECT=-4,
+		PARRY=-5
+	}
+	enum BATTLE{
+		TEST=0,
+		TUTORIAL=1,
+		YUHANG=2,//TODO
+		SHIFT_SANS=3,//TODO
+		UTSE_SANS=4,
+		UTSE_SANS_P2=5,
+		ANYA=7,
+		ANYA_DT2=8,
+		SANS_REMAKE=9,
+		UTC_SANS=10,
+		STARRY_SANS=11,
+		THREE_MINUTE_GB=12,
+		SPONGE=13,
+		SPONGE_P2=14
+	}
 }

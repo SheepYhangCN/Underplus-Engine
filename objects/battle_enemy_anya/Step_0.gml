@@ -8,7 +8,7 @@ window_set_caption(GAME_NAME+" - Anya Fight")
 if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
-global.battle=7
+global.battle=BATTLE.ANYA
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_AIM&&Battle_GetTurnNumber()<11&&flirted=false){head.seeing=true}else{head.seeing=false}
 
 if(flirted=true){

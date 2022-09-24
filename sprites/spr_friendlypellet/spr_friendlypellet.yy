@@ -36,7 +36,7 @@
     "name": "spr_friendlypellet",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.5,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

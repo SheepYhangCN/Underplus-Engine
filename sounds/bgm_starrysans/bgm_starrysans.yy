@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "bgm_starrysans",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "fights",
     "path": "folders/Sounds/BGM/fights.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bgm_starrysans",
-  "tags": [],
-  "resourceType": "GMSound",
 }

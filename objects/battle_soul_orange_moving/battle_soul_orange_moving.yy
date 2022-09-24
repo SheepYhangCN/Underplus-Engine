@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battle_soul_orange_moving",
   "spriteId": {
     "name": "spr_battle_soul_orange",
     "path": "sprites/spr_battle_soul_orange/spr_battle_soul_orange.yy",
@@ -31,8 +34,4 @@
     "name": "moving",
     "path": "folders/Objects/Battle/Soul/effect/moving.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battle_soul_orange_moving",
-  "tags": [],
-  "resourceType": "GMObject",
 }

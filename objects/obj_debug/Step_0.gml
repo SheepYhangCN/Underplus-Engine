@@ -40,9 +40,9 @@ if(global.debug = 1){
 }
 	if(keyboard_check_pressed(vk_f5)){
 	if(global.language=LANGUAGE.ENGLISH){
-	Language_Set(1)
+	Language_Set(LANGUAGE.SCHINESE)
 	}else if(global.language=LANGUAGE.SCHINESE){
-	Language_Set(0)
+	Language_Set(LANGUAGE.ENGLISH)
 	}
 }
 if(keyboard_check_pressed(vk_tab)){

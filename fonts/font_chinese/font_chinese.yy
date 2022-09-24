@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMFont",
+  "resourceVersion": "1.0",
+  "name": "font_chinese",
   "hinting": 0,
   "glyphOperations": 0,
   "interpreter": 0,
@@ -14580,8 +14583,4 @@
     "name": "Fonts",
     "path": "folders/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "font_chinese",
-  "tags": [],
-  "resourceType": "GMFont",
 }

@@ -8,5 +8,5 @@ window_set_caption(GAME_NAME+" - Tutorial Fight")
 if(_hp<=0){
 show_error("This is an Error message, If u see this message, please tell the author",true)}
 }
-global.battle=1
+global.battle=BATTLE.TUTORIAL
 Battle_SetFleeable(true)

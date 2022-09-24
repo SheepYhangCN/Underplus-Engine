@@ -1,1 +1,1 @@
-Encounter_Start(14)
+Encounter_Start(BATTLE.SPONGE_P2)

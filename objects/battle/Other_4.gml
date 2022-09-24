@@ -34,3 +34,7 @@ Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BATTLE_START);
 Battle_GotoNextState();
 
 if(global.mode=GAME_MODE.EASY&&Player_GetInvTotal()=0){Player_SetInv(1)}else if(global.mode!=1){Player_SetInv(0)}
+
+var save_slot=Flag_GetSaveSlot()
+Player_Save(10)
+Flag_SetSaveSlot(save_slot)

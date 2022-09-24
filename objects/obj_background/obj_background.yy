@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "obj_background",
   "spriteId": {
     "name": "spr_space",
     "path": "sprites/spr_space/spr_space.yy",
@@ -28,8 +31,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "obj_background",
-  "tags": [],
-  "resourceType": "GMObject",
 }

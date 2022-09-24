@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMTileSet",
+  "resourceVersion": "1.0",
+  "name": "tile_sanscorridor",
   "spriteId": {
     "name": "spr_bg_sanscorridor",
     "path": "sprites/spr_bg_sanscorridor/spr_bg_sanscorridor.yy",
@@ -95,8 +98,4 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "tile_sanscorridor",
-  "tags": [],
-  "resourceType": "GMTileSet",
 }

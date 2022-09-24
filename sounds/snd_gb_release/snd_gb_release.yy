@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_gb_release",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "battle",
     "path": "folders/Sounds/SFX/battle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_gb_release",
-  "tags": [],
-  "resourceType": "GMSound",
 }

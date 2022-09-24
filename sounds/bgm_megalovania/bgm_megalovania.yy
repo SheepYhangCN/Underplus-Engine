@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "bgm_megalovania",
   "conversionMode": 0,
   "compression": 2,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "fights",
     "path": "folders/Sounds/BGM/fights.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bgm_megalovania",
-  "tags": [],
-  "resourceType": "GMSound",
 }

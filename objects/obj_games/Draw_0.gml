@@ -108,6 +108,9 @@ draw_sprite_ext(spr_sponge_body,0,320,220+23,2,2,0,c_white,1)
 game="Spongeswap | Spongebob Fight"
 game+=" | Phase "+string(phase+1)
 break
+case 6:
+game="Undershift | Sans Fight"
+break
 }
 draw_text_transformed(320,40,(current_hour<12&&current_hour>=6 ? "Good morning, " : "")+(current_hour=12 ? "Good noon,  " : "")+(current_hour>12&&current_hour<=16 ? "Good afternoon,  " : "")+(current_hour>16&&current_hour<=20 ? "Good evening,  " : "")+(current_hour>20&&current_hour<=23 ? "Good night,  " : "")+(current_hour>=0&&current_hour<=3 ? "Good midnight,  " : "")+(current_hour>3&&current_hour<=5 ? "Good dawn,  " : "")+Player_GetName()+"!\n[< & > - Switch Game][X/Shift - Quit][C/Ctrl - Shop]",2,2,0)
 draw_text_transformed(320,370,game,2,2,0)
@@ -213,6 +216,9 @@ draw_sprite_ext(spr_sponge_face,0,320,220-25,2,2,0,c_white,1)
 draw_sprite_ext(spr_sponge_body,0,320,220+23,2,2,0,c_white,1)
 game="[font_dialog]Spongeswap | Spongebob [font_chinese]战"
 game+="[font_dialog] | [font_chinese]第[font_dialog]"+string(phase+1)+"[font_chinese]阶段"
+break
+case 6:
+game="[font_dialog]Undershift | Sans[font_chinese]战"
 break
 }
 draw_text_scribble(320,45,"[font_chinese][scale,2]"+(current_hour<12&&current_hour>=6 ? "早上好，" : "")+(current_hour=12 ? "中午好，" : "")+(current_hour>12&&current_hour<=16 ? "下午好，" : "")+(current_hour>16&&current_hour<=20 ? "傍晚好，" : "")+(current_hour>20&&current_hour<=23 ? "晚上好，" : "")+(current_hour>=0&&current_hour<=3 ? "午夜好，" : "")+(current_hour>3&&current_hour<=5 ? "凌晨好，" : "")+"[font_dialog]"+Player_GetName()+"!\n[[[font_chinese]←[font_dialog]&[font_chinese]→[font_dialog]-[font_chinese]切换游戏[font_dialog]][[X/Shift-[font_chinese]退出[font_dialog]][[C/Ctrl-[font_chinese]商店[font_dialog]]")

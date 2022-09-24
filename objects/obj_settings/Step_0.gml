@@ -143,7 +143,7 @@ if(Input_IsPressed(INPUT.LEFT)){
 if(choice=1&&global.language=LANGUAGE.SCHINESE){
 if(global.language=LANGUAGE.SCHINESE){
 audio_play_sound(snd_menu_confirm,0,0)}
-Language_Set(0)
+Language_Set(LANGUAGE.ENGLISH)
 choice=1}
 if(choice=2&&!(os_type=os_android||os_type=os_ios||os_type=os_winphone)&&fullscreen!=2){
 if(window_size>1){
@@ -179,7 +179,7 @@ if(Input_IsPressed(INPUT.RIGHT)){
 if(choice=1&&global.language=LANGUAGE.ENGLISH){
 if(global.language=LANGUAGE.ENGLISH){
 audio_play_sound(snd_menu_confirm,0,0)}
-Language_Set(1)
+Language_Set(LANGUAGE.SCHINESE)
 choice=1}
 
 if(choice=2&&!(os_type=os_android||os_type=os_ios||os_type=os_winphone)&&fullscreen!=2&&Border_IsEnabled()=false){
@@ -214,9 +214,9 @@ Flag_Set(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,border_var)
 }
 
 if(global.language<0){
-Language_Set(0)}
+Language_Set(LANGUAGE.ENGLISH)}
 if(global.language>1){
-Language_Set(1)}
+Language_Set(LANGUAGE.SCHINESE)}
 
 
 if(choice=5&&Input_IsHeld(INPUT.LEFT)){

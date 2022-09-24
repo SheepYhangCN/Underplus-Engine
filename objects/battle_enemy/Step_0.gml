@@ -1,2 +1,2 @@
 window_set_caption(GAME_NAME+" - Test Battle")
-global.battle=0
+global.battle=BATTLE.TEST

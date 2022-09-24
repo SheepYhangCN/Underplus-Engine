@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battle_soul_blue_effect",
   "spriteId": {
     "name": "spr_battle_soul_blue",
     "path": "sprites/spr_battle_soul_blue/spr_battle_soul_blue.yy",
@@ -31,8 +34,4 @@
     "name": "changed",
     "path": "folders/Objects/Battle/Soul/effect/changed.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battle_soul_blue_effect",
-  "tags": [],
-  "resourceType": "GMObject",
 }

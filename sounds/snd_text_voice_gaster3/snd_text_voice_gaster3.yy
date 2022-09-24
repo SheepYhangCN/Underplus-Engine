@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_text_voice_gaster3",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "text_voice",
     "path": "folders/Sounds/SFX/text_voice.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_text_voice_gaster3",
-  "tags": [],
-  "resourceType": "GMSound",
 }

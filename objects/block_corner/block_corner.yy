@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "block_corner",
   "spriteId": {
     "name": "spr_block_corner",
     "path": "sprites/spr_block_corner/spr_block_corner.yy",
@@ -31,8 +34,4 @@
     "name": "Block",
     "path": "folders/Objects/Block.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "block_corner",
-  "tags": [],
-  "resourceType": "GMObject",
 }
