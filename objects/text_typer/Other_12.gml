@@ -13,6 +13,7 @@ switch(cmd[|0]){
 	case "color":
 		if(is_string(cmd[|1])){
 			var color=GetColorFromString(cmd[|1]);
+			}else if(is_real(cmd[|1])){var color=cmd[|1]}
 			switch(color){
 				default:
 					_color_text[0]=color;
@@ -56,7 +57,6 @@ switch(cmd[|0]){
 					_color_shadow[2]=make_color_rgb(76,0,0);
 					_color_shadow[3]=make_color_rgb(76,0,0);
 					break;
-			}
 		}
 		break;
 		

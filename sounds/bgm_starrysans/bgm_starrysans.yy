@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "bgm_starrysans",
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 2,
   "volume": 1.0,
   "preload": false,
   "bitRate": 128,

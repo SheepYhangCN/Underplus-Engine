@@ -16,11 +16,11 @@ function Battle_SetMenuChoiceAction() {
 			battle._menu_choice_action_first-=1;
 		}
 		var text="";
-		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy(),Battle_GetMenuChoiceAction()-2)+"&";
-		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy(),Battle_GetMenuChoiceAction()-1)+"&";
-		text+="{color `white`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy(),Battle_GetMenuChoiceAction())+"&";
-		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy(),Battle_GetMenuChoiceAction()+1)+"&";
-		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy(),Battle_GetMenuChoiceAction()+2)+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1),Battle_GetMenuChoiceAction()-2)+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1),Battle_GetMenuChoiceAction()-1)+"&";
+		text+="{color `white`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1),Battle_GetMenuChoiceAction())+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1),Battle_GetMenuChoiceAction()+1)+"&";
+		text+="{color `gray`}"+Battle_GetEnemyActionName(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1),Battle_GetMenuChoiceAction()+2)+"&";
 		Battle_SetDialog5Line(text,true);
 	
 		if(CALL){
