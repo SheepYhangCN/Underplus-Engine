@@ -1,6 +1,6 @@
 event_inherited();
 
-global.shop=0
+global.shop=SHOP.TEST
 
 encounter_text = -1;
 

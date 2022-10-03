@@ -73,7 +73,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Sprites/Battle/Enemy.yy",
+    "name": "papyrus",
+    "path": "folders/Sprites/Battle/Enemy/papyrus.yy",
   },
 }

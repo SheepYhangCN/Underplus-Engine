@@ -28,7 +28,7 @@ if(Game_GetFrameSkip()>0){
 if(room!=room_battle){
 global.battle=BATTLE.TEST}
 if(room!=room_shop){
-global.shop=0}
+global.shop=SHOP.TEST}
 
 if(keyboard_check_pressed(vk_f2)){
 	room_restart();

@@ -31,7 +31,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "test",
-    "path": "folders/Objects/Battle/Turn/test.yy",
+    "name": "zzz_test",
+    "path": "folders/Objects/Battle/Turn/zzz_test.yy",
   },
 }

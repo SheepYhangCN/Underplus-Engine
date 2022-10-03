@@ -9,7 +9,7 @@ if(keyboard_check_pressed(vk_insert)){
 if(global.debug = 1){
 	show_debug_overlay(true);
 	if(!instance_exists(obj_console)){
-	instance_create_depth(0,0,0,obj_console)}
+	instance_create_depth(0,0,depth-1,obj_console)}
 	if(keyboard_check_pressed(vk_end)){
 	if(instance_exists(char_player)){
 	with(block){

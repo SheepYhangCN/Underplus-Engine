@@ -658,6 +658,65 @@ switch(cmd[|0]){
 		with(asset_get_index(cmd[|1])){
 		alarm[_alarm]=cmd[|3]}}
 		break;
+//ui_dialog名字=================================================================================================
+	case "show_name":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._show_name=cmd[|1]
+		}
+		break
+	case "name":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._name=cmd[|1]
+		}
+		break
+//ui_dialog设置=================================================================================================
+	case "ui_font":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._font=asset_get_index(cmd[|1])
+		}
+		break
+	case "ui_font_scale":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog.scale=cmd[|1]
+		}
+		break
+//ui_dialog位置=================================================================================================
+	case "top":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._top=cmd[|1]
+		}
+		break
+//ui_dialog选择=================================================================================================
+	case "ui_choice":
+		if(is_real(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice=cmd[|1]
+		}
+		break
+	case "ui_choice1":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice1=cmd[|1]
+		}
+		break
+	case "ui_choice2":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice2=cmd[|1]
+		}
+		break
+	case "ui_choice3":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice3=cmd[|1]
+		}
+		break
+	case "ui_choice4":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice4=cmd[|1]
+		}
+		break
+	case "ui_choice5":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice5=cmd[|1]
+		}
+		break
 //==================================================
 	case "encounter":
 		if(is_real(cmd[|1])){

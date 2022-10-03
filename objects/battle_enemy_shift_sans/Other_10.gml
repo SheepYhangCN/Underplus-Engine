@@ -20,10 +20,18 @@ Battle_SetEnemyActionInfo(_enemy_slot,1,"和敌人谈话")
 }
 
 Battle_SetEnemyDEF(_enemy_slot,1);
-_hp = 1
-_hpmax = 1
+_face = 0
+_face_spr=spr_shift_sans_head
+_hp=1
+_hpmax=1
+_cape=1
+bodyx = x-7
+bodyy = y+20
+headx=bodyx
+heady=bodyy-70
 Player_SetLv(1)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
 Battle_SetMenuMercyFleeEnabled(false)
 audio_stop_all()
+alarm[2]=1

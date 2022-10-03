@@ -8,7 +8,6 @@ audio_play_sound(snd_menu_confirm,0,0)
 battle_sponge_p2_turn10.pressed=true
 battle_sponge_p2_turn10.alarm[1]=1}
 }else{
-image_blend = make_color_hsv(0,0,sat)
 battle_sponge_p2_turn10.touched=false
 image_index=(global.language ? 2 : 0)}
 }

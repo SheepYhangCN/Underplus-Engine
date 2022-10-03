@@ -1,5 +1,5 @@
 var proc=0;
-var NUMBER=Battle_GetEnemyActionNumber(Battle_GetMenuChoiceEnemy()+(instance_exists(Battle_GetEnemy(0)) ? 0 : 1)+(instance_exists(Battle_GetEnemy(1)) ? 0 : 1));
+var NUMBER=Battle_GetEnemyActionNumber(Battle_GetMenuChoiceEnemyNum());
 var CURRENT=Battle_GetMenuChoiceAction();
 
 repeat(NUMBER){
