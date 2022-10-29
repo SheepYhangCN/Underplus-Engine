@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 10,
   "height": 10,
   "textureGroupId": {
@@ -69,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Bone",
-    "path": "folders/Sprites/Battle/Bullet/Bone.yy",
+    "name": "anya",
+    "path": "folders/Sprites/Battle/Enemy/anya.yy",
   },
 }

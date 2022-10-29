@@ -28,10 +28,21 @@ _cape=1
 bodyx = x-7
 bodyy = y+20
 headx=bodyx
-heady=bodyy-70
+heady=bodyy-80
 Player_SetLv(1)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
 Battle_SetMenuMercyFleeEnabled(false)
 audio_stop_all()
 alarm[2]=1
+Battle_SetTurnInfo(BATTLE_TURN.BOARD_X,114514)
+Battle_SetTurnInfo(BATTLE_TURN.BOARD_Y,1919810)
+battle_board.x=114514
+battle_board.y=1919810
+if(global.mode=GAME_MODE.EASY){
+Battle_SetEnemyAtk(3)}
+if(global.mode=GAME_MODE.NORMAL){
+Battle_SetEnemyAtk(4)}
+if(global.mode=GAME_MODE.HARD){
+Battle_SetEnemyAtk(5)}
+Battle_SetPlayerTempInv(60)

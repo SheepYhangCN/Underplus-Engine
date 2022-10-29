@@ -1,7 +1,6 @@
-if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM){
+if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&Battle_GetMenuChoiceAction()=0){
 		Battle_SetNextState(BATTLE_MENU.BUTTON)
 		Battle_GotoNextState()
-}
-if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT||Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY){
+}else{
 	instance_create_depth(0,0,0,asset_get_index("battle_shift_sans_turn"+string(Battle_GetTurnNumber())))
 }

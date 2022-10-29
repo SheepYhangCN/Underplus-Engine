@@ -1,0 +1,10 @@
+targetx=x
+targety=y
+moving=false
+type=0
+wait_time=35
+spd=8
+auto_destroy=true
+tween=false
+depth=DEPTH_BATTLE.BULLET_OUTSIDE_LOW
+alarm[2]=1

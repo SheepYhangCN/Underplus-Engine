@@ -98,7 +98,7 @@ case 4:
 draw_sprite_ext(spr_starry_sans_legs,0,320,220+60,2,2,0,c_white,1)
 draw_sprite_ext(spr_starry_sans_body,0,320,220+10,2,2,0,c_white,1)
 draw_sprite_ext(spr_starry_sans_face,0,320,220-30,2,2,0,c_white,1)
-game="StarryTale | Sans Fight"
+game="[Cancalled] StarryTale | Sans Fight"
 break
 case 5:
 draw_text_transformed(320,430,"Use Up and Down arrow keys to switch phase",2,2,0)
@@ -109,6 +109,7 @@ game="Spongeswap | Spongebob Fight"
 game+=" | Phase "+string(phase+1)
 break
 case 6:
+draw_sprite_ext(spr_shift_sans_intro,0,320,240,1,1,0,c_white,1)
 game="Undershift | Sans Fight"
 break
 }
@@ -207,7 +208,7 @@ case 4:
 draw_sprite_ext(spr_starry_sans_legs,0,320,220+60,2,2,0,c_white,1)
 draw_sprite_ext(spr_starry_sans_body,0,320,220+10,2,2,0,c_white,1)
 draw_sprite_ext(spr_starry_sans_face,0,320,220-30,2,2,0,c_white,1)
-game="[font_chinese]星空传说[font_dialog]StarryTale | Sans[font_chinese]战"
+game="[font_dialog][[[font_chinese]已弃坑[font_dialog]][font_chinese]星空传说[font_dialog]StarryTale | Sans[font_chinese]战"
 break
 case 5:
 draw_text_scribble(320,435,"[font_chinese][scale,2]使用上下方向键切换阶段")
@@ -218,6 +219,7 @@ game="[font_dialog]Spongeswap | Spongebob [font_chinese]战"
 game+="[font_dialog] | [font_chinese]第[font_dialog]"+string(phase+1)+"[font_chinese]阶段"
 break
 case 6:
+draw_sprite_ext(spr_shift_sans_intro,0,320,240,1,1,0,c_white,1)
 game="[font_dialog]Undershift | Sans[font_chinese]战"
 break
 }

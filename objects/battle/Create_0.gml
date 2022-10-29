@@ -116,6 +116,7 @@ _menu_fight_anim_time=0;
 _menu_fight_damage_time=0;
 
 _menu_item_used_last=-1;
+_menu_choice_item_secondary=0
 
 _turn_number=0;
 _turn_info=ds_map_create();

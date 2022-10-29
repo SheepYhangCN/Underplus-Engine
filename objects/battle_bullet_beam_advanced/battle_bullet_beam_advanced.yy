@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "battle_bullet_beam_advanced",
   "spriteId": {
-    "name": "spr_beam",
-    "path": "sprites/spr_beam/spr_beam.yy",
+    "name": "spr_beam_old",
+    "path": "sprites/spr_beam_old/spr_beam_old.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,7 +36,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blaster",
-    "path": "folders/Objects/Battle/Bullet/Blaster.yy",
+    "name": "old",
+    "path": "folders/Objects/Battle/Bullet/Blaster/old.yy",
   },
 }

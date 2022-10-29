@@ -29,13 +29,13 @@ if(global.tas=true){
 	if(global.mode!=0){var tempy=45}else{var tempy=15}
 	draw_text_scribble(620,tempy,"[scale,2][font_chinese]变速模式\n[font_dialog]([font_chinese]速度：[font_dialog]"+string(room_speed/60)+"x/"+string(room_speed)+"fps)")}
 	draw_set_halign(fa_left)
-	draw_set_color(c_red)
+	draw_set_color(c_white)
 	if(global.language=LANGUAGE.ENGLISH){
 	draw_set_font(font_menu)
-	draw_text(0,0,"Warning! Tas mode is a experimental feature!\nMight cause some problems!")}
+	draw_text_scribble(0,0,"[c_red]Warning! Tas mode is a experimental feature!\nMight cause some problems!\n\n[c_orange]Left Alt - Decrease FPS\nRight Alt - Increase FPS")}
 	if(global.language=LANGUAGE.SCHINESE){
 	draw_set_font(font_chinese)
-	draw_text(0,0,"警告！变速模式是一个实验性功能！\n可能会引起某些问题！")}
+	draw_text_scribble(0,0,"[c_red]警告[font_dialog]! [font_chinese]变速模式是一个实验性功能[font_dialog]! [font_chinese]\n可能会引起某些问题[font_dialog]! [font_chinese]\n\n[c_orange]左[font_dialog]Alt - [font_chinese]减少[font_dialog]FPS[font_chinese]\n右[font_dialog]Alt - [font_chinese]增加[font_dialog]FPS")}
 }
 if(keyboard_check(vk_escape)&&!instance_exists(char_player)){
 if(global.language=LANGUAGE.ENGLISH){

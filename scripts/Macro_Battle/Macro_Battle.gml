@@ -17,6 +17,7 @@ function Macro_Battle() {
 		ACT_TARGET,
 		ACT_ACTION,
 		ITEM,
+		ITEM_SECONDARY,
 		MERCY
 	};
 

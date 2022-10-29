@@ -5,7 +5,7 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Scripts/Battle/Bullet.yy",
+    "name": "old",
+    "path": "folders/Scripts/Battle/Bullet/Blaster/old.yy",
   },
 }

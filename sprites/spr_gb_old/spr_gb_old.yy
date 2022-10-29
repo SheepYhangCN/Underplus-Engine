@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 57,
   "height": 42,
   "textureGroupId": {
@@ -73,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "gb",
-    "path": "folders/Sprites/Battle/Bullet/gb.yy",
+    "name": "old",
+    "path": "folders/Sprites/Battle/Bullet/Blaster/old.yy",
   },
 }

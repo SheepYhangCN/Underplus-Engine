@@ -34,7 +34,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Blaster",
-    "path": "folders/Objects/Battle/Bullet/Blaster.yy",
+    "name": "old",
+    "path": "folders/Objects/Battle/Bullet/Blaster/old.yy",
   },
 }

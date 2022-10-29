@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 64,
   "height": 64,
   "textureGroupId": {
@@ -67,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Bullet",
-    "path": "folders/Sprites/Battle/Bullet.yy",
+    "name": "spongebob",
+    "path": "folders/Sprites/Battle/Enemy/spongebob.yy",
   },
 }

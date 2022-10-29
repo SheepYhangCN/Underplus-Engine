@@ -5,7 +5,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 7,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -17,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 42,
   "height": 57,
   "textureGroupId": {
@@ -68,7 +69,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 21,
-    "yorigin": 28,
+    "yorigin": 57,
     "eventToFunction": {},
     "eventStubScript": null,
   },
@@ -77,7 +78,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "gb",
-    "path": "folders/Sprites/Battle/Bullet/gb.yy",
+    "name": "Blaster",
+    "path": "folders/Sprites/Battle/Bullet/Blaster.yy",
   },
 }

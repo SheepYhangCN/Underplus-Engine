@@ -1,0 +1,3 @@
+function Battle_GetMenuChoiceItemSecondary(){
+return battle._menu_choice_item_secondary
+}

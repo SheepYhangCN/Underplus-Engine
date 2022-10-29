@@ -14,12 +14,6 @@ https://gamejolt.com/games/underplus-engine/726150
 
 ============================================================
 
-Gaster Blaster script(located in Battle_MakeBlaster_Advanced):
-
-Blaster_Create_Advanced(start x,start y,target x,target y,start angle,target angle,x scale/width,y scale,type(color,0=white,1=blue,2=orange),move time at start,blaster sprite,wait time before shoot,keep shoot how long,\*beam sprite,\*object,\*screen shake type,\*exit speed at fist,\*exit speed at the end,\*and i forgot the rest of arguments)
-
-============================================================
-
 How 2 use Debug:
 
 Insert Switch Debug

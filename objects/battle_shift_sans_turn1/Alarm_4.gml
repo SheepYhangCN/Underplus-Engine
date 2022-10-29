@@ -1,0 +1,1 @@
+audio_play_sound(snd_asgore_spear,0,0)
