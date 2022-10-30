@@ -1,4 +1,4 @@
-///@arg x,y,target_x,target_y,angle,target_angle,pause_time,scale_x,scale_y,stay_time,wait_time,type,*shake,*sprite,*object,*audio_intro,*audio_release
+///@arg x,y,target_x,target_y,angle,target_angle,pause_time,scale_x,scale_y,stay_time,move_time,type,*shake,*sprite,*object,*audio_intro,*audio_release
 function Battle_MakeBlaster()
 {
     var xx = argument[0]

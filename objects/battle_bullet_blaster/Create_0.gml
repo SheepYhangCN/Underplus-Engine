@@ -1,3 +1,4 @@
+event_inherited()
 depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH
 time = 0
 color = 0

@@ -11,4 +11,5 @@ _hpmax = 1
 Player_SetLv(1)
 Player_SetHpMax(1)
 Player_SetHp(Player_GetHpMax())
+Battle_SetEnemyAtk(1)
 temp=false

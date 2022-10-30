@@ -1,5 +1,6 @@
 function Camera_Reset(){
 	with(camera){
+		Anim_Destroy(self)
 		x=0
 		y=0
 		width=640

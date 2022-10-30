@@ -16,26 +16,26 @@ switch timer{
 		alarm[0]=-1
 		break
 	case 260:
-		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,gbscale,2,0,30,spr_blaster,20,15)
+		Battle_MakeBlaster(0,0,battle_board.x-64,battle_board.y-50,0,0+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x-50,battle_board.y-64,0,-90+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x+64,battle_board.y+50,0,180+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x+50,battle_board.y+64,0,90+90,20,gbscale,2,15,30,0)
 		break
 	case 320:
-		Blaster_Create_Advanced(0,0,240,240,0,45-90,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,400,240,0,-45-90,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,240,400,0,135-90,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,400,400,0,-135-90,gbscale,2,0,30,spr_blaster,20,15)
+		Battle_MakeBlaster(0,0,240,240,0,45,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,400,240,0,-45,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,240,400,0,135,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,400,400,0,-135,20,gbscale,2,15,30,0)
 		break
 	case 380:
-		Blaster_Create_Advanced(0,0,battle_board.x-64,battle_board.y-50,0,0,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x-50,battle_board.y-64,0,-90,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+64,battle_board.y+50,0,180,gbscale,2,0,30,spr_blaster,20,15)
-		Blaster_Create_Advanced(0,0,battle_board.x+50,battle_board.y+64,0,90,gbscale,2,0,30,spr_blaster,20,15)
+		Battle_MakeBlaster(0,0,battle_board.x-64,battle_board.y-50,0,0+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x-50,battle_board.y-64,0,-90+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x+64,battle_board.y+50,0,180+90,20,gbscale,2,15,30,0)
+		Battle_MakeBlaster(0,0,battle_board.x+50,battle_board.y+64,0,90+90,20,gbscale,2,15,30,0)
 		break
 	case 440:
-		Blaster_Create_Advanced(0,0,200,battle_board.y,0,90-90,4,2,0,40,spr_blaster,20,35)
-		Blaster_Create_Advanced(0,0,440,battle_board.y,0,-90-90,4,2,0,40,spr_blaster,20,35)
+		Battle_MakeBlaster(0,0,200,battle_board.y,0,90,20,4,2,35,40,0)
+		Battle_MakeBlaster(0,0,440,battle_board.y,0,-90,20,4,2,35,40,0)
 		break
 	case 599:
 		titr_body.image_index=1

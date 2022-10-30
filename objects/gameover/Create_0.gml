@@ -8,16 +8,7 @@ audio_stop_all();
 audio_sound_gain(bgm_gameover,1,0)
 fader.alpha=0
 Anim_Destroy(fader,"alpha")
-camera.angle=0
-camera.scale_x=1
-camera.scale_y=1
-camera.x=0
-camera.y=0
-Anim_Destroy(camera,"angle")
-Anim_Destroy(camera,"scale_x")
-Anim_Destroy(camera,"scale_y")
-Anim_Destroy(camera,"x")
-Anim_Destroy(camera,"y")
+Camera_Reset()
 
 //alarm[8]=1
 

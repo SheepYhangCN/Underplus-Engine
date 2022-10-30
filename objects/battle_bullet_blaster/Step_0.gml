@@ -25,7 +25,7 @@ if (time == ((move_time + pause) + 5))
 {
     image_index++
     alarm[1] = 3
-    a = instance_create_depth((x + lengthdir_x(20, (idealrot - 90))), (y + lengthdir_y(20, (idealrot - 90))), 0, battle_bullet_beam)
+    a = instance_create_depth((x + lengthdir_x(-15, (idealrot - 90))), (y + lengthdir_y(-15, (idealrot - 90))), 0, battle_bullet_beam)
 	a.shake=shake
     a.image_angle = idealrot
     a.depth = depth
@@ -67,8 +67,8 @@ if (time >= ((move_time + pause) + 4))
 {
     if instance_exists(a)
     {
-        a.x = (x + lengthdir_x(20, (idealrot - 90)))
-        a.y = (y + lengthdir_y(20, (idealrot - 90)))
+        a.x = (x + lengthdir_x(-15, (idealrot - 90)))
+        a.y = (y + lengthdir_y(-15, (idealrot - 90)))
         a.image_yscale += (speed / 16)
     }
 }
