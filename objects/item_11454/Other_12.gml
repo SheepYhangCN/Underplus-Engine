@@ -1,7 +1,7 @@
 //Dialog_Add("* The Engine won't make you drop&  it.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* 29 59 14 6C.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 29 59 14 6C。")
 }
 Dialog_Start();

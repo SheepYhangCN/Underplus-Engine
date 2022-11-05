@@ -1,7 +1,7 @@
 ///@desc Name Check
 var text="";
 var valid=true;
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 switch(string_lower(_naming_name)){
 	default:
 		text="{font 1}Is this name correct?"
@@ -71,8 +71,8 @@ switch(string_lower(_naming_name)){
 //		text=Lang_GetString("menu.confirm.title.chara");
 //		break;
 	case "frisk":
-		text="{font 1}Tips:Please use Delete key&to switch Hard Mode"
-		global.hardmode=1;
+		text="{font 1}Tips:Please goto settings&to switch to Hard Mode"
+		global.mode=GAME_MODE.HARD;
 		break;
 	case "":
 		text="{font 1}OMG that's a awesome name&really awesome i love it"
@@ -140,7 +140,7 @@ switch(string_lower(_naming_name)){
 		text="Devil."
 		break;
 }
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 switch(string_lower(_naming_name)){
 	default:
 		text="{font 0}是这个名字没错吗?"
@@ -168,8 +168,8 @@ switch(string_lower(_naming_name)){
 		text="{font 0}不是很有创造性...?"
 		break;
 	case "frisk":
-		text="{font 0}提示:请使用{font 0}Delete{font 0}键&来开关困难模式"
-		global.hardmode=1;
+		text="{font 0}提示:请前往设置&来切换至困难模式"
+		global.mode=GAME_MODE.HARD;
 		break;
 	case "":
 		text="{font 0}噢我的天哪那可真是个好名字&真的太棒了我爱死这个名字了"

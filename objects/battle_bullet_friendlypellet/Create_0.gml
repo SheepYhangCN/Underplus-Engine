@@ -1,0 +1,13 @@
+event_inherited()
+targetx=x
+targety=y
+angle=0
+moving=false
+type=0
+move_time=10
+wait_time=35
+spd=8
+auto_destroy=true
+tween=false
+depth=DEPTH_BATTLE.BULLET_OUTSIDE_LOW
+alarm[2]=1

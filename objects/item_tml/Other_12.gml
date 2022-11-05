@@ -1,7 +1,7 @@
 //Dialog_Add("* The Engine won't make you drop&  it.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* You let TML go.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 你放走了糖萌芦。")
 }
 Dialog_Start();

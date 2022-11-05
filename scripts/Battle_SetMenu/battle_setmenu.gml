@@ -54,7 +54,8 @@ function Battle_SetMenu() {
 		if(object_exists(OBJ)){
 			if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 				instance_create_depth(0,0,0,OBJ);
-				OBJ.image_yscale=0.97
+				OBJ.image_yscale=OBJ.base_yscale*0.97
+				OBJ.image_xscale=OBJ.base_xscale*1
 				/*OBJ.image_xscale=0
 				OBJ.image_yscale=OBJ._base_yscale*0.97
 				OBJ.image_alpha=0
@@ -74,7 +75,14 @@ function Battle_SetMenu() {
 	//物品
 	if(MENU==BATTLE_MENU.ITEM){
 		Battle_SetMenuChoiceItem(0,false);
-		instance_create_depth(0,0,0,battle_menu_item_scrollbar);
+		if!(instance_exists(battle_menu_item_scrollbar)){
+		instance_create_depth(0,0,0,battle_menu_item_scrollbar);}
+	}
+	if(MENU==BATTLE_MENU.ITEM_SECONDARY){
+		Battle_SetMenuChoiceItem(Battle_GetMenuChoiceItem(),false);
+		Battle_SetMenuChoiceItemSecondary(0,false);
+		if!(instance_exists(battle_menu_item_scrollbar)){
+		instance_create_depth(0,0,0,battle_menu_item_scrollbar);}
 	}
 
 	//仁慈
@@ -95,18 +103,18 @@ function Battle_SetMenu() {
 				}
 				proc+=1;
 			}
-			if(global.language=0){
+			if(global.language=LANGUAGE.ENGLISH){
 			text+="* Spare"
-			}else if(global.language=1){
+			}else if(global.language=LANGUAGE.SCHINESE){
 			text+="* {font 0}饶恕"
 			}
 		
 			//逃跑是否可用
 			if(Battle_IsMenuMercyFleeEnabled()){
 				text+="&{color `white`}";
-			if(global.language=0){
+			if(global.language=LANGUAGE.ENGLISH){
 			text+="* Flee"
-			}else if(global.language=1){
+			}else if(global.language=LANGUAGE.SCHINESE){
 			text+="* 逃跑"}
 			}
 		}else{

@@ -10,20 +10,21 @@ ds_map_add(_map_macro,"DIR.RIGHT",DIR.RIGHT);
 ds_map_add(_map_macro,"FONT.DIALOG",0);
 ds_map_add(_map_macro,"FONT.MENU",1);
 ds_map_add(_map_macro,"FONT.BATTLE",2);
-ds_map_add(_map_macro,"font.sans",3);
-ds_map_add(_map_macro,"font.papyrus",4);
-ds_map_add(_map_macro,"font.gaster",5);
-ds_map_add(_map_macro,"font.inksans",6);
+ds_map_add(_map_macro,"FONT.SANS",3);
+ds_map_add(_map_macro,"FONT.PAPYRUS",4);
+ds_map_add(_map_macro,"FONT.GASTER",5);
+ds_map_add(_map_macro,"FONT.INKSANS",6);
 
 ds_map_add(_map_macro,"VOICE.NULL",-1);
 ds_map_add(_map_macro,"VOICE.DEFAULT",0);
 ds_map_add(_map_macro,"VOICE.TYPER",1);
-ds_map_add(_map_macro,"voice.toriel",2);
-ds_map_add(_map_macro,"voice.sans",3);
-ds_map_add(_map_macro,"voice.papyrus",4);
-ds_map_add(_map_macro,"voice.asgore",5);
-ds_map_add(_map_macro,"voice.gaster",6);
-ds_map_add(_map_macro,"voice.chara",7);
+ds_map_add(_map_macro,"VOICE.TORIEL",2);
+ds_map_add(_map_macro,"VOICE.SANS",3);
+ds_map_add(_map_macro,"VOICE.PAPYRUS",4);
+ds_map_add(_map_macro,"VOICE.ASGORE",5);
+ds_map_add(_map_macro,"VOICE.GASTER",6);
+ds_map_add(_map_macro,"VOICE.CHARA",7);
+ds_map_add(_map_macro,"VOICE,SPONGE",8);
 
 _group_font[0,0]=font_dialog
 _group_font_scale_x[0,0]=1;
@@ -49,11 +50,11 @@ _group_font[2,0]=font_battle
 _group_font_scale_x[2,0]=1;
 _group_font_scale_y[2,0]=1;
 _group_font_space_x[2,0]=0;
-_group_font[2,1]=font_chinese
+_group_font[2,1]=font_chinese_enemy
 _group_font_scale_x[2,1]=1;
 _group_font_scale_y[2,1]=1;
 _group_font_space_x[2,1]=1
-_group_font_space_y[2]=0;
+_group_font_space_y[2]=1;
 
 _group_font[3,0]=font_sans
 _group_font_scale_x[3,0]=1;
@@ -103,6 +104,7 @@ _group_voice[4,0]=snd_text_voice_papyrus;
 _group_voice[5,0]=snd_text_voice_asgore;
 _group_voice[6,0]=asset_get_index("snd_text_voice_gaster"+string(irandom_range(1,7)))
 _group_voice[7,0]=snd_text_voice_chara
+_group_voice[8,0]=snd_text_voice_spongebob
 
 _group_face[0]=face;
 _group_face[1]=face_sans;

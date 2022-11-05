@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "bgm_gameover",
   "conversionMode": 0,
   "compression": 2,
   "volume": 1.0,
@@ -17,8 +20,4 @@
     "name": "BGM",
     "path": "folders/Sounds/BGM.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bgm_gameover",
-  "tags": [],
-  "resourceType": "GMSound",
 }

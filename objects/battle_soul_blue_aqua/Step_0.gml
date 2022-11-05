@@ -1,6 +1,5 @@
 var SPD, xx, yy, input, fx, fy, mx, my, cx, cy, inst, m, _temp_local_var_9;
 event_inherited()
-if(Battle_GetState()=BATTLE_STATE.IN_TURN){
 if (dir == 270)
     image_angle = 0
 else if (dir == 90)
@@ -8,56 +7,76 @@ else if (dir == 90)
 else if (dir == 180)
     image_angle = -90
 else if (dir == 0)
-    image_angle = 90}
-	var isInside1 = false;
-	var isInside2 = false;
-	var isInside3 = false;
-	var isInside4 = false;
+    image_angle = 90
+	/*var */isInside1 = false;
+	/*var */isInside2 = false;
+	/*var */isInside3 = false;
+	/*var */isInside4 = false;
 
 var STATE=Battle_GetState();
 if(STATE==BATTLE_STATE.TURN_PREPARATION||STATE==BATTLE_STATE.IN_TURN){
 	if(instance_exists(battle_soul)){
-
 		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(battle_soul.x - sprite_width/2-1, battle_soul.y)){
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(battle_soul.x - sprite_width/2-1, battle_soul.y)){
 				isInside1 = true;
 				break;
 			}
 		}
 		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(battle_soul.x + sprite_width/2+1, battle_soul.y)){
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(battle_soul.x + sprite_width/2+1, battle_soul.y)){
 				isInside2 = true;
 				break;
 			}
 		}
 		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(battle_soul.x, battle_soul.y - sprite_height/2 - 1 )){
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(battle_soul.x, battle_soul.y - sprite_height/2 - 1 )){
 				isInside3 = true;
 				break;
 			}
 		}
 		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(battle_soul.x, battle_soul.y + sprite_height/2 + 1)){
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(battle_soul.x, battle_soul.y + sprite_height/2 + 1)){
 				isInside4 = true;
 				break;
 			}
 		}
 	
-		if(!isInside4&&dir = 270){	//如果出框
+		if(!isInside4&&dir = 270){	//方向为下时碰到下方框
 			bbb = 1;
 			move = 0;
 		}
-		if(!isInside3&&dir = 90){	//如果出框
+		if(!isInside3&&dir = 90){	//方向为上时碰到上方框
 			bbb = 1;
 			move = 0;
 		}
-		if(!isInside2&&dir = 0){	//如果出框
+		if(!isInside2&&dir = 0){	//方向为右时碰到右方框
 			bbb = 1;
 			move = 0;
 		}
-		if(!isInside1&&dir = 180){	//如果出框
+		if(!isInside1&&dir = 180){	//方向为左时碰到左方框
 			bbb = 1;
 			move = 0;
+		}
+		
+		if(!isInside3&&dir = 270){	//方向为下时碰到上方框
+			move = 0;
+			Anim_Create(id,"move",0,0,0,-0.001,4);
+		}
+		if(!isInside4&&dir = 90){	//方向为上时碰到下方框
+			move = 0;
+			Anim_Create(id,"move",0,0,0,-0.001,4);
+		}
+		if(!isInside3&&dir = 270){	//方向为下时碰到上方框
+			move = 0;
+			Anim_Create(id,"move",0,0,0,-0.001,4);
+		}
+		if(!isInside3&&dir = 270){	//方向为下时碰到上方框
+			move = 0;
+			Anim_Create(id,"move",0,0,0,-0.001,4);
 		}
 	}
 }
@@ -88,15 +107,14 @@ if((Battle_GetState() == 3)&&moveable){
     }
     xx = 0
     yy = 0
-	if(dir==DIR.DOWN){
-		yy=sprite_height/2+0.1;
-	}else if(dir==DIR.UP){
-		yy=-sprite_height/2-0.1;
-	}else if(dir==DIR.LEFT){
-		xx=-sprite_height/2-0.1;
-	}else if(dir==DIR.RIGHT){
-		xx=sprite_height/2+0.1;
-	}
+    if (dir == 270)
+        yy = ((sprite_height / 2) + 0.1)
+    else if (dir == 90)
+        yy = (((- sprite_height) / 2) - 0.1)
+    else if (dir == 180)
+        xx = (((- sprite_height) / 2) - 0.1)
+    else if (dir == 0)
+        xx = ((sprite_height / 2) + 0.1)
     blockk = position_meeting((x + xx), (y + yy), block)
     plat = position_meeting((x + xx), (y + yy), battle_platform)
     input = -1
@@ -112,28 +130,26 @@ if((Battle_GetState() == 3)&&moveable){
 		aaa = 0;
         fx = 0
         fy = 0
-		if(dir==DIR.DOWN){
-			fy=sprite_height/2;
-		}else if(dir==DIR.UP){
-			fy=-sprite_height/2;
-		}else if(dir==DIR.LEFT){
-			fx=-sprite_height/2;
-		}else if(dir==DIR.RIGHT){
-			fx=sprite_height/2;
-		}
+        if (dir == 270)
+            fy = (sprite_height / 2)
+        else if (dir == 90)
+            fy = ((- sprite_height) / 2)
+        else if (dir == 180)
+            fx = ((- sprite_height) / 2)
+        else if (dir == 0)
+            fx = (sprite_height / 2)
         while (position_meeting((x + fx), (y + fy), block) || position_meeting((x + fx), (y + fy), battle_platform)){
 			move = 0;
             mx = 0
             my = 0
-			if(dir==DIR.DOWN){
-				my=-0.1;
-			}else if(dir==DIR.UP){
-				my=0.1;
-			}else if(dir==DIR.LEFT){
-				mx=0.1;
-			}else if(dir==DIR.RIGHT){
-				mx=-0.1;
-			}
+            if (dir == 270)
+                my = -0.1
+            else if (dir == 90)
+                my = 0.1
+            else if (dir == 180)
+                mx = 0.1
+            else if (dir == 0)
+                mx = -0.1
             x = (x + mx)
             y = (y + my)
         }
@@ -152,20 +168,19 @@ if((Battle_GetState() == 3)&&moveable){
             {
                 cx = 0
                 cy = 0
-				if(dir==DIR.DOWN){
-					cy=sprite_height/2+1;
-				}else if(dir==DIR.UP){
-					cy=-sprite_height/2-1;
-				}else if(dir==DIR.LEFT){
-					cx=-sprite_height/2-1;
-				}else if(dir==DIR.RIGHT){
-					cx=sprite_height/2+1;
-				}
-                inst = instance_place((x + cx), (y + cy), battle_platform)
+                if (dir == 270)
+                    cy = ((sprite_height / 2) + 1)
+                else if (dir == 90)
+                    cy = (((- sprite_height) / 2) - 1)
+                else if (dir == 180)
+                    cx = (((- sprite_height) / 2) - 1)
+                else if (dir == 0)
+                    cx = ((sprite_height / 2) + 1)
+                inst = instance_position((x + cx), (y + cy), battle_platform)
                 if instance_exists(inst)
                 {
                     if inst.sticky
-                        x += (inst.x - inst.xprevious)
+                        x = (x + (inst.x - inst.xprevious))
                 }
             }
             if Input_IsHeld(input)
@@ -204,15 +219,14 @@ if((Battle_GetState() == 3)&&moveable){
     {
         xx = 0
         yy = 0
-		if(dir==DIR.DOWN){
-			yy=(sprite_height/2)*sign(move);
-		}else if(dir==DIR.UP){
-			yy=-(sprite_height/2)*sign(move);
-		}else if(dir==DIR.LEFT){
-			xx=-(sprite_width/2)*sign(move);
-		}else if(dir==DIR.RIGHT){
-			xx=(sprite_width/2)*sign(move);
-		}
+        if (dir == 270)
+            yy = ((sprite_height / 2) * sign(move))
+        else if (dir == 90)
+            yy = ((- (sprite_height / 2)) * sign(move))
+        else if (dir == 180)
+            xx = ((- (sprite_width / 2)) * sign(move))
+        else if (dir == 0)
+            xx = ((sprite_width / 2) * sign(move))
         if (! position_meeting((x + xx), (y + yy), block)) || (isInside4)
         {
            bbb = 0; 
@@ -225,30 +239,28 @@ if((Battle_GetState() == 3)&&moveable){
         {
             xx = 0
             yy = 0
-			if(dir==DIR.DOWN){
-				yy=0.1*sign(move);
-			}else if(dir==DIR.UP){
-				yy=-0.1*sign(move);
-			}else if(dir==DIR.LEFT){
-				xx=-0.1*sign(move);
-			}else if(dir==DIR.RIGHT){
-				xx=0.1*sign(move);
-			}
+            if (dir == 270)
+                yy = (0.1 * sign(move))
+            else if (dir == 90)
+                yy = (-0.1 * sign(move))
+            else if (dir == 180)
+                xx = (-0.1 * sign(move))
+            else if (dir == 0)
+                xx = (0.1 * sign(move))
             x = (x + xx)
             y = (y + yy)
         }
     }
     xx = 0
     yy = 0
-			if(dir==DIR.DOWN){
-				yy=0.1*sign(move);
-			}else if(dir==DIR.UP){
-				yy=-0.1*sign(move);
-			}else if(dir==DIR.LEFT){
-				xx=-0.1*sign(move);
-			}else if(dir==DIR.RIGHT){
-				xx=0.1*sign(move);
-			}
+    if (dir == 270)
+        yy = (-0.1 * sign(move))
+    else if (dir == 90)
+        yy = (0.1 * sign(move))
+    else if (dir == 180)
+        xx = (0.1 * sign(move))
+    else if (dir == 0)
+        xx = (-0.1 * sign(move))
     if place_meeting((x + xx), (y + yy), block)
         move = 0
 }

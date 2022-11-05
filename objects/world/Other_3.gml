@@ -6,3 +6,5 @@ Input_Uninit();
 Demo_Uninit();
 Shop_Uninit();
 file_delete(working_directory+"console.txt");
+if(file_exists("./"+GAME_SAVE_NAME+"./file10.ini")){file_delete("./"+GAME_SAVE_NAME+"./file10.ini")}
+if(directory_exists("./"+GAME_SAVE_NAME+"./flag/10")){directory_destroy("./"+GAME_SAVE_NAME+"./flag/10")}

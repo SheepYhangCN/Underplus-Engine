@@ -1,7 +1,7 @@
-//instance_create_depth(random(room_width+10), 0, depth, season_effect)
-if(global.language=0){
+//instance_create_depth(random(room_width+10), 0, depth, obj_season_effect)
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Warning")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 警告")
 }
 if(Input_IsPressed(INPUT.CONFIRM)&&temp=0){

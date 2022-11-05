@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+///@arg window_size
 function Window_Size_Set(){
 var window_size=argument[0]
 if(instance_exists(obj_settings)){

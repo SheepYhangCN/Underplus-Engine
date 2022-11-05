@@ -16,15 +16,21 @@ else
         while (true)
         {
 			var isInside = false;
-			for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(x + sprite_width/2 + (sign(move_x)*0.1), y)) {
+		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(x - sprite_width/2 + (sign(move_x) * 0.1), y)) {
 				isInside = true;
-			}}
+				break;
+			}
+		}
 			var isInside1 = false;
-			for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
-			if(global.borders[i].contains(x - sprite_width/2 + (sign(move_x)*0.1), y)) {
+		for(var i = 0; i < global.borderCount; i++) {	//遍历所有框，判断是否出框
+			bb = ds_list_find_value(global.borders_list,i);
+			if(bb.contains(x + sprite_width/2 + (sign(move_x) * 0.1), y)) {
 				isInside1 = true;
-			}}
+				break;
+			}
+		}
             //if (! place_meeting((x + (sign(move_x) * 0.1)), y, block))
 			if(isInside&&isInside1)
             {

@@ -26,7 +26,7 @@ if(_input_acceptable){
 		
 		var ATK=Player_GetAtkTotal();
 		var DEF=Battle_GetEnemyDEF(Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));
-		var DISTANCE=point_distance(x,y,_aim_x,y);
+		var DISTANCE=point_distance(x,y,(_dir=DIR.RIGHT ? _aim_x : _aim_x_1),y);
 		var WIDTH=sprite_get_width(spr_battle_menu_fight_bg)/2;
 		var damage=ATK-DEF+random(2);
 		if(DISTANCE<=12){

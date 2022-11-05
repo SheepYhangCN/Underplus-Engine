@@ -9,7 +9,7 @@ if(keyboard_check_pressed(vk_insert)){
 if(global.debug = 1){
 	show_debug_overlay(true);
 	if(!instance_exists(obj_console)){
-	instance_create_depth(0,0,0,obj_console)}
+	instance_create_depth(0,0,depth-1,obj_console)}
 	if(keyboard_check_pressed(vk_end)){
 	if(instance_exists(char_player)){
 	with(block){
@@ -20,25 +20,29 @@ if(global.debug = 1){
 	with(hint_landmark){
 	visible=!visible}}
 	if(Player_IsInBattle()){
-	with(battle_bullet_bone){
+	with(battle_bullet){
+	if(variable_instance_exists(self,"out")){
 	out=!out}
+	if(variable_instance_exists(self,"outside")){
+	outside=!outside}
+	}
 	}}
 	if(keyboard_check_pressed(vk_f12)){
-	if(global.mode = 0){
-		global.mode = 1;
-	}else if(global.mode = 1){
-		global.mode = 2;
-	}else if(global.mode = 2){
-		global.mode = 0
+	if(global.mode=GAME_MODE.NORMAL){
+		global.mode=GAME_MODE.EASY;
+	}else if(global.mode=GAME_MODE.EASY){
+		global.mode=GAME_MODE.HARD;
+	}else if(global.mode=GAME_MODE.HARD){
+		global.mode=GAME_MODE.NORMAL
 	}
 		Player_SetHp(Player_GetHpMax())
 		room_restart()
 }
 	if(keyboard_check_pressed(vk_f5)){
-	if(global.language=0){
-	Language_Set(1)
-	}else if(global.language=1){
-	Language_Set(0)
+	if(global.language=LANGUAGE.ENGLISH){
+	Language_Set(LANGUAGE.SCHINESE)
+	}else if(global.language=LANGUAGE.SCHINESE){
+	Language_Set(LANGUAGE.ENGLISH)
 	}
 }
 if(keyboard_check_pressed(vk_tab)){
@@ -91,7 +95,7 @@ if(keyboard_check_pressed(vk_tab)){
 		Shop_Start(shop_start)
 	}
 	if(keyboard_check_pressed(vk_pagedown)){
-		encounter_battle=get_integer("Encounter_Start", global.enemy)
+		encounter_battle=get_integer("Encounter_Start", global.battle)
 		Encounter_Start(encounter_battle)
 }
 	if(keyboard_check_pressed(ord("S"))&&!instance_exists(battle_soul_blue)&&!instance_exists(battle_soul_blue_aqua)&&!instance_exists(battle_soul_green)&&!instance_exists(battle_soul_green_aqua)){
@@ -106,7 +110,7 @@ if(keyboard_check_pressed(vk_tab)){
 		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_init);
 		room_goto(asset_get_index(target))
 	}
-if(keyboard_check_pressed(vk_escape)){
+if(keyboard_check_pressed(vk_space)){
 		show_message("Game Paused")}
 if(Player_IsInBattle()){
 	if(instance_exists(battle_soul_blue)||instance_exists(battle_soul_blue_aqua)){
@@ -117,6 +121,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.UP)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.UP)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
@@ -127,6 +133,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.LEFT)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.LEFT)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
@@ -137,6 +145,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.DOWN)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.DOWN)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
@@ -147,6 +157,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Anya(DIR.RIGHT)
 		}else if(instance_exists(battle_enemy_utcsans)){
 		BlueSoulControl_UtcSans(DIR.RIGHT)
+		}else if(instance_exists(starry_sans_body)){
+		BlueSoulControl_Starry(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}
 	}}

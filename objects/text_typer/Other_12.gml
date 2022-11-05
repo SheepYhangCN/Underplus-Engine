@@ -13,6 +13,7 @@ switch(cmd[|0]){
 	case "color":
 		if(is_string(cmd[|1])){
 			var color=GetColorFromString(cmd[|1]);
+			}else if(is_real(cmd[|1])){var color=cmd[|1]}
 			switch(color){
 				default:
 					_color_text[0]=color;
@@ -56,7 +57,6 @@ switch(cmd[|0]){
 					_color_shadow[2]=make_color_rgb(76,0,0);
 					_color_shadow[3]=make_color_rgb(76,0,0);
 					break;
-			}
 		}
 		break;
 		
@@ -658,6 +658,65 @@ switch(cmd[|0]){
 		with(asset_get_index(cmd[|1])){
 		alarm[_alarm]=cmd[|3]}}
 		break;
+//ui_dialog名字=================================================================================================
+	case "show_name":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._show_name=cmd[|1]
+		}
+		break
+	case "name":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._name=cmd[|1]
+		}
+		break
+//ui_dialog设置=================================================================================================
+	case "ui_font":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._font=asset_get_index(cmd[|1])
+		}
+		break
+	case "ui_font_scale":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog.scale=cmd[|1]
+		}
+		break
+//ui_dialog位置=================================================================================================
+	case "top":
+		if(is_bool(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._top=cmd[|1]
+		}
+		break
+//ui_dialog选择=================================================================================================
+	case "ui_choice":
+		if(is_real(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice=cmd[|1]
+		}
+		break
+	case "ui_choice1":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice1=cmd[|1]
+		}
+		break
+	case "ui_choice2":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice2=cmd[|1]
+		}
+		break
+	case "ui_choice3":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice3=cmd[|1]
+		}
+		break
+	case "ui_choice4":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice4=cmd[|1]
+		}
+		break
+	case "ui_choice5":
+		if(is_string(cmd[|1])&&instance_exists(ui_dialog)){
+			ui_dialog._choice5=cmd[|1]
+		}
+		break
 //==================================================
 	case "encounter":
 		if(is_real(cmd[|1])){
@@ -766,6 +825,26 @@ switch(cmd[|0]){
 	case "utcsans_legs":
 		if(is_real(cmd[|1])&&instance_exists(battle_enemy_utcsans)){
 			battle_enemy_utcsans._legs=cmd[|1]
+		}
+		break
+//==================================================
+	case "starry_face":
+		if(is_real(cmd[|1])&&instance_exists(starry_sans_head)){
+			starry_sans_head.image_index=cmd[|1]
+		}
+		break
+	case "starry_body":
+		if(is_real(cmd[|1])&&instance_exists(starry_sans_body)){
+			starry_sans_body.image_index=cmd[|1]
+		}
+		break
+//==================================================
+	case "sponge_face":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_sponge)){
+			battle_enemy_sponge._face=cmd[|1]
+		}
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_sponge_p2)){
+			battle_enemy_sponge_p2._face=cmd[|1]
 		}
 		break
 }

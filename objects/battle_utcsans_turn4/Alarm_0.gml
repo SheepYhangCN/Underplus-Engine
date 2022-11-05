@@ -1,7 +1,7 @@
 var angle=random_range(-180,180)
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 var scale=0.5
 }else{
 var scale=0.3}
-Blaster_Create_Advanced(0,0,battle_soul.x+lengthdir_x(100,angle),battle_soul.y+lengthdir_y(100,angle),0,angle+180,scale,2,0,20,spr_blaster,10,10)
+Battle_MakeBlaster(battle_soul.x+lengthdir_x(250,angle),battle_soul.y+lengthdir_y(250,angle),battle_soul.x+lengthdir_x(100,angle),battle_soul.y+lengthdir_y(100,angle),angle-90,angle-90,10,scale,2,10,20,0)
 alarm[0]=140

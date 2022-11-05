@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_text_voice_asgore",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "snd_text_voice_asgore.wav",
   "duration": 0.093741,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "text_voice",
+    "path": "folders/Sounds/SFX/text_voice.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_text_voice_asgore",
-  "tags": [],
-  "resourceType": "GMSound",
 }

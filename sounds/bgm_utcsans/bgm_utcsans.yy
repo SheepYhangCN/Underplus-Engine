@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "bgm_utcsans",
   "conversionMode": 0,
   "compression": 2,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "bgm_utcsans.mp3",
   "duration": 193.90692,
   "parent": {
-    "name": "BGM",
-    "path": "folders/Sounds/BGM.yy",
+    "name": "fights",
+    "path": "folders/Sounds/BGM/fights.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "bgm_utcsans",
-  "tags": [],
-  "resourceType": "GMSound",
 }

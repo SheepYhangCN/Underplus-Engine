@@ -1,8 +1,8 @@
 ///@desc Use
 //Dialog_Add("* You ate TML.&{sleep 20}* Undertale Engine Forever!&{sleep 20}* Your HP is maxed out.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* You typed [29 59 14 6C].{sleep 20}&* Inscreased 30 to your max HP.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 你输入了[29 59 14 6C]。{sleep 20}&* 你的HP上限被增加了30。")
 }
 Dialog_Start();

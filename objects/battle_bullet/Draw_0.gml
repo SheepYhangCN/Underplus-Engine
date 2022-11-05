@@ -8,6 +8,6 @@ if (type == 2){
 	}
 if (type == 3){
     image_blend = c_lime}
-//surface_set_target(Battle_GetBoardSurface());{
+surface_set_target(Battle_GetBoardSurface());{
 	draw_self();
-//}surface_reset_target();
+}surface_reset_target();

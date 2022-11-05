@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_text_voice_gaster2",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "snd_text_voice_gaster2.wav",
   "duration": 0.062494,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "text_voice",
+    "path": "folders/Sounds/SFX/text_voice.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_text_voice_gaster2",
-  "tags": [],
-  "resourceType": "GMSound",
 }

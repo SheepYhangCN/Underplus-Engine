@@ -26,3 +26,5 @@ _moveable_warp=true;
 _moveable_encounter=true;
 _moveable_box=true;
 can_move=(moveable&&_moveable_dialog&&_moveable_menu&&_moveable_save&&_moveable_warp&&_moveable_encounter&&_moveable_box);
+
+flavor="None"

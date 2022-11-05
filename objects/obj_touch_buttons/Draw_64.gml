@@ -15,15 +15,15 @@
 	sprites on them.
 **/
 
-draw_sprite_ext(spr_button_x, 0, 680-200, 305+80, 0.5, 0.5, 0, noone, 0.35) // X
-draw_sprite_ext(spr_button_y, 0, 735-200, 250+80, 0.5, 0.5, 0, noone, 0.35) // Y
-draw_sprite_ext(spr_button_a, 0, 735-200, 360+80, 0.5, 0.5, 0, noone, 0.35) // A
-draw_sprite_ext(spr_button_b, 0, 790-200, 305+80, 0.5, 0.5, 0, noone, 0.35) // B
+draw_sprite_ext(spr_button_x, keyboard_check(ord("C")), 680-200, 305+80, 2.5, 2.5, 0, noone, 0.5) // C
+draw_sprite_ext(spr_button_y, keyboard_check(vk_space), 735-200, 250+80, 2.5, 2.5, 0, noone, 0.5) // Space
+draw_sprite_ext(spr_button_a, keyboard_check(ord("X")), 735-200, 360+80, 2.5, 2.5, 0, noone, 0.5) // X
+draw_sprite_ext(spr_button_b, keyboard_check(ord("Z")), 790-200, 305+80, 2.5, 2.5, 0, noone, 0.5) // Z
 
 
 ///////////// The code below is intended for debugging /////////////
 
-if should_show_touch_areas 
+if global.debug 
 {
 	// Buttons
 	virtual_key_show(vk_button_x)	; virtual_key_show(vk_button_y);

@@ -1,7 +1,7 @@
 ///@desc Use
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* They're better dry.{sleep 15}&* You recovered 90 HP.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 生吃更好。{sleep 15}&* 你恢复了90点HP。")
 }
 Dialog_Start();

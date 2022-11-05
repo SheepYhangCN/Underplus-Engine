@@ -6,7 +6,9 @@ temp1=0
 temp2=0
 audio_stop_all();
 audio_sound_gain(bgm_gameover,1,0)
-//BGM_Play(0,bgm_gameover)
+fader.alpha=0
+Anim_Destroy(fader,"alpha")
+Camera_Reset()
 
 //alarm[8]=1
 

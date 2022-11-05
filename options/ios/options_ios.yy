@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMiOSOptions",
+  "resourceVersion": "1.3",
+  "name": "iOS",
   "option_ios_display_name": "Underplus Engine",
   "option_ios_bundle_name": "com.yuhang.upe",
   "option_ios_version": "114.514.1919",
@@ -38,8 +41,4 @@
   "option_ios_texture_page": "4096x4096",
   "option_ios_podfile_path": "${options_dir}/ios/Podfile",
   "option_ios_podfile_lock_path": "${options_dir}/ios/Podfile.lock",
-  "resourceVersion": "1.3",
-  "name": "iOS",
-  "tags": [],
-  "resourceType": "GMiOSOptions",
 }

@@ -1,0 +1,4 @@
+virtual_key_delete(vk_button_x)
+virtual_key_delete(vk_button_y)
+virtual_key_delete(vk_button_a)
+virtual_key_delete(vk_button_b)

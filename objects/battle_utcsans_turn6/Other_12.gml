@@ -1,4 +1,4 @@
-if(global.mode=2){
+if(global.mode=GAME_MODE.HARD){
 alarm[0]=27
 alarm[1]=54
 //alarm[2]=120

@@ -9,11 +9,14 @@ ba.image_yscale=-6
 ba.alarm[1]=1
 ba.tempscale=-6*/
 depth=DEPTH_UI.TEXT
-instance_create_depth(0,0,0,obj_effect_space)
+instance_create_depth(0,0,depth+2,obj_background)
+if!(os_type=os_android||os_type=os_ios||os_type=os_winphone||os_browser=browser_ie_mobile||os_browser=browser_ie_mobile){
+instance_create_depth(0,0,depth+1,obj_effect_space)}
 
 //rainbow=0
 choice=0
-choice_max=4
+choice_min=-1
+choice_max=6
 phase=0
 phases=0
 temp=0

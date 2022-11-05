@@ -9,9 +9,9 @@ BGM_Play(0,bgm_menu_winter,true,1,1)}*/
 if(!audio_is_playing(bgm_sansdate)){
 BGM_Play(0,bgm_sansdate,true,1,1)}
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Games Selection")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 游戏选择")
 }
 
@@ -22,26 +22,30 @@ warning_color=c_white}
 if(warning_countdown>0){
 warning_color=c_red}
 
-/*a=instance_create_depth(random(room_width+10), 0, depth, season_effect)
+/*a=instance_create_depth(random(room_width+10), 0, depth, obj_season_effect)
 a.image_xscale=1
 a.image_yscale=1
 a.alarm[0]=-1
 a.alarm[1]=1*/
 //按键
 if(temp=0){
-if(Input_IsPressed(INPUT.LEFT)&&choice>0){
+if(Input_IsPressed(INPUT.LEFT)&&choice>choice_min){
+warning_countdown=1
 choice-=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.RIGHT)&&choice<choice_max){
+warning_countdown=1
 choice+=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.UP)&&phase>0){
+warning_countdown=1
 phase-=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.DOWN)&&phase<phases){
+warning_countdown=1
 phase+=1
 audio_play_sound(snd_menu_switch,0,0)}
 
@@ -86,24 +90,40 @@ default:
 phases=0
 enabled=true
 break
-case 0://教程
+case -1://小游戏
 phases=0
-enabled=false
+enabled=true
 break
-case 1://雪镇杉
+//case 0://教程
+//phases=0
+//enabled=false
+//break
+case 0://雪镇杉
 phases=2
 enabled=true
 break
-case 2://阿尼亚
+case 1://阿尼亚
 phases=1
 enabled=true
 break
-case 3://原杉
+case 2://原杉
 phases=2
 enabled=false
 break
-case 4://utc杉
+case 3://utc杉
 phases=0
 enabled=true
+break
+case 4://starry杉
+phases=0
+enabled=false
+break
+case 5://海绵宝宝
+phases=1
+enabled=true
+break
+case 6://shift杉王
+phases=0
+enabled=false
 break
 }

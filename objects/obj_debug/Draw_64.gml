@@ -14,15 +14,15 @@ if(global.debug=1){
 	rainbow+=1
 	draw_set_color(make_color_hsv((rainbow % 255), 255, 255))
 	draw_set_font(font_fzjcxs)
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	language="English"
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	language="简体中文"
 	}
 	draw_room="Current Room:"+string(room)+"("+room_get_name(room)+")"
 	draw_fps="Current FPS:"+string(fps)+"/"+string(room_speed)+"("+string(fps_real)+")"
 	draw_language="Current Language:"+string(language)
-	draw_windowsize="Current Window Size:"+string(world._window_size)+"x"
+	draw_windowsize="Current Window Size:"+string(world._window_size)+"x("+string(window_get_width())+"x"+string(window_get_height())+")"
 	draw_instance_count="Instance Count:"+string(instance_count)
 	draw_mousexy="Mouse XY:["+string(mouse_x)+","+string(mouse_y)+"]"
 	if(global.kr=0){
@@ -30,7 +30,7 @@ if(global.debug=1){
 	if(global.kr=1){
 	draw_hp_kr="HP(+KR):["+string(Player_GetHp())+"(+"+string(Player_GetKR())+")/"+string(Player_GetHpMax())+"]"}
 if(room=room_games&&instance_exists(obj_games)){
-	draw_choice="Choice:["+string(obj_games.choice)+"/"+string(obj_games.choice_max)+"]"
+	draw_choice="Choice:["+string(obj_games.choice_min)+"/"+string(obj_games.choice)+"/"+string(obj_games.choice_max)+"]"
 	draw_phase="Phase:["+string(obj_games.phase)+"/"+string(obj_games.phases)+"]"
 	draw_warning_color="Warning Color:["+string(obj_games.warning_color)+","+string(obj_games.warning_countdown)+"]"
 	draw_text(0,175,draw_choice)
@@ -45,13 +45,11 @@ if(Player_IsInBattle()){
 	draw_soulxy="Soul XY:["+string(battle_soul.x)+","+string(battle_soul.y)+"]"
 	draw_battle_button="Choice Button:"+string(Battle_GetMenuChoiceButton())
 	draw_turn="Turn Number:"+string(Battle_GetTurnNumber())
-	if(instance_exists(battle_turn)){
-	if(battle_turn.timer!=-1){
+	if(instance_exists(battle_turn)&&variable_instance_exists(battle_turn,"timer")&&battle_turn.timer!=-1){
 	draw_turn_timer="Turn Timer:"+string(turn_timer)+"("+string(battle_turn.timer)+")"
 	}else{
-	draw_turn_timer="Turn Timer:"+string(turn_timer)}}else{
 	draw_turn_timer="Turn Timer:"+string(turn_timer)}
-	draw_enemy="Battle:"+string(global.enemy)+"["+object_get_name(Encounter_GetEnemy(global.enemy,0))+","+object_get_name(Encounter_GetEnemy(global.enemy,1))+","+object_get_name(Encounter_GetEnemy(global.enemy,2))+"]"
+	draw_enemy="Battle:"+string(global.battle)+"["+object_get_name(Encounter_GetEnemy(global.battle,0))+","+object_get_name(Encounter_GetEnemy(global.battle,1))+","+object_get_name(Encounter_GetEnemy(global.battle,2))+"]"
 	draw_board="Board XY & Size:["+string(battle_board.x)+","+string(battle_board.y)+"],["+string(battle_board.up)+","+string(battle_board.down)+","+string(battle_board.left)+","+string(battle_board.right)+"]"
 	draw_state="Battle State & Menu:["+string(Battle_GetState())+","+string(Battle_GetMenu())+"]"
     draw_text(0, 175, draw_soulxy)
@@ -85,10 +83,12 @@ if(Player_IsInBattle()){
 	draw_playerspeed="Character Move Speed:["+string(char_player.move_speed[DIR.UP])+","+string(char_player.move_speed[DIR.DOWN])+","+string(char_player.move_speed[DIR.LEFT])+","+string(char_player.move_speed[DIR.RIGHT])+"]"
 	draw_playersprite="Character Sprite:"+sprite_get_name(char_player.sprite_index)+"["+string(int64(char_player.image_index))+"]"
 	draw_playercanmove="Moveable:"+string(char_player.can_move)+"["+string(char_player.moveable)+","+string(char_player._moveable_box)+","+string(char_player._moveable_dialog)+","+string(char_player._moveable_encounter)+","+string(char_player._moveable_menu)+","+string(char_player._moveable_save)+","+string(char_player._moveable_warp)+"]"
+	draw_playerflavor="Flavor:"+char_player.flavor
 	draw_text(0, 175, draw_playerxy)
 	draw_text(0, 195, draw_playerspeed)
 	draw_text(0, 215, draw_playersprite)
-	draw_text(0, 235, draw_playercanmove)}
+	draw_text(0, 235, draw_playercanmove)
+	draw_text(0, 255, draw_playerflavor)}
 }
     draw_text(0, 35, draw_room)
     draw_text(0, 55, draw_fps)

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "battle_death_particle_collision",
   "spriteId": null,
   "solid": false,
   "visible": false,
@@ -25,8 +28,4 @@
     "name": "Battle",
     "path": "folders/Objects/Battle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "battle_death_particle_collision",
-  "tags": [],
-  "resourceType": "GMObject",
 }

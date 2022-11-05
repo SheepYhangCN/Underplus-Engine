@@ -48,6 +48,15 @@ case 900:
 	break
 case 910:
 	alarm[1]=10
+	audio_pause_sound(bgm_utcsans)
+	fader.alpha=1
+	audio_play_sound(snd_cut,0,0)
+	if!(os_type=os_android||os_type=os_ios||os_type=os_winphone||os_browser=browser_ie_mobile||os_browser=browser_ie_mobile){
+	space=instance_create_depth(0,0,DEPTH_BATTLE.BG-1,obj_effect_space)}
+	break
+case 940:
+	audio_resume_sound(bgm_utcsans)
+	fader.alpha=0
 	break
 case 970:
 	alarm[2]=1
@@ -89,6 +98,7 @@ case 1760:
 	fader.alpha=1
 	fader.color=c_black
 	Battle_SetBoardSize(64,64,64,64)
+	if(instance_exists(space)){instance_destroy(space)}
 	break
 case 1800:
 	audio_resume_sound(bgm_utcsans)
@@ -107,8 +117,8 @@ case 1900:
 	BlueSoulControl_UtcSans(DIR.UP)
 	battle_soul.x=battle_board.x-32
 	battle_soul.y=battle_board.y-32
-	Battle_MakeBoneWallTop(40,40,15)
-	Battle_MakeBoneWallLeft(40,40,15)
+	Battle_MakeBoneWallTop(40,40,10)
+	Battle_MakeBoneWallLeft(40,40,10)
 	break
 case 1960:
 	audio_pause_sound(bgm_utcsans)

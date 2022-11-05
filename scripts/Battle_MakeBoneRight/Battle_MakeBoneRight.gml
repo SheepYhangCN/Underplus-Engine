@@ -1,4 +1,4 @@
-///@arg y,length,vspeed,type,out.rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
+///@arg y,length,vspeed,type,out,rotate,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneRight(){
     var Y = argument[0]
     var LENGTH = argument[1]
@@ -20,6 +20,7 @@ function Battle_MakeBoneRight(){
     if (argument_count >= 11)
         SPR_END = argument[10]
     var bone = Battle_MakeBoneH((((battle_board.x + battle_board.right) - (LENGTH / 2)) - 5), Y, LENGTH, 0, VSPEED, COLOR, OUT, ROT, DESTROY, DURATION,OBJ,SPR_BODY,SPR_END)
+	bone.angle+=180
     return bone;
 
 }

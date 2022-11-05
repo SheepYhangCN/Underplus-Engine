@@ -1,1 +1,0 @@
-Battle_End();

@@ -8,6 +8,6 @@ draw_set_color(c_black)
 draw_rectangle(0,0,640,480,0)
 draw_set_color(c_white)
 
-shader_set(shader_gray)
+shader_set(shd_gray)
 draw_surface(surface,0,0)
 shader_reset()

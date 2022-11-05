@@ -1,7 +1,7 @@
 //Dialog_Add("* You won't be able to drop it.");
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("{font 0}* You throw Cake away.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("{font 0}* {font 0}你扔掉了蛋糕。")
 }
 Dialog_Start();

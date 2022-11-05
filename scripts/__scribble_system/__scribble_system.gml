@@ -1,6 +1,6 @@
 // @jujuadams
-#macro __SCRIBBLE_VERSION           "8.0.4"
-#macro __SCRIBBLE_DATE              "2022-06-26"
+#macro __SCRIBBLE_VERSION           "8.0.8"
+#macro __SCRIBBLE_DATE              "2022-09-08"
 #macro __SCRIBBLE_DEBUG             false
 #macro __SCRIBBLE_VERBOSE_GC        false
 #macro SCRIBBLE_LOAD_FONTS_ON_BOOT  true
@@ -85,9 +85,11 @@ global.__scribble_stretch_grid         = ds_grid_create(1000, __SCRIBBLE_GEN_STR
 global.__scribble_temp_grid            = ds_grid_create(1000, __SCRIBBLE_GEN_WORD.__SIZE); //For some reason, changing the width of this grid causes GM to crash
 global.__scribble_temp2_grid           = ds_grid_create(1000, __SCRIBBLE_GEN_GLYPH.__SIZE);
 global.__scribble_vbuff_pos_grid       = ds_grid_create(1000, __SCRIBBLE_GEN_VBUFF_POS.__SIZE);
-//global.__scribble_window_array_null    = array_create(2*__SCRIBBLE_WINDOW_COUNT, 1.0); //TODO - Do we still need this?
 
-global.__scribble_cache_check_time = current_time;
+//Give us 1 second breathing room when booting up before trying to garbage collect
+global.__scribble_cache_check_time = current_time + 1000;
+
+global.__scribble_null_element = new __scribble_class_null_element();
 
 global.__scribble_mcache_dict       = {};
 global.__scribble_mcache_name_array = [];
@@ -274,6 +276,8 @@ global.__scribble_msdf_u_fSecondDraw              = shader_get_uniform(__shd_scr
 scribble_msdf_thickness_offset(0);
 
 //Set up animation properties
+global.__scribble_os_is_paused = false;
+
 global.__scribble_anim_shader_desync = false;
 global.__scribble_anim_shader_desync_to_default = false;
 global.__scribble_anim_shader_default = false;
@@ -281,6 +285,9 @@ global.__scribble_anim_shader_default = false;
 global.__scribble_anim_shader_msdf_desync = false;
 global.__scribble_anim_shader_msdf_desync_to_default = false;
 global.__scribble_anim_shader_msdf_default = false;
+
+global.__scribble_standard_shader_uniforms_dirty = true;
+global.__scribble_msdf_shader_uniforms_dirty = true;
 
 global.__scribble_anim_properties = array_create(__SCRIBBLE_ANIM.__SIZE);
 scribble_anim_reset();
@@ -354,7 +361,7 @@ function __scribble_error()
         ++_i;
     }
     
-    show_debug_message("Scribble: " + string_replace_all(_string, "\n", "\n          "));
+    show_debug_message("Scribble " + __SCRIBBLE_VERSION + ": " + string_replace_all(_string, "\n", "\n          "));
     show_error("Scribble:\n" + _string + "\n ", true);
 }
 
@@ -872,7 +879,7 @@ enum __SCRIBBLE_GEN_LINE
 #macro __SCRIBBLE_CACHE_TIMEOUT        120 //How long to wait (in milliseconds) before the text element cache automatically cleans up unused data
 #macro __SCRIBBLE_AUDIO_COMMAND_TAG    "__scribble_audio_playback__"
 
-#macro __SCRIBBLE_DEVANAGARI_OFFSET  0xFFFF
+#macro __SCRIBBLE_DEVANAGARI_OFFSET  0xFFFF //This probably won't work for any other value
 
 #macro __SCRIBBLE_MAX_LINES  1000  //Maximum number of lines in a textbox. This constant must match the corresponding values in __shd_scribble and __shd_scribble_msdf
 

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMHtml5Options",
+  "resourceVersion": "1.0",
+  "name": "HTML5",
   "option_html5_browser_title": "Underplus Engine",
   "option_html5_version": "114.514.1919.810",
   "option_html5_foldername": "yh-utgames",
@@ -27,8 +30,4 @@
   "option_html5_flurry_id": "",
   "option_html5_google_analytics_enable": false,
   "option_html5_google_tracking_id": "",
-  "resourceVersion": "1.0",
-  "name": "HTML5",
-  "tags": [],
-  "resourceType": "GMHtml5Options",
 }

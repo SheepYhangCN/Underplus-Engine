@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_bone_out",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,11 +17,7 @@
   "soundFile": "snd_bone_out.wav",
   "duration": 0.503583,
   "parent": {
-    "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "name": "battle",
+    "path": "folders/Sounds/SFX/battle.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_bone_out",
-  "tags": [],
-  "resourceType": "GMSound",
 }

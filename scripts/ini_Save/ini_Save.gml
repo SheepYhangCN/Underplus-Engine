@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ini_Save(){
 	ini_open(GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")
 	ini_write_string("static","room",Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_get_name(0)));

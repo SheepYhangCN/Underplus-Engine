@@ -3,8 +3,8 @@ if(Input_IsPressed(INPUT.CONFIRM)){
 	room_goto(room_warning)
 }
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Logo")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 标题画面")
 }

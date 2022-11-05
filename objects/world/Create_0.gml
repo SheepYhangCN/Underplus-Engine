@@ -7,6 +7,6 @@ depth=DEPTH_UI.GAME
 global.P_System = 0
 global.P_System2 = 0
 global.P_System = part_system_create()
-part_system_depth(global.P_System, (-1000 << 0))
+part_system_depth(global.P_System, (DEPTH_BATTLE.BULLET_OUTSIDE_HIGH << 0))
 global.P_System2 = part_system_create()
 part_system_depth(global.P_System2, (-199 << 0))

@@ -2,7 +2,7 @@
 function Player_GetRoomName() {
 	var ROOM=argument[0];
 	var name="{room_name_missing}"
-	if(global.language=0){
+	if(global.language=LANGUAGE.ENGLISH){
 	if(ROOM="room_lobby"){
 	name="Lobby"
 	}
@@ -36,7 +36,7 @@ function Player_GetRoomName() {
 	if(ROOM="room_credits"){
 	name="Credits"
 	}
-	}else if(global.language=1){
+	}else if(global.language=LANGUAGE.SCHINESE){
 	if(ROOM="room_lobby"){
 	name="{font 0}大厅"
 	}

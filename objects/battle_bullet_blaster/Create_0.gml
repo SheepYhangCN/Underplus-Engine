@@ -1,0 +1,23 @@
+event_inherited()
+depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH
+time = 0
+color = 0
+image_speed = 0
+xx = 0
+yy = 0
+pause = 0
+time = 0
+stay_time = 20
+move_time = 0
+idealrot = 0
+_destroy = 0
+type = 0
+image_angle = 0
+angle = 0
+ag_start = 0
+a = 0
+ad = 0
+scaleE = 0
+db = 0
+shake=true
+beam_spr=spr_beam

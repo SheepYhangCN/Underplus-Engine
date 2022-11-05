@@ -77,7 +77,7 @@ if(_menu==0){
 				audio_stop_all()
 				var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,-1);
 				room_goto(asset_get_index(target))
-			}else if(_choice==1){
+			}else if(_choice==1&&Flag_GetSaveSlot()>=0&&Flag_GetSaveSlot()<=9){
 				_menu=1;
 				_naming_name=Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,"");
 				//_confirm_title=Lang_GetString("menu.confirm.title.reset");
@@ -267,8 +267,8 @@ if(_menu==2||_menu==3){
 if(string_lower(_naming_name)="gaster"){
 game_restart()}
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Menu")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 菜单")
 }

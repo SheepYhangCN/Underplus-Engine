@@ -10,7 +10,7 @@ function Blaster_Create(){
     var angle_start = argument[6]
     var angle_target = argument[7]
     var scale = argument[8]
-    var inst = instance_create_depth(x_start, y_start, -1000, string(blaster))
+    var inst = instance_create_depth(x_start, y_start, DEPTH_BATTLE.BULLET_OUTSIDE_HIGH, string(blaster))
     if (argument_count > 9)
     {
         var release = argument[9]

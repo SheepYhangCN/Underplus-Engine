@@ -1,13 +1,13 @@
-//instance_create_depth(random(room_width+100),0,0,season_effect)
-b=instance_create_depth(random(room_width+10), 0, 0, season_effect)
+//instance_create_depth(random(room_width+100),0,0,obj_season_effect)
+b=instance_create_depth(random(room_width+10), 0, 0, obj_season_effect)
 b.image_xscale=1
 b.image_yscale=1
 b.alarm[0]=-1
 b.alarm[1]=1
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Settings")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 设置")
 }
 var border_=Flag_Get(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,0)
@@ -66,7 +66,7 @@ window_size_text="< 1.5x >"}
 if(window_size=2){
 window_size_text="< 2x {color `gray`}>"}
 
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 //全屏
 if(fullscreen=1){
 if(choice=3){
@@ -97,7 +97,7 @@ modetext="< Normal >"}
 if(mode_val=2){
 modetext="< {color `red`}Hard {color `gray`}>"}
 }
-if(global.language=1){
+if(global.language=LANGUAGE.SCHINESE){
 //全屏
 if(fullscreen=1){
 if(choice=3){
@@ -140,10 +140,10 @@ audio_play_sound(snd_menu_switch,0,0)
 choice-=1}
 }
 if(Input_IsPressed(INPUT.LEFT)){
-if(choice=1&&global.language=1){
-if(global.language=1){
+if(choice=1&&global.language=LANGUAGE.SCHINESE){
+if(global.language=LANGUAGE.SCHINESE){
 audio_play_sound(snd_menu_confirm,0,0)}
-Language_Set(0)
+Language_Set(LANGUAGE.ENGLISH)
 choice=1}
 if(choice=2&&!(os_type=os_android||os_type=os_ios||os_type=os_winphone)&&fullscreen!=2){
 if(window_size>1){
@@ -176,10 +176,10 @@ Flag_Set(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,border_var)
 }
 
 if(Input_IsPressed(INPUT.RIGHT)){
-if(choice=1&&global.language=0){
-if(global.language=0){
+if(choice=1&&global.language=LANGUAGE.ENGLISH){
+if(global.language=LANGUAGE.ENGLISH){
 audio_play_sound(snd_menu_confirm,0,0)}
-Language_Set(1)
+Language_Set(LANGUAGE.SCHINESE)
 choice=1}
 
 if(choice=2&&!(os_type=os_android||os_type=os_ios||os_type=os_winphone)&&fullscreen!=2&&Border_IsEnabled()=false){
@@ -214,9 +214,9 @@ Flag_Set(FLAG_TYPE.SETTINGS,FLAG_SETTINGS.BORDER,border_var)
 }
 
 if(global.language<0){
-Language_Set(0)}
+Language_Set(LANGUAGE.ENGLISH)}
 if(global.language>1){
-Language_Set(1)}
+Language_Set(LANGUAGE.SCHINESE)}
 
 
 if(choice=5&&Input_IsHeld(INPUT.LEFT)){

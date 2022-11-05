@@ -1,4 +1,4 @@
-depth = -1000
+depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH
 image_speed = 0
 image_alpha = 0
 type = 0

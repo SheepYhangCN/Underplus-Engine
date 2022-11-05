@@ -8,6 +8,7 @@ repeat num
 	inst._bone_end=_bone_end
 	inst.type=type
     inst.auto_destroy = 0
+	inst.dir+=180
     _bones_inst[proc] = inst
     proc += 1
 }

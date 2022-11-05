@@ -8,8 +8,8 @@ Border_SetEnabled(false)}else{
 Border_SetEnabled(true)
 if(Border_GetSprite()!=Border_Get_Sprite(border_)){
 Border_SetSprite(Border_Get_Sprite(border_))}}*/
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 window_set_caption(GAME_NAME+" - Lobby")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 window_set_caption(GAME_NAME+" - 大厅")
 }

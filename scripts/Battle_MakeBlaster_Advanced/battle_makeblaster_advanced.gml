@@ -56,7 +56,7 @@ function Battle_MakeBlaster_Advanced(){
 	var obj=battle_bullet_blaster_advanced
 	if(argument_count >= 24){
 		obj = argument[23];}
-	var beam_spr=spr_beam
+	var beam_spr=spr_beam_old
 	if(argument_count >= 25){
 		beam_spr = argument[24];}
 
@@ -103,7 +103,7 @@ function Blaster_Create_Advanced(){
     var fire_pause_time = argument[11]
     var fire_stay_time = argument[12]
 	
-	var beam_spr = spr_beam
+	var beam_spr = spr_beam_old
 	var obj = battle_bullet_blaster_advanced
 	
     var fire_shake_type = -1

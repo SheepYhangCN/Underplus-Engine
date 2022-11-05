@@ -5,6 +5,15 @@ tempy=battle_soul.y
 if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
+		//检测当前按键是否存在
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_fight)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.ACT)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_act)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.ITEM)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_item)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.MERCY)}
+		if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_mercy)){
+		Battle_SetMenuChoiceButton(BATTLE_BUTTON.FIGHT)}
 		//左/右
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
@@ -14,21 +23,21 @@ if(_state==BATTLE_STATE.MENU){
 			if(button<0){
 				button=3;
 			}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_item)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_fight)){
 			button=0}
 			Battle_SetMenuChoiceButton(button);
 		}else if(Input_IsPressed(INPUT.RIGHT)){
@@ -39,21 +48,21 @@ if(_state==BATTLE_STATE.MENU){
 			if(button>3){
 				button=0;
 			}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
 			button=2}
-			if(Battle_GetMenuChoiceButton()=0&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.FIGHT&&!instance_exists(battle_button_act)&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_item)&&instance_exists(battle_button_mercy)){
 			button=3}
-			if(Battle_GetMenuChoiceButton()=1&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ACT&&!instance_exists(battle_button_item)&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_mercy)&&instance_exists(battle_button_fight)){
 			button=0}
-			if(Battle_GetMenuChoiceButton()=2&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.ITEM&&!instance_exists(battle_button_mercy)&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_fight)&&instance_exists(battle_button_act)){
 			button=1}
-			if(Battle_GetMenuChoiceButton()=3&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
+			if(Battle_GetMenuChoiceButton()=BATTLE_BUTTON.MERCY&&!instance_exists(battle_button_fight)&&!instance_exists(battle_button_act)&&instance_exists(battle_button_item)){
 			button=2}
 			Battle_SetMenuChoiceButton(button);
 		}
@@ -260,13 +269,46 @@ if(_state==BATTLE_STATE.MENU){
 			Anim_Create(battle_soul,"image_angle",0,0,90,-90,3)
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_EndMenu();
+			//Battle_EndMenu();
+			Anim_Create(battle_soul,"x",0,0,tempx,battle_board.x-battle_board.left-5+305-tempx,3)
+			Battle_SetMenu(BATTLE_MENU.ITEM_SECONDARY);
 		}
 		//if(!(Anim_IsExists(battle_soul,"x")&&battle_soul.x!=battle_board.x-battle_board.left-5+45)){battle_soul.x=battle_board.x-battle_board.left-5+45}
 		//if(!(Anim_IsExists(battle_soul,"y")&&battle_soul.y!=battle_board.y-battle_board.up-5+36+32*1)){battle_soul.y=battle_board.y-battle_board.up-5+36+32*1}
 		//if(!(Anim_IsExists(battle_soul,"image_angle")&&battle_soul.image_angle!=90)){battle_soul.image_angle=90}
 	}else
-	
+	//物品二次选择
+	if(_menu==BATTLE_MENU.ITEM_SECONDARY){
+		//上/下
+		if(Input_IsPressed(INPUT.UP)){
+			var slot=Battle_GetMenuChoiceItemSecondary()-1;
+			if(slot>=0){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceItemSecondary(slot);
+			}
+		}else if(Input_IsPressed(INPUT.DOWN)){
+			var slot=Battle_GetMenuChoiceItemSecondary()+1;
+			if(slot<3){
+				audio_play_sound(snd_menu_switch,0,false);
+				Battle_SetMenuChoiceItemSecondary(slot);
+			}
+		}else if(Input_IsPressed(INPUT.CANCEL)){
+			var tmp = _menu_choice_item;
+			var tmp1 = _menu_choice_item_first;
+			Battle_SetMenu(BATTLE_MENU.ITEM);
+			battle._menu_choice_item_first = tmp1;
+			Battle_SetMenuChoiceItem(tmp);
+			Anim_Create(battle_soul,"x",0,0,tempx,battle_board.x-battle_board.left-5+45-tempx,3)
+			
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
+			audio_play_sound(snd_menu_confirm,0,false);
+			Battle_EndMenu();
+		}
+		
+		/*battle_soul.x=battle_board.x-battle_board.left-5+305
+		battle_soul.y=battle_board.y-battle_board.up-5+36+32*Battle_GetMenuChoiceItem();*/
+	}else
+
 	//仁慈
 	if(_menu==BATTLE_MENU.MERCY){
 		//上/下
@@ -369,7 +411,7 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 		text+="{font 0}* You WON!&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
 		break
 		case 1:
-		text+="{font 0}* 你赢了！&* 你获得了 {insert EXP} EXP 和 {insert GOLD} 金钱。"
+		text+="{font 0}* 你赢了!&* 你获得了 {insert EXP} EXP 和 {insert GOLD} 金钱。"
 		break
 		}
 	Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
@@ -389,8 +431,8 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetDialog(text);
 }
 
-//if(global.language=0){
+//if(global.language=LANGUAGE.ENGLISH){
 //window_set_caption("YH!Undertale Games - Battle")
-//}else if(global.language=1){
+//}else if(global.language=LANGUAGE.SCHINESE){
 //window_set_caption("YH!Undertale Games - 战斗")
 //}

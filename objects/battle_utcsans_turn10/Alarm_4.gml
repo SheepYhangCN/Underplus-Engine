@@ -1,4 +1,4 @@
-if(global.mode=2){empty=40}else{empty=45}
+if(global.mode=GAME_MODE.HARD){empty=40}else{empty=45}
 Battle_MakeBoneTop(battle_board.x+320,basey-(battle_board.y-64),-4,0,0,0,1)
 Battle_MakeBoneBottom(battle_board.x+320,battle_board.y+64-basey-empty,-4,0,0,0,1)
 

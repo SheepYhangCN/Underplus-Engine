@@ -1,4 +1,4 @@
-shader_set(shader_space)
+shader_set(shd_space)
  
 shader_set_uniform_f(uni_time, current_time * 0.001)
 shader_set_uniform_f(uni_resolution, 640	, 380)

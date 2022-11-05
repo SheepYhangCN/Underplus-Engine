@@ -1,7 +1,7 @@
 ///@desc Use
-if(global.language=0){
+if(global.language=LANGUAGE.ENGLISH){
 	Dialog_Add("* You recovered 25 HP.")
-}else if(global.language=1){
+}else if(global.language=LANGUAGE.SCHINESE){
 	Dialog_Add("* 你恢复了25 HP。")
 }
 Dialog_Start();
