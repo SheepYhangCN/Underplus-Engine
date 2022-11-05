@@ -8,21 +8,21 @@ if(move = 0){
 		moving = 0;
 	}
 	if((dir == 180) || (dir == 0)){
-        if Input_IsHeld(INPUT.DOWN)&&!Input_IsHeld(INPUT.UP){
+        if Input_IsHeld(INPUT.UP)&&!Input_IsHeld(INPUT.DOWN){
             if(!position_meeting(x, (y - (sprite_height / 2)), block))
 				moving = 1;
         }
-        if Input_IsHeld(INPUT.UP)&&!Input_IsHeld(INPUT.DOWN){
+        if Input_IsHeld(INPUT.DOWN)&&!Input_IsHeld(INPUT.UP){
             if (!position_meeting(x, (y + (sprite_height / 2)), block))
 				moving = 1;
         }
     }
     if ((dir == 90) || (dir == 270)){
-        if Input_IsHeld(INPUT.RIGHT)&&!Input_IsHeld(INPUT.LEFT){
+        if Input_IsHeld(INPUT.LEFT)&&!Input_IsHeld(INPUT.RIGHT){
             if (!position_meeting((x - (sprite_width / 2)), y, block))
 				moving = 1;
         }
-        if Input_IsHeld(INPUT.LEFT)&&!Input_IsHeld(INPUT.RIGHT){
+        if Input_IsHeld(INPUT.RIGHT)&&!Input_IsHeld(INPUT.LEFT){
             if (!position_meeting((x + (sprite_width / 2)), y, block))
 				moving = 1;
 		}

@@ -30,18 +30,22 @@ a.alarm[1]=1*/
 //按键
 if(temp=0){
 if(Input_IsPressed(INPUT.LEFT)&&choice>choice_min){
+warning_countdown=1
 choice-=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.RIGHT)&&choice<choice_max){
+warning_countdown=1
 choice+=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.UP)&&phase>0){
+warning_countdown=1
 phase-=1
 audio_play_sound(snd_menu_switch,0,0)}
 
 if(Input_IsPressed(INPUT.DOWN)&&phase<phases){
+warning_countdown=1
 phase+=1
 audio_play_sound(snd_menu_switch,0,0)}
 
@@ -108,7 +112,7 @@ enabled=false
 break
 case 3://utc杉
 phases=0
-enabled=false
+enabled=true
 break
 case 4://starry杉
 phases=0

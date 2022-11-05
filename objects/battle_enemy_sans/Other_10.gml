@@ -37,6 +37,10 @@ Player_SetHp(Player_GetHpMax())
 Battle_SetEnemyAtk(2)
 global.shield=false
 global.shield_useable=false
+var a=instance_create_depth(0,10,0,battle_bg)
+a.sprite_index=spr_bg_battle_corridor
+a.image_xscale=2
+a.image_yscale=2
 
 animsin = 0
 sinn = 2

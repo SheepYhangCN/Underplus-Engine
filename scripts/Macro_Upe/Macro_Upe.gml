@@ -28,7 +28,7 @@ function Macro_Upe(){
 		PARRY=-5
 	}
 	enum SHOP{
-		TEST=0
+		TEST
 	}
 	enum BATTLE{
 		TEST,
@@ -37,12 +37,12 @@ function Macro_Upe(){
 		CXX,//TODO
 		UTSE_SANS,
 		UTSE_SANS_P2,
-		SHIFT_SANS,//TODO
+		SHIFT_SANS,//Cancelled
 		ANYA,
 		ANYA_DT2,
-		SANS_REMAKE,
+		SANS_REMAKE,//Cancelled
 		UTC_SANS,
-		STARRY_SANS,
+		STARRY_SANS,//Cancelled
 		THREE_MINUTE_GB,
 		SPONGE,
 		SPONGE_P2

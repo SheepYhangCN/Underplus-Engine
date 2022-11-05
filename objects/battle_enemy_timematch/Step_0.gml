@@ -13,7 +13,9 @@ global.battle=BATTLE.THREE_MINUTE_GB
 if(Input_IsPressed(INPUT.MENU)&&temp=false){
 temp=true
 battle_turn_gbfan_3min.alarm[0]=-1
-with(battle_bullet_blaster_advanced){
+with(battle_bullet_blaster){
+instance_destroy()}
+with(battle_bullet_beam){
 instance_destroy()}
 fader.color=c_black
 Fader_Fade(0,1,29)

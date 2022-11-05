@@ -4,7 +4,7 @@
   "name": "Android",
   "option_android_sync_amazon": false,
   "option_android_display_name": "Underplus Engine",
-  "option_android_version": "2022.10.30",
+  "option_android_version": "2022.11.5",
   "option_android_tools_from_version": false,
   "option_android_build_tools": "",
   "option_android_support_lib": "30.0.0",

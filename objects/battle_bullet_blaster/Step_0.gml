@@ -31,6 +31,7 @@ if (time == ((move_time + pause) + 5))
     a.depth = depth
     a.scaleE = scaleE
     a.db = db
+	a.sprite_index=beam_spr
     if ad
     {
         if (ad != 200)

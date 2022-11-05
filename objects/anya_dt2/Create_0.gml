@@ -1,6 +1,7 @@
 fader.color=c_white
 spr=1
-Anim_Create(fader,"alpha",0,0,fader.alpha,-fader.alpha,1)//fader.alpha=0
+fader.alpha=0
+Anim_Create(fader,"alpha",0,0,fader.alpha,-fader.alpha,1)
 temp=0
 audio_stop_all()
 main_audio=audio_play_sound(bgm_dt_p2_intro,0,0)

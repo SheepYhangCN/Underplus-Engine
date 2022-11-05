@@ -8,5 +8,5 @@ function BlueSoulControl(){
 	battle_soul.impact_shake=true
 	if(argument_count>1){
 	battle_soul.move=argument[1]}else{
-	battle_soul.move=3}
+	battle_soul.move=3.5}
 }

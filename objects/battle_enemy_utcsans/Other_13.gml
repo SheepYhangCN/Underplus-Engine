@@ -6,7 +6,6 @@ if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
 	}
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){
 		_body=8
-		_legs=1
 		a = instance_create_depth(0,0,0,shaker);
 		a.target = id;
 		a.var_name = "x";

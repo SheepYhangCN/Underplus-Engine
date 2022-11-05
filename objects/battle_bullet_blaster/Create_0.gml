@@ -20,3 +20,4 @@ ad = 0
 scaleE = 0
 db = 0
 shake=true
+beam_spr=spr_beam

@@ -24,17 +24,17 @@ case 150:
 case 200:
 	Battle_SetSoul(battle_soul_red)
 	if(global.mode=GAME_MODE.HARD){var scale=2.5}else{var scale=2.2}
-	Blaster_Create_Advanced(0,0,200,200,0,45-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,440,200,0,-45-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,200,440,0,135-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,440,440,0,-135-90,scale,2,0,25,spr_blaster,20,30)
+	Battle_MakeBlaster(320-lengthdir_x(350,45-90),320-lengthdir_y(350,45-90),200,200,45-90+90,45-90+90,20,scale,2,30,25,0)
+	Battle_MakeBlaster(320-lengthdir_x(350,-45-90),320-lengthdir_y(350,-45-90),440,200,-45-90+90,-45-90+90,20,scale,2,30,25,0)
+	Battle_MakeBlaster(320-lengthdir_x(350,135-90),320-lengthdir_y(350,135-90),200,440,135-90+90,135-90+90,20,scale,2,30,25,0)
+	Battle_MakeBlaster(320-lengthdir_x(350,-135-90),320-lengthdir_y(350,-135-90),440,440,-135-90+90,-135-90+90,20,scale,2,30,25,0)
 	break
 case 270:
 	if(global.mode=GAME_MODE.HARD){var scale=2.8}else{var scale=2.5}
-	Blaster_Create_Advanced(0,0,battle_board.x,200,0,0-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,battle_board.x,440,0,180-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,200,battle_board.y,0,90-90,scale,2,0,25,spr_blaster,20,30)
-	Blaster_Create_Advanced(0,0,440,battle_board.y,0,-90-90,scale,2,0,25,spr_blaster,20,30)
+	Battle_MakeBlaster(320,0,320,200,0,0,20,scale,2,30,25,0)
+	Battle_MakeBlaster(320,480,320,440,180,180,20,scale,2,30,25,0)
+	Battle_MakeBlaster(0,320,200,320,90,90,20,scale,2,30,25,0)
+	Battle_MakeBlaster(640,320,440,320,-90,-90,20,scale,2,30,25,0)
 	break
 case 340:
 	BlueSoulControl_UtcSans(DIR.DOWN)
