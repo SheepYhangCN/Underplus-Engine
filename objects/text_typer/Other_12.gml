@@ -847,4 +847,10 @@ switch(cmd[|0]){
 			battle_enemy_sponge_p2._face=cmd[|1]
 		}
 		break
+//==================================================
+	case "warma_face":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_warma)){
+			battle_enemy_warma._face=cmd[|1]
+		}
+		break
 }

@@ -5,7 +5,7 @@ audio_play_sound(snd_logo,0,0)
 typer=instance_create_depth(10,10,0,text_typer)
 typer.text="{instant true}{skippable false}{font 1}{scale 2}"
 if(global.language=LANGUAGE.ENGLISH){
-typer.text+="{scale 4}Spongeswap&{scale 3}Spongebob Fight&{scale 2}Made By SheepYhangCN&Used Song:&P1: Hell Or High Water by LucasPucas&P2: Hell or High water (Remix) by Chrono Catalyst&Spongebob Sprite by _蔡曉依_"
+typer.text+="{scale 4}Spongeswap&{scale 3}Spongebob Fight&{scale 2}Made By SheepYhangCN&Used Song:&P1: Hell Or High Water by LucasPucas&P2: Hell or High water (Remix) by Chrono Catalyst&Spongebob Sprite by CaixiaoE"
 typer1=instance_create_depth(180,440,0,text_typer)
 typer1.text="{scale 2}{instant true}{color `gray`}[Press Z or Enter]"}
 if(global.language=LANGUAGE.SCHINESE){

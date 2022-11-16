@@ -1,0 +1,2 @@
+if(Battle_GetTurnTime()=600){Anim_Create(id,"_x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,_x,512-_x,60);alarm[1]=80;BlueSoulControl_Warma(DIR.UP)}
+if(Battle_GetTurnTime()=80){Anim_Create(id,"_x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,_x,battle_enemy_warma.x-_x,60)}

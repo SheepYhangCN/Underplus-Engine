@@ -9,5 +9,5 @@ _dialog=instance_create_depth(420, 110, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 3}{titr_face 3}after all, you see,{sleep 15}{titr_face 1}&a battle like this really&tired into my \"bone\"."
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{speed 5}{scale 1}{voice 3}{titr_face 3}毕竟你看，{sleep 15}{titr_face 1}&这样的战斗真的让我&累到了“骨子”里。"
+_dialog.text="{font 3}{speed 5}{scale 1}{voice 3}{titr_face 3}毕竟你看, {sleep 15}{titr_face 1}&这样的战斗真的让我&累到了“骨子”里。"
 }

@@ -32,8 +32,8 @@ if(warning_time=0){
 if(knife_time>0){
 knife_time-=1}
 if(knife_time=1){
-Anim_Create(self,"image_alpha",0,0,1,-1,10)
-Anim_Create(self,"image_xscale",0,0,image_xscale,3,10)}
+Anim_Create(id,"image_alpha",0,0,1,-1,10)
+Anim_Create(id,"image_xscale",0,0,image_xscale,3,10)}
 }
 
 if(image_alpha<=0){

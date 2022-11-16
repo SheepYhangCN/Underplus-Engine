@@ -1,0 +1,2 @@
+if(Battle_GetTurnTime()=500){Anim_Create(id,"_x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,_x,128-_x,60)}
+if(Battle_GetTurnTime()=80){Anim_Create(id,"_x",ANIM_TWEEN.SINE,ANIM_EASE.IN_OUT,_x,battle_enemy_warma.x-_x,60)}

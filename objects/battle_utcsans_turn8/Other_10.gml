@@ -8,5 +8,5 @@ _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}that's why,{sleep 15}&i will replace the pun joke&with \"determination of&fighting\",{sleep 20}{utcsans_face 0} to support me to&continue escaping."
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}所以，{sleep 15}&我才要用“主战的决心”&替代双关笑话，{sleep 20}{utcsans_face 0}&支撑着我继续逃避。"
+_dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}所以, {sleep 15}&我才要用“主战的决心”&替代双关笑话, {sleep 20}{utcsans_face 0}&支撑着我继续逃避。"
 }

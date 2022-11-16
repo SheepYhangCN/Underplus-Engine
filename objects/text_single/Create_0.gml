@@ -21,10 +21,10 @@ color_outline[2]=make_color_rgb(110,110,110);
 color_outline[3]=make_color_rgb(110,110,110);
 shadow_x=1;
 shadow_y=1;
-alpha=0//1;
-alpha_text=0//1;
-alpha_shadow=0//1;
-alpha_outline=0//1;
+alpha=0;
+alpha_text=1;
+alpha_shadow=1;
+alpha_outline=1;
 effect=0;
 gui=true;
 

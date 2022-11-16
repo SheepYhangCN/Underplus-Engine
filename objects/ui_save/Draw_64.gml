@@ -10,7 +10,7 @@ if(_state==0||_state==1){
 	draw_set_font(font_menu)
 	draw_text_transformed_color(108-80+43,118+7,"Slot",2,2,0,color,color,color,color,1)}
 	if(global.language=LANGUAGE.SCHINESE){
-	draw_set_font(font_chinese)
+	draw_set_font(font_chs)
 	draw_text_transformed_color(108-80+43,118+8,"槽位",2,2,0,color,color,color,color,1)}
 	draw_set_font(font_dialog)
 	draw_text_transformed_color(108-80+25,118+95,"<     >",2,2,90,color,color,color,color,1)

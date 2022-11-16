@@ -8,5 +8,5 @@ Border_SetEnabled(false)
 if(global.language=LANGUAGE.ENGLISH){
 CC_Add("{font 1}Because of a bug of Water Effect,&Border was disabled.")}
 if(global.language=LANGUAGE.SCHINESE){
-CC_Add("由于水效果的一个Bug，&边框已被关闭。")}
+CC_Add("由于水效果的一个Bug, &边框已被关闭。")}
 }

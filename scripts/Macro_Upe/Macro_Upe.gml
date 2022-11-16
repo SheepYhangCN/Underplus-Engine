@@ -45,6 +45,7 @@ function Macro_Upe(){
 		STARRY_SANS,//Cancelled
 		THREE_MINUTE_GB,
 		SPONGE,
-		SPONGE_P2
+		SPONGE_P2,
+		WARMA
 	}
 }

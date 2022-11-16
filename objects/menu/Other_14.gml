@@ -82,7 +82,7 @@ switch(string_lower(_naming_name)){
 	case "gml":
 	case "yyg":
 	case "yygame":
-		text="{font 1}damn it YoYoGames!"
+		text="{font 1}Fuck you YoYoGames!"
 		break;
 	case "tml":
 	case "ute":
@@ -104,7 +104,7 @@ switch(string_lower(_naming_name)){
 	case "vulva":
 	case "ass":
 	case "butt":
-	case "jiba":
+	case "pussy":
 		text="{font 1}WHAT?"
 		break;
 	case "kris":
@@ -124,7 +124,7 @@ switch(string_lower(_naming_name)){
 		text="omg it's cxx 11111"
 		break;
 	case "yst":
-		text="omg it's YuanSaTion 11111"
+		text="omg it's Honyaradoh 11111"
 		break;
 	case "ax":
 	case "anxing":
@@ -132,6 +132,36 @@ switch(string_lower(_naming_name)){
 		break;
 	case "hf":
 		text="omg it's HF 11111"
+		break;
+	case "17":
+	case "ml17":
+		text="omg it's 17"
+		break;
+	case "zhazha":
+		text="omg it's OneZhazha 11111"
+		break;
+	case "fdy":
+		text="omg it's FDY 11111"
+		break;
+	case "zy":
+		text="omg it's ZY  11111"
+		break;
+	case "moluo":
+	case "moluox":
+	case "ml":
+		text="omg it's MoluoX 11111"
+		break;
+	case "cukong":
+		text="omg it's Cukong 11111"
+		break;
+	case "crosu":
+		text="omg it's Crosu 11111"
+		break;
+	case "Saness":
+		text="ong it's Sanesss 11111&Can you unblock my BiliBili plz"
+		break;
+	case "QcCfF":
+		text="omg it's QcCfF 11111"
 		break;
 	case "666":
 	case "6666":
@@ -209,6 +239,7 @@ switch(string_lower(_naming_name)){
 	case "vulva":
 	case "ass":
 	case "butt":
+	case "pussy":
 	case "jiba":
 		text="{font 0}¿你不对劲"
 		break;
@@ -238,6 +269,37 @@ switch(string_lower(_naming_name)){
 	case "hf":
 		text="我趣事幻风大跌11111"
 		break;
+	case "17":
+	case "ml17":
+	case "shiqi":
+		text="我趣事十七"
+		break;
+	case "zhazha":
+		text="我趣事渣渣大跌11111"
+		break;
+	case "fdy":
+		text="我趣事复读鸭大跌11111"
+		break;
+	case "zy":
+		text="我趣事庄严大跌11111"
+		break;
+	case "moluo":
+	case "moluox":
+	case "ml":
+		text="我趣事末落大跌11111"
+		break;
+	case "cukong":
+		text="我趣事粗孔大跌11111"
+		break;
+	case "crosu":
+		text="我趣事南省大跌11111"
+		break;
+	case "Saness":
+		text="我趣事扇你死大跌11111&主播能不能把我B站拉黑解了"
+		break;
+	case "QcCfF":
+		text="我趣事穹狗11111"
+		break;
 	case "114514":
 		text="你是一个一个一个哼哼啊啊啊啊啊啊啊啊啊啊"
 		break;
@@ -245,7 +307,7 @@ switch(string_lower(_naming_name)){
 	case "6666":
 	case "66666":
 	case "666666":
-		text="西方的恶魔"
+		text=_naming_name
 		break;
 }}
 

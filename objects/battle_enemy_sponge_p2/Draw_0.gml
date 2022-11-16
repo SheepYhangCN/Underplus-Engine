@@ -8,5 +8,5 @@ draw_set_font(font_sans)
 if(global.language=LANGUAGE.ENGLISH){
 draw_text(10,10,"Now playing: Hell or High water (Remix) by Chrono Catalyst")}
 if(global.language=LANGUAGE.SCHINESE){
-draw_text(10,10,"现在正在播放：[深水地狱]Hell or High water (Remix) by Chrono Catalyst")}
+draw_text(10,10,"现在正在播放: [深水地狱]Hell or High water (Remix) by Chrono Catalyst")}
 hint-=1}

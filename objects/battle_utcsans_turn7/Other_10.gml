@@ -12,5 +12,5 @@ _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}after all,{sleep 15}{utcsans_face 1}&whether it is war or not,{sleep 10}{utcsans_face 0}&the future of monsters&is not optimistic."
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}说到底，{sleep 15}{utcsans_face 1}&无论是战还是忍，{sleep 10}{utcsans_face 0}&怪物的未来都不容乐观。"
+_dialog.text="{font 3}{scale 1}{voice 3}{utcsans_face 3}说到底, {sleep 15}{utcsans_face 1}&无论是战还是忍, {sleep 10}{utcsans_face 0}&怪物的未来都不容乐观。"
 }

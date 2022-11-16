@@ -107,7 +107,7 @@ if(keyboard_check_pressed(vk_tab)){
 	}
 	if(keyboard_check_pressed(ord("L"))){
 		Player_Load(Flag_GetSaveSlot());
-		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room_init);
+		var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,"room_init");
 		room_goto(asset_get_index(target))
 	}
 if(keyboard_check_pressed(vk_space)){
@@ -123,6 +123,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_UtcSans(DIR.UP)
 		}else if(instance_exists(starry_sans_body)){
 		BlueSoulControl_Starry(DIR.UP)
+		}else if(instance_exists(battle_enemy_warma)){
+		BlueSoulControl_Warma(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
@@ -135,6 +137,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_UtcSans(DIR.LEFT)
 		}else if(instance_exists(starry_sans_body)){
 		BlueSoulControl_Starry(DIR.LEFT)
+		}else if(instance_exists(battle_enemy_warma)){
+		BlueSoulControl_Warma(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
@@ -147,6 +151,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_UtcSans(DIR.DOWN)
 		}else if(instance_exists(starry_sans_body)){
 		BlueSoulControl_Starry(DIR.DOWN)
+		}else if(instance_exists(battle_enemy_warma)){
+		BlueSoulControl_Warma(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
@@ -159,6 +165,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_UtcSans(DIR.RIGHT)
 		}else if(instance_exists(starry_sans_body)){
 		BlueSoulControl_Starry(DIR.RIGHT)
+		}else if(instance_exists(battle_enemy_warma)){
+		BlueSoulControl_Warma(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}
 	}}

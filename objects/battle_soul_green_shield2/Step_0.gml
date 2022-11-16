@@ -5,7 +5,7 @@ if(instance_exists(inst)&&inst.enable&&inst.type=2){
 	instance_destroy(inst)
 	audio_play_sound(snd_ding,0,0)
 	image_index=1
-	Anim_Create(self,"image_index",0,0,1,-1,1,30)
+	Anim_Create(id,"image_index",0,0,1,-1,1,30)
 }
 var _xx=lengthdir_x(20,image_angle)
 var _yy=lengthdir_y(20,image_angle)

@@ -26,24 +26,24 @@ if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
 		_face=2
 		var random_flash=choose(0,1)
 		if(random_flash=0){
-		Anim_Create(self,"x",0,0,320,80,15)
-		Anim_Create(self,"headx",0,0,headx,80,15)
-		Anim_Create(self,"bodyx",0,0,bodyx,80,15)
-		Anim_Create(self,"legx",0,0,legx,80,15)
-		Anim_Create(self,"x",0,0,400,-80,15,40)
-		Anim_Create(self,"headx",0,0,headx+80,-80,15,40)
-		Anim_Create(self,"bodyx",0,0,bodyx+80,-80,15,40)
-		Anim_Create(self,"legx",0,0,legx+80,-80,15,40)
+		Anim_Create(id,"x",0,0,320,80,15)
+		Anim_Create(id,"headx",0,0,headx,80,15)
+		Anim_Create(id,"bodyx",0,0,bodyx,80,15)
+		Anim_Create(id,"legx",0,0,legx,80,15)
+		Anim_Create(id,"x",0,0,400,-80,15,40)
+		Anim_Create(id,"headx",0,0,headx+80,-80,15,40)
+		Anim_Create(id,"bodyx",0,0,bodyx+80,-80,15,40)
+		Anim_Create(id,"legx",0,0,legx+80,-80,15,40)
 		}
 		if(random_flash=1){
-		Anim_Create(self,"x",0,0,320,-80,15)
-		Anim_Create(self,"headx",0,0,headx,-80,15)
-		Anim_Create(self,"bodyx",0,0,bodyx,-80,15)
-		Anim_Create(self,"legx",0,0,legx,-80,15)
-		Anim_Create(self,"x",0,0,240,80,15,40)
-		Anim_Create(self,"headx",0,0,headx-80,80,15,40)
-		Anim_Create(self,"bodyx",0,0,bodyx-80,80,15,40)
-		Anim_Create(self,"legx",0,0,legx-80,80,15,40)
+		Anim_Create(id,"x",0,0,320,-80,15)
+		Anim_Create(id,"headx",0,0,headx,-80,15)
+		Anim_Create(id,"bodyx",0,0,bodyx,-80,15)
+		Anim_Create(id,"legx",0,0,legx,-80,15)
+		Anim_Create(id,"x",0,0,240,80,15,40)
+		Anim_Create(id,"headx",0,0,headx-80,80,15,40)
+		Anim_Create(id,"bodyx",0,0,bodyx-80,80,15,40)
+		Anim_Create(id,"legx",0,0,legx-80,80,15,40)
 		}
 	}
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){

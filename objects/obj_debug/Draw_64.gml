@@ -1,3 +1,5 @@
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 if(global.debug=1){
 	draw_set_font(font_mars_needs_cunnilingus)
 	draw_set_color(c_red)
@@ -13,7 +15,7 @@ if(global.debug=1){
 	//draw_set_color(c_yellow)
 	rainbow+=1
 	draw_set_color(make_color_hsv((rainbow % 255), 255, 255))
-	draw_set_font(font_fzjcxs)
+	draw_set_font(font_chs_enemy)
 	if(global.language=LANGUAGE.ENGLISH){
 	language="English"
 	}else if(global.language=LANGUAGE.SCHINESE){

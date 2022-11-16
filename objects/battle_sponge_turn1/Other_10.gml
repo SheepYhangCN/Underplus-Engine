@@ -9,5 +9,5 @@ _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 1}What?&{sleep 15}You really think that&only you can dodge?"
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 1}怎么？&{sleep 15}你真以为只有你能躲避？"
+_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 1}怎么? &{sleep 15}你真以为只有你能躲避? "
 }

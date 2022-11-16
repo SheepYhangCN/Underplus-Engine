@@ -78,16 +78,16 @@ instance_destroy(obj_left_analog)
 instance_destroy(obj_touch_buttons)
 instance_create_depth(0,0,depth-1,mobile_control)
 if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Mobile Control By Crosu")}
-if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：移动端控制By南省Crosu")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前: 移动端控制By南省Crosu")}
 }else if(instance_exists(mobile_control)){
 instance_destroy(mobile_control)
 if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Disabled")}
-if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：已关闭")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前: 已关闭")}
 }else{
 instance_create_depth(0,0,depth-1,obj_left_analog)
 instance_create_depth(0,0,depth-1,obj_touch_buttons)
 if(global.language=LANGUAGE.ENGLISH){CC_Add("{font 1}Current: Mobile Control By Darknslim")}
-if(global.language=LANGUAGE.SCHINESE){CC_Add("当前：移动端控制By Darknslim")}
+if(global.language=LANGUAGE.SCHINESE){CC_Add("当前: 移动端控制By Darknslim")}
 }}
 
 if(instance_exists(battle_soul_yellow)||instance_exists(battle_soul_yellow_aqua)||instance_exists(battle_soul_yellow_orange)||instance_exists(battle_soul_yellow_aqua_orange)){

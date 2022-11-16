@@ -9,5 +9,5 @@ _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}You caused all of these,{sleep 15}&isn't it?"
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}是你造成的一切，{sleep 15}&不是吗？"
+_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}是你造成的一切, {sleep 15}&不是吗? "
 }

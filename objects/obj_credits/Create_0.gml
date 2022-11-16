@@ -11,8 +11,8 @@ BGM_Play(0,bgm_menu_winter,true,1,1)}
 if(global.language=LANGUAGE.ENGLISH){
 dialog=instance_create_depth(200,10,0,text_typer)
 dialog.text="{scale 3}{instant true}Credits"
-dialog2=instance_create_depth(100,415,0,text_typer)
-dialog2.text="{scale 2}{instant true}{color `gray`}[Use arrow keys to swtich page]&[Press X or Shift to return]"
+dialog2=instance_create_depth(120,415,0,text_typer)
+dialog2.text="{scale 2}{instant true}{color `gray`}{font 1}[Use arrow keys to swtich page]&[Press X or Shift to return]"
 }else if(global.language=LANGUAGE.SCHINESE){
 dialog=instance_create_depth(200,10,0,text_typer)
 dialog.text="{scale 3}{instant true}制作名单"

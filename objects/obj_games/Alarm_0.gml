@@ -61,5 +61,8 @@ switch choice{
 		//Encounter_Start(BATTLE.SHIFT_SANS)
 		room_goto(room_shift_sans_intro)
 	break
+	case 7://沃玛
+		room_goto(room_logo_warmtale)
+	break
 }
 }

@@ -4,21 +4,21 @@ if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
 		head.image_index=2
 		var random_flash=choose(0,1)
 		if(random_flash=0){
-		Anim_Create(self,"x",0,0,320,80,15)
+		Anim_Create(id,"x",0,0,320,80,15)
 		Anim_Create(head,"x",0,0,head.x,80,15)
 		Anim_Create(body,"x",0,0,body.x,80,15)
 		Anim_Create(legs,"x",0,0,legs.x,80,15)
-		Anim_Create(self,"x",0,0,400,-80,15,40)
+		Anim_Create(id,"x",0,0,400,-80,15,40)
 		Anim_Create(head,"x",0,0,head.x+80,-80,15,40)
 		Anim_Create(body,"x",0,0,body.x+80,-80,15,40)
 		Anim_Create(legs,"x",0,0,legs.x+80,-80,15,40)
 		}
 		if(random_flash=1){
-		Anim_Create(self,"x",0,0,320,-80,15)
+		Anim_Create(id,"x",0,0,320,-80,15)
 		Anim_Create(head,"x",0,0,head.x,-80,15)
 		Anim_Create(body,"x",0,0,body.x,-80,15)
 		Anim_Create(legs,"x",0,0,legs.x,-80,15)
-		Anim_Create(self,"x",0,0,240,80,15,40)
+		Anim_Create(id,"x",0,0,240,80,15,40)
 		Anim_Create(head,"x",0,0,head.x-80,80,15,40)
 		Anim_Create(body,"x",0,0,body.x-80,80,15,40)
 		Anim_Create(legs,"x",0,0,legs.x-80,80,15,40)

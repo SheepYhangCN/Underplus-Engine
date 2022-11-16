@@ -1,8 +1,8 @@
 /*if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM){
-		Anim_Create(self,"x",0,0,320,100,15)
-		Anim_Create(self,"bodyx",0,0,bodyx,100,15)
-		Anim_Create(self,"x",0,0,420,-100,15,40)
-		Anim_Create(self,"bodyx",0,0,bodyx+100,-100,15,40)
+		Anim_Create(id,"x",0,0,320,100,15)
+		Anim_Create(id,"bodyx",0,0,bodyx,100,15)
+		Anim_Create(id,"x",0,0,420,-100,15,40)
+		Anim_Create(id,"bodyx",0,0,bodyx+100,-100,15,40)
 	}*/
 if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){
 		audio_play_sound(snd_damage,0,0);

@@ -123,6 +123,7 @@ switch timer{
 		gbtemp=true
 		//alarm[8]=1//}
 		alarm[11]=1
+		gravitying=true
 		break
 	case 2140:
 		gbtemp=false
@@ -137,7 +138,6 @@ switch timer{
 	case 2230:
 		Battle_SetSoul(battle_soul_blue)
 		alarm[2]=20
-		gravitying=true
 		break
 	case 2850:
 		alarm[2]=-1

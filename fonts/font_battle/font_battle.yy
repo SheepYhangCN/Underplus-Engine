@@ -24,7 +24,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
-  "ascender": 0,
+  "ascender": 13,
   "glyphs": {
     "32": {"x":2,"y":2,"w":5,"h":16,"character":32,"shift":5,"offset":0,},
     "33": {"x":102,"y":38,"w":2,"h":16,"character":33,"shift":4,"offset":1,},
@@ -122,7 +122,7 @@
     "125": {"x":236,"y":2,"w":6,"h":16,"character":125,"shift":7,"offset":0,},
     "126": {"x":226,"y":2,"w":8,"h":16,"character":126,"shift":9,"offset":0,},
     "160": {"x":172,"y":20,"w":0,"h":16,"character":160,"shift":5,"offset":0,},
-    "9647": {"x":90,"y":56,"w":9,"h":16,"character":9647,"shift":16,"offset":3,},
+    "9647": {"x":90,"y":56,"w":8,"h":16,"character":9647,"shift":16,"offset":4,},
   },
   "kerningPairs": [],
   "ranges": [

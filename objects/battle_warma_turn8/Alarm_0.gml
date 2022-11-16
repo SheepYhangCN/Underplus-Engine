@@ -1,0 +1,9 @@
+var a=Battle_MakeLineBomb(battle_soul.x-128,battle_soul.y,0)
+a.sprite_index=spr_rabbit_bomb
+var a=Battle_MakeLineBomb(battle_soul.x+128,battle_soul.y,0)
+a.sprite_index=spr_rabbit_bomb
+var a=Battle_MakeLineBomb(battle_soul.x,battle_soul.y-128,0)
+a.sprite_index=spr_rabbit_bomb
+var a=Battle_MakeLineBomb(battle_soul.x,battle_soul.y+128,0)
+a.sprite_index=spr_rabbit_bomb
+alarm[0]=90

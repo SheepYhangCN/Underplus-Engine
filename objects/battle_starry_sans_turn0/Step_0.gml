@@ -72,7 +72,7 @@ case 999:
 	if(global.language=LANGUAGE.ENGLISH){
 	a.text="{font 3}{scale 1}{voice 3}{starry_face 1}{starry_body 1}heheh{sleep 15}&i said why didn't anyone&make the big thing at first?{pause}{end_turn}{end}"
 	}else if(global.language=LANGUAGE.SCHINESE){
-	a.text="{font 3}{scale 1}{voice 3}{starry_face 1}{starry_body 1}哈{sleep 15}&我就说怎么没人一开始&就放大呢？{pause}{end_turn}{end}"
+	a.text="{font 3}{scale 1}{voice 3}{starry_face 1}{starry_body 1}哈{sleep 15}&我就说怎么没人一开始&就放大呢? {pause}{end_turn}{end}"
 	}
 	break
 }

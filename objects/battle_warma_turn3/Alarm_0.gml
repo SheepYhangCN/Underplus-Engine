@@ -1,0 +1,13 @@
+var a=Battle_MakeFriendlyPellet(battle_soul.x,-32,battle_soul.x,battle_soul.y-128,0,40,20,6,-90,0,1,false,battle_bullet_friendlypellet,spr_ball)
+a.image_xscale=2
+a.image_yscale=2
+var a=Battle_MakeFriendlyPellet(battle_soul.x,640+32,battle_soul.x,battle_soul.y+128,0,40,20,6,90,0,1,false,battle_bullet_friendlypellet,spr_ball)
+a.image_xscale=2
+a.image_yscale=2
+var a=Battle_MakeFriendlyPellet(-32,battle_soul.y,battle_soul.x-128,battle_soul.y,0,40,20,6,0,0,1,false,battle_bullet_friendlypellet,spr_ball)
+a.image_xscale=2
+a.image_yscale=2
+var a=Battle_MakeFriendlyPellet(640+32,battle_soul.y,battle_soul.x+128,battle_soul.y,0,40,20,6,180,0,1,false,battle_bullet_friendlypellet,spr_ball)
+a.image_xscale=2
+a.image_yscale=2
+alarm[choose(0,1)]=50

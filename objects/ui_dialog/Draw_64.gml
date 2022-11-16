@@ -12,7 +12,7 @@ if(_top){
 	}
 	//选择==========
 	if(_choice>0){
-		if(_font=font_chinese){
+		if(_font=font_chs){
 		c1=string_width(_choice1)*scale+10
 		c2=string_width(_choice2)*scale+10
 		c3=string_width(_choice3)*scale+10
@@ -67,7 +67,7 @@ if(_top){
 	}
 	//选择==========
 	if(_choice>0){
-		if(_font=font_chinese){
+		if(_font=font_chs){
 		c1=string_width(_choice1)*scale+10
 		c2=string_width(_choice2)*scale+10
 		c3=string_width(_choice3)*scale+10

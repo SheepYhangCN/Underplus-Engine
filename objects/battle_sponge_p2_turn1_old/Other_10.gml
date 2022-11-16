@@ -9,5 +9,5 @@ _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
 _dialog.text="{font 3}{voice 8}{sponge_face 4}Honestly, {sleep 15}&I was dreamed&that you can go back.{pause}{clear}{sponge_face 3}Of course,{sleep 15}&it can only be a dream."
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{voice 8}{sponge_face 4}说实话，{sleep 15}&我本来还幻想着&你能回头的。{pause}{clear}{sponge_face 3}当然那也只能是幻想了。"
+_dialog.text="{font 3}{voice 8}{sponge_face 4}说实话, {sleep 15}&我本来还幻想着&你能回头的。{pause}{clear}{sponge_face 3}当然那也只能是幻想了。"
 }

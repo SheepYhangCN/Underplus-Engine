@@ -1,0 +1,2 @@
+Battle_MakeBoneTwoV(battle_board.x-64,battle_board.y+16,10,25,1,-1,battle_bullet_bone,bone_body,spr_luotuo_end)
+Battle_MakeBoneTwoV(battle_board.x+64,battle_board.y+16,-10,25,1,-1,battle_bullet_bone,bone_body,spr_luotuo_end)

@@ -1,4 +1,4 @@
 if(moving){
-Anim_Destroy(self,"x")
-Anim_Destroy(self,"y")
+Anim_Destroy(id,"x")
+Anim_Destroy(id,"y")
 instance_destroy()}

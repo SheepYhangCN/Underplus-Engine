@@ -21,9 +21,9 @@ Anim_Create(battle_enemy_utcsans,"_body",0,0,5,1,0,5)
 Anim_Create(battle_enemy_utcsans,"_body",0,0,6,-6,0,30)
 }
 BlueSoulControl(argument[0])
-if(Battle_GetTurnNumber()>0){
+/*if(Battle_GetTurnNumber()>0){
 battle_enemy_utcsans._face_spr=spr_utcsans_blue_eyes
 Anim_Create(battle_enemy_utcsans,"_face_spr",0,0,spr_utcsans_blue_eyes,spr_utcsans_face-spr_utcsans_blue_eyes,0,30)
-Anim_Create(battle_enemy_utcsans,"_face",0,0,0,0,0,31)}
+Anim_Create(battle_enemy_utcsans,"_face",0,0,0,0,0,31)}*/
 return
 }

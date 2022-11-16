@@ -8,5 +8,5 @@ draw_set_font(font_sans)
 if(global.language=LANGUAGE.ENGLISH){
 draw_text(10,10,"Now playing: Hell Or High Water by LucasPucas")}
 if(global.language=LANGUAGE.SCHINESE){
-draw_text(10,10,"现在正在播放：[深水地狱]Hell Or High Water by LucasPucas")}
+draw_text(10,10,"现在正在播放: [深水地狱]Hell Or High Water by LucasPucas")}
 hint-=1}

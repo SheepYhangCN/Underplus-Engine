@@ -14,5 +14,5 @@ sprite_index=spr_battle_menu_fight_bg_high
 //base_xscale=0.87
 //base_yscale=0.97
 }
-Anim_Create(self,"image_alpha",0,0,0,1,10)
+Anim_Create(id,"image_alpha",0,0,0,1,10)
 alarm[3]=1 

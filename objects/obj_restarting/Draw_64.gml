@@ -5,7 +5,7 @@ if(global.language=LANGUAGE.ENGLISH){
 draw_set_font(font_menu)
 draw_text_transformed(room_width/2,room_height/2,"Restarting...",3,3,0)}
 if(global.language=LANGUAGE.SCHINESE){
-draw_set_font(font_chinese)
+draw_set_font(font_chs)
 draw_text_transformed(room_width/2,room_height/2,"正在重启...",3,3,0)}
 draw_text_scribble(room_width/2,room_height/10*9,"[scale,2][c_gray]"+subtitle)
 draw_set_valign(fa_top)

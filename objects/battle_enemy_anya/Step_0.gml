@@ -17,7 +17,7 @@ if(global.language=LANGUAGE.ENGLISH){
 	Battle_SetEnemyActionInfo(_enemy_slot,2,"Bring her away")}
 	if(global.language=LANGUAGE.SCHINESE){
 	Battle_SetEnemyActionName(_enemy_slot,2,"抱走")
-	Battle_SetEnemyActionInfo(_enemy_slot,2,"把她抱走（")}
+	Battle_SetEnemyActionInfo(_enemy_slot,2,"把她抱走 (")}
 }
 if(flirted=false){
 if(global.language=LANGUAGE.ENGLISH){

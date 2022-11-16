@@ -126,4 +126,8 @@ case 6://shift杉王
 phases=0
 enabled=false
 break
+case 7://沃玛
+phases=0
+enabled=true
+break
 }

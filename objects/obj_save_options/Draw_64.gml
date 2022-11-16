@@ -14,11 +14,11 @@ draw_text_transformed(320,360,"Deleted Save #"+string(slot_previous)+"!",2,2,0)}
 }
 if(global.language=LANGUAGE.SCHINESE){
 if(choice_previous=2){
-draw_text_scribble(320,360,"[scale,2][font_chinese]已将[font_dialog]"+string(Flag_GetSaveSlot())+"[font_chinese]号存档复制至槽位[font_dialog]"+string(select_previous)+"!")}
+draw_text_scribble(320,360,"[scale,2][font_chs]已将[font_dialog]"+string(Flag_GetSaveSlot())+"[font_chs]号存档复制至槽位[font_dialog]"+string(select_previous)+"!")}
 if(choice_previous=3){
-draw_text_scribble(320,360,"[scale,2][font_chinese]已将[font_dialog]"+string(slot_previous)+"[font_chinese]号存档移动至槽位[font_dialog]"+string(select_previous)+"!")}
+draw_text_scribble(320,360,"[scale,2][font_chs]已将[font_dialog]"+string(slot_previous)+"[font_chs]号存档移动至槽位[font_dialog]"+string(select_previous)+"!")}
 if(choice_previous=4){
-draw_text_scribble(320,360,"[scale,2][font_chinese]已删除[font_dialog]"+string(slot_previous)+"[font_chinese]号存档[font_dialog]![font_chinese]")}
+draw_text_scribble(320,360,"[scale,2][font_chs]已删除[font_dialog]"+string(slot_previous)+"[font_chs]号存档[font_dialog]![font_chs]")}
 }
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)

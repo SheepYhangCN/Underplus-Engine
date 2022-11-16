@@ -10,9 +10,9 @@ draw_set_color(c_white)
 
 var b=irandom(50)
 if(b>=40){
-	a=10
+	a=range_max
 }else{
-	a=5
+	a=range_min
 }
 
 for(i=0;i<=room_height;i++){
