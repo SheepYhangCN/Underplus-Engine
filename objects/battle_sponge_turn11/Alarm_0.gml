@@ -1,1 +1,0 @@
-Encounter_Start(BATTLE.SPONGE_P2)

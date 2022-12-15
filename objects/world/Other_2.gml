@@ -44,7 +44,7 @@ instance_create_depth(0,0,0,camera);
 instance_create_depth(0,0,0,fader);
 instance_create_depth(0,0,0,border);
 instance_create_depth(0,0,0,closed_captions);
-instance_create_depth(0,0,depth,obj_debug)
+//instance_create_depth(0,0,depth,obj_debug)
 if(os_type=os_android||os_type=os_ios||os_type=os_winphone||os_browser=browser_ie_mobile||os_browser=browser_ie_mobile){
 instance_create_depth(0,0,depth-1,obj_left_analog)
 instance_create_depth(0,0,depth-1,obj_touch_buttons)
@@ -82,4 +82,4 @@ if(!Border_IsEnabled()&&window_get_fullscreen()=false){
 Window_Size_Set(_window_size)}}
 
 //Language_Set(LANGUAGE.SCHINESE)
-room_goto(room_logo)
+room_goto(room_logo_warmtale)

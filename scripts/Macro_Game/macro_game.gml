@@ -1,6 +1,6 @@
 function Macro_Game() {
 	//Anything you want, must be a string.
-#macro GAME_NAME "Underplus Engine"
+#macro GAME_NAME "Warmtale Warma Fight Phase 1"
 
 	//Anything you want, must be a string.
 #macro GAME_AUTHOR "SheepYhangCN"

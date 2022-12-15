@@ -231,5 +231,5 @@ event_user(0)
 if(choice=7&&Input_IsPressed(INPUT.CONFIRM)){
 audio_play_sound(snd_menu_confirm,0,0)
 Flag_Save(FLAG_TYPE.SETTINGS)
-room_goto(room_menu)}
+room_goto(room_logo_warmtale)}
 //room_goto(room_logo)}

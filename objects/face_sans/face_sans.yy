@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "face_sans",
-  "spriteId": {
-    "name": "spr_sans_face",
-    "path": "sprites/spr_sans_face/spr_sans_face.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

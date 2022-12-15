@@ -1,1 +1,0 @@
-BlueSoulControl(DIR.DOWN)

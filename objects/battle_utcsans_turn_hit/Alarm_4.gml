@@ -1,1 +1,0 @@
-room_goto(room_utcsans_end)

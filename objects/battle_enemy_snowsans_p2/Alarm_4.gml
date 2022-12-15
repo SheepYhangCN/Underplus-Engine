@@ -1,1 +1,0 @@
-fader.alpha=0

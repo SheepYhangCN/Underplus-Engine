@@ -1,9 +1,0 @@
-if(battle_board.up=176&&battle_board.down=64){
-surface_set_target(Battle_GetBoardSurface());{
-/*draw_set_color(c_red)
-draw_line(battle_board.x-120,battle_board.y,battle_board.x+120,battle_board.y-1)
-draw_set_color(c_blue)
-draw_line(battle_board.x-120,battle_board.y+1,battle_board.x+120,battle_board.y+2)*/
-draw_sprite_ext(spr_spatula_souls,1,battle_board.x,battle_board.y-56,1,1,90,c_white,1)
-}surface_reset_target();
-}

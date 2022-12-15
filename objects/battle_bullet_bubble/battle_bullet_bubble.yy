@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "battle_bullet_bubble",
-  "spriteId": {
-    "name": "spr_bubble",
-    "path": "sprites/spr_bubble/spr_bubble.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

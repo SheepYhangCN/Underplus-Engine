@@ -1,1 +1,0 @@
-if(sprite_index=spr_sans_blue_eyes){image_speed=1}else{image_speed=0}
