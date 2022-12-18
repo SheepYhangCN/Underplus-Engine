@@ -1,7 +1,7 @@
 ///@desc Menu Switch
 if(_menu==0){
 	//_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO,0));
-	_mode=file_exists("./"+GAME_SAVE_NAME+"./file0.ini")||file_exists("./"+GAME_SAVE_NAME+"./file1.ini")||file_exists("./"+GAME_SAVE_NAME+"./file2.ini")||file_exists("./"+GAME_SAVE_NAME+"./file3.ini")||file_exists("./"+GAME_SAVE_NAME+"./file4.ini")||file_exists("./"+GAME_SAVE_NAME+"./file5.ini")||file_exists("./"+GAME_SAVE_NAME+"./file6.ini")||file_exists("./"+GAME_SAVE_NAME+"./file7.ini")||file_exists("./"+GAME_SAVE_NAME+"./file8.ini")||file_exists("./"+GAME_SAVE_NAME+"./file9.ini")
+	_mode=file_exists(working_directory+GAME_SAVE_NAME+"/file0.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file1.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file2.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file3.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file4.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file5.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file6.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file7.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file8.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file9.ini")
 	if(_mode==0){
 		//_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F2] - Restart Room&[F3] - Restart&[F4] - Fullscreen&[ESC] - Quit Game&& --- DEBUG Mode Keys ---{space_y -1}&{space_y 2}[Insert] - DEBUG Mode&[Home] - Lock/Unlock HP&[~] - Console";
 		_inst_begin=instance_create_depth(170,315,0,text_typer);

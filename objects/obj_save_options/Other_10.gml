@@ -70,14 +70,14 @@ if(choice=2){
 if(ok){inst_copy.text=_prefix+"{color `red`}(Are you sure? It will overwrite your old save!)"
 }else{inst_copy.text=_prefix+"{color `yellow`}Copy to"}
 }else{
-if(Flag_GetSaveSlot()!=select&&file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(Flag_GetSaveSlot()!=select&&file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_copy.text=_prefix+"Copy to"}else{inst_copy.text=_prefix+"{color `gray`}Copy to"}
 	}
 if(choice=3){
 if(ok){inst_move.text=_prefix+"{color `red`}(Are you sure? It will overwrite your old save!)"
 }else{inst_move.text=_prefix+"{color `yellow`}Move to"}
 }else{
-if(Flag_GetSaveSlot()!=select&&file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(Flag_GetSaveSlot()!=select&&file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_move.text=_prefix+"Move to"}else{inst_move.text=_prefix+"{color `gray`}Move to"}
 	}
 
@@ -85,7 +85,7 @@ if(choice=4){
 if(ok){inst_delete.text=_prefix+"{color `red`}(Are you sure? It will delete your save forever!)"
 }else{inst_delete.text=_prefix+"{color `yellow`}Delete"}
 }else{
-if(file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_delete.text=_prefix+"Delete"}else{inst_delete.text=_prefix+"{color `gray`}Delete"}
 	}
 if(choice=5){
@@ -97,21 +97,21 @@ if(choice=2){
 if(ok){inst_copy.text=_prefix+"{color `red`}(你确定吗? 这将会覆盖你的旧存档!)"
 }else{inst_copy.text=_prefix+"{color `yellow`}复制至"}
 }else{
-if(Flag_GetSaveSlot()!=select&&file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(Flag_GetSaveSlot()!=select&&file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_copy.text=_prefix+"复制至"}else{inst_copy.text=_prefix+"{color `gray`}复制至"}
 	}
 if(choice=3){
 if(ok){inst_move.text=_prefix+"{color `red`}(你确定吗? 这将会覆盖你的旧存档!)"
 }else{inst_move.text=_prefix+"{color `yellow`}移动至"}
 }else{
-if(Flag_GetSaveSlot()!=select&&file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(Flag_GetSaveSlot()!=select&&file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_move.text=_prefix+"移动至"}else{inst_move.text=_prefix+"{color `gray`}移动至"}
 	}
 if(choice=4){
 if(ok){inst_delete.text=_prefix+"{color `red`}(你确定吗? 这将会永久删除你的存档!)"
 }else{inst_delete.text=_prefix+"{color `yellow`}删除"}
 }else{
-if(file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){
+if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){
 	inst_delete.text=_prefix+"删除"}else{inst_delete.text=_prefix+"{color `gray`}删除"}
 	}
 if(choice=5){

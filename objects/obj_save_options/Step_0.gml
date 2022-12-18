@@ -31,18 +31,18 @@ audio_play_sound(snd_menu_switch,0,0)
 if(Input_IsPressed(INPUT.CANCEL)&&ok){ok=false}
 if(Input_IsPressed(INPUT.CONFIRM)){
 if(choice=5){room_goto(room_menu)}
-if!((choice=2&&Flag_GetSaveSlot()=select)||(choice=3&&Flag_GetSaveSlot()=select)||(choice=2&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))||(choice=3&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))||(choice=4&&!file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())))){
-if((!file_exists("./"+GAME_SAVE_NAME+"./file"+string(select)+".ini")&&!directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(select)))||ok){
+if!((choice=2&&Flag_GetSaveSlot()=select)||(choice=3&&Flag_GetSaveSlot()=select)||(choice=2&&!file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())))||(choice=3&&!file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())))||(choice=4&&!file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")&&!directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())))){
+if((!file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(select)+".ini")&&!directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(select)))||ok){
 if(choice=2||choice=3){
-	if(directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(select))){directory_destroy("./"+GAME_SAVE_NAME+"./flag/"+string(select))}
-	directory_create("./"+GAME_SAVE_NAME+"./flag/"+string(select))
-	if(file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")){file_copy("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini","./"+GAME_SAVE_NAME+"./file"+string(select)+".ini")}
-	if(file_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())+"/info")){file_copy("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())+"/info","./"+GAME_SAVE_NAME+"./flag/"+string(select)+"/info")}
-	if(file_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())+"/static")){file_copy("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot())+"/static","./"+GAME_SAVE_NAME+"./flag/"+string(select)+"/static")}
+	if(directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(select))){directory_destroy(working_directory+GAME_SAVE_NAME+"/flag/"+string(select))}
+	directory_create(working_directory+GAME_SAVE_NAME+"/flag/"+string(select))
+	if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")){file_copy(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini",working_directory+GAME_SAVE_NAME+"/file"+string(select)+".ini")}
+	if(file_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())+"/info")){file_copy(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())+"/info",working_directory+GAME_SAVE_NAME+"/flag/"+string(select)+"/info")}
+	if(file_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())+"/static")){file_copy(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot())+"/static",working_directory+GAME_SAVE_NAME+"/flag/"+string(select)+"/static")}
 	}
 if(choice=3||choice=4){
-	if(file_exists("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")){file_delete("./"+GAME_SAVE_NAME+"./file"+string(Flag_GetSaveSlot())+".ini")}
-	if(directory_exists("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))){directory_destroy("./"+GAME_SAVE_NAME+"./flag/"+string(Flag_GetSaveSlot()))}
+	if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")){file_delete(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot())+".ini")}
+	if(directory_exists(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))){directory_destroy(working_directory+GAME_SAVE_NAME+"/flag/"+string(Flag_GetSaveSlot()))}
 	slot_previous=Flag_GetSaveSlot()
 	if(choice=3){
 	Flag_SetSaveSlot(select)}
