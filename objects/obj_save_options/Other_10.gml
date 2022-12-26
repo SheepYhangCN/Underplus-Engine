@@ -89,8 +89,8 @@ if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot(
 	inst_delete.text=_prefix+"Delete"}else{inst_delete.text=_prefix+"{color `gray`}Delete"}
 	}
 if(choice=5){
-inst_back.text=_prefix+"{color `yellow`}Back"
-}else{inst_back.text=_prefix+"Back"}
+inst_back.text=_prefix+"{color `yellow`}Confirm \\& Back"
+}else{inst_back.text=_prefix+"Confirm \\& Back"}
 }
 if(global.language=LANGUAGE.SCHINESE){
 if(choice=2){
@@ -115,6 +115,6 @@ if(file_exists(working_directory+GAME_SAVE_NAME+"/file"+string(Flag_GetSaveSlot(
 	inst_delete.text=_prefix+"删除"}else{inst_delete.text=_prefix+"{color `gray`}删除"}
 	}
 if(choice=5){
-inst_back.text=_prefix+"{color `yellow`}返回"
-}else{inst_back.text=_prefix+"返回"}
+inst_back.text=_prefix+"{color `yellow`}确定并返回"
+}else{inst_back.text=_prefix+"确定并返回"}
 }

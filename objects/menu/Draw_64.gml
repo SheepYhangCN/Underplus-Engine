@@ -7,7 +7,7 @@ if(_menu==0){
 	draw_set_valign(fa_top);
 	if(global.language=LANGUAGE.SCHINESE){
 	draw_set_font(font_chs)
-	draw_text_ext(320,4,"《健康游戏忠告》\n抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。\n适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。",18,-1)
+	draw_text_ext(320,4,"《健康游戏忠告》\n抵制不良游戏, 拒绝盗版游戏。注意自我保护, 谨防受骗上当。\n适度游戏益脑, 沉迷游戏伤身。合理安排时间, 享受健康生活。",18,-1)
 	}
 	draw_set_halign(fa_left);
 }

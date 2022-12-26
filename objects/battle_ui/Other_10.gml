@@ -5,7 +5,7 @@ draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHp()*1.25,21,0,c_aqua,1);
 }else{
 draw_sprite_ext(spr_pixel,0,x+245,y-1,Player_GetHp()*1.25,21,0,make_color_rgb(255,255,0),1);}
 
-if(global.kr=true){
+if(global.kr=true||global.battle=BATTLE.WARMA){
     draw_sprite_ext(spr_pixel, 0, ((x + 245) + ((Player_GetHp() * 1.25) * 1)), (y - 1), ((Player_GetKR() * 1.25) * 1), 21, 0, make_color_rgb(255, 0, 255), 1)
     if (Player_GetKR() > 0)
         color = make_color_rgb(255, 0, 255)
@@ -13,16 +13,12 @@ if(global.kr=true){
         color = c_white
     draw_set_color(color)
     draw_text_ext_transformed_color((((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 14), y, ((("    " + string(((Player_GetHp() * 1) + (Player_GetKR() * 1)))) + " / ") + string((Player_GetHpMax() * 1))), -1, -1, 1, 1, 0, color, color, color, color, 1)
-	if(global.battle=BATTLE.STARRY_SANS){
-    draw_sprite_ext(spr_battle_ui_sr_starry, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
-	}else{
 	if(global.mode=GAME_MODE.NORMAL){
     draw_sprite_ext(spr_battle_ui_kr, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
 	}else if(global.mode=GAME_MODE.HARD){
     draw_sprite_ext(spr_battle_ui_krplus, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)
 	}else if(global.mode=GAME_MODE.EASY){
     draw_sprite_ext(spr_battle_ui_krminu, 0, (((x + 245) + ((Player_GetHpMax() * 1.25) * 1)) + 10), (y + 4), 1, 1, 0, color, 1)}
-	}
 }else if(global.kr=false){
 draw_text(x+245+Player_GetHpMax()*1.25+14,y,string(Player_GetHp())+" / "+string(Player_GetHpMax()));}
 

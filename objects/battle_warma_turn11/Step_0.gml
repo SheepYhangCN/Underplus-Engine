@@ -4,19 +4,20 @@ BlueSoulControl_Warma(DIR.DOWN)
 Battle_MakeBoneWallBottom(30,60,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
 }
 if(timer=40){
-BlueSoulControl_Warma(DIR.UP)
-Battle_MakeBoneWallTop(30,60,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
+Battle_SetSoul(battle_soul_red)
+//BlueSoulControl_Warma(DIR.UP)
+Battle_MakeBoneWallTop(30,56,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
 }
 if(timer=80){
 BlueSoulControl_Warma(DIR.LEFT)
 Battle_MakeBoneWallLeft(30,60,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
 }
 if(timer=120){
-BlueSoulControl_Warma(DIR.RIGHT)
-Battle_MakeBoneWallRight(30,60,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
+Battle_SetSoul(battle_soul_red)
+//BlueSoulControl_Warma(DIR.RIGHT)
+Battle_MakeBoneWallRight(30,56,10,0,battle_bullet_bone,bone_body,spr_luotuo_end)
 }
 if(timer=160){
-Battle_SetSoul(battle_soul_red)
 var a=Battle_MakeLineBomb(320-64,320-64,45,40)
 a.sprite_index=spr_rabbit_bomb
 var a=Battle_MakeLineBomb(320-64,320+64,45,40)
@@ -74,7 +75,8 @@ Battle_MakeBoneWallLeft(40,30,5,0,battle_bullet_bone,bone_body,spr_luotuo_end)
 }
 if(timer=760){
 Battle_SetBoardSize(64,64,320,320,60)
-BlueSoulControl_Warma(DIR.RIGHT)
+//BlueSoulControl_Warma(DIR.RIGHT)
+battle_soul.dir=DIR.RIGHT
 Anim_Create(battle_soul,"x",0,0,battle_soul.x,320-battle_soul.x,40)
 }
 if(timer=800){
@@ -152,10 +154,11 @@ if(timer=2500){
 alarm[5]=-1
 }
 if(timer=2560){
-Battle_SetBoardSize(8,8,8,8,40)
+//Battle_SetBoardSize(8,8,8,8,40)
 }
 if(timer=2600){
-alarm[6]=1
+Battle_EndTurn()
+//alarm[6]=1
 }
 if(timer=3500){
 alarm[6]=-1
@@ -167,7 +170,7 @@ Battle_EndTurn()
 
 if(timer>860&&timer<1800){
 if(timer mod 100 = 0){
-Battle_MakeWave(_x,_y,choose(1,2))
+Battle_MakeWave(_x,_y,choose(1,2),0.1,1,battle_bullet_wave_warma)
 }
 }
 

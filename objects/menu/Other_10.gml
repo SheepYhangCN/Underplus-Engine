@@ -18,8 +18,8 @@ if(_menu==0){
 		_inst_instruction=instance_create_depth(150,0,0,text_typer);
 		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
 		_inst_begin.text=_prefix+"{font 0}开始游戏"
-		_inst_settings.text=_prefix+"{font 0}设置"
-		_inst_credits.text=_prefix+"{font 0}制作名单"
+		_inst_settings.text=_prefix+"{font 0}游戏设置"
+		_inst_credits.text=_prefix+"{font 0}鸣谢名单"
 		}
 		with(text_typer){
 			event_user(15);
@@ -65,7 +65,7 @@ if(_menu==0){
 		_inst_continue.text+="{font 0}继续"
 		_inst_reset.text=_prefix+"{font 0}重置"
 		_inst_settings.text=_prefix+"{font 0}设置"
-		_inst_credits.text=_prefix+"{font 0}制作名单"
+		_inst_credits.text=_prefix+"{font 0}鸣谢"
 		_inst_save_options.text=_prefix+"存档选项"
 		}
 		event_user(2);

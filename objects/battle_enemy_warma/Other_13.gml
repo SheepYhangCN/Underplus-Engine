@@ -1,5 +1,5 @@
-if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM&&Battle_GetTurnNumber()!=13){
-		_face=2
+if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM&&Battle_GetTurnNumber()!=16){
+		//_face=2
 		var random_flash=choose(0,1)
 		if(random_flash=0){
 		Anim_Create(id,"x",0,0,320,100,15)
@@ -23,7 +23,7 @@ if(Battle_GetMenu() == BATTLE_MENU.FIGHT_ANIM&&Battle_GetTurnNumber()!=13){
 		}
 	}
 	if(Battle_GetMenu() == BATTLE_MENU.FIGHT_DAMAGE){
-		if(Battle_GetTurnNumber()=13){
+		if(Battle_GetTurnNumber()=16){
 			audio_stop_all()
 			audio_play_sound(snd_cut,0,0)
 			fader.alpha=1

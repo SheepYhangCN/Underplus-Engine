@@ -24,7 +24,12 @@ ds_map_add(_map_macro,"VOICE.PAPYRUS",4);
 ds_map_add(_map_macro,"VOICE.ASGORE",5);
 ds_map_add(_map_macro,"VOICE.GASTER",6);
 ds_map_add(_map_macro,"VOICE.CHARA",7);
-ds_map_add(_map_macro,"VOICE,SPONGE",8);
+ds_map_add(_map_macro,"VOICE.ASRIEL",8);
+ds_map_add(_map_macro,"VOICE.ASRIEL_DREEMURR",9);
+ds_map_add(_map_macro,"VOICE.FLOWEY",10);
+ds_map_add(_map_macro,"VOICE.ALPHYS",11);
+ds_map_add(_map_macro,"VOICE.UNDYNE",12);
+ds_map_add(_map_macro,"VOICE.SPONGE",13);
 
 _group_font[0,0]=font_dialog
 _group_font_scale_x[0,0]=1;
@@ -110,7 +115,12 @@ _group_voice[6,4]=snd_text_voice_gaster5
 _group_voice[6,5]=snd_text_voice_gaster6
 _group_voice[6,6]=snd_text_voice_gaster7
 _group_voice[7,0]=snd_text_voice_chara
-_group_voice[8,0]=snd_text_voice_spongebob
+_group_voice[8,0]=snd_text_voice_asriel
+_group_voice[9,0]=snd_text_voice_asriel_dreemurr
+_group_voice[10,0]=snd_text_voice_flowey
+_group_voice[11,0]=snd_text_voice_alphys
+_group_voice[12,0]=snd_text_voice_undyne
+_group_voice[13,0]=snd_text_voice_spongebob
 
 _group_face[0]=face;
 _group_face[1]=face_sans;

@@ -6,7 +6,7 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,120)
 
 _dialog=instance_create_depth(420, 120, 0, battle_dialog_enemy)
 if(global.language=LANGUAGE.ENGLISH){
-_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}Our report shows that&something wrong happened&in the timespace&continuum."
+_dialog.text="{font 3}{scale 1}{voice VOICE.SPONGE}{sponge_face 3}Our report shows that&something wrong happened&in the timespace&continuum."
 }else if(global.language=LANGUAGE.SCHINESE){
-_dialog.text="{font 3}{scale 1}{voice 8}{sponge_face 3}我们的报告显示&时空连续区出现了异常。"
+_dialog.text="{font 3}{scale 1}{voice VOICE.SPONGE}{sponge_face 3}我们的报告显示&时空连续区出现了异常。"
 }

@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_text_voice_default",
-  "duration": 0.0,
+  "duration": 0.060476,
   "parent": {
     "name": "text_voice",
     "path": "folders/Sounds/SFX/text_voice.yy",
