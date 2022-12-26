@@ -36,7 +36,7 @@ if(_menu==0){
 		var second=time mod 60;
 		_inst_time.text=_prefix+string(minute)+":"+(second<10 ? "0" : "")+string(second);
 		_inst_room=instance_create_depth(140,160,0,text_typer);
-		_inst_room.text=_prefix+Player_GetRoomName(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.ROOM));
+		_inst_room.text=_prefix+(global.language ? "" : "{font 1}")+Player_GetRoomName(Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.ROOM));
 		_inst_continue=instance_create_depth(170,210,0,text_typer);
 		_inst_continue.override_color_text_enabled=true;
 		_inst_reset=instance_create_depth(390,210,0,text_typer);
