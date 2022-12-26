@@ -1,7 +1,7 @@
 ///@desc Menu Switch
 if(_menu==0){
 	//_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO,0));
-	_mode=file_exists("./"+GAME_SAVE_NAME+"./file0.ini")||file_exists("./"+GAME_SAVE_NAME+"./file1.ini")||file_exists("./"+GAME_SAVE_NAME+"./file2.ini")||file_exists("./"+GAME_SAVE_NAME+"./file3.ini")||file_exists("./"+GAME_SAVE_NAME+"./file4.ini")||file_exists("./"+GAME_SAVE_NAME+"./file5.ini")||file_exists("./"+GAME_SAVE_NAME+"./file6.ini")||file_exists("./"+GAME_SAVE_NAME+"./file7.ini")||file_exists("./"+GAME_SAVE_NAME+"./file8.ini")||file_exists("./"+GAME_SAVE_NAME+"./file9.ini")
+	_mode=file_exists(working_directory+GAME_SAVE_NAME+"/file0.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file1.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file2.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file3.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file4.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file5.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file6.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file7.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file8.ini")||file_exists(working_directory+GAME_SAVE_NAME+"/file9.ini")
 	if(_mode==0){
 		//_inst_instruction.text=_prefix+"{color_text `gray_light`} --- New Keys ---{space_y -1}&{space_y 2}[F2] - Restart Room&[F3] - Restart&[F4] - Fullscreen&[ESC] - Quit Game&& --- DEBUG Mode Keys ---{space_y -1}&{space_y 2}[Insert] - DEBUG Mode&[Home] - Lock/Unlock HP&[~] - Console";
 		_inst_begin=instance_create_depth(170,315,0,text_typer);
@@ -18,8 +18,8 @@ if(_menu==0){
 		_inst_instruction=instance_create_depth(150,0,0,text_typer);
 		_inst_instruction.text=_prefix+"{font 1}{color_text `gray_light`} --- 按键 ---{space_y -1}&{space_y 2}[F1] - 重启&[F2] - 重启房间&[F4] - 全屏&[X/Shift] - 奔跑(主世界)&[X/Shift] - 减速(战斗中)&[Insert] - 调试模式&按下返回键(退格)来开关&移动端控制器"
 		_inst_begin.text=_prefix+"{font 0}开始游戏"
-		_inst_settings.text=_prefix+"{font 0}设置"
-		_inst_credits.text=_prefix+"{font 0}制作名单"
+		_inst_settings.text=_prefix+"{font 0}游戏设置"
+		_inst_credits.text=_prefix+"{font 0}鸣谢名单"
 		}
 		with(text_typer){
 			event_user(15);
@@ -65,7 +65,7 @@ if(_menu==0){
 		_inst_continue.text+="{font 0}继续"
 		_inst_reset.text=_prefix+"{font 0}重置"
 		_inst_settings.text=_prefix+"{font 0}设置"
-		_inst_credits.text=_prefix+"{font 0}制作名单"
+		_inst_credits.text=_prefix+"{font 0}鸣谢"
 		_inst_save_options.text=_prefix+"存档选项"
 		}
 		event_user(2);

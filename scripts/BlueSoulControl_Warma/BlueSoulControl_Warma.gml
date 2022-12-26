@@ -20,6 +20,6 @@ Anim_Create(battle_enemy_warma,"_body",0,0,0,7,0)
 Anim_Create(battle_enemy_warma,"_body",0,0,7,1,0,5)
 Anim_Create(battle_enemy_warma,"_body",0,0,8,-8,0,30)
 }
-BlueSoulControl(argument[0])
+BlueSoulControl(argument[0],2)
 return
 }

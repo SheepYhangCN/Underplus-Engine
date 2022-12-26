@@ -5,7 +5,7 @@ function Flag_GetSavePath() {
 	if(argument_count>1){
 	SLOT=argument[1]}
 
-	var result="./"+GAME_SAVE_NAME+"./flag/";
+	var result=working_directory+GAME_SAVE_NAME+"/flag/";
 	switch(TYPE){
 		case FLAG_TYPE.STATIC:
 			result+=string(SLOT)+"/static";

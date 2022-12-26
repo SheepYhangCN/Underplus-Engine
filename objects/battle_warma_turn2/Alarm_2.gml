@@ -10,6 +10,6 @@ var b=Battle_MakeFriendlyPellet(320-64-64,320+64+32,320-64-64,320+64+32,0,40,30,
 b.depth=DEPTH_BATTLE.BULLET
 b.image_xscale=2
 b.image_yscale=2
-Battle_MakeWave(_x,_y,choose(1,2))
+Battle_MakeWave(_x,_y,choose(1,2),0.1,1,battle_bullet_wave_warma)
 audio_play_sound(snd_exclamation,0,0)
 alarm[choose(0,1,2,3)]=70

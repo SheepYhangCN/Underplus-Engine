@@ -8,7 +8,7 @@ _x=320
 _y=battle_enemy_warma.y
 
 var inst=instance_create_depth(420,120,0,battle_dialog_enemy)
-inst.text="{skippable false}{warma_face 3}...{sleep 15}3&{sleep 50}...{sleep 5}2&{sleep 50}...{sleep 5}{warma_face 0}1{sleep 50}...{end}"
+inst.text="{voice VOICE.ASRIEL}{skippable false}{warma_face 3}...{sleep 15}3&{sleep 50}...{sleep 5}2&{sleep 50}...{sleep 5}{warma_face 0}1{sleep 50}...{end}"
 
 soultemp=false
 moving=false

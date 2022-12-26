@@ -35,8 +35,8 @@ if(keyboard_check_pressed(vk_f2)){
 }
 
 if(keyboard_check_pressed(vk_f1)){
-	//game_restart();
-	room_goto(room_restarting)
+	game_restart();
+	//room_goto(room_restarting)
 }
 
 if(keyboard_check_pressed(vk_f4)&&!keyboard_check(vk_alt)&&!keyboard_check(vk_control)&&!keyboard_check(vk_shift)){

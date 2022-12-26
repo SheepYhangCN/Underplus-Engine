@@ -15,7 +15,7 @@ dialog2=instance_create_depth(120,415,0,text_typer)
 dialog2.text="{scale 2}{instant true}{color `gray`}{font 1}[Use arrow keys to swtich page]&[Press X or Shift to return]"
 }else if(global.language=LANGUAGE.SCHINESE){
 dialog=instance_create_depth(200,10,0,text_typer)
-dialog.text="{scale 3}{instant true}制作名单"
+dialog.text="{scale 3}{instant true}鸣谢名单"
 dialog2=instance_create_depth(140,412,0,text_typer)
 dialog2.text="{scale 2}{instant true}{color `gray`}[使用方向键来翻页]&[按下 X 或 Shift 来返回]"
 }

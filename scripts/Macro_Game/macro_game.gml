@@ -6,11 +6,11 @@ function Macro_Game() {
 #macro GAME_AUTHOR "SheepYhangCN"
 
 	//Anything you want, must be a string.
-#macro GAME_VERSION "v2022.12.15"
+#macro GAME_VERSION "v2022.12.26"
 
 	//Anything you want, must be a string.
 	//Can only contain letters, numbers and underscores.
-#macro GAME_SAVE_NAME "underplus-engine"
+#macro GAME_SAVE_NAME "warmtale_warma_p1"
 
 
 }

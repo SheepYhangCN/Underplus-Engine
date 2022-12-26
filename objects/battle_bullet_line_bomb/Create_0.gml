@@ -9,6 +9,7 @@ width=20
 angle=0
 crossing=1//0为一字 1为十字 2为米字 可在脚本修改
 type=0
+shake=true
 
 beam_alpha=0
 image_alpha=0

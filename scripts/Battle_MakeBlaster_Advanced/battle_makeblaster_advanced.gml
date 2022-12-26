@@ -106,7 +106,7 @@ function Blaster_Create_Advanced(){
 	var beam_spr = spr_beam_old
 	var obj = battle_bullet_blaster_advanced
 	
-    var fire_shake_type = -1
+    var fire_shake_type = 0
     var exit_speed_initial = 0
     var exit_speed_end = 70
     var scale_fire_pause_change_time = 6
