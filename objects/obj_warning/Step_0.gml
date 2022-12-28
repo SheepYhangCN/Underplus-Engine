@@ -6,4 +6,6 @@ window_set_caption(GAME_NAME+" - 警告")
 }
 if(Input_IsPressed(INPUT.CONFIRM)&&temp=0){
 temp=1
-alarm[0]=1}
+glitch=Glitch_Make(-15,15)
+audio_play_sound(snd_noise,0,0)
+alarm[0]=30}

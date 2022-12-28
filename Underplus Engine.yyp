@@ -537,6 +537,7 @@
     {"id":{"name":"scribble_font_has_character","path":"scripts/scribble_font_has_character/scribble_font_has_character.yy",},"order":11,},
     {"id":{"name":"__input_finalize_verb_groups","path":"scripts/__input_finalize_verb_groups/__input_finalize_verb_groups.yy",},"order":7,},
     {"id":{"name":"spr_battle_platform_purple","path":"sprites/spr_battle_platform_purple/spr_battle_platform_purple.yy",},"order":3,},
+    {"id":{"name":"snd_noise","path":"sounds/snd_noise/snd_noise.yy",},"order":56,},
     {"id":{"name":"Battle_GetTurnNumber","path":"scripts/Battle_GetTurnNumber/Battle_GetTurnNumber.yy",},"order":2,},
     {"id":{"name":"Battle_CreateBoardExtraRect","path":"scripts/Battle_CreateBoardExtraRect/Battle_CreateBoardExtraRect.yy",},"order":4,},
     {"id":{"name":"spr_starry_sans_sweat","path":"sprites/spr_starry_sans_sweat/spr_starry_sans_sweat.yy",},"order":4,},
