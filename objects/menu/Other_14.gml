@@ -161,10 +161,8 @@ switch(string_lower(_naming_name)){
 		text="ong it's Sanesss 11111&Can you unblock my BiliBili plz"
 		break;
 	case "qccff":
+	case "qc":
 		text="omg it's QcCfF 11111"
-		break;
-	case "xmx":
-		text="不是你谁啊，真没人在乎[笑哭]"
 		break;
 	case "666":
 	case "6666":
@@ -301,6 +299,7 @@ switch(string_lower(_naming_name)){
 		text="我趣事扇你死大跌11111&主播能不能把我B站拉黑解了"
 		break;
 	case "qccff":
+	case "qc":
 		text="我趣事穹狗11111"
 		break;
 	case "xmx":
