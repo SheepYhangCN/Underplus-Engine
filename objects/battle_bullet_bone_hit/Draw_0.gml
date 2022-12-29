@@ -70,7 +70,16 @@ var collision6=collision_line(
         , 
         (y-0.8 + lengthdir_y(sprite_get_height(_bone_end)/2,angle+90) - lengthdir_y((length / 2), angle))
 		, battle_soul, false, false)
-if(collision1||collision2||collision3||collision4||collision5||collision6){event_user(0)}
+var collision7=collision_line(
+        (x-0.8 - lengthdir_x((length / 2), angle))
+        , 
+        (y-0.8 - lengthdir_y((length / 2), angle))
+        , 
+        (x-0.8 + lengthdir_x((length / 2), angle))
+        , 
+        (y-0.8 + lengthdir_y((length / 2), angle))
+		, battle_soul, false, false)
+if(collision1||collision2||collision3||collision4||collision5||collision6||collision7){event_user(0)}
 if(global.debug){
     depth = DEPTH_BATTLE.BULLET_OUTSIDE_HIGH
     surface_set_target(Battle_GetBoardSurface())
@@ -128,6 +137,15 @@ if(global.debug){
         (x-0.8 + lengthdir_x(sprite_get_height(_bone_end)/2,angle+90) - lengthdir_x((length / 2), angle))
         , 
         (y-0.8 + lengthdir_y(sprite_get_height(_bone_end)/2,angle+90) - lengthdir_y((length / 2), angle))
+		)
+	draw_line(
+        (x-0.8 - lengthdir_x((length / 2), angle))
+        , 
+        (y-0.8 - lengthdir_y((length / 2), angle))
+        , 
+        (x-0.8 + lengthdir_x((length / 2), angle))
+        , 
+        (y-0.8 + lengthdir_y((length / 2), angle))
 		)
 		surface_reset_target()
     depth = DEPTH_BATTLE.BULLET
