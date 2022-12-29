@@ -163,6 +163,9 @@ switch(string_lower(_naming_name)){
 	case "QcCfF":
 		text="omg it's QcCfF 11111"
 		break;
+	case "xmx":
+		text="不是你谁啊，真没人在乎[笑哭]"
+		break;
 	case "666":
 	case "6666":
 	case "66666":
@@ -299,6 +302,9 @@ switch(string_lower(_naming_name)){
 		break;
 	case "QcCfF":
 		text="我趣事穹狗11111"
+		break;
+	case "xmx":
+		text="不是你谁啊，真没人在乎[笑哭]"
 		break;
 	case "114514":
 		text="你是一个一个一个哼哼啊啊啊啊啊啊啊啊啊啊"
