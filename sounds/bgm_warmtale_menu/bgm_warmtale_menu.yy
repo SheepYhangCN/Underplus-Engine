@@ -17,7 +17,7 @@
   "soundFile": "bgm_warmtale_menu.mp3",
   "duration": 157.02194,
   "parent": {
-    "name": "BGM",
-    "path": "folders/Sounds/BGM.yy",
+    "name": "fights",
+    "path": "folders/Sounds/BGM/fights.yy",
   },
 }

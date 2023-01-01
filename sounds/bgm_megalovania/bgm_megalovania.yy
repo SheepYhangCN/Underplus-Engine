@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "bgm_megalovania.ogg",
-  "duration": 221.95506,
+  "duration": 208.39864,
   "parent": {
     "name": "fights",
     "path": "folders/Sounds/BGM/fights.yy",

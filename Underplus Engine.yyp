@@ -1309,7 +1309,7 @@
     {"id":{"name":"spr_bigger_area","path":"sprites/spr_bigger_area/spr_bigger_area.yy",},"order":0,},
     {"id":{"name":"__input_class_gamepad_mapping","path":"scripts/__input_class_gamepad_mapping/__input_class_gamepad_mapping.yy",},"order":7,},
     {"id":{"name":"battle_ui","path":"objects/battle_ui/battle_ui.yy",},"order":11,},
-    {"id":{"name":"bgm_warmtale_menu","path":"sounds/bgm_warmtale_menu/bgm_warmtale_menu.yy",},"order":19,},
+    {"id":{"name":"bgm_warmtale_menu","path":"sounds/bgm_warmtale_menu/bgm_warmtale_menu.yy",},"order":14,},
     {"id":{"name":"scribble_font_add_all","path":"scripts/scribble_font_add_all/scribble_font_add_all.yy",},"order":1,},
     {"id":{"name":"battle_fader","path":"objects/battle_fader/battle_fader.yy",},"order":1,},
     {"id":{"name":"logo_warmtale","path":"objects/logo_warmtale/logo_warmtale.yy",},"order":1,},
