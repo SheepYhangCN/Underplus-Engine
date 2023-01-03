@@ -1,5 +1,5 @@
-#macro __INPUT_VERSION "5.3.0"
-#macro __INPUT_DATE    "2022-11-13"
+#macro __INPUT_VERSION "5.3.1"
+#macro __INPUT_DATE    "2022-12-26"
 #macro __INPUT_DEBUG   false
 
 #macro __INPUT_BINDING_KEY               "key"
@@ -177,57 +177,6 @@ function __input_axis_is_directional(_axis)
 {
     return ((_axis == gp_padu)   || (_axis == gp_padd)   || (_axis == gp_padl)   || (_axis == gp_padr)
          || (_axis == gp_axislh) || (_axis == gp_axislv) || (_axis == gp_axisrh) || (_axis == gp_axisrv));
-}
-
-/// @param GUID
-/// @param legacy
-/// @param suppressWarnings
-function __input_gamepad_guid_parse(_guid, _legacy, _suppress)
-{
-    var _vendor  = "";
-    var _product = "";
-    
-    if (_guid == "00000000000000000000000000000000")
-    {
-        if (!_suppress) __input_trace("Warning! GUID was empty");
-        return { vendor : "", product : "" };
-    }
-    
-    if (_legacy)
-    {
-        //GM on Windows uses an older version of SDL so we strip out VID + PID as a special case
-        _vendor  = string_copy(_guid, 1, 4);
-        _product = string_copy(_guid, 5, 4);
-    }
-    else
-    {
-        //Check to see if this GUID fits our expected pattern:
-        //
-        //  ****0000****0000****0000****????
-        //  ^       ^       ^       ^
-        //  Driver  Vendor  Product Revision
-        //
-        //If not, return an invalid VID+PID
-        if ((string_copy(_guid,  5, 4) != "0000")
-        ||  (string_copy(_guid, 13, 4) != "0000")
-        ||  (string_copy(_guid, 21, 4) != "0000"))
-        {
-            if (!_suppress) __input_trace("Warning! GUID \"", _guid, "\" does not fit expected pattern. VID+PID cannot be extracted");
-            return { vendor : "", product : "" };
-        }
-        
-        //Check to see if the driver for this GUID is what we expect
-        //In some cases, what we expect for the driver ID is going to be different so this isn't necessarily something that invalidates VID+PID checking
-        if ((string_copy(_guid, 1, 4) != "0300") && (string_copy(_guid, 1, 4) != "0500"))
-        {
-            if (!_suppress) __input_trace("Warning! GUID \"", _guid, "\" driver ID does not match expected (Found ", string_copy(_guid, 1, 4), ", expect either 0300 or 0500)");
-        }
-        
-        _vendor  = string_copy(_guid,  9, 4);
-        _product = string_copy(_guid, 17, 4);
-    }
-    
-    return { vendor : _vendor, product : _product };
 }
 
 function __input_trace()
