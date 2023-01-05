@@ -123,8 +123,8 @@ switch(string_lower(_naming_name)){
 	case "cxx":
 		text="omg it's cxx 11111"
 		break;
-	case "yst":
-		text="omg it's Honyaradoh 11111"
+	case "mayse":
+		text="omg it's Obbligato_Mayse 11111"
 		break;
 	case "ax":
 	case "anxing":
@@ -258,10 +258,10 @@ switch(string_lower(_naming_name)){
 		text="我趣事拼图方块大跌11111"
 		break;
 	case "cxx":
-		text="我趣事cxx大跌11111"
+		text="我趣事Cxx大跌11111"
 		break;
-	case "yst":
-		text="我趣事养生堂大跌11111"
+	case "mayse":
+		text="我趣事Obbligato_Mayse大跌11111"
 		break;
 	case "ax":
 	case "anxing":

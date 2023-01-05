@@ -37,12 +37,12 @@ dialog3.text="{scale 2}{instant true}<第"+string(page+1)+"/4页>"
 if(page=3){
 if(global.language=LANGUAGE.ENGLISH){
 dialog1=instance_create_depth(70,70,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}Special Thanks&Cxx, Honyaradoh, Ptfk, LiarOnce"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}Special Thanks&Cxx, Obbligato_Mayse, Ptfk, LiarOnce"
 dialog3=instance_create_depth(450,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}<Page "+string(page+1)+"/4{color `gray`}>"
 }else if(global.language=LANGUAGE.SCHINESE){
 dialog1=instance_create_depth(80,60,0,text_typer)
-dialog1.text="{font 1}{scale 2}{speed 1}{instant true}特别感谢&Cxx、养生堂、拼图方块、LiarOnce"
+dialog1.text="{font 1}{scale 2}{speed 1}{instant true}特别感谢&Cxx、Obbligato_Mayse、拼图方块、LiarOnce"
 dialog3=instance_create_depth(480,20,0,text_typer)
 dialog3.text="{scale 2}{instant true}<第"+string(page+1)+"/4页{color `gray`}>"
 }}
