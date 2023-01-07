@@ -1,4 +1,4 @@
-//event_inherited();
+event_inherited();
 depth=DEPTH_BATTLE.BOARD-2
 type=0
 warning_time=60
