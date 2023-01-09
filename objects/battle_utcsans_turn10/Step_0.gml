@@ -51,6 +51,7 @@ case 910:
 	audio_pause_sound(bgm_utcsans)
 	fader.alpha=1
 	audio_play_sound(snd_cut,0,0)
+	space=noone
 	if!(os_type=os_android||os_type=os_ios||os_type=os_winphone||os_browser=browser_ie_mobile||os_browser=browser_ie_mobile){
 	space=instance_create_depth(0,0,DEPTH_BATTLE.BG-1,obj_effect_space)}
 	break
