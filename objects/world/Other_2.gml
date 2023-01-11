@@ -10,6 +10,7 @@ global.shield=false
 global.shield_useable=false
 global.shielding=false
 global.shieldval=120
+global.vape=false
 room_speed=60
 //cursor_sprite=spr_cursor
 window_set_size(640,480)

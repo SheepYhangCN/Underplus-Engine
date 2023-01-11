@@ -62,8 +62,23 @@ if(keyboard_check(ord("V"))){
 if(keyboard_check(ord("A"))){
 if(keyboard_check(ord("P"))){
 if(keyboard_check_pressed(ord("E"))){
-	Vape_Setup()
+	global.vape=!global.vape
+	audio_play_sound(snd_save,0,0)
+	if(global.vape){
+	if(global.language=LANGUAGE.ENGLISH){CC_Add("Vape v114.514 Installed")}
+	if(global.language=LANGUAGE.SCHINESE){CC_Add("Vape v114.514 已注入")}
+	}else{
+	if(global.language=LANGUAGE.ENGLISH){CC_Add("Vape v114.514 Uninstalled")}
+	if(global.language=LANGUAGE.SCHINESE){CC_Add("Vape v114.514 已卸载")}}
 }}}}
+if(global.vape){
+	global.debug=false
+	global.undead=false
+	Player_SetKR(0)
+	Player_SetHp(Player_GetHpMax())
+	Player_SetName("Vape")
+	if(instance_exists(menu)){menu._naming_name="Vape"}
+	}
 if(global.tas=true){
 if(keyboard_check(vk_lalt)){
 room_speed-=1}

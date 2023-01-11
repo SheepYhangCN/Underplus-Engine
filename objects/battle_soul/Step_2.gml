@@ -1,5 +1,5 @@
 if(Player_GetHp()+Player_GetKR()<=0){
-	if(global.undead!=1){
+	if(global.undead!=1||global.vape=false){
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.GAMEOVER_SOUL_X,x-camera.x);
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.GAMEOVER_SOUL_Y,y-camera.y);
 	room_goto(room_gameover)}else{
