@@ -76,8 +76,8 @@ if(global.vape){
 	global.undead=false
 	Player_SetKR(0)
 	Player_SetHp(Player_GetHpMax())
-	Player_SetName("Vape")
-	if(instance_exists(menu)){menu._naming_name="Vape"}
+	//Player_SetName("Vape")
+	//if(instance_exists(menu)){menu._naming_name="Vape"}
 	}
 if(global.tas=true){
 if(keyboard_check(vk_lalt)){

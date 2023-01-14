@@ -1,6 +1,6 @@
 draw_set_halign(fa_left)
 draw_set_valign(fa_top)
-if(global.debug=1){
+if(global.debug=true){
 	draw_set_font(font_mars_needs_cunnilingus)
 	draw_set_color(c_red)
     draw_text(5, 15, "D")
@@ -99,6 +99,6 @@ if(Player_IsInBattle()){
     draw_text(0, 115, draw_instance_count)
     draw_text(0, 135, draw_mousexy)
     draw_text(0, 155, draw_hp_kr)
-	if(global.undead=1){
+	if(global.undead=true){
 	draw_text(85,15,"Undead Mode")}
 	}

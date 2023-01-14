@@ -7,7 +7,7 @@ switch(string_lower(_naming_name)){
 		text="{font 1}Is this name correct?"
 		break;
 	case "yuhang":
-		if(global.debug=0){
+		if(global.debug=false){
 		text="No you can't !!1!11"
 		valid=false}
 		break;
@@ -177,7 +177,7 @@ switch(string_lower(_naming_name)){
 		text="{font 0}是这个名字没错吗?"
 		break;
 	case "yuhang":
-		if(global.debug=0){
+		if(global.debug=false){
 		text="不你不能!!1!11"
 		valid=false}
 		break;

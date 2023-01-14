@@ -14,7 +14,7 @@ if (type == 4){
 //surface_set_target(Battle_GetBoardSurface());{
 	draw_self();
 //}surface_reset_target();
-if(global.debug=1){
+if(global.debug=true){
 draw_set_font(font_chs_enemy)
 draw_set_color(c_white)
 draw_text_transformed(x,y,string(type)+"\n"+string(warning_time)+"\n"+string(knife_time)+"\n"+string(width)+"\n"+string(hit_damage),1,1,image_angle)}

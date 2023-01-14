@@ -4,6 +4,6 @@ if(STATE==BATTLE_STATE.IN_TURN || STATE==BATTLE_STATE.TURN_PREPARATION || (STATE
 	draw_sprite(spr_battle_soul_green_background,0,x,y)
 	draw_self();
 }
-if(global.debug=1){
+if(global.debug=true){
 	draw_sprite(spr_battle_soul_mask,0,x,y)
 }

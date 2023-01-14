@@ -1,6 +1,6 @@
 draw_self();
 
-if(Input_IsPressed(INPUT.CONFIRM)&&can_move&&global.debug=1){
+if(Input_IsPressed(INPUT.CONFIRM)&&can_move&&global.debug=true){
 	draw_set_color(c_red);
 	if(dir==DIR.UP){
 		draw_rectangle(x-sprite_width/2+15,y-5,x+sprite_width/2-15,y-sprite_height+5,true);
