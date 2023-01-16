@@ -221,11 +221,13 @@ if(Player_IsInBattle()){
 	}
 	
 	if(keyboard_check_direct(vk_add)){
-		Player_Heal(1);
+		//Player_Heal(1);
+		Player_SetHp(Player_GetHp()+1)
 		//audio_play_sound(snd_item_heal,0,0);
 		
 	}else if(keyboard_check_direct(vk_subtract)){
-		Player_Hurt(1);
+		//Player_Hurt(1);
+		Player_SetHp(Player_GetHp()-1)
 		//audio_play_sound(snd_hurt,0,0);
 	}
 	if(keyboard_check_pressed(vk_home)){
