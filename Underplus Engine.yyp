@@ -782,7 +782,7 @@
     {"id":{"name":"item_starry_stars","path":"objects/item_starry_stars/item_starry_stars.yy",},"order":2,},
     {"id":{"name":"spr_battle_damage_no_effect","path":"sprites/spr_battle_damage_no_effect/spr_battle_damage_no_effect.yy",},"order":3,},
     {"id":{"name":"battle_soul_orange_moving","path":"objects/battle_soul_orange_moving/battle_soul_orange_moving.yy",},"order":1,},
-    {"id":{"name":"battle_hp_anim","path":"objects/battle_hp_anim/battle_hp_anim.yy",},"order":17,},
+    {"id":{"name":"hp_anim","path":"objects/hp_anim/hp_anim.yy",},"order":27,},
     {"id":{"name":"input_default_joycon_axis","path":"scripts/input_default_joycon_axis/input_default_joycon_axis.yy",},"order":2,},
     {"id":{"name":"obj_warning","path":"objects/obj_warning/obj_warning.yy",},"order":9,},
     {"id":{"name":"battle_soul_changed_effect","path":"objects/battle_soul_changed_effect/battle_soul_changed_effect.yy",},"order":10,},

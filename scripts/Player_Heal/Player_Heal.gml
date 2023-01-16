@@ -1,7 +1,7 @@
 ///@arg heal
 function Player_Heal() {
 	var HEAL=argument[0];
-	var a=instance_create_depth(0,0,0,battle_hp_anim)
+	var a=instance_create_depth(0,0,0,hp_anim)
 	a.hp_offset=HEAL
 	/*if(HEAL>=0){
 		var HP=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP);
