@@ -13,9 +13,9 @@ switch(Battle_GetMenuChoiceButton()){
 			break;
 			case 1:
 			if(global.language=LANGUAGE.ENGLISH){
-			Dialog_Add("* You insulted Anya.{sleep 15}&* Strangely, she seems to know&  what you are going to say.{pause}{clear}{set_hpmax "+string(int64(Player_GetHpMax()/2))+"}{set_hp "+string(int64(Player_GetHp()/2))+"}{audio_play `snd_hurt` 0 0}* Your HP and Max HP has been&  halved!");}
+			Dialog_Add("* You insulted Anya.{sleep 15}&* Strangely, she seems to know&  what you are going to say.{pause}{clear}{set_hpmax "+string(round(Player_GetHpMax()/2))+"}{set_hp "+string(round(Player_GetHp()/2))+"}{audio_play `snd_hurt` 0 0}* Your HP and Max HP has been&  halved!");}
 			if(global.language=LANGUAGE.SCHINESE){
-			Dialog_Add("* 你侮辱了Anya。{sleep 15}&* 奇怪的是, 她似乎已经知道&  你要说什么了。{pause}{clear}{set_hpmax "+string(int64(Player_GetHpMax()/2))+"}{set_hp "+string(int64(Player_GetHp()/2))+"}{audio_play `snd_hurt` 0 0}* 你的HP和HP上限被减半!");}
+			Dialog_Add("* 你侮辱了Anya。{sleep 15}&* 奇怪的是, 她似乎已经知道&  你要说什么了。{pause}{clear}{set_hpmax "+string(round(Player_GetHpMax()/2))+"}{set_hp "+string(round(Player_GetHp()/2))+"}{audio_play `snd_hurt` 0 0}* 你的HP和HP上限被减半!");}
 			break;
 			case 2:
 			if(flirted=true){

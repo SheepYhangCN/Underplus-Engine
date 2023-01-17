@@ -12,4 +12,4 @@ if(choice!=5){
 draw_set_color(c_white)
 }else if(choice=5){
 draw_set_color(c_yellow)}
-draw_text_transformed(540,238.3,string(int64(world.volume*100))+"%",2,2,0)
+draw_text_transformed(540,238.3,string(round(world.volume*100))+"%",2,2,0)

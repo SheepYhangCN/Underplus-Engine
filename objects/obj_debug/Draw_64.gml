@@ -83,7 +83,7 @@ if(Player_IsInBattle()){
 	if(instance_exists(char_player)){
 	draw_playerxy="Character XY:["+string(char_player.x)+","+string(char_player.y)+"]"
 	draw_playerspeed="Character Move Speed:["+string(char_player.move_speed[DIR.UP])+","+string(char_player.move_speed[DIR.DOWN])+","+string(char_player.move_speed[DIR.LEFT])+","+string(char_player.move_speed[DIR.RIGHT])+"]"
-	draw_playersprite="Character Sprite:"+sprite_get_name(char_player.sprite_index)+"["+string(int64(char_player.image_index))+"]"
+	draw_playersprite="Character Sprite:"+sprite_get_name(char_player.sprite_index)+"["+string(floor(char_player.image_index))+"]"
 	draw_playercanmove="Moveable:"+string(char_player.can_move)+"["+string(char_player.moveable)+","+string(char_player._moveable_box)+","+string(char_player._moveable_dialog)+","+string(char_player._moveable_encounter)+","+string(char_player._moveable_menu)+","+string(char_player._moveable_save)+","+string(char_player._moveable_warp)+"]"
 	draw_playerflavor="Flavor:"+char_player.flavor
 	draw_text(0, 175, draw_playerxy)
