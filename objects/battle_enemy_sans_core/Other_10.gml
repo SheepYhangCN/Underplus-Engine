@@ -30,20 +30,30 @@ Battle_SetEnemyDEF(_enemy_slot,1);
 _hp = 1
 _hpmax = 1
 audio_stop_all()
-audio_play_sound(bgm_bird,0,1)
-Player_SetLv(19)
+Player_SetLv(13)
 Player_SetHpMax(Player_GetLvHpMax(Player_GetLv()))
 Player_SetHp(Player_GetHpMax())
 Battle_SetEnemyAtk(2)
 global.shield=false
 global.shield_useable=false
 var a=instance_create_depth(0,10,0,battle_bg)
-a.sprite_index=spr_battle_bg_corridor
-a.image_xscale=2
-a.image_yscale=2
+a.sprite_index=spr_battle_bg_core
+a.image_xscale=1
+a.image_yscale=1
 
 animsin = 0
 sinn = 2
-head = instance_create_depth(x-1.6, y-30, 0, titr_head)
-body = instance_create_depth(x-1.6, y+13, 0, titr_body)
-legs = instance_create_depth(x, y+60, 0, titr_legs)
+headx = x-1
+heady = y-30
+bodyx = x-1
+bodyy = y+13
+legx = x
+legy = y+60
+_face_spr=spr_sans_face
+_face = 3
+_body = 0
+_legs= 0
+sweat=0
+alarm[2]=1
+audio=0
+bgm=audio_play_sound(bgm_sans_core,0,1)

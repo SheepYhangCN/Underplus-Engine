@@ -164,6 +164,10 @@ switch(string_lower(_naming_name)){
 	case "qc":
 		text="omg it's QcCfF 11111"
 		break;
+	case "nian":
+	case "yx":
+		text="omg it's Niangao_yx 11111"
+		break;
 	case "666":
 	case "6666":
 	case "66666":
@@ -301,6 +305,10 @@ switch(string_lower(_naming_name)){
 	case "qccff":
 	case "qc":
 		text="我趣事穹狗11111"
+		break;
+	case "nian":
+	case "yx":
+		text="我趣事年糕_yx11111"
 		break;
 	case "xmx":
 		text="不是你谁啊，真没人在乎[笑哭]"

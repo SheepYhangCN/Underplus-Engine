@@ -1,0 +1,1 @@
+instance_create_depth(0,0,0,asset_get_index("battle_sans_core_turn"+string(Battle_GetTurnNumber())))

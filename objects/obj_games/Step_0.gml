@@ -130,4 +130,8 @@ case 7://沃玛
 phases=0
 enabled=true
 break
+case 8://核心杉
+phases=0
+enabled=true
+break
 }

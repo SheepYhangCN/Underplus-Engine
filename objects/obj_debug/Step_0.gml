@@ -125,6 +125,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Starry(DIR.UP)
 		}else if(instance_exists(battle_enemy_warma)){
 		BlueSoulControl_Warma(DIR.UP)
+		}else if(instance_exists(battle_enemy_sans_core)){
+		BlueSoulControl_SansCore(DIR.UP)
 		}else{
 		BlueSoulControl(DIR.UP)}
 	}
@@ -139,6 +141,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Starry(DIR.LEFT)
 		}else if(instance_exists(battle_enemy_warma)){
 		BlueSoulControl_Warma(DIR.LEFT)
+		}else if(instance_exists(battle_enemy_sans_core)){
+		BlueSoulControl_SansCore(DIR.LEFT)
 		}else{
 		BlueSoulControl(DIR.LEFT)}
 	}
@@ -153,6 +157,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Starry(DIR.DOWN)
 		}else if(instance_exists(battle_enemy_warma)){
 		BlueSoulControl_Warma(DIR.DOWN)
+		}else if(instance_exists(battle_enemy_sans_core)){
+		BlueSoulControl_SansCore(DIR.DOWN)
 		}else{
 		BlueSoulControl(DIR.DOWN)}
 	}
@@ -167,6 +173,8 @@ if(Player_IsInBattle()){
 		BlueSoulControl_Starry(DIR.RIGHT)
 		}else if(instance_exists(battle_enemy_warma)){
 		BlueSoulControl_Warma(DIR.RIGHT)
+		}else if(instance_exists(battle_enemy_sans_core)){
+		BlueSoulControl_SansCore(DIR.RIGHT)
 		}else{
 		BlueSoulControl(DIR.RIGHT)}
 	}}

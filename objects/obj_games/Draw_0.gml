@@ -89,6 +89,7 @@ if(global.language=LANGUAGE.ENGLISH){game+=" | Corridor"}
 if(global.language=LANGUAGE.SCHINESE){game+="[font_dialog] | [font_chs]长廊"}
 break
 case 1:
+draw_sprite_ext(spr_battle_bg_corridor,0,317-sprite_get_width(spr_battle_bg_corridor)*1.3/2,213-sprite_get_height(spr_battle_bg_corridor)*1.3/2,1.3,1.3,0,c_white,1)
 draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_face,3,325-3,220-35,2,2,0,c_white,1)
@@ -96,6 +97,7 @@ if(global.language=LANGUAGE.ENGLISH){game+=" | Phase 1"}
 if(global.language=LANGUAGE.SCHINESE){game+="[font_dialog] | [font_chs]第[font_dialog]1[font_chs]阶段"}
 break
 case 2:
+draw_sprite_ext(spr_battle_bg_corridor,0,317-sprite_get_width(spr_battle_bg_corridor)*1.3/2,213-sprite_get_height(spr_battle_bg_corridor)*1.3/2,1.3,1.3,0,c_white,1)
 draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
 draw_sprite_ext(spr_sans_blue_eyes,0,325-3,220-35,2,2,0,c_white,1)
@@ -144,6 +146,14 @@ draw_sprite_ext(spr_warma_body,0,320-2,240-30,1/9*(4/5),1/9*(4/5),0,c_white,1)
 draw_sprite_ext(spr_warma_face,0,320+5,240-92,1/9*(4/5),1/9*(4/5),0,c_white,1)
 if(global.language=LANGUAGE.ENGLISH){game="Warmtale | Warma Fight | Phase 1"}
 if(global.language=LANGUAGE.SCHINESE){game="[font_chs]温暖传说[font_dialog]Warmtale | [font_chs]沃玛战[font_dialog] | [font_chs]第[font_dialog]1[font_chs]阶段"}
+break
+case 8:
+draw_sprite_ext(spr_battle_bg_core,0,317-sprite_get_width(spr_battle_bg_core)*0.75/2,213-sprite_get_height(spr_battle_bg_core)*0.75/2,0.75,0.75,0,c_white,1)
+draw_sprite_ext(spr_sans_leg,0,325-2,220+53,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_body,0,325-3,220+8,2,2,0,c_white,1)
+draw_sprite_ext(spr_sans_face,0,325-3,220-35,2,2,0,c_white,1)
+if(global.language=LANGUAGE.ENGLISH){game="Undertale: the Core Encounter | Sans Fight"}
+if(global.language=LANGUAGE.SCHINESE){game="[font_dialog]Undertale: [font_chs]核心之遇[font_dialog] | Sans[font_chs]战"}
 break
 }
 if(global.language=LANGUAGE.ENGLISH){

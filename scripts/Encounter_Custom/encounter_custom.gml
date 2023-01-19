@@ -15,6 +15,7 @@ function Encounter_Custom() {
 	Encounter_Set(BATTLE.SPONGE,-1,battle_enemy_sponge,-1,"* Are you ready?")
 	Encounter_Set(BATTLE.SPONGE_P2,-1,battle_enemy_sponge_p2,-1,"* Welcome to Hell Of High Water.")
 	Encounter_Set(BATTLE.WARMA,-1,battle_enemy_warma,-1,"* A familiar figure stands in&  front of you.",-1,false,true,false,320,320)
+	Encounter_Set(BATTLE.SANS_CORE,-1,battle_enemy_sans_core,-1,"",-1,false,true,false,320,320)
 	}else if(global.language=LANGUAGE.SCHINESE){
 	Encounter_Set(BATTLE.TEST,-1,battle_enemy,-1,"* {font 0}测试战斗");
 	Encounter_Set(BATTLE.TUTORIAL,-1,battle_enemy_tutorial,-1,"* 你遇见了个敌人!",bgm_shop);
@@ -31,5 +32,6 @@ function Encounter_Custom() {
 	Encounter_Set(BATTLE.SPONGE,-1,battle_enemy_sponge,-1,"* 你准备好了吗?")
 	Encounter_Set(BATTLE.SPONGE_P2,-1,battle_enemy_sponge_p2,-1,"* 欢迎来到深水地狱。")
 	Encounter_Set(BATTLE.WARMA,-1,battle_enemy_warma,-1,"* 一个熟悉的身影站在你面前。",-1,false,true,false,320,320)
+	Encounter_Set(BATTLE.SANS_CORE,-1,battle_enemy_sans_core,-1,"",-1,false,true,false,320,320)
 	}
 }

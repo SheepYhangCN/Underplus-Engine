@@ -1,0 +1,2 @@
+char_player.dir=DIR.UP
+char_player.sprite_index=spr_char_frisk_up

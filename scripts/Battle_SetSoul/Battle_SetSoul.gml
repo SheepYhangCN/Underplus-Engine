@@ -13,7 +13,7 @@ function Battle_SetSoul() {
 			instance_destroy(battle_soul);
 		}
 		var inst=instance_create_depth(X,Y,DEPTH_BATTLE.SOUL,SOUL);
-		inst=INV
+		inst._inv=INV
 		if(argument_count>1){
 		inst.default_spr=argument[1]
 		inst.sprite_index=argument[1]

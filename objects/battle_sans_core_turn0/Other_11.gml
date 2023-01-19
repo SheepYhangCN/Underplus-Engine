@@ -1,0 +1,5 @@
+var a=instance_create_depth(420, 110, 0, battle_dialog_enemy)
+if(global.language=LANGUAGE.ENGLISH){
+a.text="{font 3}{scale 1}{speed 3}{voice 3}{skippable false}before we start,{sleep 15}&i bought a little&surprise for you.{sleep 80}{clear}did you saw&the door behind me?{sleep 80}{clear}you should know,{sleep 15}&that is the Core{sleep 80}{clear}i am standing here,{sleep 15}&that meant the Core&is on my side this time.{sleep 80}{clear}i think we should stop&meaningless talking.{sleep 15}&after all,&you killed me millions time.{sleep 80}{clear}Let's begin.{sleep 114514}"}
+if(global.language=LANGUAGE.SCHINESE){
+a.text="{font 3}{scale 1}{speed 6}{voice 3}{skippable false}在我们开始前,{sleep 15}&我给你带了个小惊喜。{sleep 120}{clear}看到我后面的门了吗{sleep 120}{clear}你应该知道,{sleep 15}&那就是核心{sleep 120}{clear}既然我站在了这,{sleep 15}&说明这次的核心&是站在我这边的。{sleep 120}{clear}我想不用多废话了,{sleep 15}&毕竟你已经不知道&杀了我多少次了。{sleep 120}{clear}让我们开始吧。{sleep 114514}"}

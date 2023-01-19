@@ -16,7 +16,7 @@ instance_create_depth(0,0,depth+1,obj_effect_space)}
 //rainbow=0
 choice=0
 choice_min=-1
-choice_max=7
+choice_max=8
 phase=0
 phases=0
 temp=0

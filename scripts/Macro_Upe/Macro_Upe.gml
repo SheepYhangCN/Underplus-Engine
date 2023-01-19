@@ -46,6 +46,7 @@ function Macro_Upe(){
 		THREE_MINUTE_GB,
 		SPONGE,
 		SPONGE_P2,
-		WARMA
+		WARMA,
+		SANS_CORE
 	}
 }
