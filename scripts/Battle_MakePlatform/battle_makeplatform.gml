@@ -1,4 +1,4 @@
-///@arg x,y,*obj,*sticky,*width,*angle,*move_x,*move_y,*bounce_x,*auto_destroy,*auto_destroy_dir
+///@arg x,y,*obj,*sticky,*width,*angle,*hspeed,*vspeed,*bounce,*auto_destroy
 function Battle_MakePlatform(){
 var OBJ=battle_platform
 var _x=argument[0]
@@ -13,14 +13,12 @@ a.width=argument[4]}
 if(argument_count>5){
 a.angle=argument[5]}
 if(argument_count>6){
-a.move_x=argument[6]}
+a.hspeed=argument[6]}
 if(argument_count>7){
-a.move_y=argument[7]}
+a.vspeed=argument[7]}
 if(argument_count>8){
-a.bounce_x=argument[8]}
+a.bounce=argument[8]}
 if(argument_count>9){
 a.auto_destroy=argument[9]}
-if(argument_count>10){
-a.auto_destroy_dir=argument[10]}
 return a
 }
