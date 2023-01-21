@@ -1,4 +1,4 @@
-///@arg dir
+///@arg dir,*impact_speed
 function BlueSoulControl_SansCore(){
 if(argument[0]=DIR.UP){
 Anim_Create(battle_enemy_sans_core,"_body",0,0,0,2,0)
@@ -20,7 +20,7 @@ Anim_Create(battle_enemy_sans_core,"_body",0,0,0,6,0)
 Anim_Create(battle_enemy_sans_core,"_body",0,0,6,1,0,5)
 Anim_Create(battle_enemy_sans_core,"_body",0,0,7,-7,0,30)
 }
-BlueSoulControl(argument[0])
+if(argument_count>1){BlueSoulControl(argument[0],argument[1])}else{BlueSoulControl(argument[0])}
 /*if(Battle_GetTurnNumber()>0){
 battle_enemy_sans_core._face_spr=spr_sans_blue_eyes
 Anim_Create(battle_enemy_sans_core,"_face_spr",0,0,spr_utcsans_blue_eyes,spr_utcsans_face-spr_utcsans_blue_eyes,0,30)
