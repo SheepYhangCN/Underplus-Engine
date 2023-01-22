@@ -39,7 +39,7 @@ if(global.tas=true){
 	draw_set_font(font_chs)
 	draw_text_scribble(0,0,"[c_red]警告[font_dialog]! [font_chs]变速模式是一个实验性功能[font_dialog]! [font_chs]\n可能会引起某些问题[font_dialog]! [font_chs]\n\n[c_orange]左[font_dialog]Alt - [font_chs]减少[font_dialog]FPS[font_chs]\n右[font_dialog]Alt - [font_chs]增加[font_dialog]FPS")}
 }
-if(global.vape){draw_sprite_ext(spr_vape,0,0,0,0.25,0.25,0,c_white,1)}
+if(global.vape){draw_sprite_ext(spr_vape,0,camera.width-(sprite_get_width(spr_vape)*0.25),0,0.25,0.25,0,c_white,1)}
 if(keyboard_check(vk_escape)&&!instance_exists(char_player)){
 if(global.language=LANGUAGE.ENGLISH){
 draw_set_font(font_menu)

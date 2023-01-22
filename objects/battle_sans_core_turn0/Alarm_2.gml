@@ -1,2 +1,9 @@
+if(_alarm){
+bonedir=choose(DIR.UP,DIR.DOWN,DIR.LEFT,DIR.RIGHT)
+BlueSoulControl_SansCore(bonedir)
+alarm[5]=30
+alarm[2]=50
+}else{
 Battle_MakeBlaster(battle_soul.x,0,battle_soul.x,battle_board.y-128,0,0,20,1,2,20,20,0)
-alarm[2]=240
+alarm[2]=180
+}

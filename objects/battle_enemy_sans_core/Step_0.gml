@@ -8,4 +8,19 @@ if(_hp<=0){
 show_error("这是一条错误信息 如果你看到了此消息 请尽快告诉作者 并且尽量记录下此信息出现前的一切行为",true)}}
 global.battle=BATTLE.SANS_CORE
 
-if(keyboard_check_pressed(ord("C"))&&Battle_GetTurnNumber()=0&&battle_sans_core_turn0.timer<1500){audio_sound_set_track_position(bgm,1519/60);audio=1519/60;battle_sans_core_turn0.timer=1499;with(battle_dialog_enemy){instance_destroy()}}
+if(keyboard_check_pressed(ord("C"))&&Battle_GetTurnNumber()=0&&battle_sans_core_turn0.timer<1500){
+hint=0
+audio_sound_set_track_position(bgm,1519/60)
+audio=1519/60
+battle_sans_core_turn0.timer=1499
+with(battle_dialog_enemy){instance_destroy()}
+}
+
+if(keyboard_check_pressed(ord("H"))&&global.mode!=GAME_MODE.HARD){
+hint=0
+item_used+=1
+item_used_hint=60
+Player_SetKR(0)
+Player_Heal(114514)
+audio_play_sound(snd_item_heal,0,0)
+}

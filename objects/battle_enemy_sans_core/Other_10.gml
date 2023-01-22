@@ -57,3 +57,5 @@ sweat=0
 alarm[2]=1
 audio=0
 bgm=audio_play_sound(bgm_sans_core,0,1)
+item_used=0
+item_used_hint=0
