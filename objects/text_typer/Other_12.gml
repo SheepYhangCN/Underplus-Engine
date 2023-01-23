@@ -853,4 +853,16 @@ switch(cmd[|0]){
 			battle_enemy_warma._face=cmd[|1]
 		}
 		break
+//==================================================
+	case "sans_core_face":
+		if(is_real(cmd[|1])&&instance_exists(battle_enemy_sans_core)){
+			battle_enemy_sans_core._face=cmd[|1]
+		}
+		break
+//==================================================
+	case "sans_core_ending":
+		battle_button_fight.depth=DEPTH_BATTLE.BOARD-1
+		Anim_Create(battle_button_fight,"x",0,0,battle_button_fight.x,320-battle_button_fight.x,120,120)
+		Anim_Create(battle_button_fight,"y",0,0,battle_button_fight.y,320-battle_button_fight.y,120,120)
+		break
 }

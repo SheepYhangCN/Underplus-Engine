@@ -136,7 +136,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			if(impact = 1){
 				audio_play_sound(snd_impact,0,0);
 				if(impact_shake){Camera_Shake(8,8,1,1,1,1);}
-				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}
+				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}else if(Player_GetHp()=1&&Player_GetKR()>0){Player_SetKR(Player_GetKR()-1)}
 				impact = 0;
 			}
 		}
@@ -147,7 +147,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			if(impact = 1){
 				audio_play_sound(snd_impact,0,0);
 				if(impact_shake){Camera_Shake(8,8,1,1,1,1);}
-				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}
+				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}else if(Player_GetHp()=1&&Player_GetKR()>0){Player_SetKR(Player_GetKR()-1)}
 				impact = 0;
 			}
 		}
@@ -159,7 +159,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			if(impact = 1){
 				audio_play_sound(snd_impact,0,0);
 				if(impact_shake){Camera_Shake(8,8,1,1,1,1);}
-				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}
+				if(impact_damage&&Player_GetHp()>1){Player_Hurt(1)}else if(Player_GetHp()=1&&Player_GetKR()>0){Player_SetKR(Player_GetKR()-1)}
 				impact = 0;
 			}
 			

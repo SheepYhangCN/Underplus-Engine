@@ -1,0 +1,4 @@
+char_player.moveable=true
+char_player._moveable_dialog=true
+char_player._moveable_encounter=true
+instance_destroy()

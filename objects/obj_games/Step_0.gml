@@ -132,6 +132,6 @@ enabled=true
 break
 case 8://核心杉
 phases=0
-enabled=false
+enabled=true
 break
 }

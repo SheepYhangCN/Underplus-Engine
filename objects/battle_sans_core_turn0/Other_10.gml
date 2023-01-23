@@ -6,3 +6,6 @@ Battle_SetTurnInfo(BATTLE_TURN.BOARD_RIGHT,64)
 _dir=45
 _alarm=false
 final=false
+pressed=false
+touched=false
+press_temp=false

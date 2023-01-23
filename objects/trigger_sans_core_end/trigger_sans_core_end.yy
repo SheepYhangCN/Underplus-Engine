@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "battle_sans_core_turn1",
-  "spriteId": null,
+  "name": "trigger_sans_core_end",
+  "spriteId": {
+    "name": "spr_trigger",
+    "path": "sprites/spr_trigger/spr_trigger.yy",
+  },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "battle_turn",
-    "path": "objects/battle_turn/battle_turn.yy",
+    "name": "trigger",
+    "path": "objects/trigger/trigger.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -26,11 +29,12 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "sans_core",
-    "path": "folders/Objects/Battle/Turn/sans_core.yy",
+    "name": "Trigger",
+    "path": "folders/Objects/Trigger.yy",
   },
 }

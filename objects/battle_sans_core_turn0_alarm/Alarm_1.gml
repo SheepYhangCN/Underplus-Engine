@@ -1,0 +1,4 @@
+battle_enemy_sans_core._body=9
+battle_enemy_sans_core.legspr=spr_sans_leg_marry
+battle_enemy_sans_core._face=6
+alarm[2]=60

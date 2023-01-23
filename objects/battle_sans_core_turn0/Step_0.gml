@@ -286,6 +286,14 @@ case 10350:
 	battle_enemy_sans_core._face_spr=spr_sans_face
 	battle_enemy_sans_core._face=0
 	break
+case 10480:
+	Battle_SetBoardSize(65,65,283,283,60)
+	Battle_SetSoul(battle_soul_red)
+	battle_enemy_sans_core.alarm[2]=-1
+	var d=instance_create_depth(420, 110, 0, battle_dialog_enemy)
+	if(global.language=LANGUAGE.ENGLISH){d.text="{font 3}{voice 3}{sans_core_face 3}okay,{sleep 15}&you are still alive{pause}{clear}{sans_core_face 1}why are you looking at&me with that look{pause}{clear}{sans_core_face 2}are you hoping the core&blow up and kill me?{pause}{clear}{sans_core_face 1}come on,{sleep 15}&i am not stupid like that{pause}{clear}{sans_core_face 3}i just,{sleep 15}&having a rest{pause}{clear}you know,{sleep 15}{sans_core_face 1}&i'm tired to the \"bone\"&after such a high-intensity&battle like this{pause}{sans_core_face 3}{sans_core_ending}{end}"}
+	if(global.language=LANGUAGE.SCHINESE){d.text="{font 3}{voice 3}{sans_core_face 3}好吧,{sleep 15}&你居然活下来了{pause}{clear}{sans_core_face 1}你怎么用那种眼神看着我{pause}{clear}{sans_core_face 2}难不成你还期待着&核心突然爆炸把我炸死吗?{pause}{clear}{sans_core_face 1}拜托,{sleep 15}&我哪有那么蠢{pause}{clear}{sans_core_face 3}我只是,{sleep 15}&先休息会{pause}{clear}你知道,{sleep 15}{sans_core_face 1}&这么高强度的战斗可是&让我累到了“骨子”里{pause}{sans_core_face 3}{sans_core_ending}{end}"}
+	break
 }
 
 with(battle_bullet_bone){
@@ -293,3 +301,11 @@ if(variable_instance_exists(id,"a")&&a=3&&x!=(((battle_board.x - battle_board.le
 }
 if(fader.alpha!=0){instance_destroy(battle_dialog_enemy)}
 if(final){battle_enemy_sans_core._face_spr=spr_sans_blue_eyes;battle_enemy_sans_core._face+=1}
+if(pressed&&press_temp=false){
+press_temp=true
+instance_create_depth(320,battle_enemy_sans_core.y+10,0,battle_menu_fight_anim_knife)
+battle_enemy_sans_core.sweat=2
+battle_enemy_sans_core._face=5
+alarmobj=instance_create_depth(0,0,0,battle_sans_core_turn0_alarm)
+alarmobj.alarm[0]=60
+}

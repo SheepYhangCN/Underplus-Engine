@@ -1,0 +1,1 @@
+if(instance_exists(battle_sans_core_turn0_alarm)){instance_destroy(battle_sans_core_turn0_alarm)}
