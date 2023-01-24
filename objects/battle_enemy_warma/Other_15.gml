@@ -4,7 +4,7 @@ switch(Battle_GetMenuChoiceButton()){
 			case 0:
 			if(Battle_GetTurnNumber()=16){
 			if(global.language=LANGUAGE.ENGLISH){
-			Dialog_Add("* Warma{sleep 15}&* A angel which facing world&  with honest and kindness.");}
+			Dialog_Add("* Warma{sleep 15}&* An angel which facing world&  with honest and kindness.");}
 			if(global.language=LANGUAGE.SCHINESE){
 			Dialog_Add("* 沃玛{sleep 15}&* 以真心和善良面对着世界的天使");}
 			}else if(Battle_GetTurnNumber()>=13){
