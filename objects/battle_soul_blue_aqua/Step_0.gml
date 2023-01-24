@@ -227,7 +227,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			case 270:
 				repeat(10){
 					if!(position_meeting(x-sprite_width/2,y,block)){
-						x -= Player_GetSpdTotal()/10;
+						x -= (Input_IsHeld(INPUT.CANCEL) ? Player_GetSpdTotal()/2 : Player_GetSpdTotal())/10;
 					}
 					else{
 						x = xprevious;	
@@ -252,7 +252,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			case 270:
 				repeat(10){
 					if!(position_meeting(x+sprite_width/2,y,block)){
-					  x += Player_GetSpdTotal()/10;
+					  x += (Input_IsHeld(INPUT.CANCEL) ? Player_GetSpdTotal()/2 : Player_GetSpdTotal())/10;
 					}
 					else{
 						x = xprevious;	
@@ -277,7 +277,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			case 180:
 				repeat(10){
 					if!(position_meeting(x,y-sprite_height/2,block)){
-					  y -= Player_GetSpdTotal()/10;
+					  y -= (Input_IsHeld(INPUT.CANCEL) ? Player_GetSpdTotal()/2 : Player_GetSpdTotal())/10;
 					}
 					else{
 						y = yprevious;	
@@ -302,7 +302,7 @@ if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 			case 180:
 				repeat(10){
 					if!(position_meeting(x,y+sprite_height/2,block)){
-					  y += Player_GetSpdTotal()/10;
+					  y += (Input_IsHeld(INPUT.CANCEL) ? Player_GetSpdTotal()/2 : Player_GetSpdTotal())/10;
 					}
 					else{
 						y = yprevious;	
