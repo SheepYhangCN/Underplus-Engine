@@ -8,9 +8,9 @@ if(hint>0){
 draw_set_color(c_white)
 draw_set_font(font_sans)
 if(global.language=LANGUAGE.ENGLISH){
-draw_text(10,10,"Press C to skip intro"+(global.mode!=GAME_MODE.HARD ? "\nPress H to heal" : ""))}
+draw_text(10,10,"Press C to skip intro"+(global.mode!=GAME_MODE.HARD ? "\nPress Space to heal" : ""))}
 if(global.language=LANGUAGE.SCHINESE){
-draw_text(10,10,"按下C跳过开头"+(global.mode!=GAME_MODE.HARD ? "\n按下H吃药" : ""))}
+draw_text(10,10,"按下C跳过开头"+(global.mode!=GAME_MODE.HARD ? "\n按下空格吃药" : ""))}
 hint-=1}
 
 if(item_used_hint>0){

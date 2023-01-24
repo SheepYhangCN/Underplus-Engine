@@ -18,7 +18,7 @@ battle_sans_core_turn0.timer=1499
 with(battle_dialog_enemy){instance_destroy()}
 }
 
-if(keyboard_check_pressed(ord("H"))&&global.mode!=GAME_MODE.HARD){
+if(keyboard_check_pressed(vk_space)&&global.mode!=GAME_MODE.HARD){
 hint=0
 item_used+=1
 item_used_hint=60
