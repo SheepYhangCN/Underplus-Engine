@@ -6,7 +6,7 @@ function Macro_Game() {
 #macro GAME_AUTHOR "SheepYhangCN"
 
 	//Anything you want, must be a string.
-#macro GAME_VERSION "v2023.1.24a"
+#macro GAME_VERSION "v2023.1.25"
 
 	//Anything you want, must be a string.
 	//Can only contain letters, numbers and underscores.

@@ -1,5 +1,5 @@
 a=instance_create_depth(battle_board.x+160,battle_board.y+28,-1001,battle_platform)
-a.move_x=-2
+a.hspeed=-2
 if(global.mode=GAME_MODE.HARD){
 alarm[0]=40
 }else{
