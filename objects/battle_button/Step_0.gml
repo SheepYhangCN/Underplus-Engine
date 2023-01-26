@@ -22,3 +22,4 @@ if(STATUS==BATTLE_STATE.MENU && MENU!=BATTLE_MENU.FIGHT_AIM && MENU!=BATTLE_MENU
 	}else if(global.language=LANGUAGE.SCHINESE){
 	image_index=2}
 }
+if(global.battle=BATTLE.WARMA){image_xscale=0.35;image_yscale=0.35}
