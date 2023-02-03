@@ -1,4 +1,4 @@
-///@arg x,y,vspeed,gap,auto_destroy,*duration
+///@arg x,y,hspeed,gap,auto_destroy,*duration,*obj,*spr_body,*spr_end
 function Battle_MakeBoneTwoH(){
     var X = argument[0]
     var Y = argument[1]
