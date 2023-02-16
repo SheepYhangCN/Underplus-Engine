@@ -32,7 +32,7 @@ function Flag_Custom() {
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.PHONE+7,noone);
 
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX,item_yuhang);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+1,item_yst);
+	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+1,item_mayse);
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+2,item_cxx);
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+3,item_ptfk);
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+4,item_cnj);

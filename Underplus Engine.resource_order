@@ -300,7 +300,7 @@
     {"name":"input_binding_is_valid","order":6,"path":"scripts/input_binding_is_valid/input_binding_is_valid.yy",},
     {"name":"spr_char_frisk_mask","order":3,"path":"sprites/spr_char_frisk_mask/spr_char_frisk_mask.yy",},
     {"name":"obj_touch_buttons","order":1,"path":"objects/obj_touch_buttons/obj_touch_buttons.yy",},
-    {"name":"item_yst","order":3,"path":"objects/item_yst/item_yst.yy",},
+    {"name":"item_mayse","order":3,"path":"objects/item_mayse/item_mayse.yy",},
     {"name":"sans_core_end","order":2,"path":"objects/sans_core_end/sans_core_end.yy",},
     {"name":"spr_char_sign","order":1,"path":"sprites/spr_char_sign/spr_char_sign.yy",},
     {"name":"spr_char_save","order":2,"path":"sprites/spr_char_save/spr_char_save.yy",},

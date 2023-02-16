@@ -345,7 +345,7 @@
     {"id":{"name":"input_binding_is_valid","path":"scripts/input_binding_is_valid/input_binding_is_valid.yy",},"order":6,},
     {"id":{"name":"spr_char_frisk_mask","path":"sprites/spr_char_frisk_mask/spr_char_frisk_mask.yy",},"order":3,},
     {"id":{"name":"obj_touch_buttons","path":"objects/obj_touch_buttons/obj_touch_buttons.yy",},"order":1,},
-    {"id":{"name":"item_yst","path":"objects/item_yst/item_yst.yy",},"order":3,},
+    {"id":{"name":"item_mayse","path":"objects/item_mayse/item_mayse.yy",},"order":0,},
     {"id":{"name":"sans_core_end","path":"objects/sans_core_end/sans_core_end.yy",},"order":2,},
     {"id":{"name":"spr_char_sign","path":"sprites/spr_char_sign/spr_char_sign.yy",},"order":1,},
     {"id":{"name":"spr_char_save","path":"sprites/spr_char_save/spr_char_save.yy",},"order":2,},
