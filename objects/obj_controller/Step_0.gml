@@ -36,7 +36,7 @@ if(choice=1){
 keyboard.text=prefix+"键盘"
 controller.text=prefix+"{color `yellow`}手柄"}}}
 
-if(Input_IsPressed(INPUT.CONFIRM)&&temp!=1){
+if((Input_IsPressed(INPUT.CONFIRM)||input_check("confirm"))&&temp!=1){
 	instance_destroy(title)
 	instance_destroy(keyboard)
 	instance_destroy(controller)
