@@ -1,4 +1,4 @@
-//if(gamepad_is_supported()&&gamepad_is_connected(0)){
+if(global.controller){
 if(input_check("up")){keyboard_key_press(vk_up)}else{keyboard_key_release(vk_up)}
 if(input_check("down")){keyboard_key_press(vk_down)}else{keyboard_key_release(vk_down)}
 if(input_check("left")){keyboard_key_press(vk_left)}else{keyboard_key_release(vk_left)}
@@ -16,4 +16,4 @@ if(input_check("space")){keyboard_key_press(vk_space)}else{keyboard_key_release(
 
 if(input_check("select")){keyboard_key_press(vk_f2)}else{keyboard_key_release(vk_f2)}
 if(input_check("pause")){keyboard_key_press(vk_escape)}else{keyboard_key_release(vk_escape)}
-//}
+}

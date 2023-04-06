@@ -11,6 +11,7 @@ global.shield_useable=false
 global.shielding=false
 global.shieldval=120
 global.vape=false
+global.controller=false
 room_speed=60
 //cursor_sprite=spr_cursor
 window_set_size(640,480)
@@ -83,4 +84,4 @@ if(!Border_IsEnabled()&&window_get_fullscreen()=false){
 Window_Size_Set(_window_size)}}
 
 //Language_Set(LANGUAGE.SCHINESE)
-room_goto(room_logo)
+if(gamepad_is_supported()&&gamepad_is_connected(0)){room_goto(room_controller)}else{room_goto(room_logo)}
