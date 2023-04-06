@@ -37,10 +37,10 @@ INPUT_DEFAULT_PROFILES = {
         left:  input_binding_gamepad_axis(gp_axislh, true),
         right: input_binding_gamepad_axis(gp_axislh, false),
         
-        cancel:  input_binding_gamepad_button(gp_face1),
-        confirm:  input_binding_gamepad_button(gp_face2),
-        space:  input_binding_gamepad_button(gp_face3),
-        control: input_binding_gamepad_button(gp_face4),
+        cancel:  input_binding_gamepad_button(gp_face2),
+        confirm:  input_binding_gamepad_button(gp_face1),
+        space:  input_binding_gamepad_button(gp_face4),
+        control: input_binding_gamepad_button(gp_face3),
         
         aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
         aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
