@@ -11,6 +11,6 @@ keyboard.text=prefix+"{color `yellow`}Keyboard"
 controller.text=prefix+"Controller"}
 if(global.language=LANGUAGE.SCHINESE){
 prefix="{instant true}{scale 2}{font 0}"
-title.text=prefix+"已检测到控制器。&你想使用哪种方式游玩？"
+title.text=prefix+"已检测到控制器。&你想使用哪种方式游玩?"
 keyboard.text=prefix+"{color `yellow`}键盘"
 controller.text=prefix+"手柄"}
