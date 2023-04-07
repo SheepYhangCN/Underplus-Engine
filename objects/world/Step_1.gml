@@ -8,11 +8,12 @@ if(input_check("pad_up")){keyboard_key_press(ord("W"))}else{keyboard_key_release
 if(input_check("pad_down")){keyboard_key_press(ord("S"))}else{keyboard_key_release(ord("S"))}
 if(input_check("pad_left")){keyboard_key_press(ord("A"))}else{keyboard_key_release(ord("A"))}
 if(input_check("pad_right")){keyboard_key_press(ord("D"))}else{keyboard_key_release(ord("D"))}
-
-if(input_check("confirm")){keyboard_key_press(vk_enter)}else{keyboard_key_release(vk_enter)}
-if(input_check("cancel")){keyboard_key_press(vk_shift)}else{keyboard_key_release(vk_shift)}
-if(input_check("control")){keyboard_key_press(vk_control)}else{keyboard_key_release(vk_control)}
-if(input_check("space")){keyboard_key_press(vk_space)}else{keyboard_key_release(vk_space)}
+if(global.controller=2){var key1=vk_enter;var key2=vk_shift;var key3=vk_control;var key4=vk_space}
+if(global.controller=1){var key2=vk_enter;var key1=vk_shift;var key4=vk_control;var key3=vk_space}
+if(input_check("confirm")){keyboard_key_press(key1)}else{keyboard_key_release(key1)}
+if(input_check("cancel")){keyboard_key_press(key2)}else{keyboard_key_release(key2)}
+if(input_check("control")){keyboard_key_press(key3)}else{keyboard_key_release(key3)}
+if(input_check("space")){keyboard_key_press(key4)}else{keyboard_key_release(key4)}
 
 if(input_check("select")){keyboard_key_press(vk_f2)}else{keyboard_key_release(vk_f2)}
 if(input_check("pause")){keyboard_key_press(vk_escape)}else{keyboard_key_release(vk_escape)}
