@@ -8,3 +8,19 @@ Shop_Uninit();
 file_delete(working_directory+"console.txt");
 if(file_exists(working_directory+GAME_SAVE_NAME+"/file10.ini")){file_delete(working_directory+GAME_SAVE_NAME+"/file10.ini")}
 if(directory_exists(working_directory+GAME_SAVE_NAME+"/flag/10")){directory_destroy(working_directory+GAME_SAVE_NAME+"/flag/10")}
+#region Release Keys
+keyboard_key_release(vk_up)
+keyboard_key_release(vk_down)
+keyboard_key_release(vk_left)
+keyboard_key_release(vk_right)
+keyboard_key_release(ord("W"))
+keyboard_key_release(ord("S"))
+keyboard_key_release(ord("A"))
+keyboard_key_release(ord("D"))
+keyboard_key_release(vk_enter)
+keyboard_key_release(vk_shift)
+keyboard_key_release(vk_control)
+keyboard_key_release(vk_space)
+keyboard_key_release(vk_f2)
+keyboard_key_release(vk_escape)
+#endregion
